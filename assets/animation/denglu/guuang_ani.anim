@@ -1,0 +1,53 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "guuang_ani",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 3.9833333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            81,
+            -125
+          ]
+        },
+        {
+          "frame": 0.75,
+          "value": [
+            -69,
+            105
+          ]
+        }
+      ],
+      "color": [
+        {
+          "frame": 0,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 248,
+            "b": 214,
+            "a": 255
+          }
+        },
+        {
+          "frame": 3.9833333333333334,
+          "value": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 247,
+            "b": 210,
+            "a": 255
+          }
+        }
+      ]
+    }
+  },
+  "events": []
+}

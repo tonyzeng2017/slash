@@ -1,0 +1,91 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "born",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.275,
+  "sample": 40,
+  "speed": 0.5,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "cbc01dc9-b8ae-42ef-9847-52fc039e944b"
+            }
+          },
+          {
+            "frame": 0.025,
+            "value": {
+              "__uuid__": "c6424635-1f27-4ecc-98ef-265279a7dede"
+            }
+          },
+          {
+            "frame": 0.05,
+            "value": {
+              "__uuid__": "b3c737ab-9073-479a-9ecf-daf7ff4f28ce"
+            }
+          },
+          {
+            "frame": 0.075,
+            "value": {
+              "__uuid__": "deec5c92-32c2-4c23-88aa-1380a386824a"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "b7ae7f2a-c44a-4c63-87a3-0d273b5099b9"
+            }
+          },
+          {
+            "frame": 0.125,
+            "value": {
+              "__uuid__": "d6af46e9-7b97-4564-8c59-119f99da3ac2"
+            }
+          },
+          {
+            "frame": 0.15,
+            "value": {
+              "__uuid__": "f9597556-7a57-4bf0-94f8-ad0f8149fe7f"
+            }
+          },
+          {
+            "frame": 0.175,
+            "value": {
+              "__uuid__": "36a30863-7e0c-41e7-90cd-b163f714f4b2"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "1d8aed87-1942-4a42-b1bf-5fe93b62dfd5"
+            }
+          },
+          {
+            "frame": 0.225,
+            "value": {
+              "__uuid__": "79c9ffdf-0a73-41d3-92a1-1854fff6a782"
+            }
+          },
+          {
+            "frame": 0.25,
+            "value": {
+              "__uuid__": "06991ac8-7603-4747-8878-4bf73259c519"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.25,
+      "func": "finish",
+      "params": []
+    }
+  ]
+}

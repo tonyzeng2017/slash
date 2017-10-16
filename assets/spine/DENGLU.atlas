@@ -1,0 +1,20 @@
+
+DENGLU.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+DENGLU_0
+  rotate: false
+  xy: 2, 2
+  size: 221, 67
+  orig: 221, 67
+  offset: 0, 0
+  index: -1
+DENGLU_1
+  rotate: true
+  xy: 225, 12
+  size: 57, 120
+  orig: 57, 120
+  offset: 0, 0
+  index: -1

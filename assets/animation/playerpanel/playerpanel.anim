@@ -1,0 +1,287 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "playerpanel",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.31666666666666665,
+          "value": 255
+        }
+      ]
+    },
+    "paths": {
+      "battle-bg1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                902,
+                -27
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                399,
+                -27
+              ]
+            }
+          ]
+        }
+      },
+      "attribute_bg1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                891,
+                209
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                397.2,
+                209.5
+              ]
+            }
+          ]
+        }
+      },
+      "attribute_bg2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.21666666666666667,
+              "value": [
+                896,
+                110
+              ]
+            },
+            {
+              "frame": 0.4,
+              "value": [
+                396,
+                110
+              ]
+            }
+          ]
+        }
+      },
+      "attribute_bg3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.25,
+              "value": [
+                896,
+                8
+              ]
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": [
+                396,
+                8
+              ]
+            }
+          ]
+        }
+      },
+      "attribute_bg4": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.2833333333333333,
+              "value": [
+                896,
+                -93
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": [
+                396,
+                -93
+              ]
+            }
+          ]
+        }
+      },
+      "attribute_bg5": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.31666666666666665,
+              "value": [
+                899,
+                -193
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                396,
+                -193
+              ]
+            }
+          ]
+        }
+      },
+      "attribute_bg6": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.35,
+              "value": [
+                899,
+                -292
+              ]
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": [
+                396,
+                -292
+              ]
+            }
+          ]
+        }
+      },
+      "attributeNode1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                743,
+                210
+              ]
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                253,
+                210
+              ]
+            }
+          ]
+        }
+      },
+      "attributeNode2": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.21666666666666667,
+              "value": [
+                746,
+                109
+              ]
+            },
+            {
+              "frame": 0.4,
+              "value": [
+                254,
+                109
+              ]
+            }
+          ]
+        }
+      },
+      "attributeNode3": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.25,
+              "value": [
+                747,
+                8
+              ]
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": [
+                253,
+                8
+              ]
+            }
+          ]
+        }
+      },
+      "attributeNode4": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.2833333333333333,
+              "value": [
+                749,
+                -90
+              ]
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": [
+                253,
+                -90
+              ]
+            }
+          ]
+        }
+      },
+      "attributeNode5": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.31666666666666665,
+              "value": [
+                751,
+                -192
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                253,
+                -192
+              ]
+            }
+          ]
+        }
+      },
+      "attributeNode6": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.35,
+              "value": [
+                753,
+                -291
+              ]
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": [
+                253,
+                -291
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

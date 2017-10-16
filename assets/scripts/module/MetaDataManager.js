@@ -1,0 +1,288 @@
+
+var isMobile = function () {
+    return cc.sys.isMobile;
+};
+
+var loadMetaData = function(name, callback){
+    var url = cc.url.raw( 'resources/' + name + '.json' )
+    cc.loader.load( url, function( err, res)
+    {
+            // 如果有異常會在 err 變數顯示, 否則在res就會是讀進來的json object
+            if(err){
+                cc.log( 'load['+ url +'], err['+err+']');
+            }
+            else{
+                cc.log( 'load['+ url +'], result: ' + JSON.stringify(res));
+                callback(res)
+            }
+    });
+}
+
+var _stageOpenData;
+
+function getStageOpenData(){
+    return _stageOpenData;  
+}
+
+function getStageOpenDataByID(id){
+    return _stageOpenData[id.toString()];
+}
+
+var _monsterData;
+
+function getMonsterData(){
+    return _monsterData;
+}
+
+var _spawnsData;
+function getSpawnsData(){
+    return _spawnsData;
+}
+
+var _wavesData;
+function getWavesData(){
+    return _wavesData;
+}
+
+function getWaveDataByID(waveID){
+    return _wavesData[waveID.toString()];
+}
+
+var _stageData;
+function getStageDataByID(stageID){
+    return _stageData[stageID.toString()];
+}
+
+var _playerData;
+/*function getPlayerPropertyByStarAndLevelAndID(star, level, ID){
+    for(var key in _playerData){
+        let propertyData = _playerData[key];
+        // cc.log("player data not exist for star: %s, level: %s, ID: %s", propertyData.PlayerStar, propertyData.Level , propertyData.PropertyID);
+        // cc.log("player data not exist for star: %s, level: %s, ID: %s", propertyData.PlayerStar == star, propertyData.Level == level , propertyData.PropertyID == ID);
+        if(propertyData.PlayerStar  == star && propertyData.Level == level && propertyData.PropertyID == ID){
+            return propertyData;
+        }
+    }
+    cc.log("player data not exist for star: %s, level: %s, ID: %s", star, level , ID);
+    return null;
+}*/
+
+function getMaxLevelByStarAndID(star, ID){
+    let maxLevel = 0;
+    for(var key in _playerData){
+        let propertyData = _playerData[key];
+        if(propertyData.PlayerStar  == star && propertyData.PropertyID == ID){
+            if(propertyData.Level > maxLevel ){
+                maxLevel = propertyData.Level;
+            }
+        }
+    }
+
+    return maxLevel;
+}
+
+function getMinLevelByStarAndID(star, ID) {
+    let minLevel = 1000;
+    for(var key in _playerData){
+        let propertyData = _playerData[key];
+        if(propertyData.PlayerStar  == star && propertyData.PropertyID == ID){
+            if(propertyData.Level < minLevel ){
+                minLevel = propertyData.Level;
+            }
+        }
+    }
+
+    return minLevel;
+}
+
+function getPlayerPropertyByStarAndID(star, ID){
+    for(var key in _playerData){
+        let propertyData = _playerData[key];
+        if(propertyData.PlayerStar == star && propertyData.PropertyID == ID){
+            return propertyData;
+        }
+    }
+
+    return null;
+}
+
+function getPlayerPropertyByLevelAndID(level, ID){
+    for(var key in _playerData){
+        let propertyData = _playerData[key];
+        if(propertyData.Level == level && propertyData.PropertyID == ID){
+            return propertyData;
+        }
+    }
+
+    return null;
+}
+
+var _propertyData;
+function getAttributeDataByID(ID){
+    return _propertyData[ID.toString()];
+}
+
+var _valueConstantData;
+function getValueDataByID(ID){
+    return _valueConstantData[ID];
+}
+
+var _comboData;
+function getComboScore(count) {
+    let comboItem = _comboData[count.toString()];
+    return comboItem && comboItem.ComboScore ? comboItem.ComboScore : 0;
+}
+
+function getSpawnDataByID(spawnID){
+    return _spawnsData[spawnID];
+}
+
+var _bossSpawnData;
+function getBossSpawnDataByID(bossSpawnID){
+    return _bossSpawnData[bossSpawnID];
+}
+
+function getBossSpawnData(){
+    return _bossSpawnData;
+}
+
+function getMonsterDataByID(monsterID){
+    return _monsterData[monsterID];
+}
+
+function getMonsterDataByFoeType(foeType){
+    for (var id in _monsterData) {
+        if(_monsterData[id].FoeType == foeType){
+            return _monsterData[id];
+        }
+    }
+
+    return null
+}
+
+var _shopData;
+function getShopData(){
+    return _shopData;
+}
+
+var _entranceData;
+function test(ID){
+    return _entranceData[ID.toString()];
+}
+
+var _rewardData;
+function getRewardDataByID(ID){
+    return _rewardData[ID];
+}
+
+function geEntranceDataByID(ID){
+    return _entranceData[ID.toString()];
+}
+
+var _rangeData;
+function getRangeDataByID(ID){
+    return _rangeData[ID.toString()];
+}
+
+var _cutData;
+function getOneSlashDataByCount(count) {
+    _cutData.sort(function(a, b){
+        return a.CutNum < b.CutNum;
+    })
+    for(var i = 0; i < _cutData.length; i ++){
+        if(_cutData[i].CutNum <= count){
+            return _cutData[i].CutScore;
+        }
+    }
+
+    return _cutData[_cutData.length - 1].CutScore;
+}
+
+function loadData(completeCallback, progressCallback) {
+    let metaNames   = ["ValueData", "StageOpenData", "StageData", "MonsterData", "SpawnsData", "WavesData", "ComboData",
+                        "PlayerData","PropertyData", "ShopData", "RewardData", "EntranceData", "RangeData", "BossSpawnsData", "CutData"];
+    let scheduler = cc.director.getScheduler();
+    let count = 0;
+    let completed = 0;
+
+    var updateProgress = function(){
+        if(progressCallback){
+            progressCallback(completed / metaNames.length);
+        }
+    };
+
+    let callbackMap = {"StageOpenData" : function(data){_stageOpenData = data; updateProgress();},
+                       "MonsterData" : function(data)  {_monsterData = data; updateProgress();},
+                       "SpawnsData" : function(data)   {_spawnsData = data; updateProgress();},
+                       "WavesData" : function(data)    {_wavesData = data; updateProgress();},
+                        "ComboData": function(data)    {_comboData = data; updateProgress();},
+                        "StageData": function(data)    {_stageData = data; updateProgress();},
+                        "PlayerData": function(data)    {_playerData = data; updateProgress();},
+                        "PropertyData": function(data)  {_propertyData = data; updateProgress();},
+                        "ValueData": function(data)  {_valueConstantData = data; updateProgress();},
+                        "ShopData": function(data)  {_shopData = data; updateProgress();},
+                        "RewardData": function(data)  {_rewardData = data; updateProgress();},
+                        "EntranceData": function(data)  {_entranceData = data; updateProgress();},
+                        "RangeData": function(data) {_rangeData = data; updateProgress();},
+                        "BossSpawnsData": function(data) {_bossSpawnData = data; updateProgress();},
+                        "CutData": function(data) {
+                                        _cutData = [];
+                                        for(var key in data){
+                                            _cutData.push(data[key]);
+                                        }
+                                        updateProgress();
+                                    },
+                    };
+
+    let loadFunc = function() {
+        let metaName = metaNames[count];
+        // cc.log("metaName: " + metaName);
+        if (metaName) {
+            loadMetaData(metaName, function (data) {
+                cc.log(metaName + " data loaded~~~~~~~~~~~~~~~~~");
+                completed++;
+                callbackMap[metaName](data);
+                if (completed >= metaNames.length) {
+                    cc.log("data load completed~~~~~~");
+                    if(completeCallback){
+                        completeCallback()
+                    }
+                }
+            });
+        } else {
+            // Constant.instance.init();
+            scheduler.unscheduleAllForTarget(this);
+        }
+        count++;
+    }
+
+    scheduler.schedule(loadFunc, this, 0.1, metaNames.length, 0, false);
+}
+
+module.exports = {
+    geEntranceData: geEntranceDataByID,
+    loadData: loadData,
+    getStageOpenData: getStageOpenData,
+    getMonsterData: getMonsterData,
+    getStageOpenDataByID: getStageOpenDataByID,
+    getWavesData: getWavesData,
+    getWaveDataByID: getWaveDataByID,
+    getSpawnDataByID:getSpawnDataByID,
+    getMonsterDataByID:getMonsterDataByID,
+    getMonsterDataByFoeType: getMonsterDataByFoeType,
+    getComboScore: getComboScore,
+    getStageDataByID: getStageDataByID,
+    getValueDataByID: getValueDataByID,
+    getPlayerPropertyByLevelAndID: getPlayerPropertyByLevelAndID,
+    getPlayerPropertyByStarAndID: getPlayerPropertyByStarAndID,
+    getMaxLevelByStarAndID: getMaxLevelByStarAndID,
+    getMinLevelByStarAndID: getMinLevelByStarAndID,
+    getAttributeDataByID: getAttributeDataByID,
+    getShopData: getShopData,
+    getRewardDataByID: getRewardDataByID,
+    test: test,
+    getRangeDataByID: getRangeDataByID,
+    getBossSpawnDataByID: getBossSpawnDataByID,
+    getBossSpawnData: getBossSpawnData,
+    getOneSlashDataByCount: getOneSlashDataByCount,
+};

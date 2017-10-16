@@ -1,0 +1,225 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "playermax",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.48333333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "xing_1_xin": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.45,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "liuguang": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "attributeNode1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "attributeNode2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "attributeNode3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "attributeNode4": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "attributeNode5": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "attributeNode6": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "bg_max": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "btnClose": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0.25,
+              "value": 3
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.25,
+              "value": 3
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "btnBuy": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0.21666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 0.9
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.21666666666666667,
+              "value": 2
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 0.9
+            },
+            {
+              "frame": 0.48333333333333334,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.21666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

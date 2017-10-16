@@ -1,0 +1,9 @@
+
+{
+    "1" : {"MapID" : 1, "MapName" : "少室山", "StageStart" : "1", "StageEnd" : "12", "HeroStar" : 1}
+    ,"2" : {"MapID" : 2, "MapName" : "玄晶洞", "StageStart" : "13", "StageEnd" : "27", "HeroStar" : 2}
+    ,"3" : {"MapID" : 3, "MapName" : "鬼嚎谷", "StageStart" : "28", "StageEnd" : "44", "HeroStar" : 3}
+    ,"4" : {"MapID" : 4, "MapName" : "寒冰河", "StageStart" : "45", "StageEnd" : "62", "HeroStar" : 4}
+    ,"5" : {"MapID" : 5, "MapName" : "阴风村", "StageStart" : "63", "StageEnd" : "80", "HeroStar" : 5}
+    ,"6" : {"MapID" : 6, "MapName" : "噬魂宅", "StageStart" : "81", "StageEnd" : "99", "HeroStar" : 6}
+}

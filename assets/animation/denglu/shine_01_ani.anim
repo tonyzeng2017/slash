@@ -1,0 +1,33 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "shine_01_ani",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 3.533333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 0.55,
+          "value": 256
+        },
+        {
+          "frame": 2.3666666666666667,
+          "value": 255
+        },
+        {
+          "frame": 3.533333333333333,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,15 @@
+
+{
+    "1" : {"Name" : "新手切菜", "FoeType" : 4, "HitPoint" : 1, "AtkRange" : 80, "AtkDist" : 80, "HurtRadius" : 20, "AtkDuration" : 300, "AtkStun" : 1000, "AtkPrepTime" : 1500, "MoveSpeed" : 120, "CorpseDuration" : 500, "KillScore" : 10}
+    ,"2" : {"Name" : "普通型", "FoeType" : 2, "HitPoint" : 1, "AtkRange" : 215, "AtkDist" : 225, "HurtRadius" : 30, "AtkDuration" : 500, "AtkStun" : 700, "AtkPrepTime" : 1300, "MoveSpeed" : 100, "CorpseDuration" : 500, "KillScore" : 20}
+    ,"3" : {"Name" : "坦克型", "FoeType" : 1, "HitPoint" : 2, "AtkRange" : 260, "AtkDist" : 260, "HurtRadius" : 60, "AtkDuration" : 300, "AtkStun" : 700, "AtkPrepTime" : 1100, "MoveSpeed" : 60, "CorpseDuration" : 500, "KillScore" : 50}
+    ,"4" : {"Name" : "敏捷型", "FoeType" : 5, "HitPoint" : 1, "AtkRange" : 240, "AtkDist" : 260, "HurtRadius" : 70, "AtkDuration" : 200, "AtkStun" : 200, "AtkPrepTime" : 400, "MoveSpeed" : 250, "CorpseDuration" : 500, "KillScore" : 55}
+    ,"5" : {"Name" : "弓箭", "FoeType" : 6, "HitPoint" : 1, "AtkRange" : 480, "AtkDist" : 480, "HurtRadius" : 30, "AtkDuration" : 300, "AtkStun" : 500, "AtkPrepTime" : 1500, "MoveSpeed" : 100, "CorpseDuration" : 500, "KillScore" : 40}
+    ,"6" : {"Name" : "连弩", "FoeType" : 8, "HitPoint" : 1, "AtkRange" : 180, "AtkDist" : 180, "HurtRadius" : 30, "AtkDuration" : 200, "AtkStun" : 300, "AtkPrepTime" : 900, "MoveSpeed" : 300, "CorpseDuration" : 500, "KillScore" : 45}
+    ,"7" : {"Name" : "小法师", "FoeType" : 0, "HitPoint" : 1, "AtkRange" : 480, "AtkDist" : 500, "HurtRadius" : 60, "AtkDuration" : 500, "AtkStun" : 1000, "AtkPrepTime" : 2000, "MoveSpeed" : 80, "CorpseDuration" : 500, "KillScore" : 60}
+    ,"8" : {"Name" : "大法师", "FoeType" : 11, "HitPoint" : 1, "AtkRange" : 480, "AtkDist" : 530, "HurtRadius" : 60, "AtkDuration" : 400, "AtkStun" : 1000, "AtkPrepTime" : 2200, "MoveSpeed" : 80, "CorpseDuration" : 500, "KillScore" : 80}
+    ,"9" : {"Name" : "坦克BOSS", "FoeType" : 3, "HitPoint" : 8, "AtkRange" : 350, "AtkDist" : 360, "HurtRadius" : 80, "AtkDuration" : 300, "AtkStun" : 400, "AtkPrepTime" : 1000, "MoveSpeed" : 100, "CorpseDuration" : 500, "KillScore" : 1000}
+    ,"10" : {"Name" : "敏捷BOSS", "FoeType" : 10, "HitPoint" : 5, "AtkRange" : 280, "AtkDist" : 290, "HurtRadius" : 80, "AtkDuration" : 200, "AtkStun" : 400, "AtkPrepTime" : 700, "MoveSpeed" : 300, "CorpseDuration" : 500, "KillScore" : 1000}
+    ,"11" : {"Name" : "法师BOSS", "FoeType" : 9, "HitPoint" : 5, "AtkRange" : 500, "AtkDist" : 580, "HurtRadius" : 60, "AtkDuration" : 300, "AtkStun" : 400, "AtkPrepTime" : 1100, "MoveSpeed" : 80, "CorpseDuration" : 500, "KillScore" : 1000}
+    ,"12" : {"Name" : "射手BOSS", "FoeType" : 7, "HitPoint" : 5, "AtkRange" : 500, "AtkDist" : 580, "HurtRadius" : 40, "AtkDuration" : 300, "AtkStun" : 400, "AtkPrepTime" : 900, "MoveSpeed" : 100, "CorpseDuration" : 500, "KillScore" : 1000}
+}

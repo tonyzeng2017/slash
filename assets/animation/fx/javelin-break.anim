@@ -1,0 +1,153 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "javelin-break",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5,
+  "sample": 40,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "pieceL": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -6,
+                0
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 0.125,
+              "value": [
+                -6,
+                0
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                -6,
+                12
+              ],
+              "motionPath": [
+                [
+                  -18.4,
+                  57.4,
+                  -6.4,
+                  41.3,
+                  -25.6,
+                  67
+                ],
+                [
+                  -40.7,
+                  73.3,
+                  -36.5,
+                  72.4,
+                  -46,
+                  74.4
+                ],
+                [
+                  -73.3,
+                  59.2,
+                  -68.6,
+                  66.7,
+                  -81.1,
+                  47.1
+                ]
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                -85,
+                28
+              ],
+              "motionPath": []
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": -180
+            },
+            {
+              "frame": 0.5,
+              "value": -355
+            }
+          ]
+        }
+      },
+      "pieceR": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 180
+            },
+            {
+              "frame": 0.5,
+              "value": 360
+            }
+          ],
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                5.6,
+                0
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                5.6,
+                15
+              ],
+              "motionPath": [
+                [
+                  12.8,
+                  36.2,
+                  5.6,
+                  28.6,
+                  19.1,
+                  42.8
+                ],
+                [
+                  35.3,
+                  50,
+                  29.1,
+                  50,
+                  48.1,
+                  50
+                ]
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                58,
+                15
+              ],
+              "motionPath": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

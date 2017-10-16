@@ -1,0 +1,18 @@
+
+{
+    "1" : {"Xpoint" : -640, "Ypoint" : -360, "Width" : "426", "Height" : 196}
+    ,"2" : {"Xpoint" : -640, "Ypoint" : -164, "Width" : "426", "Height" : 196}
+    ,"3" : {"Xpoint" : -640, "Ypoint" : 76, "Width" : "426", "Height" : 196}
+    ,"4" : {"Xpoint" : -214, "Ypoint" : -360, "Width" : "426", "Height" : 196}
+    ,"5" : {"Xpoint" : -214, "Ypoint" : -164, "Width" : "426", "Height" : 196}
+    ,"6" : {"Xpoint" : -214, "Ypoint" : 76, "Width" : "426", "Height" : 196}
+    ,"7" : {"Xpoint" : 212, "Ypoint" : -360, "Width" : "426", "Height" : 196}
+    ,"8" : {"Xpoint" : 212, "Ypoint" : -164, "Width" : "426", "Height" : 196}
+    ,"9" : {"Xpoint" : 212, "Ypoint" : 76, "Width" : "426", "Height" : 196}
+    ,"10" : {"Xpoint" : -640, "Ypoint" : -360, "Width" : "1150", "Height" : 670}
+    ,"11" : {"Xpoint" : -314, "Ypoint" : -264, "Width" : "626", "Height" : 396}
+    ,"12" : {"Xpoint" : -427, "Ypoint" : -44, "Width" : "10", "Height" : 10}
+    ,"13" : {"Xpoint" : 0, "Ypoint" : -284, "Width" : "10", "Height" : 10}
+    ,"14" : {"Xpoint" : 0, "Ypoint" : 196, "Width" : "10", "Height" : 10}
+    ,"15" : {"Xpoint" : 425, "Ypoint" : -44, "Width" : "10", "Height" : 10}
+}

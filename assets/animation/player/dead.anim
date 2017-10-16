@@ -1,0 +1,90 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "dead",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 9.7,
+  "sample": 10,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "58c22494-6541-47a5-88e0-b051d3c8a502"
+            }
+          },
+          {
+            "frame": 0.1,
+            "value": {
+              "__uuid__": "03ca4526-c611-4b6e-8bfa-796e23720b71"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "58c22494-6541-47a5-88e0-b051d3c8a502"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "aa74a4bd-494b-4a8c-bf4e-610f96464cf7"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "9dd92ae7-0763-4278-bc23-4b1c568ee4bb"
+            }
+          },
+          {
+            "frame": 0.5,
+            "value": {
+              "__uuid__": "6e4d46c3-5bd2-4abe-9507-38a37784e742"
+            }
+          },
+          {
+            "frame": 0.6,
+            "value": {
+              "__uuid__": "6ee69873-6625-4e06-bd3a-93e43dfe2230"
+            }
+          },
+          {
+            "frame": 0.7,
+            "value": {
+              "__uuid__": "522588ec-ea72-47d9-b0a8-629f092c77eb"
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__uuid__": "6fca1a98-4d90-43ca-9aff-97c1ab383e6a"
+            }
+          },
+          {
+            "frame": 9.6,
+            "value": {
+              "__uuid__": "58c22494-6541-47a5-88e0-b051d3c8a502"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.2,
+      "func": "playParticle",
+      "params": []
+    },
+    {
+      "frame": 2,
+      "func": "finish",
+      "params": []
+    }
+  ]
+}

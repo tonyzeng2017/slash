@@ -1,0 +1,116 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "xiaoguai_dead_down_2",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 16.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 13.016666666666667,
+            "value": {
+              "__uuid__": "9ca55df2-658e-4aca-a1f3-f01cd68f07a3"
+            }
+          },
+          {
+            "frame": 13.083333333333334,
+            "value": {
+              "__uuid__": "2487b34d-4963-4387-b1b5-d45bddf8438b"
+            }
+          },
+          {
+            "frame": 13.15,
+            "value": {
+              "__uuid__": "b103ab0e-aa32-4764-967a-b7637610474e"
+            }
+          },
+          {
+            "frame": 13.216666666666667,
+            "value": {
+              "__uuid__": "cbe62b5a-d9a3-4bc7-969e-bcaff9a1e62b"
+            }
+          },
+          {
+            "frame": 13.283333333333333,
+            "value": {
+              "__uuid__": "580b6e67-7613-45e8-be4a-40990206b6e3"
+            }
+          },
+          {
+            "frame": 13.35
+          },
+          {
+            "frame": 13.366666666666667,
+            "value": {
+              "__uuid__": "2c00f99a-acf6-4428-9e5b-83bd83642bd4"
+            }
+          },
+          {
+            "frame": 13.383333333333333,
+            "value": {
+              "__uuid__": "2c00f99a-acf6-4428-9e5b-83bd83642bd4"
+            }
+          },
+          {
+            "frame": 13.416666666666666,
+            "value": {
+              "__uuid__": "53622ee8-4804-41e9-bc54-626ae18f3508"
+            }
+          },
+          {
+            "frame": 13.483333333333333,
+            "value": {
+              "__uuid__": "ef13fff3-3368-4078-90d1-aba801238814"
+            }
+          },
+          {
+            "frame": 13.55,
+            "value": {
+              "__uuid__": "e23712cc-c790-4907-895d-2dfdfc4ad875"
+            }
+          },
+          {
+            "frame": 13.616666666666667,
+            "value": {
+              "__uuid__": "e23712cc-c790-4907-895d-2dfdfc4ad875"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "opacity": [
+        {
+          "frame": 13,
+          "value": 0
+        },
+        {
+          "frame": 13.016666666666667,
+          "value": 255
+        },
+        {
+          "frame": 13.683333333333334,
+          "value": 255
+        },
+        {
+          "frame": 13.7,
+          "value": 0
+        },
+        {
+          "frame": 16.483333333333334,
+          "value": 0
+        },
+        {
+          "frame": 16.5,
+          "value": 0
+        }
+      ]
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,222 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "panelstore",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.43333333333333335,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {},
+    "paths": {
+      "battle-shop-bg": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "items_bg": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 255
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "battle-shop-prop": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.35,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "battle-shop-icon_title": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 3
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 3
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "btn_close": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0.35,
+              "value": 3
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.35,
+              "value": 3
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.35,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "btn_right": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "label_have": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.35,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "icon_product": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.35,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "text_gold": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.35,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

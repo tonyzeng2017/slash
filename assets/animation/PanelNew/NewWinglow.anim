@@ -1,0 +1,31 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "NewWinglow",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 1,
+          "value": [
+            -188,
+            -128
+          ]
+        },
+        {
+          "frame": 1.3333333333333333,
+          "value": [
+            151,
+            127
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

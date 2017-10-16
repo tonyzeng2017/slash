@@ -1,0 +1,128 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "xinshouyindao",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.8333333333333334,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "glow_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 120
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.38333333333333336,
+              "value": 0.2
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.4
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.38333333333333336,
+              "value": 0.2
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 0.3
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.4
+            }
+          ]
+        }
+      },
+      "quan_02": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.15
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 0.15
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.62
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.15
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 0.15
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.62
+            }
+          ]
+        }
+      },
+      "shou_1": {
+        "props": {
+          "opacity": []
+        }
+      }
+    }
+  },
+  "events": []
+}

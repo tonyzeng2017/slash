@@ -1,0 +1,25 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "corpse",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.03333333333333333,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "6fca1a98-4d90-43ca-9aff-97c1ab383e6a"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

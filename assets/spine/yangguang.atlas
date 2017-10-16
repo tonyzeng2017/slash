@@ -1,0 +1,55 @@
+
+yangguang.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 132
+  size: 280, 270
+  orig: 280, 270
+  offset: 0, 0
+  index: -1
+2
+  rotate: true
+  xy: 2, 2
+  size: 128, 301
+  orig: 128, 301
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 2, 712
+  size: 379, 307
+  orig: 379, 307
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 323, 556
+  size: 79, 295
+  orig: 79, 295
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 383, 803
+  size: 373, 216
+  orig: 373, 216
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 383, 637
+  size: 378, 164
+  orig: 378, 164
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 2, 404
+  size: 319, 306
+  orig: 319, 306
+  offset: 0, 0
+  index: -1

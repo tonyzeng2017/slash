@@ -1,0 +1,31 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "long_2_ani",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.6666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0.16666666666666666,
+          "value": [
+            -8,
+            -361
+          ]
+        },
+        {
+          "frame": 1.6666666666666667,
+          "value": [
+            -212,
+            266
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,43 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "pre_atk_down",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.26666666666666666,
+  "sample": 15,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "9edceaad-7d6d-4a39-8f98-7c384bf43a06"
+            }
+          },
+          {
+            "frame": 0.06666666666666667,
+            "value": {
+              "__uuid__": "99a7c688-47da-4253-8264-94f92fbe0d70"
+            }
+          },
+          {
+            "frame": 0.13333333333333333,
+            "value": {
+              "__uuid__": "ce14808d-4be5-4938-86b9-2cac3edaef24"
+            }
+          },
+          {
+            "frame": 0.2,
+            "value": {
+              "__uuid__": "8fe529e6-952a-4212-ae45-5e93b97b304a"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

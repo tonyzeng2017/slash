@@ -1,0 +1,280 @@
+const Foe = require('Foe');
+const FoeType = require('Types').FoeType;
+const BossType = require('Types').BossType;
+const FoeTypeMap = require('Types').FoeTypeMap;
+const Spawn = require('Spawn');
+var  MetaDataManager = require('MetaDataManager');
+var GameManager = require("GameManager");
+
+const Wave = cc.Class({
+    name: 'Wave',
+    properties: {
+        spawns: {
+            default: [],
+            type: Spawn
+        },
+        bossType: {
+            default: BossType.Demon,
+            type: BossType
+        }
+    },
+
+    statics: {
+        create: function(waveData){
+            var wave = new Wave();
+            wave.bossType = BossType.Demon;
+            wave.spawns = [];
+            var spawnIDs = waveData.SpawnID.split(",");
+            //cc.log("spawnID length: " + spawnIDs.length);
+            for (var i = 0 ; i < spawnIDs.length; i++ ) {
+                var spawnData = MetaDataManager.getSpawnDataByID(spawnIDs[i]);
+                if(spawnData){
+                    var spawn =  Spawn.create(spawnData);
+                    spawn.ID  = spawnIDs[i];
+                    if(i == waveData.BossAppear){
+                        spawn.isCompany = true;
+                        spawn.bossSpawnID = waveData.BossID;
+                        cc.log("boss appeared: %s", spawn.bossSpawnID);
+                    }
+
+                    wave.spawns.push(spawn);
+                }else{
+                    cc.error("the spawn data for ID: %s doesn't exist~", spawnIDs[i]);
+                }
+            }
+
+            wave.init();
+            return wave;
+        }
+    },
+    
+    init () {
+        this.totalFoes = 0;
+        this.spawnIdx = 0;
+        for (let i = 0; i < this.spawns.length; ++i) {
+            // if (this.spawns[i].isCompany === false) {
+                this.totalFoes += this.spawns[i].total;
+            // }
+            // cc.log("spawn: %s, is company: %s", this.spawns[i].ID, this.spawns[i].isCompany);
+        }
+    },
+
+    getNextSpawn () {// return next spawn
+        this.spawnIdx++;
+        if (this.spawnIdx < this.spawns.length) {
+            return this.spawns[this.spawnIdx];
+        } else {
+            return null;
+        }
+    }
+});
+
+cc.Class({
+    extends: cc.Component,
+
+    properties: {
+        waves: {
+            default: [],
+            type: Wave
+        },
+        startWaveIdx: 0,
+        spawnMargin: 0,
+        killedFoe: {
+            visible: false,
+            default: 0,
+            notify: function () {
+                if (!this.currentWave || !this.waveTotalFoes ) {
+                    return;
+                }
+                if (this.waveTotalFoes && this.killedFoe >= this.waveTotalFoes) {
+                    cc.log("waves ended~~~~~~~~~~~~~~~~");
+                    this.endWave();
+                }
+                if (this.waveProgress && this.waveTotalFoes) {
+                    let ratio = Math.min(this.killedFoe/this.waveTotalFoes, 1);
+                    this.waveProgress.updateProgress(ratio);
+                    this.waveProgress.updateWaveText(this.waveIdx + 1, this.waves.length);
+                }
+            }
+        },
+        waveProgress: cc.Node,
+        bossProgress: cc.Node,
+        audioNewWave: cc.AudioClip,
+        audioProjectiles: [cc.AudioClip]
+    },
+
+    // use this for initialization
+    init (game) {
+        let stageData = MetaDataManager.getStageDataByID(GameManager.instance.curStageID);
+        if (!stageData){
+            cc.log("curStageID: %s doesn't exist~~~~~~~~", GameManager.instance.curStageID);
+        }
+
+        var wavesIDs = stageData.WavesID.split(",");
+        var newWaves = [];
+        for (let i = 0 ; i < wavesIDs.length; i++ ){
+            let waveData = MetaDataManager.getWaveDataByID(wavesIDs[i]);
+            var wave = Wave.create(waveData);
+            newWaves.push(wave);
+        }
+        //cc.log("sorted waves data: ", JSON.stringify( this.waves.length));
+        this.waves = newWaves;
+        
+        this.game = game;
+        this.player = game.player;
+        this.foeGroup = game.foeGroup;
+        this.waveIdx = this.startWaveIdx;
+        this.spawnIdx = 0;
+        this.currentWave = this.waves[this.waveIdx];
+        
+        this.waveProgress = this.waveProgress.getComponent('WaveProgress');
+        this.waveProgress.init(this);
+        this.bossProgress = this.bossProgress.getComponent('BossProgress');
+        this.bossProgress.init(this.game.bossMng);
+    },
+    
+    start(){
+        cc.log("started~~~~~~~~~~~: " +  this.waves.length);
+    },
+
+    startSpawn () {
+        this.schedule(this.spawnFoe, this.currentSpawn.spawnInterval);
+    },
+
+    startBossSpawn (bossSpawn) {
+        this.bossSpawn = bossSpawn;
+        this.waveTotalFoes += bossSpawn.total;
+        // this.killedFoe = 0;
+        this.schedule(this.spawnBossFoe, bossSpawn.spawnInterval);
+    },
+
+    endSpawn () {
+        this.unschedule(this.spawnFoe);
+        let nextSpawn = this.currentWave.getNextSpawn();
+        if (nextSpawn) {
+            this.currentSpawn = nextSpawn;
+            this.startSpawn();
+            cc.log("nextSpawn : %s, isCompany: %s",nextSpawn.ID, nextSpawn.isCompany);
+            if (nextSpawn.isCompany) {
+                cc.log("nextSpawn.bossSpawnID: %s",nextSpawn.bossSpawnID);
+                this.startBoss(nextSpawn.bossSpawnID);
+            }
+        }
+    },
+
+    startWave () {
+        this.unschedule(this.spawnFoe);
+        this.currentWave.init();
+        this.waveTotalFoes = this.currentWave.totalFoes;
+        this.killedFoe = 0;
+        this.currentSpawn = this.currentWave.spawns[this.currentWave.spawnIdx];
+        this.startSpawn();
+        this.game.inGameUI.showWave(this.waveIdx + 1);
+        GameManager.instance.playSound(this.audioNewWave, false, 1);
+        cc.log("wave totalFoes: %s", this.waveTotalFoes);
+    },
+
+    startBoss (bossSpawnID) {
+        this.game.bossMng.startBoss(bossSpawnID);
+        this.bossProgress.show();
+    },
+
+    endWave () {
+        this.bossProgress.hide();
+        this.game.bossMng.endBoss();
+        // update wave index
+        cc.log("waveIndex: %s, countWaves: %s", this.waveIdx, this.waves.length);
+        if (this.waveIdx < this.waves.length - 1) {
+            this.waveIdx++;
+            this.currentWave = this.waves[this.waveIdx];
+            cc.log("endWave wave index:%s: ", this.waveIdx);
+            this.startWave();
+        } else {
+            let self = this;
+            let hideCB = cc.callFunc(function() {
+                self.game.gameOver(true);
+            });
+            let action = cc.sequence(cc.delayTime(1.6), hideCB);
+            this.foeGroup.runAction(action);
+        }
+    },
+
+    spawnFoe () {
+        if(GameManager.instance.isPaused){
+            return;
+        }
+
+        if (this.currentSpawn.finished) {
+            this.endSpawn();
+            return;
+        }
+
+        let newFoe = this.currentSpawn.spawn(this.game.poolMng);
+        if (newFoe) {
+            this.foeGroup.addChild(newFoe,0);
+            newFoe.setPosition(this.getNewFoePosition(this.currentSpawn.range));
+            newFoe.getComponent('Foe').init(this);
+            // this.curFoeCount++;
+        }
+    },
+
+    spawnBossFoe () {
+        if (this.bossSpawn.finished) {
+            this.unschedule(this.spawnBossFoe);
+        }
+        let newFoe = this.bossSpawn.spawn(this.game.poolMng);
+        if (newFoe) {
+            this.foeGroup.addChild(newFoe,0);
+            newFoe.setPosition(this.getNewFoePosition(this.bossSpawn.range));
+            newFoe.getComponent('Foe').init(this);
+            newFoe.getComponent('Foe').isBoss = true;
+        }
+    },
+
+    spawnProjectile (projectileType, pos, dir, rot) {
+        let newProjectile = this.game.poolMng.requestProjectile(projectileType);
+        if (newProjectile) {
+            this.foeGroup.addChild(newProjectile);
+            newProjectile.setPosition(pos);
+            newProjectile.getComponent('Projectile').init(this, dir);
+
+            GameManager.instance.playSound(this.audioProjectiles[projectileType], false, 1);
+        } else {
+            cc.log('requesting too many projectiles! please increase size');
+        }
+    },
+
+    killFoe () {
+        this.killedFoe++;
+    },
+    
+    hitFoe () {
+        this.game.cameraShake();
+    },
+
+    hitBoss(){
+        this.game.bossMng.hitBoss();
+        this.bossProgress.updateProgress();
+    },
+
+    despawnFoe (foe) {
+        let foeType = foe.foeType;
+        // cc.log("to return foe: %s", foe.foeType);
+        this.game.poolMng.returnFoe(foeType, foe.node);
+    },
+
+    despawnProjectile (projectile) {
+        let type = projectile.projectileType;
+        this.game.poolMng.returnProjectile(type, projectile.node);
+    },
+
+    getNewFoePosition (rangeID) {
+        var range = MetaDataManager.getRangeDataByID(rangeID.toString());
+        var randX = cc.random0To1() * range.Width + range.Xpoint  - this.spawnMargin;
+        var randY = cc.random0To1() * range.Height + range.Ypoint  - this.spawnMargin;
+        // var randX = cc.randomMinus1To1() * (this.foeGroup.width - this.spawnMargin)/2;
+        // var randY = cc.randomMinus1To1() * (this.foeGroup.height - this.spawnMargin)/2;
+        // cc.log("randx: %s, randy: %s", randX, randY);
+        return cc.p(randX, randY);
+    },
+});

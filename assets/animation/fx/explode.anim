@@ -1,0 +1,77 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "explode",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.13333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "baozha__00": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "f8b3fe3b-18fb-48ef-a92c-bdf66456d6f6"
+                }
+              },
+              {
+                "frame": 0.016666666666666666,
+                "value": {
+                  "__uuid__": "f8b3fe3b-18fb-48ef-a92c-bdf66456d6f6"
+                }
+              },
+              {
+                "frame": 0.03333333333333333,
+                "value": {
+                  "__uuid__": "ac5edc02-36a1-488f-8b5b-20b57946e871"
+                }
+              },
+              {
+                "frame": 0.05,
+                "value": {
+                  "__uuid__": "95ec80b2-f7e5-4a52-9070-61bfddb780ca"
+                }
+              },
+              {
+                "frame": 0.06666666666666667,
+                "value": {
+                  "__uuid__": "5e0122c2-429c-4347-9ca1-a824e11ed316"
+                }
+              },
+              {
+                "frame": 0.08333333333333333,
+                "value": {
+                  "__uuid__": "a48f9ff6-476d-4bc2-82e2-26b4105b5e31"
+                }
+              },
+              {
+                "frame": 0.1,
+                "value": {
+                  "__uuid__": "27d4707e-fb68-450a-a301-b74ba0fe2dfa"
+                }
+              },
+              {
+                "frame": 0.11666666666666667,
+                "value": {
+                  "__uuid__": "8e2ac702-09a1-4749-9658-c389d3df6004"
+                }
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 0.11666666666666667,
+      "func": "finish",
+      "params": []
+    }
+  ]
+}

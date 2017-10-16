@@ -1,0 +1,62 @@
+
+BIANFU.png
+size: 512,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+BIANFU_0
+  rotate: false
+  xy: 301, 20
+  size: 43, 38
+  orig: 43, 38
+  offset: 0, 0
+  index: -1
+BIANFU_1
+  rotate: true
+  xy: 83, 29
+  size: 29, 54
+  orig: 29, 54
+  offset: 0, 0
+  index: -1
+BIANFU_2
+  rotate: false
+  xy: 2, 31
+  size: 79, 27
+  orig: 79, 27
+  offset: 0, 0
+  index: -1
+BIANFU_3
+  rotate: true
+  xy: 195, 15
+  size: 43, 51
+  orig: 43, 51
+  offset: 0, 0
+  index: -1
+BIANFU_4
+  rotate: false
+  xy: 346, 22
+  size: 43, 36
+  orig: 43, 36
+  offset: 0, 0
+  index: -1
+BIANFU_5
+  rotate: true
+  xy: 139, 30
+  size: 28, 54
+  orig: 28, 54
+  offset: 0, 0
+  index: -1
+BIANFU_6
+  rotate: false
+  xy: 2, 2
+  size: 76, 27
+  orig: 76, 27
+  offset: 0, 0
+  index: -1
+BIANFU_7
+  rotate: true
+  xy: 248, 16
+  size: 42, 51
+  orig: 42, 51
+  offset: 0, 0
+  index: -1

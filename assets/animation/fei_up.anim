@@ -1,0 +1,95 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "fei_up",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "Sprite_fei_up": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                141,
+                104
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                141,
+                104.4
+              ],
+              "curve": "linear"
+            },
+            {
+              "frame": 1.5,
+              "value": [
+                141,
+                357
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 255
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.25,
+              "value": 0.7
+            },
+            {
+              "frame": 1.5,
+              "value": 0.25
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.25,
+              "value": 0.7
+            },
+            {
+              "frame": 1.5,
+              "value": 0.25
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "frame": 1.3333333333333333,
+      "func": "finished",
+      "params": []
+    }
+  ]
+}

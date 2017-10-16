@@ -1,0 +1,13 @@
+
+{
+    "1" : {"CutNum" : 2, "CutScore" : 20}
+    ,"2" : {"CutNum" : 5, "CutScore" : 25}
+    ,"3" : {"CutNum" : 10, "CutScore" : 30}
+    ,"4" : {"CutNum" : 15, "CutScore" : 40}
+    ,"5" : {"CutNum" : 20, "CutScore" : 50}
+    ,"6" : {"CutNum" : 25, "CutScore" : 60}
+    ,"7" : {"CutNum" : 30, "CutScore" : 70}
+    ,"8" : {"CutNum" : 35, "CutScore" : 80}
+    ,"9" : {"CutNum" : 40, "CutScore" : 100}
+    ,"10" : {"CutNum" : 45, "CutScore" : 120}
+}
