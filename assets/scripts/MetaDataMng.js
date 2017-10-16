@@ -22,6 +22,8 @@ cc.Class({
         loadingUI: cc.Node
     },
 
+    //test commit.
+
     // use this for initialization
     onLoad: function () {
         var self = this;
