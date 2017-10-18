@@ -1,5 +1,6 @@
 var IOUtil =  require("IOUtil");
 const MetaDataManager = require("MetaDataManager");
+var Constant = require("Constant");
 
 var dataKey = "UserDataModel";
 var MAX_STAR = 6;
@@ -31,7 +32,18 @@ var UserDataModel = cc.Class({
         this._gold = userData && userData.gold ? userData.gold : 0;
         this._openedStages = userData && userData.openedStages ? userData.openedStages : ["0"];
         // cc.log("user data model constructor22222222222~~~~~~~~");
+        this._reviveCount = userData && userData.reviveCount ? userData.reviveCount : 0;
+        this._openedEntrances = userData && userData.openedEntrances ? userData.openedEntrances : {"1": false};
         cc.log("user level and star :%s, %s " , this._levels, this._star);
+    },
+
+    addRevive: function(){
+        this,_reviveCount++;
+        this.saveData();
+    },
+
+    canReviveFree: function(){
+        return this._reviveCount < Constant.instance.MAX_FREE_REVIVE;
     },
 
     isAttrMaxLevel: function(attrID){
@@ -133,6 +145,14 @@ var UserDataModel = cc.Class({
     openStage: function(stage){
         if(this._openedStages.indexOf( stage.toString() ) < 0){
             this._openedStages.push(stage.toString());
+
+            var allEntrances = MetaDataManager.getAllEntrances();
+            for(var eID in allEntrances){
+                if(this._openedEntrances[eID] === undefined && this.isEntraceEnabled(eID)){
+                    this._openedEntrances[eID] = false;
+                }
+            }
+
             this.saveData();
             // cc.log("stage opened: %s", this._openedStages);
         }
@@ -143,6 +163,14 @@ var UserDataModel = cc.Class({
         var index =  this._openedStages.indexOf(stageData.Preconditions);
 
         return index >= 0;
+    },
+
+    isEntraceEnabled: function(entranceID){
+        var entranceData = MetaDataManager.getEntranceData(entranceID);
+        let isStageOpen = this.isStageEnabled(entranceData.StageStart);
+
+        cc.log("openStar: %s", entranceData.OpenStar);
+        return isStageOpen && this._star >= Number(entranceData.OpenStar);
     },
 
     getTopStageInEntrance: function(entranceID){
@@ -169,8 +197,12 @@ var UserDataModel = cc.Class({
         return index >= 0;
     },
 
-    isBest: function(){
+    toMaxEnable: function(){
         return this.isAllAttrMax() && this._star == MAX_STAR;
+    },
+
+    starUpEnable: function(){
+        return this.isAllAttrMax() && this._star < MAX_STAR;
     },
 
     isAllAttrMax: function(){
@@ -192,7 +224,8 @@ var UserDataModel = cc.Class({
             levels: this._levels,
             star: this._star,
             gold: this._gold,
-            openedStages: this._openedStages
+            openedStages: this._openedStages,
+            openedEntrances: this._openedEntrances
         }
     },
 

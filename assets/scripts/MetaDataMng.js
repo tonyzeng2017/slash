@@ -22,8 +22,6 @@ cc.Class({
         loadingUI: cc.Node
     },
 
-    //test commit.
-
     // use this for initialization
     onLoad: function () {
         var self = this;
@@ -41,7 +39,9 @@ cc.Class({
 
             function(progress){
                 cc.log("loading progress: %s", progress);
-            }
+            },
+
+            this
         );
 
         var maxOpenStage = UserDataManager.instance.getUserData().getMaxOpenStage();

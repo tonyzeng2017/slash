@@ -166,9 +166,6 @@ function getShopData(){
 }
 
 var _entranceData;
-function test(ID){
-    return _entranceData[ID.toString()];
-}
 
 var _rewardData;
 function getRewardDataByID(ID){
@@ -179,9 +176,20 @@ function geEntranceDataByID(ID){
     return _entranceData[ID.toString()];
 }
 
+function getAllEntrances(){
+    return _entranceData;
+}
+
 var _rangeData;
 function getRangeDataByID(ID){
     return _rangeData[ID.toString()];
+}
+
+var _ratingData;
+function getRatingData(ID){
+    var data = _ratingData[ID.toString()];
+
+    return data && data.Value ? Number(data.Value)/100 : 0;
 }
 
 var _cutData;
@@ -198,10 +206,12 @@ function getOneSlashDataByCount(count) {
     return _cutData[_cutData.length - 1].CutScore;
 }
 
-function loadData(completeCallback, progressCallback) {
-    let metaNames   = ["ValueData", "StageOpenData", "StageData", "MonsterData", "SpawnsData", "WavesData", "ComboData",
-                        "PlayerData","PropertyData", "ShopData", "RewardData", "EntranceData", "RangeData", "BossSpawnsData", "CutData"];
-    let scheduler = cc.director.getScheduler();
+function loadData(completeCallback, progressCallback, target) {
+    let metaNames   = ["ValueData", "StageOpenData", "StageData", "MonsterData",
+                        "SpawnsData", "WavesData", "ComboData", "PlayerData","PropertyData",
+                        "ShopData", "RewardData", "EntranceData", "RangeData",
+                        "BossSpawnsData", "CutData", "RatingValueData"];
+    //var scheduler = cc.director.getScheduler();
     let count = 0;
     let completed = 0;
 
@@ -211,7 +221,7 @@ function loadData(completeCallback, progressCallback) {
         }
     };
 
-    let callbackMap = {"StageOpenData" : function(data){_stageOpenData = data; updateProgress();},
+    var callbackMap = {"StageOpenData" : function(data){_stageOpenData = data; updateProgress();},
                        "MonsterData" : function(data)  {_monsterData = data; updateProgress();},
                        "SpawnsData" : function(data)   {_spawnsData = data; updateProgress();},
                        "WavesData" : function(data)    {_wavesData = data; updateProgress();},
@@ -232,10 +242,13 @@ function loadData(completeCallback, progressCallback) {
                                         }
                                         updateProgress();
                                     },
+                        "RatingValueData": function(data){
+                                        _ratingData = data;
+                                    }
                     };
 
-    let loadFunc = function() {
-        let metaName = metaNames[count];
+    var loadFunc = function() {
+        var metaName = metaNames[count];
         // cc.log("metaName: " + metaName);
         if (metaName) {
             loadMetaData(metaName, function (data) {
@@ -251,16 +264,17 @@ function loadData(completeCallback, progressCallback) {
             });
         } else {
             // Constant.instance.init();
-            scheduler.unscheduleAllForTarget(this);
+            cc.director.getScheduler().unscheduleAllForTarget(target);
         }
         count++;
     }
 
-    scheduler.schedule(loadFunc, this, 0.1, metaNames.length, 0, false);
+    cc.director.getScheduler().schedule(loadFunc, target, 0.1, metaNames.length, 0, false);
 }
 
 module.exports = {
-    geEntranceData: geEntranceDataByID,
+    getEntranceData: geEntranceDataByID,
+    getAllEntrances: getAllEntrances,
     loadData: loadData,
     getStageOpenData: getStageOpenData,
     getMonsterData: getMonsterData,
@@ -280,9 +294,9 @@ module.exports = {
     getAttributeDataByID: getAttributeDataByID,
     getShopData: getShopData,
     getRewardDataByID: getRewardDataByID,
-    test: test,
     getRangeDataByID: getRangeDataByID,
     getBossSpawnDataByID: getBossSpawnDataByID,
     getBossSpawnData: getBossSpawnData,
     getOneSlashDataByCount: getOneSlashDataByCount,
+    getRatingData: getRatingData,
 };
