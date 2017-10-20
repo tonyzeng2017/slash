@@ -29,15 +29,24 @@ cc.Class({
         TDProxy.onEvent("enter_game", UserDataManager.instance.getUserData().getDCData());
 
         MetaDataManager.loadData(
-            function(){
+            function () {
                 Constant.instance.init();
+
+                cc.director.preloadScene("MapGame1", function(){
+                    cc.log("map game preloaded~~~~~");
+                });
+
+                cc.director.preloadScene("PlayGame", function(){
+                    cc.log("play game preloaded~~~~~~");
+                });
+
                 self.isCompleted = true;
                 self.loadingUI.active = false;
                 self.btnStart.active = true;
                 TDProxy.onEvent("game_load_completed", UserDataManager.instance.getUserData().getDCData());
             },
 
-            function(progress){
+            function (progress) {
                 cc.log("loading progress: %s", progress);
             },
 

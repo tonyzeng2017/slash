@@ -18,10 +18,25 @@ cc.Class({
         // ...
         storeItemPrefeb: cc.Prefab,
         scrollViewContent: cc.Node,
+        scrollView: cc.ScrollView,
         textGold: cc.Label,
         audioShop: cc.AudioClip,
         audioShopClose: cc.AudioClip,
-        buySuccessAni: cc.Node
+        buySuccessAni: cc.Node,
+        arrow_left: cc.Node,
+        arrow_right: cc.Node
+    },
+
+    // use this for initialization
+    start: function () {
+        this.scrollView.node.on('scrolling', this.onScrolling, this);
+        this.onScrolling();
+    },
+
+    onScrolling: function(){
+        this.arrow_left.active = this.scrollViewContent.x < -435;
+        this.arrow_right.active = this.scrollViewContent.x > -435-(this.scrollViewContent.width - 870)
+        // cc.log("on scrolling content x:%s", this.content.x);
     },
 
     // use this for initialization

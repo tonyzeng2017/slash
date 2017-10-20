@@ -1134,6 +1134,9 @@
     },
     "btnSoundOn": {
       "__id__": 9
+    },
+    "audioTouch": {
+      "__uuid__": "1323c45a-6885-4b43-8c04-9eeeb0ef74e4"
     }
   },
   {
@@ -1152,7 +1155,7 @@
         "__uuid__": "2dd6c675-d47a-4bfc-92fe-3360fe880e47"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "cc.PrefabInfo",

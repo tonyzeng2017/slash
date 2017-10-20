@@ -1,5 +1,6 @@
 var GameManager = require("GameManager");
 var UserDataManager = require("UserDataManager");
+var Types = require("Types");
 
 cc.Class({
     extends: cc.Component,
@@ -18,7 +19,9 @@ cc.Class({
         // storeUI: cc.Prefeb
         storeUI: cc.Prefab,
         audioReturn: cc.AudioClip,
-        newbieEnterPlayer: cc.Node
+        audioTouch: cc.AudioClip,
+        newbieEnterPlayer: cc.Node,
+        textGold: cc.Label
     },
 
     // use this for initialization
@@ -28,19 +31,34 @@ cc.Class({
         this._shopUI.y = 0;
         this._shopUI.active = false;
         this.node.addChild(this._shopUI);
+        GameManager.instance.updateScene(Types.sceneType.NORMAL);
 
         if(this.newbieEnterPlayer){
             this.newbieEnterPlayer.active = UserDataManager.instance.getNewbieData().isShowAttrLevelUp();
         }
+
+        this.updateGold();
+        var self = this;
+        this.node.on('gold_changed', function (event) {
+            // event.stopPropagation();
+            self.updateGold();
+        });
     },
 
-    openStage: function(event, data){
-        cc.log("goto open stage~: " + data.toString());
-        GameManager.instance.curStageID = data;
-        cc.director.loadScene('PlayerScene');
+    updateGold: function(){
+        this.textGold.string = UserDataManager.instance.getUserData().gold;
     },
+
+    // openStage: function(event, data){
+    //     cc.log("goto open stage~: " + data.toString());
+    //     GameManager.instance.curStageID = data;
+    //     cc.director.loadScene('PlayerScene');
+    // },
 
     onReturn: function(){
+        //to clear the current stage;
+        GameManager.instance.updateStage(-1, false);
+
         GameManager.instance.playSound(this.audioReturn, false, 1);
         cc.director.loadScene('EntranceGame');
     },
@@ -52,6 +70,7 @@ cc.Class({
     
     showPlayer: function () {
         cc.director.loadScene('PlayerScene');
+        GameManager.instance.playSound(this.audioTouch, false, 1);
     }
 
     // called every frame, uncomment this function to activate update callback

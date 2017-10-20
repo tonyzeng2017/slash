@@ -18,6 +18,7 @@ cc.Class({
         btnMusicOn: cc.Node,
         btnSoundOff: cc.Node,
         btnSoundOn: cc.Node,
+        audioTouch: cc.AudioClip
     },
 
     // use this for initialization
@@ -33,7 +34,7 @@ cc.Class({
     },
 
     onMusicOn: function(){
-        GameManager.instance.playSound(this.audio, false, 1);
+        GameManager.instance.playSound(this.audioTouch, false, 1);
         GameManager.instance.switchMusic(true);
 
         // this.btnMusicOff.active = true;
@@ -42,7 +43,7 @@ cc.Class({
     },
 
     onMusicOff: function(){
-        GameManager.instance.playSound(this.audio, false, 1);
+        GameManager.instance.playSound(this.audioTouch, false, 1);
         GameManager.instance.switchMusic(false);
 
         // this.btnMusicOff.active = false;
@@ -51,7 +52,7 @@ cc.Class({
     },
 
     onSoundOn: function(){
-        GameManager.instance.playSound(this.audio, false, 1);
+        GameManager.instance.playSound(this.audioTouch, false, 1);
         GameManager.instance.switchSound(true);
 
         // this.btnSoundOff.active = true;
@@ -60,7 +61,7 @@ cc.Class({
     },
 
     onSoundOff: function(){
-        GameManager.instance.playSound(this.audio, false, 1);
+        GameManager.instance.playSound(this.audioTouch, false, 1);
         GameManager.instance.switchSound(false);
 
         // this.btnSoundOff.active = false;
@@ -69,7 +70,9 @@ cc.Class({
     },
 
     show: function () {
+        GameManager.instance.playSound(this.audioTouch);
         this.node.active = true;
+        this.node.getComponent(cc.Animation).play();
     },
 
     hide: function () {
@@ -79,6 +82,7 @@ cc.Class({
         }.bind(this));
 
         this.node.runAction(hideCB);
+        GameManager.instance.playSound(this.audioTouch);
     }
 
     // called every frame, uncomment this function to activate update callback

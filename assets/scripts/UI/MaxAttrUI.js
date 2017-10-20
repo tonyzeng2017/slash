@@ -47,6 +47,7 @@ cc.Class({
     onAniFinished: function () {
         this.buySuccessAni.getComponent(cc.Animation).off('finished', this.onAniFinished, this);
         this.buySuccessAni.active = false;
+        this.hide();
     },
 
     onBuy: function(){
@@ -57,6 +58,7 @@ cc.Class({
                 UserDataManager.instance.getUserData().setMaxLevel();
                 self.updateAttrs();
                 self.playerUI.getComponent("PlayerUI").updateAttrs();
+                self.playerUI.getComponent("PlayerUI").updateButtons();
                 self.upgradeUI.getComponent("UpgradeUI").updateAttrs();
                 self.onBuySuccess();
             },
@@ -85,6 +87,7 @@ cc.Class({
         this.node.active = true;
         this.updateAttrs();
         GameManager.instance.playSound(this.audioBreak, false, 1);
+        this.node.getComponent(cc.Animation).play();
     },
 
     updateAttrs:function(){

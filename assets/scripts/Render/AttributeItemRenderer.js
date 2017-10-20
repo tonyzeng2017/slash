@@ -2,6 +2,7 @@ const MetaDataManager = require("MetaDataManager");
 const GameManager = require("GameManager");
 var UserDataManager = require("UserDataManager");
 var AttributeName = require("Types").AttributeName;
+var TipsManager = require("TipsManager");
 
 cc.Class({
     extends: cc.Component,
@@ -76,6 +77,7 @@ cc.Class({
     onLevelUp:function(){
         cc.log("attribute level up~~");
         if(UserDataManager.instance.getUserData().isAttrMaxLevel(this.attrID)){
+            TipsManager.init.showTips("属性已满级~");
             return;
         }
 
@@ -93,7 +95,7 @@ cc.Class({
             var dcAttrName = AttributeName[this.attrID - 1] + "_up";
             TDProxy.onEvent(dcAttrName, {number: dataUP.PropertyValue - data.PropertyValue});
         }else{
-            cc.log("gold not enough~~");
+            TipsManager.init.showTips("灵石不够~");
         }
     },
     

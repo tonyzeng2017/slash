@@ -1,6 +1,8 @@
 const MetaDataManager = require("MetaDataManager");
 const GameManager = require("GameManager");
 var UserDataManager = require("UserDataManager");
+var Types = require("Types");
+var Constant = require("Constant");
 
 cc.Class({
     extends: cc.Component,
@@ -20,29 +22,70 @@ cc.Class({
         detailUI: cc.Node,
         maxAttrUI:  cc.Node,
         attrItems: [cc.Node],
-        btnUpgrade: cc.Node,
         audioUpgrade: cc.AudioClip,
         audioStart: cc.AudioClip,
         audioReturn: cc.AudioClip,
         audioStar: cc.AudioClip,
+        audioTouch: cc.AudioClip,
         newbieShowAttribute: cc.Node,
         newbieTapLeft: cc.Node,
-        btnUpgradeLevel: cc.Node
+        btnUpgradeMax: cc.Node,
+        btnUpgradeStar: cc.Node,
+        labelCD: cc.Label
     },
 
     // use this for initialization
     onLoad: function () {
+        GameManager.instance.updateScene(Types.sceneType.NORMAL);
+
         if(GameManager.instance.playerSceneIndex == 1){
             this.onLeft();
             GameManager.instance.playerSceneIndex = 0;
         }
-        if(this.btnUpgradeLevel){
-            this.btnUpgradeLevel.active = !UserDataManager.instance.getUserData().isBest();
-        }
-        this.btnUpgrade.active = UserDataManager.instance.getUserData().isAllAttrMax();
 
+        this.updateButtons();
         this.newbieTapLeft.active = false;
         this.newbieShowAttribute.active = UserDataManager.instance.getNewbieData().isShowAttrLevelUp();
+    },
+
+    updateButtons: function(){
+        this.btnUpgradeMax.active = !UserDataManager.instance.getUserData().toMaxEnable();
+        this.btnUpgradeStar.active = UserDataManager.instance.getUserData().starUpEnable();
+    },
+
+    start: function(){
+        var timeStamp = GameManager.instance.lastTimeStamp;
+        if(timeStamp == 0){
+            GameManager.instance.resetTimeStamp();
+        }
+
+        if(this.btnUpgradeMax.active){
+            this.schedule(this.countdown, 1.0);
+            this.countdown();
+        }
+    },
+
+    countdown: function(){
+        var now = Math.round(new Date().getTime()/1000);
+        var cdSecs =  Constant.instance.CD_DURATION + GameManager.instance.lastTimeStamp - now;
+        if(cdSecs <= 0){
+            GameManager.instance.resetTimeStamp();
+        }
+
+        this.updateCD(cdSecs);
+    },
+
+    updateCD: function(secs){
+        var formatNumber = function(num){
+            return num < 10 ? "0" + num : new String(num);
+        }
+
+        var hours = Math.floor(secs/3600);
+        secs = secs%3600;
+        var mins = Math.floor(secs/60);
+        secs = secs%60;
+
+        this.labelCD.string = formatNumber(hours)+ ":"+ formatNumber(mins) +":" + formatNumber(secs);
     },
 
     onBreak: function(){
@@ -63,11 +106,12 @@ cc.Class({
         upgradeUIScript.onStar();
 
         this.node.getComponent("StarRenderer").onLoad();
-        this.btnUpgrade.active = UserDataManager.instance.getUserData().isAllAttrMax();
+        this.updateButtons();
     },
 
     onBack:function(){
-        // cc.director.loadScene('StartGame');
+        this.unschedule(this.countdown);
+
         GameManager.instance.playSound(this.audioReturn, false, 1);
         cc.director.loadScene('MapGame' + GameManager.instance.entranceID);
     },
@@ -100,7 +144,7 @@ cc.Class({
         // let callback = cc.callFunc(this.onAtkFinished, this);
         this.node.runAction(moveAction);
         this.updateAttrs();
-        this.btnUpgrade.active = UserDataManager.instance.getUserData().isAllAttrMax();
+        this.updateButtons();
     },
 
     onNewbieAttrFinished: function () {
@@ -119,11 +163,11 @@ cc.Class({
     },
     
     showDetail: function () {
-        this.detailUI.active = true;
+        this.detailUI.getComponent("CommonUI").show();
     },
     
     hideDetail: function () {
-        this.detailUI.active = false;
+        this.detailUI.getComponent("CommonUI").hide();
     }
 
     // called every frame, uncomment this function to activate update callback

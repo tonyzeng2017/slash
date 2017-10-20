@@ -22,6 +22,7 @@ cc.Class({
         name_bg: cc.Sprite,
         bg: cc.Sprite,
         lock: cc.Sprite,
+        seal:cc.Animation,
         audio: cc.AudioClip,
         newbieEnterGame: cc.Node
     },
@@ -37,29 +38,38 @@ cc.Class({
             }
         }
 
-        var entranceData = MetaDataManager.test(this.entranceID);
+        var entranceData = MetaDataManager.getEntranceData(this.entranceID);
          // var entranceData = MetaDataManager.getEntranceData(this.entranceID);
          this.text_name.string = entranceData.MapName;
 
-         let isEntranceOpen = UserDataManager.instance.getUserData().isStageEnabled(entranceData.StageStart);
-         cc.log("stageStart: %s, isOpen: %s", entranceData.StageStart, isEntranceOpen);
-         this.lock.node.active = !isEntranceOpen;
-         this.text_name.node.active = isEntranceOpen;
-         this.name_bg.node.active = isEntranceOpen;
+         let isEntranceEnable = UserDataManager.instance.getUserData().isEntraceEnabled(this.entranceID);
+         cc.log("stageStart: %s, isOpen: %s", entranceData.StageStart, isEntranceEnable);
+         this.lock.node.active = !isEntranceEnable;
+         this.text_name.node.active = isEntranceEnable;
+         this.name_bg.node.active = isEntranceEnable;
 
-         if(!isEntranceOpen){
+         let isEntranceOpened = UserDataManager.instance.getUserData().isEntranceOpened(this.entranceID);
+         if(isEntranceEnable && !isEntranceOpened){
+             this.seal.play();
+             cc.log("todo: play the opend animation on entrance: %s", this.entranceID);
+             UserDataManager.instance.getUserData().openEntrance(this.entranceID);
+         }
+
+         if(!isEntranceEnable){
              ShaderUtil.setShader(this.bg, "gray");
          }else{
              var self = this;
-             this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
-                 console.log('Mouse down entrance: %s', self.entranceID);
-                 self.onEnter();
-             }, self);
-
-             this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
-                 console.log('Mouse down entrance: %s', self.entranceID);
-                 self.onEnter();
-             }, self);
+             if(cc.sys.isMobile){
+                 this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
+                     console.log('Mouse down entrance: %s', self.entranceID);
+                     self.onEnter();
+                 }, self);
+             }else{
+                 this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
+                     console.log('Mouse down entrance: %s', self.entranceID);
+                     self.onEnter();
+                 }, self);
+             }
          }
     },
 

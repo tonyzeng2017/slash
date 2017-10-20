@@ -15,15 +15,16 @@ var GameDataModel = cc.Class({
         comboReward: 0,
         scoreReward: 0,
         killReward: 0,
-        slashReward: 0
+        slashReward: 0,
+        totalReward: 0,
+        reviveCount: 0,
     },
 
     getTotalReward: function(isWin){
         if(isWin){
-            return this.comboReward + this.scoreReward + this.killReward + this.slashReward;
+            return Math.round(this.totalReward);
         }else{
-            let stageData = GameManager.instance.getCurStageData()
-            return stageData ? stageData.FailReward : 0;
+            return Math.round(this.totalReward * Constant.instance.FAILED_SCORE_RATIO);
         }
     },
 
@@ -49,11 +50,18 @@ var GameDataModel = cc.Class({
         this.updateHighestScore();
     },
 
+    getFinalScore: function(){
+        let entranceData = MetaDataManager.getEntranceData(GameManager.instance.entranceID);
+        return Math.round(this.totalScore * entranceData.StageRewardValue/100);
+    },
+
     getScoreLevel: function(){
         let stageData = MetaDataManager.getStageDataByID(GameManager.instance.curStageID);
+        let finalScore = this.getFinalScore();
+
         let scores = [stageData.D, stageData.C, stageData.B, stageData.A, stageData.S, stageData.SS, stageData.SSS];
         for(let i = 0; i < scores.length; i++){
-            if(this.totalScore <= scores[i]){
+            if(finalScore <= scores[i]){
                 return i;
             }
         }
@@ -63,11 +71,14 @@ var GameDataModel = cc.Class({
 
     updateReward: function(){
         let stageData = MetaDataManager.getStageDataByID(GameManager.instance.curStageID);
-        let scoreLevel = this.getScoreLevel();
-        this.scoreReward = Math.ceil( Constant.instance.marks[scoreLevel] / 1000 * stageData.BasicReward );
+        var stageRewardValue = stageData.RewardValue/100;
+        var ratingValue = MetaDataManager.getRatingData(this.getScoreLevel());
+
+        this.totalReward = this.getFinalScore() * stageRewardValue * (1 + ratingValue);
+        /*this.scoreReward = Math.ceil( Constant.instance.marks[scoreLevel] / 1000 * stageData.BasicReward );
         this.comboReward = Math.ceil( Constant.instance.comboRewardRatio / 1000 * this.highestCombo ) ;
         this.killReward = Math.ceil( Constant.instance.killsRewardRatio / 1000 * this.killedCount );
-        this.slashReward = Math.ceil( Constant.instance.slashRewardRatio/1000 * this.highestSlashCount );
+        this.slashReward = Math.ceil( Constant.instance.slashRewardRatio/1000 * this.highestSlashCount );*/
     },
 
     addComboScore: function(comboCount){
@@ -86,6 +97,14 @@ var GameDataModel = cc.Class({
         if(this.totalScore > this.highestScore){
             this.highestScore = this.totalScore;
         }
+    },
+
+    addRevive: function(){
+        this.reviveCount++;
+    },
+
+    getReviveCount: function(){
+        return this.reviveCount;
     },
 
     getData: function(){
@@ -108,6 +127,7 @@ var GameDataModel = cc.Class({
         this.killReward = 0;
         this.killedCount = 0;
         this.slashReward = 0;
+        this.reviveCount = 0;
     },
 
     ctor: function() {

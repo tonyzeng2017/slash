@@ -158,6 +158,15 @@ var UserDataModel = cc.Class({
         }
     },
 
+    isEntranceOpened: function(entranceID){
+        return this._openedEntrances[entranceID]
+    },
+
+    openEntrance: function(entranceID){
+        this._openedEntrances[entranceID] = true;
+        this.saveData();
+    },
+
     isStageEnabled: function(stage){
         var stageData = MetaDataManager.getStageOpenDataByID(stage);
         var index =  this._openedStages.indexOf(stageData.Preconditions);

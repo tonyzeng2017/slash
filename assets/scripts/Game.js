@@ -1,7 +1,7 @@
 var MetaDataManager = require("MetaDataManager");
 var UserDataManager = require("UserDataManager");
 var GameManager = require("GameManager");
-const BossType = require('Types').BossType;
+const Types = require('Types');
 
 cc.Class({
     extends: cc.Component,
@@ -30,6 +30,12 @@ cc.Class({
 
     // use this for initialization
     onLoad () {
+        if(GameManager.instance.isBossStage){
+            GameManager.instance.updateScene(Types.sceneType.BATTLE_BOSS);
+        }else{
+            GameManager.instance.updateScene(Types.sceneType.BATTLE_NORMAL);
+        }
+
         UserDataManager.instance.getGameData().clear();
         this.playerFX = this.playerFX.getComponent('PlayerFX');
         this.playerFX.init(this);
@@ -49,7 +55,7 @@ cc.Class({
     },
 
     start () {
-        GameManager.instance.isPaused = false;
+        GameManager.instance.setPaused(false);
         this.startTime = Date.now();
         TDProxy.onEvent("play_start", {});
 
@@ -63,14 +69,15 @@ cc.Class({
         let scheduler = cc.director.getScheduler();
         scheduler.pauseTarget(this.waveMng);
         this.sortMng.enabled = false;
-        GameManager.instance.isPaused = true;
-        // cc.log("game paused~~~~~~~~~~~~");
+        GameManager.instance.setPaused(true);
+        cc.log("game paused~~~~~~~~~~~~");
     },
 
     resume () {
         let scheduler = cc.director.getScheduler();
         scheduler.resumeTarget(this.waveMng);
         this.sortMng.enabled = true;
+        GameManager.instance.resumeMusic();
     },
     
     cameraShake () {
@@ -85,9 +92,13 @@ cc.Class({
     revive () {
         cc.log("game revive~~~~~~~~~~~~~~~~");
         // this.reviveUI.hide();
-        GameManager.instance.isPaused = false;
+        GameManager.instance.setPaused(false);
         this.playerFX.playRevive();
         this.player.revive();
+        //记录总共revive次数
+        UserDataManager.instance.getUserData().addRevive();
+        //记录单场revive次数
+        UserDataManager.instance.getGameData().addRevive();
         cc.log("this.player.revive() called~~~~~~~~~~~~~~~~");
     },
     
@@ -141,12 +152,12 @@ cc.Class({
             this._gameWinUI.getComponent("GameWinUI").init(this);
             this.node.addChild(this._gameWinUI);
             this._gameWinUI.getComponent("GameWinUI").show();
-            GameManager.instance.playSound(this.audioGameWin, false, 1);
             // cc.log("winsize: %s, %s", this._pauseUI.x, this._pauseUI.y);
         }else{
             this._gameWinUI.getComponent("GameWinUI").show();
-            GameManager.instance.playSound(this.audioGameFail, false, 1);
         }
+
+        GameManager.instance.playSound(this.audioGameWin, false, 1);
     },
 
     showGameFail: function(){
@@ -159,9 +170,12 @@ cc.Class({
         }else{
             this._gameFailUI.getComponent("GameFailUI").show();
         }
+
+        GameManager.instance.playSound(this.audioGameFail, false, 1);
     },
 
     gameOver: function (isWin) {
+        GameManager.instance.pauseMusic();
         UserDataManager.instance.getGameData().saveData();
         this.hideRevive();
 
@@ -178,11 +192,13 @@ cc.Class({
             if(GameManager.instance.isFirstDead()){
                 TDProxy.onEvent("first_dead", {mapID: GameManager.instance.mapID, stageID: GameManager.instance.curStageID});
             }
+            GameManager.instance.countDead();
         }
+
     },
 
     restart: function () {
-        GameManager.instance.isPaused = false;
+        GameManager.instance.setPaused(false);
         cc.director.loadScene('PlayGame');
     }
     // called every frame, uncomment this function to activate update callback
