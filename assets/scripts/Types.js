@@ -65,11 +65,26 @@ const AttributeName = [
     "moving_speed"
 ];
 
+const sceneType = cc.Enum({
+    NORMAL: -1,
+    BATTLE_NORMAL: -1,
+    BATTLE_BOSS: -1,
+    None: 999
+});
+
+const BG_MUSIC_NAME = [
+    "bg_music/bgm_main",
+    "bg_music/bgm_battle",
+    "bg_music/bgm_over",
+];
+
 module.exports = {
     BossType,
     FoeType,
     ProjectileType,
     FoeTypeMap,
     ProjectileBrokeAnimation,
-    AttributeName
+    AttributeName,
+    BG_MUSIC_NAME,
+    sceneType
 };

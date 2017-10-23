@@ -32,7 +32,7 @@ cc.Class({
         var width = cc.director.getWinSize().width/2;
         var height = cc.director.getWinSize().height/2;
         cc.log("homeUI onload: %s, %s~~~~~~~~~~~~~~~", width, height);
-        GameManager.instance.playMusic();
+        GameManager.instance.updateScene(Types.sceneType.NORMAL);
 
         this.initSerttings();
     },

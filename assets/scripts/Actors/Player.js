@@ -2,6 +2,8 @@ const MetaDataManager = require("MetaDataManager");
 const GameManager = require("GameManager");
 var UserDataManager = require("UserDataManager");
 
+const standAnimations = ["stand_up", "stand_right", "stand"];
+
 const propertyMap = [
     "life",
     "hurtRadius",
@@ -19,6 +21,11 @@ cc.Class({
         sfAtkDirs: [cc.SpriteFrame],
         attachPoints: [cc.Vec2],
         sfPostAtks: [cc.SpriteFrame],
+
+        postAtkIndex: {
+            visible: false,
+            default: 2
+        },
         spPlayer: cc.Sprite,
         spSlash: cc.Sprite,
         hurtRadius: 0,
@@ -31,8 +38,11 @@ cc.Class({
         invincible: false,
         audioHit: cc.AudioClip,
         audioDead: cc.AudioClip,
-        audioSlashLeft: cc.AudioClip,
-        audioSlashRight: cc.AudioClip
+        audioSlashLefts: [cc.AudioClip],
+        audioSlashRights: [cc.AudioClip],
+
+        audio_move_left: cc.AudioClip,
+        audio_move_right: cc.AudioClip
     },
 
     onLoad(){
@@ -74,10 +84,18 @@ cc.Class({
         cc.log("valid rect, width: %s, height: %s", this.node.parent.width, this.node.parent.height);
         this.oneSlashKills = 0;
         this.totalScore = 0;
-        cc.log("player.atkDuration: %s, player.atkDist: " , this.atkDuration, this.atkDist);
 
         this.node.setScale(0.85);
-        this.anim.play("stand");
+        this.playStand();
+    },
+
+    playStand () {
+        var index = this.sfPostAtks.indexOf(this.nextPoseSF);
+        cc.log("index: %s", index);
+        index = index < 0 || index == undefined ? 2 : index;
+        // cc.log("play stand animation: %s", standAnimations[index]);
+        this.anim.play(standAnimations[index]);
+        // this.anim.play("stand_up");
     },
 
     registerInput () {
@@ -192,14 +210,13 @@ cc.Class({
         if (deg <= 0) {
             this.spPlayer.node.scaleX = 1;
             this.spPlayer.spriteFrame = getAtkSF(mag, this.sfAtkDirs);
-            GameManager.instance.playSound(this.audioSlashLeft, false, 1);
+            GameManager.instance.playSound(this.audio_move_left, false, 1);
         } else {
             this.spPlayer.node.scaleX = -1;
             this.spPlayer.spriteFrame = getAtkSF(mag, this.sfAtkDirs);
-            GameManager.instance.playSound(this.audioSlashRight, false, 1);
+            GameManager.instance.playSound(this.audio_move_right, false, 1);
         }
 
-        cc.log("mag: %s", mag);
         let moveAction = cc.moveTo(this.atkDuration/1000, targetPos).easing(cc.easeQuadraticActionOut());
         let delay = cc.delayTime(this.atkStun/1000);
         let callback = cc.callFunc(this.onAtkFinished, this);
@@ -216,12 +233,15 @@ cc.Class({
         // cc.log("attack finished, position: %s, %s", this.node.position.x, this.node.position.y);
         if (this.nextPoseSF) {
             this.spPlayer.spriteFrame = this.nextPoseSF;
-            //this.anim.play("stand");
+            this.playStand();
         }
         this.spSlash.enabled = false;
         this.inputEnabled = true;
         this.isAttacking = false;
         this.isAtkGoingOut = false;
+
+        this.playSlashSound();
+        cc.log("oneSlashKills: %s", this.oneSlashKills);
         if (this.oneSlashKills >= 2) {
             cc.log(" this.oneSlashKills: " + this.oneSlashKills)
             this.game.inGameUI.showKills(this.oneSlashKills);
@@ -229,6 +249,31 @@ cc.Class({
             UserDataManager.instance.getGameData().addOneSlashScore(this.oneSlashKills);
             this.game.inGameUI.showScore();
         }
+    },
+
+    playSlashSound() {
+        var self = this;
+        var getAudioByCount = function(audios){
+            //to get the left audio according to the numbers
+            if(self.oneSlashKills == 0){
+                return null;
+            }else if(self.oneSlashKills == 1){
+                return  audios[0];
+            }else if(self.oneSlashKills<5){
+                return  audios[1];
+            }else{
+                return  audios[2];
+            }
+        }
+
+        var audio = null;
+        if(this.spPlayer.node.scaleX == 1){
+            audio = getAudioByCount(this.audioSlashLefts);
+        }else{
+            audio = getAudioByCount(this.audioSlashRights);
+        }
+
+        GameManager.instance.playSound(audio);
     },
     
     addKills () {

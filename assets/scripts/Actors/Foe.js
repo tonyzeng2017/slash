@@ -10,6 +10,8 @@ const AttackType = cc.Enum({
     Range: -1
 });
 
+const AttackAnimations = ["atk_down", "atk_right", "atk_up"];
+
 cc.Class({
     extends: cc.Component,
 
@@ -212,18 +214,25 @@ cc.Class({
             this.spFoe.spriteFrame = getAtkSF(mag, this.sfAtkDirs);
             GameManager.instance.playSound(this.audioSlashRight, false, 1);
         }
+
         let delay = cc.delayTime(this.atkStun);
         let callback = cc.callFunc(this.onAtkFinished, this);
 
         if (this.atkType === AttackType.Melee) {
             let moveAction = cc.moveTo(this.atkDuration, targetPos).easing(cc.easeQuinticActionOut());
+             // let moveAction = cc.moveTo(2.0, targetPos).easing(cc.easeQuinticActionOut());
             this.node.runAction(cc.sequence(moveAction, delay, callback));
             this.isAttacking = true;
+
+            var atkAniName = AttackAnimations[this.sfAtkDirs.indexOf(this.spFoe.spriteFrame)];
+            cc.log("atk animation name: %s", atkAniName);
+            this.anim.play(atkAniName);
         } else {
             if (this.projectileType === ProjectileType.None) {
                 return;
             }
-            this.waveMng.spawnProjectile(this.projectileType, this.node.position, atkDir);
+            var startPos = cc.p(this.node.position.x, this.node.position.y + 20);
+            this.waveMng.spawnProjectile(this.projectileType, startPos, atkDir);
             this.node.runAction(cc.sequence(delay, callback));
         }
     },

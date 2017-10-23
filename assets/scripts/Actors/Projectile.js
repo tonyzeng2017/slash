@@ -67,7 +67,7 @@ cc.Class({
         }
 
         let dist = cc.pDistance(this.player.node.position, this.node.position);
-        if (dist < this.player.hurtRadius && this.player.isAlive) {
+        if (dist < 35 && this.player.isAlive) {
             if (this.canBreak && this.player.isAttacking) {
                 this.broke();
                 return;

@@ -29,7 +29,7 @@ cc.Class({
     },
 
     render: function(){
-        this.text_total_score.string = UserDataManager.instance.getGameData().totalScore;
+        this.text_total_score.string = UserDataManager.instance.getGameData().getFinalScore();
         this.text_highest_score.string = UserDataManager.instance.getGameData().highestScore;
         this.text_highest_combo.string = UserDataManager.instance.getGameData().highestCombo;
         this.text_kills.string = UserDataManager.instance.getGameData().highestSlashCount;

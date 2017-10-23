@@ -23,8 +23,7 @@ cc.Class({
         audio: cc.AudioClip,
         audioTick: cc.AudioClip,
         start_ui: cc.Node,
-        end_ui: cc.Node
-
+        end_ui: cc.Node,
     },
 
     init: function(game){
@@ -69,19 +68,22 @@ cc.Class({
         let anim = this.spCD.getComponent(cc.Animation);
         anim.play ('cd');
         anim.on('finished',  this.onFinished, this);
-        anim.on('tick',  this.onTick, this);
+        //anim.on('tick',  this.onTick, this);
+        GameManager.instance.playSound(this.audioTick, false, 1);
     },
 
     onTick: function(){
-        this.spCD.getComponent(cc.Animation).off('tick', this.onTick, this);
+        // this.spCD.getComponent(cc.Animation).off('tick', this.onTick, this);
         GameManager.instance.playSound(this.audioTick, false, 1);
+        cc.log("onTick~~~~~");
     },
 
     onFinished: function(){
-        GameManager.instance.playSound(this.audioTick, false, 1);
+        // GameManager.instance.playSound(this.audioTick, false, 1);
         this.spCD.getComponent(cc.Animation).off('finished', this.onFinished, this);
-        GameManager.instance.isPaused = false;
+        GameManager.instance.setPaused(false);
         this.hide();
+        cc.log("onTick finished~~~~~");
     },
 
     onMusicOn: function(){
@@ -123,7 +125,7 @@ cc.Class({
     onRestart: function(){
         GameManager.instance.playSound(this.audio, false, 1);
         UserDataManager.instance.getGameData().clear();
-        GameManager.instance.isPaused = false;
+        GameManager.instance.setPaused(false);
         cc.director.loadScene('PlayGame');
     },
 

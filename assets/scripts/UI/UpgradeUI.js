@@ -78,7 +78,7 @@ cc.Class({
     },
 
     isButtonStarVisible: function(){
-        return UserDataManager.instance.getUserData().isAllAttrMax();
+        return UserDataManager.instance.getUserData().starUpEnable();
     },
 
     refresh: function(){

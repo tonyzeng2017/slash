@@ -17,7 +17,8 @@ cc.Class({
         // ...
         nodeLevels: [cc.Node],
         scoreDetail: cc.Node,
-        newbieLevelUp: cc.Node
+        newbieLevelUp: cc.Node,
+        audioTouch: cc.AudioClip
     },
 
     init: function(game){
@@ -37,7 +38,7 @@ cc.Class({
         this._rewardRenderer.render();
 
         let scoreLevel = UserDataManager.instance.getGameData().getScoreLevel();
-        for(i = 0 ; i < this.nodeLevels.length; i++ ){
+        for(var i = 0 ; i < this.nodeLevels.length; i++ ){
             this.nodeLevels[i].active = scoreLevel == i;
 
             /*if(this.nodeLevels[i].active){
@@ -64,19 +65,23 @@ cc.Class({
 
     onHome: function(){
         cc.director.loadScene("MapGame" + GameManager.instance.entranceID);
+        GameManager.instance.playSound(this.audioTouch);
     },
 
     onRestart: function(){
         cc.director.loadScene("PlayGame");
+        GameManager.instance.playSound(this.audioTouch);
     },
 
     hide: function(){
         this.node.active = false;
         this.node.x = 2000;
+        GameManager.instance.playSound(this.audioTouch);
     },
 
     toogleDetail: function(){
         this.scoreDetail.active = !this.scoreDetail.active;
+        GameManager.instance.playSound(this.audioTouch);
     },
     
     onNewbieLevelUp: function () {

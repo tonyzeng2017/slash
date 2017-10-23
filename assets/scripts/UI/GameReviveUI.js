@@ -1,6 +1,7 @@
 var MetaDataManager = require("MetaDataManager");
 var PaymentProxy = require("PaymentProxy");
 var Constant = require("Constant");
+var UserDataManager = require("UserDataManager");
 
 cc.Class({
     extends: cc.Component,
@@ -17,7 +18,9 @@ cc.Class({
         // },
         // ...
 
-        txtPrice: cc.Label
+        txtPrice: cc.Label,
+        btnPayRevive: cc.Node,
+        btnFreeRevive: cc.Node
     },
 
     init:function(game){
@@ -26,7 +29,6 @@ cc.Class({
         var height = cc.director.getWinSize().height/2;
         this.node.x = width;
         this.node.y = height;
-
     },
 
     onClose: function(){
@@ -41,6 +43,10 @@ cc.Class({
     onLoad: function () {
         this._itemData = MetaDataManager.getShopData()[Constant.instance.SHOPID_REVIVE];
         this.txtPrice.string = this._itemData.MoneyNum;
+
+        var canReviveFree = UserDataManager.instance.getUserData().canReviveFree();
+        this.btnPayRevive.active = !canReviveFree;
+        this.btnFreeRevive.active = canReviveFree;
     },
 
     onAdRevive: function(){

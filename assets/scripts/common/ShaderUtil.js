@@ -3,6 +3,10 @@ var ShaderUtils = {
     shaderPrograms: {},
 
     setShader: function(sprite, shaderName) {
+        if(cc.sys.isBrowser){
+            return;
+        }
+
         var glProgram = this.shaderPrograms[shaderName];
         if (!glProgram) {
             glProgram = new cc.GLProgram();

@@ -95,7 +95,7 @@ cc.Class({
             var dcAttrName = AttributeName[this.attrID - 1] + "_up";
             TDProxy.onEvent(dcAttrName, {number: dataUP.PropertyValue - data.PropertyValue});
         }else{
-            TipsManager.init.showTips("灵石不够~");
+            TipsManager.init.showTips("灵石不足~");
         }
     },
     

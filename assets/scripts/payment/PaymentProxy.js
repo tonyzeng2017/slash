@@ -1,4 +1,6 @@
 
+var Constant = require("Constant");
+
 var paymentHandler = null;
 
 if(cc.sys.os == cc.sys.OS_ANDROID){
@@ -12,7 +14,10 @@ if(cc.sys.os == cc.sys.OS_ANDROID){
 }else{
 
     paymentHandler = require("Win32Payment");
+}
 
+if(!Constant.instance.PAYMENT_ENABLE){
+    paymentHandler = require("Win32Payment");
 }
 
 function doPayment(prodID, prodName, amount, price, callbacks){

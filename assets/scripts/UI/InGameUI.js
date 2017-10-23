@@ -74,7 +74,7 @@ cc.Class({
             return;
         }
 
-        GameManager.instance.isPaused = true;//!GameManager.instance.isPaused;
+        GameManager.instance.setPaused(true);//!GameManager.instance.isPaused;
         GameManager.instance.playSound(this.audioPause, false, 1);
 
         if(!this._pauseUI){

@@ -22,8 +22,15 @@ var Constant = cc.Class({
         }
 
         this.costMaxAttr =  Number(MetaDataManager.getValueDataByID("16").Num);
+        console.log("costMaxAttr: %s", this.costMaxAttr);
+        this.MAX_FREE_REVIVE = Number(MetaDataManager.getValueDataByID("18").Num);
+
         this.SHOPID_REVIVE = "6";
         this.SHOPID_ALL_UPGRADE = "7";
+        this.PAYMENT_ENABLE = Number(MetaDataManager.getValueDataByID("17").Num) == 1;
+        this.CD_DURATION = 72 * 3600;
+        this.FAILED_SCORE_RATIO = Number(MetaDataManager.getValueDataByID("19").Num)/100;
+        this.REWARD_RATIO = Number(MetaDataManager.getValueDataByID("20").Num)/100;
     }
 });
 

@@ -1,3 +1,6 @@
+var GameManager = require("GameManager");
+var Types = require("Types");
+
 cc.Class({
     extends: cc.Component,
 
@@ -18,6 +21,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+        GameManager.instance.updateScene(Types.sceneType.NORMAL);
         this.initSerttings();
     },
 

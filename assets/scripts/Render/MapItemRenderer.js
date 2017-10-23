@@ -18,6 +18,7 @@ cc.Class({
         // },
         // ...
         stageID: 1,
+        isBoss: false,
         item_bg: cc.Sprite,
         icon_lock: cc.Node,
         icon_pass: cc.Node,
@@ -57,12 +58,17 @@ cc.Class({
 
         this.spine_node.active = false;
         var self = this;
+        var touched = false;
         if(stagePassed || stageEnabled){
 
             if(cc.sys.isMobile){
                 this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
                     GameManager.instance.playSound(self.audio, false, 1);
+                    if(touched){
+                        return;
+                    }
 
+                    touched = true;
                     if(self.player){
                         self.player.active = true;
                         let flyAnim = self.player.getComponent(cc.Animation);
@@ -87,14 +93,14 @@ cc.Class({
                 }, this);
 
                 this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
-                    if(!moved){
+                    if(!moved && !touched){
+                        touched = true;
                         GameManager.instance.playSound(self.audio, false, 1);
                         if(!self.player){
                             cc.log("player MOUSE_UP~~`");
                             console.log('Mouse down stage: %s', self.stageID);
                             self.enterGame();
                         }else{
-                            cc.log("player exist~~`");
                             self.player.active = true;
                             let flyAnim = self.player.getComponent(cc.Animation);
                             flyAnim.play();
@@ -109,7 +115,7 @@ cc.Class({
     },
 
     enterGame: function(){
-        GameManager.instance.curStageID = this.stageID;
+        GameManager.instance.updateStage(this.stageID, this.isBoss);
         TDProxy.onEvent("enter_play", {max_stage: UserDataManager.instance.getUserData().getMaxOpenStage()});
         cc.director.loadScene('PlayGame');
     },

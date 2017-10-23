@@ -238,7 +238,9 @@ cc.Class({
             newProjectile.setPosition(pos);
             newProjectile.getComponent('Projectile').init(this, dir);
 
+            var audio = this.audioProjectiles[projectileType];
             GameManager.instance.playSound(this.audioProjectiles[projectileType], false, 1);
+            cc.log("projectileType: %s, audio: %s", projectileType, audio);
         } else {
             cc.log('requesting too many projectiles! please increase size');
         }
