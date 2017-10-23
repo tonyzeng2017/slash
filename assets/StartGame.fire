@@ -363,9 +363,9 @@
     "_autoRemoveOnFinish": false,
     "_totalParticles": 15,
     "_duration": -1,
-    "_emissionRate": 360,
-    "_life": 3,
-    "_lifeVar": 5,
+    "_emissionRate": 500,
+    "_life": 1,
+    "_lifeVar": 3,
     "_startColor": {
       "__type__": "cc.Color",
       "r": 255,
@@ -419,10 +419,10 @@
     "_gravity": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": 100
     },
-    "_speed": -10,
-    "_speedVar": 10,
+    "_speed": -25,
+    "_speedVar": 50,
     "_tangentialAccel": 0,
     "_tangentialAccelVar": 0,
     "_radialAccel": 0,
@@ -1613,7 +1613,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 840,
+      "width": 210,
       "height": 80
     },
     "_rotationX": 0,
@@ -1622,8 +1622,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": -319
+      "x": -527,
+      "y": -317
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1641,14 +1641,14 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 30,
-    "_fontSize": 30,
-    "_lineHeight": 40,
+    "_actualFontSize": 15,
+    "_fontSize": 15,
+    "_lineHeight": 20,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。\n适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。",
+    "_N$string": "抵制不良游戏，拒绝盗版游戏。\n注意自我保护，谨防受骗上当。\n适度游戏益脑，沉迷游戏伤身。\n合理安排时间，享受健康生活。",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -2121,8 +2121,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 589.3,
-      "y": 309.3
+      "x": 579,
+      "y": 299
     },
     "_skewX": 0,
     "_skewY": 0,

@@ -1141,6 +1141,12 @@
     "_enabled": true,
     "txtPrice": {
       "__id__": 16
+    },
+    "btnPayRevive": {
+      "__id__": 14
+    },
+    "btnFreeRevive": {
+      "__id__": 27
     }
   },
   {

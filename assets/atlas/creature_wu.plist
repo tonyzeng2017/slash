@@ -4,10 +4,361 @@
     <dict>
         <key>frames</key>
         <dict>
+            <key>wu_attack_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{524,109},{98,115}}</string>
+                <key>offset</key>
+                <string>{13,-19}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{26,38},{98,115}}</string>
+                <key>sourceSize</key>
+                <string>{124,153}</string>
+            </dict>
+            <key>wu_attack_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{292,216},{76,119}}</string>
+                <key>offset</key>
+                <string>{-24,-17}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,34},{76,119}}</string>
+                <key>sourceSize</key>
+                <string>{124,153}</string>
+            </dict>
+            <key>wu_attack_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1036,2},{68,143}}</string>
+                <key>offset</key>
+                <string>{-20,-5}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{8,10},{68,143}}</string>
+                <key>sourceSize</key>
+                <string>{124,153}</string>
+            </dict>
+            <key>wu_attack_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{881,2},{62,153}}</string>
+                <key>offset</key>
+                <string>{-11,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,0},{62,153}}</string>
+                <key>sourceSize</key>
+                <string>{124,153}</string>
+            </dict>
+            <key>wu_attack_5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1430,91},{56,119}}</string>
+                <key>offset</key>
+                <string>{-14,-17}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{20,34},{56,119}}</string>
+                <key>sourceSize</key>
+                <string>{124,153}</string>
+            </dict>
+            <key>wu_attack_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{881,66},{54,123}}</string>
+                <key>offset</key>
+                <string>{-13,-15}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{22,30},{54,123}}</string>
+                <key>sourceSize</key>
+                <string>{124,153}</string>
+            </dict>
+            <key>wu_attack_7.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{405,322},{78,117}}</string>
+                <key>offset</key>
+                <string>{-4,-18}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{19,36},{78,117}}</string>
+                <key>sourceSize</key>
+                <string>{124,153}</string>
+            </dict>
+            <key>wu_attack_8.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{524,324},{84,117}}</string>
+                <key>offset</key>
+                <string>{-1,-18}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{19,36},{84,117}}</string>
+                <key>sourceSize</key>
+                <string>{124,153}</string>
+            </dict>
+            <key>wu_attack_9.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{795,208},{72,115}}</string>
+                <key>offset</key>
+                <string>{-3,-19}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{23,38},{72,115}}</string>
+                <key>sourceSize</key>
+                <string>{124,153}</string>
+            </dict>
+            <key>wu_attack_D1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{413,216},{104,109}}</string>
+                <key>offset</key>
+                <string>{-11,-5}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,12},{104,109}}</string>
+                <key>sourceSize</key>
+                <string>{126,123}</string>
+            </dict>
+            <key>wu_attack_D2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{798,91},{78,115}}</string>
+                <key>offset</key>
+                <string>{24,-2}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{48,6},{78,115}}</string>
+                <key>sourceSize</key>
+                <string>{126,123}</string>
+            </dict>
+            <key>wu_attack_D3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{985,306},{68,117}}</string>
+                <key>offset</key>
+                <string>{19,-1}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{48,4},{68,117}}</string>
+                <key>sourceSize</key>
+                <string>{126,123}</string>
+            </dict>
+            <key>wu_attack_D4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{118,389},{62,121}}</string>
+                <key>offset</key>
+                <string>{13,1}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{45,0},{62,121}}</string>
+                <key>sourceSize</key>
+                <string>{126,123}</string>
+            </dict>
+            <key>wu_attack_D5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{738,92},{58,105}}</string>
+                <key>offset</key>
+                <string>{15,-9}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{49,18},{58,105}}</string>
+                <key>sourceSize</key>
+                <string>{126,123}</string>
+            </dict>
+            <key>wu_attack_D6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1052,376},{58,99}}</string>
+                <key>offset</key>
+                <string>{14,-12}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{48,24},{58,99}}</string>
+                <key>sourceSize</key>
+                <string>{126,123}</string>
+            </dict>
+            <key>wu_attack_D7.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1224,199},{78,97}}</string>
+                <key>offset</key>
+                <string>{7,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{31,26},{78,97}}</string>
+                <key>sourceSize</key>
+                <string>{126,123}</string>
+            </dict>
+            <key>wu_attack_D8.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{746,325},{82,103}}</string>
+                <key>offset</key>
+                <string>{4,-10}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{26,20},{82,103}}</string>
+                <key>sourceSize</key>
+                <string>{126,123}</string>
+            </dict>
+            <key>wu_attack_D9.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{1116,149},{70,105}}</string>
+                <key>offset</key>
+                <string>{6,-7}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{34,16},{70,105}}</string>
+                <key>sourceSize</key>
+                <string>{126,123}</string>
+            </dict>
+            <key>wu_attack_R1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{869,298},{64,114}}</string>
+                <key>offset</key>
+                <string>{-25,-6}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{22,23},{64,114}}</string>
+                <key>sourceSize</key>
+                <string>{158,148}</string>
+            </dict>
+            <key>wu_attack_R2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{524,226},{96,112}}</string>
+                <key>offset</key>
+                <string>{-14,-7}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{17,25},{96,112}}</string>
+                <key>sourceSize</key>
+                <string>{158,148}</string>
+            </dict>
+            <key>wu_attack_R3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{614,2},{88,132}}</string>
+                <key>offset</key>
+                <string>{-29,3}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{6,5},{88,132}}</string>
+                <key>sourceSize</key>
+                <string>{158,148}</string>
+            </dict>
+            <key>wu_attack_R4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{122,138}}</string>
+                <key>offset</key>
+                <string>{-18,5}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{122,138}}</string>
+                <key>sourceSize</key>
+                <string>{158,148}</string>
+            </dict>
+            <key>wu_attack_R5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{126,2},{132,110}}</string>
+                <key>offset</key>
+                <string>{10,-8}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{23,27},{132,110}}</string>
+                <key>sourceSize</key>
+                <string>{158,148}</string>
+            </dict>
+            <key>wu_attack_R6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,142},{136,110}}</string>
+                <key>offset</key>
+                <string>{11,-8}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{22,27},{136,110}}</string>
+                <key>sourceSize</key>
+                <string>{158,148}</string>
+            </dict>
+            <key>wu_attack_R7.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,280},{118,108}}</string>
+                <key>offset</key>
+                <string>{2,-9}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{22,29},{118,108}}</string>
+                <key>sourceSize</key>
+                <string>{158,148}</string>
+            </dict>
+            <key>wu_attack_R8.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{182,389},{76,120}}</string>
+                <key>offset</key>
+                <string>{-18,-14}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{23,28},{76,120}}</string>
+                <key>sourceSize</key>
+                <string>{158,148}</string>
+            </dict>
+            <key>wu_attack_R9.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{745,199},{48,112}}</string>
+                <key>offset</key>
+                <string>{-33,-13}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{22,31},{48,112}}</string>
+                <key>sourceSize</key>
+                <string>{158,148}</string>
+            </dict>
             <key>wu_attack_d.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{122,250},{104,109}}</string>
+                <string>{{413,216},{104,109}}</string>
                 <key>offset</key>
                 <string>{-11,-5}</string>
                 <key>rotated</key>
@@ -20,11 +371,11 @@
             <key>wu_attack_r.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1027,235},{64,114}}</string>
+                <string>{{869,298},{64,114}}</string>
                 <key>offset</key>
                 <string>{-25,-6}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{22,23},{64,114}}</string>
                 <key>sourceSize</key>
@@ -33,7 +384,7 @@
             <key>wu_attack_u.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{894,120},{98,115}}</string>
+                <string>{{524,109},{98,115}}</string>
                 <key>offset</key>
                 <string>{13,-19}</string>
                 <key>rotated</key>
@@ -46,11 +397,11 @@
             <key>wu_corpse.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{131,87}}</string>
+                <string>{{748,2},{131,87}}</string>
                 <key>offset</key>
                 <string>{0,-32}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,64},{131,87}}</string>
                 <key>sourceSize</key>
@@ -59,7 +410,7 @@
             <key>wu_dead.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1093,235},{47,113}}</string>
+                <string>{{1482,387},{47,113}}</string>
                 <key>offset</key>
                 <string>{21,16}</string>
                 <key>rotated</key>
@@ -72,11 +423,11 @@
             <key>wu_dead2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{413,243},{69,111}}</string>
+                <string>{{1430,149},{69,111}}</string>
                 <key>offset</key>
                 <string>{26,9}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{57,11},{69,111}}</string>
                 <key>sourceSize</key>
@@ -85,7 +436,7 @@
             <key>wu_dead3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{331,123},{79,119}}</string>
+                <string>{{322,387},{79,119}}</string>
                 <key>offset</key>
                 <string>{23,16}</string>
                 <key>rotated</key>
@@ -98,11 +449,11 @@
             <key>wu_dead4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{911,2},{91,115}}</string>
+                <string>{{288,294},{91,115}}</string>
                 <key>offset</key>
                 <string>{16,12}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{36,6},{91,115}}</string>
                 <key>sourceSize</key>
@@ -111,11 +462,11 @@
             <key>wu_dead5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{942,237},{115,83}}</string>
+                <string>{{987,221},{115,83}}</string>
                 <key>offset</key>
                 <string>{-3,2}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{5,32},{115,83}}</string>
                 <key>sourceSize</key>
@@ -124,11 +475,11 @@
             <key>wu_dead6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{327,2},{119,87}}</string>
+                <string>{{1430,2},{119,87}}</string>
                 <key>offset</key>
                 <string>{-6,-9}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,41},{119,87}}</string>
                 <key>sourceSize</key>
@@ -137,11 +488,11 @@
             <key>wu_dead7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,135},{127,89}}</string>
+                <string>{{1181,2},{127,89}}</string>
                 <key>offset</key>
                 <string>{-2,-27}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,58},{127,89}}</string>
                 <key>sourceSize</key>
@@ -150,7 +501,7 @@
             <key>wu_pre_attack_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,264},{90,118}}</string>
+                <string>{{1310,2},{90,118}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -163,11 +514,11 @@
             <key>wu_pre_attack_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{802,120},{90,116}}</string>
+                <string>{{1673,90},{90,116}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,1},{90,116}}</string>
                 <key>sourceSize</key>
@@ -176,11 +527,11 @@
             <key>wu_pre_attack_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{731,2},{90,116}}</string>
+                <string>{{639,410},{90,116}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,1},{90,116}}</string>
                 <key>sourceSize</key>
@@ -189,11 +540,11 @@
             <key>wu_pre_attack_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{760,238},{90,116}}</string>
+                <string>{{521,410},{90,116}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,1},{90,116}}</string>
                 <key>sourceSize</key>
@@ -202,11 +553,11 @@
             <key>wu_pre_attack_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{852,238},{88,116}}</string>
+                <string>{{998,131},{88,116}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{1,1},{88,116}}</string>
                 <key>sourceSize</key>
@@ -215,11 +566,11 @@
             <key>wu_pre_attack_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{823,2},{86,116}}</string>
+                <string>{{869,210},{86,116}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{2,1},{86,116}}</string>
                 <key>sourceSize</key>
@@ -228,11 +579,11 @@
             <key>wu_pre_attack_7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{500,122},{86,118}}</string>
+                <string>{{878,122},{86,118}}</string>
                 <key>offset</key>
                 <string>{1,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{3,0},{86,118}}</string>
                 <key>sourceSize</key>
@@ -241,11 +592,11 @@
             <key>wu_pre_attack_8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{416,2},{86,118}}</string>
+                <string>{{1671,2},{86,118}}</string>
                 <key>offset</key>
                 <string>{1,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{3,0},{86,118}}</string>
                 <key>sourceSize</key>
@@ -254,11 +605,11 @@
             <key>wu_pre_attack_9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{412,123},{86,118}}</string>
+                <string>{{1551,2},{86,118}}</string>
                 <key>offset</key>
                 <string>{1,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{3,0},{86,118}}</string>
                 <key>sourceSize</key>
@@ -267,11 +618,11 @@
             <key>wu_pre_attack_D1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1676,105},{95,101}}</string>
+                <string>{{643,313},{95,101}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{1,0},{95,101}}</string>
                 <key>sourceSize</key>
@@ -280,7 +631,7 @@
             <key>wu_pre_attack_D2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1656,213},{97,101}}</string>
+                <string>{{1791,105},{97,101}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -293,7 +644,7 @@
             <key>wu_pre_attack_D3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1616,2},{97,101}}</string>
+                <string>{{1791,2},{97,101}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -306,7 +657,7 @@
             <key>wu_pre_attack_D4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1819,208},{97,99}}</string>
+                <string>{{852,364},{97,99}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
@@ -319,11 +670,11 @@
             <key>wu_pre_attack_D5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1833,105},{95,99}}</string>
+                <string>{{951,376},{95,99}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{1,2},{95,99}}</string>
                 <key>sourceSize</key>
@@ -332,7 +683,7 @@
             <key>wu_pre_attack_D6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1930,192},{91,99}}</string>
+                <string>{{1304,214},{91,99}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
@@ -345,7 +696,7 @@
             <key>wu_pre_attack_D7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1930,97},{93,99}}</string>
+                <string>{{1304,307},{93,99}}</string>
                 <key>offset</key>
                 <string>{-1,-1}</string>
                 <key>rotated</key>
@@ -358,7 +709,7 @@
             <key>wu_pre_attack_D8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1930,2},{93,99}}</string>
+                <string>{{1405,220},{93,99}}</string>
                 <key>offset</key>
                 <string>{-1,-1}</string>
                 <key>rotated</key>
@@ -371,7 +722,7 @@
             <key>wu_pre_attack_D9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1715,2},{93,101}}</string>
+                <string>{{757,409},{93,101}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
@@ -384,7 +735,7 @@
             <key>wu_pre_attack_R1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1111,2},{112,105}}</string>
+                <string>{{638,199},{112,105}}</string>
                 <key>offset</key>
                 <string>{1,0}</string>
                 <key>rotated</key>
@@ -397,11 +748,11 @@
             <key>wu_pre_attack_R2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{542,242},{112,107}}</string>
+                <string>{{112,280},{112,107}}</string>
                 <key>offset</key>
                 <string>{1,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{3,0},{112,107}}</string>
                 <key>sourceSize</key>
@@ -410,11 +761,11 @@
             <key>wu_pre_attack_R3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1101,118},{112,105}}</string>
+                <string>{{624,92},{112,105}}</string>
                 <key>offset</key>
                 <string>{1,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{3,1},{112,105}}</string>
                 <key>sourceSize</key>
@@ -423,11 +774,11 @@
             <key>wu_pre_attack_R4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1004,2},{114,105}}</string>
+                <string>{{408,109},{114,105}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{1,1},{114,105}}</string>
                 <key>sourceSize</key>
@@ -436,11 +787,11 @@
             <key>wu_pre_attack_R5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{994,119},{114,105}}</string>
+                <string>{{292,109},{114,105}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{1,1},{114,105}}</string>
                 <key>sourceSize</key>
@@ -449,11 +800,11 @@
             <key>wu_pre_attack_R6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{695,120},{116,105}}</string>
+                <string>{{496,2},{116,105}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,1},{116,105}}</string>
                 <key>sourceSize</key>
@@ -462,11 +813,11 @@
             <key>wu_pre_attack_R7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{624,2},{116,105}}</string>
+                <string>{{378,2},{116,105}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,1},{116,105}}</string>
                 <key>sourceSize</key>
@@ -475,11 +826,11 @@
             <key>wu_pre_attack_R8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{588,122},{116,105}}</string>
+                <string>{{260,2},{116,105}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,1},{116,105}}</string>
                 <key>sourceSize</key>
@@ -488,11 +839,11 @@
             <key>wu_pre_attack_R9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{651,240},{114,107}}</string>
+                <string>{{114,171},{114,107}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{1,0},{114,107}}</string>
                 <key>sourceSize</key>
@@ -501,11 +852,11 @@
             <key>wu_run_d_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1614,108},{60,103}}</string>
+                <string>{{1751,338},{60,103}}</string>
                 <key>offset</key>
                 <string>{-1,-1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,3},{60,103}}</string>
                 <key>sourceSize</key>
@@ -514,7 +865,7 @@
             <key>wu_run_d_10.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1594,214},{60,103}}</string>
+                <string>{{1583,280},{60,103}}</string>
                 <key>offset</key>
                 <string>{-1,-1}</string>
                 <key>rotated</key>
@@ -527,7 +878,7 @@
             <key>wu_run_d_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1266,111},{60,107}}</string>
+                <string>{{230,171},{60,107}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
@@ -540,7 +891,7 @@
             <key>wu_run_d_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1256,226},{60,107}}</string>
+                <string>{{226,280},{60,107}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
@@ -553,11 +904,11 @@
             <key>wu_run_d_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1218,2},{62,107}}</string>
+                <string>{{1665,182},{62,107}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{62,107}}</string>
                 <key>sourceSize</key>
@@ -566,11 +917,11 @@
             <key>wu_run_d_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1755,208},{62,101}}</string>
+                <string>{{1603,390},{62,101}}</string>
                 <key>offset</key>
                 <string>{0,-3}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,6},{62,101}}</string>
                 <key>sourceSize</key>
@@ -579,7 +930,7 @@
             <key>wu_run_d_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1868,2},{60,97}}</string>
+                <string>{{1766,400},{60,97}}</string>
                 <key>offset</key>
                 <string>{1,-4}</string>
                 <key>rotated</key>
@@ -592,11 +943,11 @@
             <key>wu_run_d_7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1918,285},{56,99}}</string>
+                <string>{{1828,400},{56,99}}</string>
                 <key>offset</key>
                 <string>{2,-3}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{5,7},{56,99}}</string>
                 <key>sourceSize</key>
@@ -605,11 +956,11 @@
             <key>wu_run_d_8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1810,2},{56,101}}</string>
+                <string>{{1603,454},{56,101}}</string>
                 <key>offset</key>
                 <string>{1,-2}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{4,5},{56,101}}</string>
                 <key>sourceSize</key>
@@ -618,7 +969,7 @@
             <key>wu_run_d_9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1773,105},{58,101}}</string>
+                <string>{{1706,400},{58,101}}</string>
                 <key>offset</key>
                 <string>{-1,-2}</string>
                 <key>rotated</key>
@@ -631,7 +982,7 @@
             <key>wu_run_r_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1318,220},{58,106}}</string>
+                <string>{{1292,404},{58,106}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
@@ -644,7 +995,7 @@
             <key>wu_run_r_10.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{295,246},{58,108}}</string>
+                <string>{{403,402},{58,108}}</string>
                 <key>offset</key>
                 <string>{-2,1}</string>
                 <key>rotated</key>
@@ -657,11 +1008,11 @@
             <key>wu_run_r_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1558,2},{56,104}}</string>
+                <string>{{1774,208},{56,104}}</string>
                 <key>offset</key>
                 <string>{2,-1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{5,5},{56,104}}</string>
                 <key>sourceSize</key>
@@ -670,7 +1021,7 @@
             <key>wu_run_r_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1282,2},{58,106}}</string>
+                <string>{{1232,404},{58,106}}</string>
                 <key>offset</key>
                 <string>{2,0}</string>
                 <key>rotated</key>
@@ -683,7 +1034,7 @@
             <key>wu_run_r_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{484,243},{56,110}}</string>
+                <string>{{60,400},{56,110}}</string>
                 <key>offset</key>
                 <string>{1,1}</string>
                 <key>rotated</key>
@@ -696,11 +1047,11 @@
             <key>wu_run_r_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1142,232},{54,110}}</string>
+                <string>{{1128,93},{54,110}}</string>
                 <key>offset</key>
                 <string>{0,1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{4,0},{54,110}}</string>
                 <key>sourceSize</key>
@@ -709,7 +1060,7 @@
             <key>wu_run_r_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{233,246},{60,108}}</string>
+                <string>{{260,402},{60,108}}</string>
                 <key>offset</key>
                 <string>{-1,-2}</string>
                 <key>rotated</key>
@@ -722,7 +1073,7 @@
             <key>wu_run_r_7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1208,116},{56,108}}</string>
+                <string>{{1352,402},{56,108}}</string>
                 <key>offset</key>
                 <string>{2,-2}</string>
                 <key>rotated</key>
@@ -735,7 +1086,7 @@
             <key>wu_run_r_8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1198,232},{56,108}}</string>
+                <string>{{463,402},{56,108}}</string>
                 <key>offset</key>
                 <string>{2,0}</string>
                 <key>rotated</key>
@@ -748,7 +1099,7 @@
             <key>wu_run_r_9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{355,244},{56,110}}</string>
+                <string>{{2,400},{56,110}}</string>
                 <key>offset</key>
                 <string>{1,1}</string>
                 <key>rotated</key>
@@ -761,11 +1112,11 @@
             <key>wu_run_u_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{211,2},{57,120}}</string>
+                <string>{{1006,72},{57,120}}</string>
                 <key>offset</key>
                 <string>{2,-1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{4,3},{57,120}}</string>
                 <key>sourceSize</key>
@@ -774,11 +1125,11 @@
             <key>wu_run_u_10.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{274,124},{55,120}}</string>
+                <string>{{1543,151},{55,120}}</string>
                 <key>offset</key>
                 <string>{2,-1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{5,3},{55,120}}</string>
                 <key>sourceSize</key>
@@ -787,11 +1138,11 @@
             <key>wu_run_u_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{504,2},{59,118}}</string>
+                <string>{{1310,94},{59,118}}</string>
                 <key>offset</key>
                 <string>{1,-2}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{2,5},{59,118}}</string>
                 <key>sourceSize</key>
@@ -800,11 +1151,11 @@
             <key>wu_run_u_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{156,124},{59,120}}</string>
+                <string>{{1551,90},{59,120}}</string>
                 <key>offset</key>
                 <string>{1,-1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{2,3},{59,120}}</string>
                 <key>sourceSize</key>
@@ -813,7 +1164,7 @@
             <key>wu_run_u_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{148,2},{61,120}}</string>
+                <string>{{1161,221},{61,120}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
@@ -826,7 +1177,7 @@
             <key>wu_run_u_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{93,128},{61,120}}</string>
+                <string>{{1112,343},{61,120}}</string>
                 <key>offset</key>
                 <string>{0,-1}</string>
                 <key>rotated</key>
@@ -839,11 +1190,11 @@
             <key>wu_run_u_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{565,2},{57,118}}</string>
+                <string>{{1310,155},{57,118}}</string>
                 <key>offset</key>
                 <string>{-2,-2}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,5},{57,118}}</string>
                 <key>sourceSize</key>
@@ -852,7 +1203,7 @@
             <key>wu_run_u_7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{270,2},{55,120}}</string>
+                <string>{{1175,343},{55,120}}</string>
                 <key>offset</key>
                 <string>{-1,-1}</string>
                 <key>rotated</key>
@@ -865,7 +1216,7 @@
             <key>wu_run_u_8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{217,124},{55,120}}</string>
+                <string>{{1104,221},{55,120}}</string>
                 <key>offset</key>
                 <string>{-1,-1}</string>
                 <key>rotated</key>
@@ -878,11 +1229,11 @@
             <key>wu_run_u_9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{91,2},{55,124}}</string>
+                <string>{{126,114},{55,124}}</string>
                 <key>offset</key>
                 <string>{1,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{4,0},{55,124}}</string>
                 <key>sourceSize</key>
@@ -891,7 +1242,7 @@
             <key>wu_stand.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1522,214},{70,104}}</string>
+                <string>{{1531,386},{70,104}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -904,11 +1255,11 @@
             <key>wu_stand_d_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1486,2},{70,104}}</string>
+                <string>{{1645,318},{70,104}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{70,104}}</string>
                 <key>sourceSize</key>
@@ -917,7 +1268,7 @@
             <key>wu_stand_d_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1472,108},{70,104}}</string>
+                <string>{{1511,280},{70,104}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -930,11 +1281,11 @@
             <key>wu_stand_d_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1450,214},{70,104}}</string>
+                <string>{{1755,266},{70,104}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{70,104}}</string>
                 <key>sourceSize</key>
@@ -943,11 +1294,11 @@
             <key>wu_stand_d_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1414,2},{70,104}}</string>
+                <string>{{1649,246},{70,104}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{70,104}}</string>
                 <key>sourceSize</key>
@@ -956,11 +1307,11 @@
             <key>wu_stand_d_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1400,108},{70,104}}</string>
+                <string>{{1543,208},{70,104}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{70,104}}</string>
                 <key>sourceSize</key>
@@ -969,7 +1320,7 @@
             <key>wu_stand_d_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1544,108},{68,104}}</string>
+                <string>{{1240,93},{68,104}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
@@ -982,7 +1333,7 @@
             <key>wu_stand_d_7.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1378,216},{70,104}}</string>
+                <string>{{1410,387},{70,104}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -995,11 +1346,11 @@
             <key>wu_stand_d_8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1342,2},{70,104}}</string>
+                <string>{{1405,315},{70,104}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{70,104}}</string>
                 <key>sourceSize</key>
@@ -1008,7 +1359,7 @@
             <key>wu_stand_d_9.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1328,110},{70,104}}</string>
+                <string>{{1232,298},{70,104}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -1026,9 +1377,9 @@
             <key>realTextureFileName</key>
             <string>creature_wu.png</string>
             <key>size</key>
-            <string>{2031,356}</string>
+            <string>{1890,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:dcd2a8e8570bcb1d26aa2c412d7f399d:1/1$</string>
+            <string>$TexturePacker:SmartUpdate:8a1405a52eef541578f3c1e14b9b6a0a:1/1$</string>
             <key>textureFileName</key>
             <string>creature_wu.png</string>
         </dict>

@@ -559,6 +559,12 @@
       },
       {
         "__uuid__": "1660b590-5c1f-4bdd-93f4-68a273d62739"
+      },
+      {
+        "__uuid__": "7eb4da56-773b-490f-82db-0181cf1ba390"
+      },
+      {
+        "__uuid__": "d2579602-7e20-4e64-9683-6101f9ad74a7"
       }
     ],
     "playOnLoad": false
@@ -859,6 +865,7 @@
         "__uuid__": "5ff12a10-9485-449c-9c91-ca5a96dec569"
       }
     ],
+    "postAtkIndex": 2,
     "spPlayer": {
       "__id__": 13
     },
@@ -879,12 +886,28 @@
     "audioDead": {
       "__uuid__": "b2a0d8fd-5f0e-4e92-84f7-efe7414e6bac"
     },
-    "audioSlashLeft": {
-      "__uuid__": "78f6b3a4-e898-4e19-891f-b405b35ae830"
-    },
-    "audioSlashRight": {
-      "__uuid__": "139d8d5d-a55b-4e2c-9f0a-136e8a1bde13"
-    }
+    "audioSlashLefts": [
+      {
+        "__uuid__": "a3989d9a-bc3f-40ba-9b25-bc21d306700d"
+      },
+      {
+        "__uuid__": "9812b4af-77e4-48bb-8237-188f96ab4f2d"
+      },
+      {
+        "__uuid__": "aaf6ce46-1aa9-4427-8c2d-280cc137be38"
+      }
+    ],
+    "audioSlashRights": [
+      {
+        "__uuid__": "c00f1d21-d734-4ed4-b0b9-b4c656e5b6d5"
+      },
+      {
+        "__uuid__": "0ee5ba3d-4ca7-4918-aa91-c9626b13c8f7"
+      },
+      {
+        "__uuid__": "b8dc71c5-853e-4e02-8237-9e9d732bb630"
+      }
+    ]
   },
   {
     "__type__": "03fecYvs+9L07SPviQLuLj3",

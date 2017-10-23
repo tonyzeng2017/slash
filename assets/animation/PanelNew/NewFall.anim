@@ -9,43 +9,6 @@
   "wrapMode": 1,
   "curveData": {
     "paths": {
-      "bg_fail": {
-        "props": {
-          "position": [
-            {
-              "frame": 0,
-              "value": [
-                2,
-                402
-              ]
-            },
-            {
-              "frame": 0.21666666666666667,
-              "value": [
-                2,
-                68
-              ]
-            },
-            {
-              "frame": 0.4,
-              "value": [
-                2,
-                58
-              ]
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 0
-            },
-            {
-              "frame": 0.21666666666666667,
-              "value": 255
-            }
-          ]
-        }
-      },
       "btnGoUpgrade": {
         "props": {
           "opacity": [
@@ -134,22 +97,6 @@
       },
       "cloud1": {
         "props": {
-          "position": [
-            {
-              "frame": 0,
-              "value": [
-                -438,
-                245
-              ]
-            },
-            {
-              "frame": 0.5,
-              "value": [
-                -75.7,
-                245
-              ]
-            }
-          ],
           "opacity": [
             {
               "frame": 0,
@@ -164,22 +111,6 @@
       },
       "cloud2": {
         "props": {
-          "position": [
-            {
-              "frame": 0,
-              "value": [
-                -540,
-                136
-              ]
-            },
-            {
-              "frame": 0.5,
-              "value": [
-                -219.9,
-                135.8
-              ]
-            }
-          ],
           "opacity": [
             {
               "frame": 0,
@@ -217,26 +148,11 @@
               "frame": 0.5,
               "value": 255
             }
-          ],
-          "position": [
-            {
-              "frame": 0,
-              "value": [
-                562,
-                39
-              ]
-            },
-            {
-              "frame": 0.5,
-              "value": [
-                255,
-                38.5
-              ]
-            }
           ]
         }
       }
-    }
+    },
+    "props": {}
   },
   "events": []
 }
