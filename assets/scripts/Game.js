@@ -25,6 +25,11 @@ cc.Class({
         startTime: {
             default: 0,
             visible: false
+        },
+
+        gameType: {
+            visible: false,
+            default: Types.GameType.NORMAL
         }
     },
 
@@ -82,6 +87,18 @@ cc.Class({
     
     cameraShake () {
         this.cameraRoot.play('camera-shake');  
+    },
+
+    checkGameOver(){
+        if(this.gameType == Types.GameType.STEP){
+            var slashCount = UserDataManager.instance.getGameData().slashCount;
+        }
+        else if(this.gameType == Types.GameType.CD){
+            
+        }
+        else{
+
+        }
     },
 
     death () {

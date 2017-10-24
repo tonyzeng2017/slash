@@ -5,6 +5,7 @@ const FoeTypeMap = require('Types').FoeTypeMap;
 const Spawn = require('Spawn');
 var  MetaDataManager = require('MetaDataManager');
 var GameManager = require("GameManager");
+var UserDataManager = require("UserDataManager");
 
 const Wave = cc.Class({
     name: 'Wave',
@@ -91,11 +92,17 @@ cc.Class({
                     this.endWave();
                 }
                 if (this.waveProgress && this.waveTotalFoes) {
-                    let ratio = Math.min(this.killedFoe/this.waveTotalFoes, 1);
-                    this.waveProgress.updateProgress(ratio);
+                    var killedTotal = UserDataManager.instance.getGameData().killedCount;
+                    
+                    this.waveProgress.updateProgress(this.killedFoe, this.waveTotalFoes);
                     this.waveProgress.updateWaveText(this.waveIdx + 1, this.waves.length);
+                    this.waveProgress.updateCount(this.stageTotalFoes - killedTotal, this.stageTotalFoes);
                 }
             }
+        },
+        stageTotalFoes: {
+            visible: false,
+            default: 0
         },
         waveProgress: cc.Node,
         bossProgress: cc.Node,
@@ -110,12 +117,14 @@ cc.Class({
             cc.log("curStageID: %s doesn't exist~~~~~~~~", GameManager.instance.curStageID);
         }
 
+        this.stageTotalFoes = 0;
         var wavesIDs = stageData.WavesID.split(",");
         var newWaves = [];
         for (let i = 0 ; i < wavesIDs.length; i++ ){
             let waveData = MetaDataManager.getWaveDataByID(wavesIDs[i]);
             var wave = Wave.create(waveData);
             newWaves.push(wave);
+            this.stageTotalFoes += wave.totalFoes;
         }
         //cc.log("sorted waves data: ", JSON.stringify( this.waves.length));
         this.waves = newWaves;

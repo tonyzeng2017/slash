@@ -6,6 +6,7 @@ cc.Class({
         head: cc.Node,
         lerpDuration: 0,
         textProgress: cc.Label,
+        textCount: cc.Label
     },
 
     onLoad () {
@@ -21,12 +22,25 @@ cc.Class({
         this.isLerping = false;
     },
 
-    updateProgress (progress) {
-        progress = Math.max(progress, 0.01);
+    updateProgress (killedFoe, waveTotalFoes) {
+        let ratio = Math.min(killedFoe /waveTotalFoes, 1);
+
+        var progress = Math.max(ratio, 0.01);
         this.curProgress = this.bar.progress;
         this.destProgress = progress;
         this.timer = 0;
         this.isLerping = true;
+        // this.updateCount(waveTotalFoes - killedFoe, waveTotalFoes);
+    },
+
+    updateCount(leftCount, totalCount){
+        // if(this.textCount){
+            this.textCount.string = "怪物数量: " + leftCount + "/" + totalCount;
+            cc.log("text updated~~~~~~~~~: %s, %s", leftCount, totalCount);
+        // }
+        // else{
+            // cc.log("this.text don't exist~~~");
+        // }
     },
     
     updateWaveText: function (curWave, totalWave) {

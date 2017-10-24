@@ -18,6 +18,7 @@ var GameDataModel = cc.Class({
         slashReward: 0,
         totalReward: 0,
         reviveCount: 0,
+        slashCount: 0
     },
 
     getTotalReward: function(isWin){
@@ -105,6 +106,10 @@ var GameDataModel = cc.Class({
 
     getReviveCount: function(){
         return this.reviveCount;
+    },
+
+    addSlash: function(){
+        this.slashCount++;
     },
 
     getData: function(){
