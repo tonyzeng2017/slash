@@ -305,6 +305,15 @@
       },
       {
         "__uuid__": "c7c6b52d-d56a-4d53-bcb6-fb0a447969cb"
+      },
+      {
+        "__uuid__": "2635cb19-be31-47b7-aa61-a0269e357060"
+      },
+      {
+        "__uuid__": "3931cdd7-1119-44bd-980b-132508eb5dad"
+      },
+      {
+        "__uuid__": "e10ca1b8-473a-476a-a9b8-204de25c5dfc"
       }
     ],
     "playOnLoad": false
@@ -609,7 +618,17 @@
     "atkPrepTime": 1,
     "corpseDuration": 3,
     "killScore": 0,
-    "sfAtkDirs": [],
+    "sfAtkDirs": [
+      {
+        "__uuid__": "33781673-1fa3-4b25-a695-466ce1a21104"
+      },
+      {
+        "__uuid__": "cfd34a60-7f5e-42f7-9660-d694d0f50f7e"
+      },
+      {
+        "__uuid__": "941c7a16-7a91-4c2d-8c7c-29db9895dc76"
+      }
+    ],
     "fxSmoke": {
       "__id__": 15
     },

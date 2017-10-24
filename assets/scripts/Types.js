@@ -56,6 +56,13 @@ const ProjectileBrokeAnimation = [
     "explode3",
 ];
 
+const GameType  = cc.Enum({
+    NORMAL: -1,
+    STEP: -1,
+    CD: -1,
+    NONE: 999
+});
+
 const AttributeName = [
     "health",
     "hurt_radius",
@@ -86,5 +93,6 @@ module.exports = {
     ProjectileBrokeAnimation,
     AttributeName,
     BG_MUSIC_NAME,
-    sceneType
+    sceneType,
+    GameType,
 };

@@ -249,6 +249,8 @@ cc.Class({
             UserDataManager.instance.getGameData().addOneSlashScore(this.oneSlashKills);
             this.game.inGameUI.showScore();
         }
+        UserDataManager.instance.getGameData().addSlash();
+        this.game.checkGameOver();
     },
 
     playSlashSound() {

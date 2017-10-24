@@ -3,7 +3,7 @@
   "_name": "run_up",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.25,
+  "_duration": 0.225,
   "sample": 40,
   "speed": 0.5,
   "wrapMode": 2,
@@ -56,17 +56,11 @@
           {
             "frame": 0.175,
             "value": {
-              "__uuid__": "e5371681-84ea-4c07-9da4-44b8ddab0a81"
-            }
-          },
-          {
-            "frame": 0.2,
-            "value": {
               "__uuid__": "239055cc-cdc6-4a84-bc5e-346004439875"
             }
           },
           {
-            "frame": 0.225,
+            "frame": 0.2,
             "value": {
               "__uuid__": "710f1a7c-eed9-42e7-b59d-9b0ba4224f9f"
             }

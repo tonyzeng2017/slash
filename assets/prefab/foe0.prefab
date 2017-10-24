@@ -222,8 +222,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 70,
-      "height": 104
+      "width": 126,
+      "height": 123
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -250,7 +250,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "58fff32d-f474-4b2e-955d-76ba0d795143"
+      "__uuid__": "e26038b5-1173-454b-bc51-772dd522b2bb"
     },
     "_type": 0,
     "_sizeMode": 2,
@@ -305,6 +305,15 @@
       },
       {
         "__uuid__": "143b90fb-8b51-4728-9e4e-9a550fd2d07e"
+      },
+      {
+        "__uuid__": "2294cf22-e54a-41e2-8915-4f8c1f756257"
+      },
+      {
+        "__uuid__": "d2338704-4716-4be8-839f-0c0ad39bc87f"
+      },
+      {
+        "__uuid__": "6533faed-a701-442f-a971-5933b3b0cc47"
       }
     ],
     "playOnLoad": false
@@ -609,7 +618,17 @@
     "atkPrepTime": 1,
     "corpseDuration": 3,
     "killScore": 0,
-    "sfAtkDirs": [],
+    "sfAtkDirs": [
+      {
+        "__uuid__": "8afb35e3-e125-4f93-bf47-ffe1c4143a40"
+      },
+      {
+        "__uuid__": "43efbac6-ce65-4a53-ad94-c84386e7202b"
+      },
+      {
+        "__uuid__": "cc794977-cc44-436c-b68c-72a6b4f6cd12"
+      }
+    ],
     "fxSmoke": {
       "__id__": 15
     },

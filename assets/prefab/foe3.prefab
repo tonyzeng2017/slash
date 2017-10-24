@@ -225,8 +225,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 182,
-      "height": 176
+      "width": 164,
+      "height": 158
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -311,6 +311,15 @@
       },
       {
         "__uuid__": "3c810f77-22ec-4acb-b175-87c966d99165"
+      },
+      {
+        "__uuid__": "40f5b0a1-67e6-4856-b0b3-c4dbaa6b1821"
+      },
+      {
+        "__uuid__": "fe7288dd-3135-43bf-b7ab-0dad98aa3c5a"
+      },
+      {
+        "__uuid__": "bfe3f387-918f-4dcb-8479-8e101ebc2542"
       }
     ],
     "playOnLoad": false
