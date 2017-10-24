@@ -208,11 +208,11 @@ cc.Class({
         if (deg <= 0) {
             this.anim.node.scaleX = 1;
             this.spFoe.spriteFrame = getAtkSF(mag, this.sfAtkDirs);
-            GameManager.instance.playSound(this.audioSlashLeft, false, 1);
+            // GameManager.instance.playSound(this.audioSlashLeft, false, 1);
         } else {
             this.anim.node.scaleX = -1;
             this.spFoe.spriteFrame = getAtkSF(mag, this.sfAtkDirs);
-            GameManager.instance.playSound(this.audioSlashRight, false, 1);
+            // GameManager.instance.playSound(this.audioSlashRight, false, 1);
         }
 
         let delay = cc.delayTime(this.atkStun);
