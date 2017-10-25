@@ -2,11 +2,11 @@
 <data version="1.0">
     <struct type="Settings">
         <key>fileFormatVersion</key>
-        <int>3</int>
+        <int>4</int>
         <key>texturePackerVersion</key>
-        <string>3.5.3</string>
+        <string>4.5.0</string>
         <key>fileName</key>
-        <string>E:/cocos2D/A1/dark-slash/dark-slash/assets/tps_texture/newbie_ani.tps</string>
+        <string>E:/cocos2D/Github/slash/tps_texture/newbie_ani.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -29,8 +29,6 @@
         </array>
         <key>allowRotation</key>
         <true/>
-        <key>premultiplyAlpha</key>
-        <false/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
@@ -43,10 +41,14 @@
         <false/>
         <key>pvrCompressionQuality</key>
         <enum type="SettingsBase::PvrCompressionQuality">PVR_QUALITY_NORMAL</enum>
+        <key>atfCompressData</key>
+        <false/>
         <key>mipMapMinSize</key>
         <uint>32768</uint>
         <key>etc1CompressionQuality</key>
         <enum type="SettingsBase::Etc1CompressionQuality">ETC1_QUALITY_LOW_PERCEPTUAL</enum>
+        <key>etc2CompressionQuality</key>
+        <enum type="SettingsBase::Etc2CompressionQuality">ETC2_QUALITY_LOW_PERCEPTUAL</enum>
         <key>dxtCompressionMode</key>
         <enum type="SettingsBase::DxtCompressionMode">DXT_PERCEPTUAL</enum>
         <key>jxrColorFormat</key>
@@ -79,6 +81,8 @@
         <uint>101</uint>
         <key>textureSubPath</key>
         <string></string>
+        <key>atfFormats</key>
+        <string></string>
         <key>textureFormat</key>
         <enum type="SettingsBase::TextureFormat">png</enum>
         <key>borderPadding</key>
@@ -97,8 +101,6 @@
             <key>height</key>
             <int>-1</int>
         </QSize>
-        <key>reduceBorderArtifacts</key>
-        <false/>
         <key>algorithmSettings</key>
         <struct type="AlgorithmSettings">
             <key>algorithm</key>
@@ -108,8 +110,6 @@
             <key>sizeConstraints</key>
             <enum type="AlgorithmSettings::SizeConstraints">AnySize</enum>
             <key>forceSquared</key>
-            <false/>
-            <key>forceWordAligned</key>
             <false/>
             <key>maxRects</key>
             <struct type="AlgorithmMaxRectsSettings">
@@ -122,6 +122,11 @@
                 <enum type="AlgorithmBasicSettings::SortBy">Best</enum>
                 <key>order</key>
                 <enum type="AlgorithmBasicSettings::Order">Ascending</enum>
+            </struct>
+            <key>polygon</key>
+            <struct type="AlgorithmPolygonSettings">
+                <key>alignToGrid</key>
+                <uint>1</uint>
             </struct>
         </struct>
         <key>andEngine</key>
@@ -159,18 +164,20 @@
         <true/>
         <key>outputFormat</key>
         <enum type="SettingsBase::OutputFormat">RGBA8888</enum>
+        <key>alphaHandling</key>
+        <enum type="SettingsBase::AlphaHandling">ClearTransparentPixels</enum>
         <key>contentProtection</key>
         <struct type="ContentProtection">
             <key>key</key>
             <string></string>
         </struct>
         <key>autoAliasEnabled</key>
-        <true/>
+        <false/>
         <key>trimSpriteNames</key>
         <false/>
         <key>prependSmartFolderName</key>
         <false/>
-        <key>cleanTransparentPixels</key>
+        <key>autodetectAnimations</key>
         <true/>
         <key>globalSpriteSettings</key>
         <struct type="SpriteSettings">
@@ -178,19 +185,71 @@
             <double>1</double>
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
-            <key>innerPadding</key>
-            <uint>0</uint>
             <key>extrude</key>
             <uint>0</uint>
             <key>trimThreshold</key>
             <uint>1</uint>
+            <key>trimMargin</key>
+            <uint>1</uint>
             <key>trimMode</key>
             <enum type="SpriteSettings::TrimMode">None</enum>
+            <key>tracerTolerance</key>
+            <int>200</int>
             <key>heuristicMask</key>
             <false/>
-            <key>pivotPoint</key>
-            <enum type="SpriteSettings::PivotPoint">Center</enum>
+            <key>defaultPivotPoint</key>
+            <point_f>0.5,0.5</point_f>
+            <key>writePivotPoints</key>
+            <false/>
         </struct>
+        <key>individualSpriteSettings</key>
+        <map type="IndividualSpriteSettingsMap">
+            <key type="filename">newbie_ani/siwang_0.png</key>
+            <key type="filename">newbie_ani/siwang_1.png</key>
+            <key type="filename">newbie_ani/siwang_2.png</key>
+            <key type="filename">newbie_ani/siwang_3.png</key>
+            <key type="filename">newbie_ani/siwang_4.png</key>
+            <key type="filename">newbie_ani/siwang_5.png</key>
+            <key type="filename">newbie_ani/siwang_6.png</key>
+            <key type="filename">newbie_ani/siwang_7.png</key>
+            <key type="filename">newbie_ani/siwang_8.png</key>
+            <key type="filename">newbie_ani/siwang_9.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>76,56,152,111</rect>
+                <key>scale9Paddings</key>
+                <rect>76,56,152,111</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">newbie_ani/smoke_0.png</key>
+            <key type="filename">newbie_ani/smoke_1.png</key>
+            <key type="filename">newbie_ani/smoke_10.png</key>
+            <key type="filename">newbie_ani/smoke_2.png</key>
+            <key type="filename">newbie_ani/smoke_3.png</key>
+            <key type="filename">newbie_ani/smoke_4.png</key>
+            <key type="filename">newbie_ani/smoke_5.png</key>
+            <key type="filename">newbie_ani/smoke_6.png</key>
+            <key type="filename">newbie_ani/smoke_7.png</key>
+            <key type="filename">newbie_ani/smoke_8.png</key>
+            <key type="filename">newbie_ani/smoke_9.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>93,87,186,175</rect>
+                <key>scale9Paddings</key>
+                <rect>93,87,186,175</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+        </map>
         <key>fileList</key>
         <array>
             <filename>newbie_ani</filename>
@@ -205,5 +264,17 @@
         <uint>1</uint>
         <key>commonDivisorY</key>
         <uint>1</uint>
+        <key>packNormalMaps</key>
+        <false/>
+        <key>autodetectNormalMaps</key>
+        <true/>
+        <key>normalMapFilter</key>
+        <string></string>
+        <key>normalMapSuffix</key>
+        <string></string>
+        <key>normalMapSheetFileName</key>
+        <filename></filename>
+        <key>exporterProperties</key>
+        <map type="ExporterProperties"/>
     </struct>
 </data>
