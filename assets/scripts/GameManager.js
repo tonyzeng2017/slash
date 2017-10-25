@@ -40,6 +40,8 @@ var GameManager = cc.Class({
         this.isSoundOn =  data.isSoundOn === undefined  ? true : data.isSoundOn;
         let count = data ? data.deadCount : 0;
         this.deadCount = count == undefined ? 0 : count;
+
+        cc.audioEngine.setMaxAudioInstance(20);
     },
 
     updateStage: function(stageID, isBoss){

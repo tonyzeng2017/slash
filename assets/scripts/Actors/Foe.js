@@ -42,8 +42,7 @@ cc.Class({
         fxBlood: cc.Animation,
         fxBlade: cc.Animation,
         audioDead: cc.AudioClip,
-        audioSlashLeft: cc.AudioClip,
-        audioSlashRight: cc.AudioClip,
+        audioAttacked: cc.AudioClip,
 
         isBoss: {
             visible: false,
@@ -264,11 +263,12 @@ cc.Class({
         if (--this.hp > 0) {
             this.isInvincible = true;
             this.scheduleOnce(this.invincible, this.bloodDuration);
+            GameManager.instance.playSound(this.audioAttacked, false, 1);
         } else {
             this.isAlive = false;
             this.scheduleOnce(this.corpse, this.deadDuation);
             this.waveMng.killFoe();
-            GameManager.instance.playSound(this.audioDead, false, 1);
+            GameManager.instance.playSound(this.audioAttacked, false, 1);
             cc.log("dead duration: %s~~~~~~~~~~~~", this.deadDuation);
         }
 
@@ -290,6 +290,7 @@ cc.Class({
     },
 
     corpse () {
+        GameManager.instance.playSound(this.audioDead, false, 1);
         this.anim.play('corpse');
         this.fxBlood.node.active = false;
         this.scheduleOnce(this.recycle, this.corpseDuration);

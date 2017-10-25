@@ -670,11 +670,8 @@
     "audioDead": {
       "__uuid__": "57e5fd2c-2c4e-4e32-9800-e0cfe006af03"
     },
-    "audioSlashLeft": {
-      "__uuid__": "b1a57a15-ceea-452c-98e8-81b5e60fd63e"
-    },
-    "audioSlashRight": {
-      "__uuid__": "55751676-9765-444d-87d7-c5ab76ae83b0"
+    "audioAttacked": {
+      "__uuid__": "a3989d9a-bc3f-40ba-9b25-bc21d306700d"
     },
     "isBoss": false
   },

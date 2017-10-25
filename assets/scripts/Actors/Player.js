@@ -240,7 +240,7 @@ cc.Class({
         this.isAttacking = false;
         this.isAtkGoingOut = false;
 
-        this.playSlashSound();
+        //this.playSlashSound();
         cc.log("oneSlashKills: %s", this.oneSlashKills);
         if (this.oneSlashKills >= 2) {
             cc.log(" this.oneSlashKills: " + this.oneSlashKills)
@@ -309,6 +309,7 @@ cc.Class({
 
     dead () {
         if (this.invincible) return;
+        if (this.isAlive) return;
 
         this.life--;
         cc.log("player life: " + this.life);
