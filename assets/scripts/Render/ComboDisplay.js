@@ -1,4 +1,5 @@
 var Constant = require("Constant")
+var MetaDataManager = require("MetaDataManager");
 
 cc.Class({
     extends: cc.Component,
@@ -28,7 +29,9 @@ cc.Class({
         this.comboCount++;
         this.node.active = true;
         // this.unschedule(this.hide);
-        let colorIdx = Math.min(Math.floor(this.comboCount / 10), this.comboColors.length - 1);
+        //let colorIdx = Math.min(Math.floor(this.comboCount / 10), this.comboColors.length - 1);
+        
+        let colorIdx =  MetaDataManager.getComboColor(this.comboCount);
         this.spFlare.node.color = this.comboColors[colorIdx];
         this.labelCombo.node.color = this.comboColors[colorIdx];
         this.labelCombo.string = this.comboCount;

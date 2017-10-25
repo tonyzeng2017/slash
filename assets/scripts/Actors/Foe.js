@@ -73,7 +73,10 @@ cc.Class({
         }else{
             cc.log("there are no data for the foeType: " + this.foeType)
         }
-        // this.node.setScale(1.5);
+
+        if(this.isBoss){
+            this.node.setScale(1.5);
+        }
     },
 
     // use this for initialization

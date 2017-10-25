@@ -1,3 +1,5 @@
+var MetaDataManager = require("MetaDataManager");
+
 cc.Class({
     extends: cc.Component,
 
@@ -7,7 +9,11 @@ cc.Class({
     },
     
     playKill (kills) {
+        var oneSlashScore = MetaDataManager.getOneSlashDataByCount(kills);
+        var scale = oneSlashScore.Scale ? oneSlashScore.Scale : 1;
+
         this.node.active = true;
+        this.node.scale = scale;
         this.labelKills.string = kills;
         this.anim.play('kill-pop');
     },

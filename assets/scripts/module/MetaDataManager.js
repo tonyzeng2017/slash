@@ -133,6 +133,11 @@ function getComboScore(count) {
     return comboItem && comboItem.ComboScore ? comboItem.ComboScore : 0;
 }
 
+function getComboColor(count){
+    let comboItem = _comboData[count.toString()];
+    return comboItem && comboItem.Color ? comboItem.comboItem : 0;
+}
+
 function getSpawnDataByID(spawnID){
     return _spawnsData[spawnID];
 }
@@ -285,6 +290,7 @@ module.exports = {
     getMonsterDataByID:getMonsterDataByID,
     getMonsterDataByFoeType: getMonsterDataByFoeType,
     getComboScore: getComboScore,
+    getComboColor: getComboColor,
     getStageDataByID: getStageDataByID,
     getValueDataByID: getValueDataByID,
     getPlayerPropertyByLevelAndID: getPlayerPropertyByLevelAndID,
