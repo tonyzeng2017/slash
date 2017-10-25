@@ -1,303 +1,303 @@
 
 {
-    "1" : {"ComboScore" : 0}
-    ,"2" : {"ComboScore" : 1}
-    ,"3" : {"ComboScore" : 1}
-    ,"4" : {"ComboScore" : 2}
-    ,"5" : {"ComboScore" : 3}
-    ,"6" : {"ComboScore" : 4}
-    ,"7" : {"ComboScore" : 5}
-    ,"8" : {"ComboScore" : 5}
-    ,"9" : {"ComboScore" : 6}
-    ,"10" : {"ComboScore" : 6}
-    ,"11" : {"ComboScore" : 6}
-    ,"12" : {"ComboScore" : 7}
-    ,"13" : {"ComboScore" : 7}
-    ,"14" : {"ComboScore" : 8}
-    ,"15" : {"ComboScore" : 8}
-    ,"16" : {"ComboScore" : 9}
-    ,"17" : {"ComboScore" : 9}
-    ,"18" : {"ComboScore" : 9}
-    ,"19" : {"ComboScore" : 9}
-    ,"20" : {"ComboScore" : 10}
-    ,"21" : {"ComboScore" : 10}
-    ,"22" : {"ComboScore" : 10}
-    ,"23" : {"ComboScore" : 10}
-    ,"24" : {"ComboScore" : 10}
-    ,"25" : {"ComboScore" : 12}
-    ,"26" : {"ComboScore" : 12}
-    ,"27" : {"ComboScore" : 12}
-    ,"28" : {"ComboScore" : 12}
-    ,"29" : {"ComboScore" : 12}
-    ,"30" : {"ComboScore" : 15}
-    ,"31" : {"ComboScore" : 15}
-    ,"32" : {"ComboScore" : 15}
-    ,"33" : {"ComboScore" : 15}
-    ,"34" : {"ComboScore" : 15}
-    ,"35" : {"ComboScore" : 18}
-    ,"36" : {"ComboScore" : 18}
-    ,"37" : {"ComboScore" : 18}
-    ,"38" : {"ComboScore" : 18}
-    ,"39" : {"ComboScore" : 18}
-    ,"40" : {"ComboScore" : 18}
-    ,"41" : {"ComboScore" : 19}
-    ,"42" : {"ComboScore" : 19}
-    ,"43" : {"ComboScore" : 19}
-    ,"44" : {"ComboScore" : 20}
-    ,"45" : {"ComboScore" : 20}
-    ,"46" : {"ComboScore" : 20}
-    ,"47" : {"ComboScore" : 21}
-    ,"48" : {"ComboScore" : 21}
-    ,"49" : {"ComboScore" : 21}
-    ,"50" : {"ComboScore" : 22}
-    ,"51" : {"ComboScore" : 22}
-    ,"52" : {"ComboScore" : 22}
-    ,"53" : {"ComboScore" : 23}
-    ,"54" : {"ComboScore" : 23}
-    ,"55" : {"ComboScore" : 23}
-    ,"56" : {"ComboScore" : 24}
-    ,"57" : {"ComboScore" : 24}
-    ,"58" : {"ComboScore" : 24}
-    ,"59" : {"ComboScore" : 25}
-    ,"60" : {"ComboScore" : 25}
-    ,"61" : {"ComboScore" : 25}
-    ,"62" : {"ComboScore" : 26}
-    ,"63" : {"ComboScore" : 26}
-    ,"64" : {"ComboScore" : 26}
-    ,"65" : {"ComboScore" : 27}
-    ,"66" : {"ComboScore" : 27}
-    ,"67" : {"ComboScore" : 27}
-    ,"68" : {"ComboScore" : 28}
-    ,"69" : {"ComboScore" : 28}
-    ,"70" : {"ComboScore" : 28}
-    ,"71" : {"ComboScore" : 29}
-    ,"72" : {"ComboScore" : 29}
-    ,"73" : {"ComboScore" : 29}
-    ,"74" : {"ComboScore" : 30}
-    ,"75" : {"ComboScore" : 30}
-    ,"76" : {"ComboScore" : 30}
-    ,"77" : {"ComboScore" : 31}
-    ,"78" : {"ComboScore" : 31}
-    ,"79" : {"ComboScore" : 31}
-    ,"80" : {"ComboScore" : 32}
-    ,"81" : {"ComboScore" : 32}
-    ,"82" : {"ComboScore" : 32}
-    ,"83" : {"ComboScore" : 33}
-    ,"84" : {"ComboScore" : 33}
-    ,"85" : {"ComboScore" : 33}
-    ,"86" : {"ComboScore" : 34}
-    ,"87" : {"ComboScore" : 34}
-    ,"88" : {"ComboScore" : 34}
-    ,"89" : {"ComboScore" : 35}
-    ,"90" : {"ComboScore" : 35}
-    ,"91" : {"ComboScore" : 35}
-    ,"92" : {"ComboScore" : 36}
-    ,"93" : {"ComboScore" : 36}
-    ,"94" : {"ComboScore" : 36}
-    ,"95" : {"ComboScore" : 37}
-    ,"96" : {"ComboScore" : 37}
-    ,"97" : {"ComboScore" : 37}
-    ,"98" : {"ComboScore" : 38}
-    ,"99" : {"ComboScore" : 38}
-    ,"100" : {"ComboScore" : 38}
-    ,"101" : {"ComboScore" : 39}
-    ,"102" : {"ComboScore" : 39}
-    ,"103" : {"ComboScore" : 39}
-    ,"104" : {"ComboScore" : 40}
-    ,"105" : {"ComboScore" : 40}
-    ,"106" : {"ComboScore" : 40}
-    ,"107" : {"ComboScore" : 41}
-    ,"108" : {"ComboScore" : 41}
-    ,"109" : {"ComboScore" : 41}
-    ,"110" : {"ComboScore" : 42}
-    ,"111" : {"ComboScore" : 42}
-    ,"112" : {"ComboScore" : 42}
-    ,"113" : {"ComboScore" : 43}
-    ,"114" : {"ComboScore" : 43}
-    ,"115" : {"ComboScore" : 43}
-    ,"116" : {"ComboScore" : 44}
-    ,"117" : {"ComboScore" : 44}
-    ,"118" : {"ComboScore" : 44}
-    ,"119" : {"ComboScore" : 45}
-    ,"120" : {"ComboScore" : 45}
-    ,"121" : {"ComboScore" : 45}
-    ,"122" : {"ComboScore" : 46}
-    ,"123" : {"ComboScore" : 46}
-    ,"124" : {"ComboScore" : 46}
-    ,"125" : {"ComboScore" : 47}
-    ,"126" : {"ComboScore" : 47}
-    ,"127" : {"ComboScore" : 47}
-    ,"128" : {"ComboScore" : 48}
-    ,"129" : {"ComboScore" : 48}
-    ,"130" : {"ComboScore" : 48}
-    ,"131" : {"ComboScore" : 49}
-    ,"132" : {"ComboScore" : 49}
-    ,"133" : {"ComboScore" : 49}
-    ,"134" : {"ComboScore" : 50}
-    ,"135" : {"ComboScore" : 50}
-    ,"136" : {"ComboScore" : 50}
-    ,"137" : {"ComboScore" : 51}
-    ,"138" : {"ComboScore" : 51}
-    ,"139" : {"ComboScore" : 51}
-    ,"140" : {"ComboScore" : 52}
-    ,"141" : {"ComboScore" : 52}
-    ,"142" : {"ComboScore" : 52}
-    ,"143" : {"ComboScore" : 53}
-    ,"144" : {"ComboScore" : 53}
-    ,"145" : {"ComboScore" : 53}
-    ,"146" : {"ComboScore" : 54}
-    ,"147" : {"ComboScore" : 54}
-    ,"148" : {"ComboScore" : 54}
-    ,"149" : {"ComboScore" : 55}
-    ,"150" : {"ComboScore" : 55}
-    ,"151" : {"ComboScore" : 55}
-    ,"152" : {"ComboScore" : 56}
-    ,"153" : {"ComboScore" : 56}
-    ,"154" : {"ComboScore" : 56}
-    ,"155" : {"ComboScore" : 57}
-    ,"156" : {"ComboScore" : 57}
-    ,"157" : {"ComboScore" : 57}
-    ,"158" : {"ComboScore" : 58}
-    ,"159" : {"ComboScore" : 58}
-    ,"160" : {"ComboScore" : 58}
-    ,"161" : {"ComboScore" : 59}
-    ,"162" : {"ComboScore" : 59}
-    ,"163" : {"ComboScore" : 59}
-    ,"164" : {"ComboScore" : 60}
-    ,"165" : {"ComboScore" : 60}
-    ,"166" : {"ComboScore" : 60}
-    ,"167" : {"ComboScore" : 61}
-    ,"168" : {"ComboScore" : 61}
-    ,"169" : {"ComboScore" : 61}
-    ,"170" : {"ComboScore" : 62}
-    ,"171" : {"ComboScore" : 62}
-    ,"172" : {"ComboScore" : 62}
-    ,"173" : {"ComboScore" : 63}
-    ,"174" : {"ComboScore" : 63}
-    ,"175" : {"ComboScore" : 63}
-    ,"176" : {"ComboScore" : 64}
-    ,"177" : {"ComboScore" : 64}
-    ,"178" : {"ComboScore" : 64}
-    ,"179" : {"ComboScore" : 65}
-    ,"180" : {"ComboScore" : 65}
-    ,"181" : {"ComboScore" : 65}
-    ,"182" : {"ComboScore" : 66}
-    ,"183" : {"ComboScore" : 66}
-    ,"184" : {"ComboScore" : 66}
-    ,"185" : {"ComboScore" : 67}
-    ,"186" : {"ComboScore" : 67}
-    ,"187" : {"ComboScore" : 67}
-    ,"188" : {"ComboScore" : 68}
-    ,"189" : {"ComboScore" : 68}
-    ,"190" : {"ComboScore" : 68}
-    ,"191" : {"ComboScore" : 69}
-    ,"192" : {"ComboScore" : 69}
-    ,"193" : {"ComboScore" : 69}
-    ,"194" : {"ComboScore" : 70}
-    ,"195" : {"ComboScore" : 70}
-    ,"196" : {"ComboScore" : 70}
-    ,"197" : {"ComboScore" : 71}
-    ,"198" : {"ComboScore" : 71}
-    ,"199" : {"ComboScore" : 71}
-    ,"200" : {"ComboScore" : 72}
-    ,"201" : {"ComboScore" : 72}
-    ,"202" : {"ComboScore" : 72}
-    ,"203" : {"ComboScore" : 73}
-    ,"204" : {"ComboScore" : 73}
-    ,"205" : {"ComboScore" : 73}
-    ,"206" : {"ComboScore" : 74}
-    ,"207" : {"ComboScore" : 74}
-    ,"208" : {"ComboScore" : 74}
-    ,"209" : {"ComboScore" : 75}
-    ,"210" : {"ComboScore" : 75}
-    ,"211" : {"ComboScore" : 75}
-    ,"212" : {"ComboScore" : 76}
-    ,"213" : {"ComboScore" : 76}
-    ,"214" : {"ComboScore" : 76}
-    ,"215" : {"ComboScore" : 77}
-    ,"216" : {"ComboScore" : 77}
-    ,"217" : {"ComboScore" : 77}
-    ,"218" : {"ComboScore" : 78}
-    ,"219" : {"ComboScore" : 78}
-    ,"220" : {"ComboScore" : 78}
-    ,"221" : {"ComboScore" : 79}
-    ,"222" : {"ComboScore" : 79}
-    ,"223" : {"ComboScore" : 79}
-    ,"224" : {"ComboScore" : 80}
-    ,"225" : {"ComboScore" : 80}
-    ,"226" : {"ComboScore" : 80}
-    ,"227" : {"ComboScore" : 81}
-    ,"228" : {"ComboScore" : 81}
-    ,"229" : {"ComboScore" : 81}
-    ,"230" : {"ComboScore" : 82}
-    ,"231" : {"ComboScore" : 82}
-    ,"232" : {"ComboScore" : 82}
-    ,"233" : {"ComboScore" : 83}
-    ,"234" : {"ComboScore" : 83}
-    ,"235" : {"ComboScore" : 83}
-    ,"236" : {"ComboScore" : 84}
-    ,"237" : {"ComboScore" : 84}
-    ,"238" : {"ComboScore" : 84}
-    ,"239" : {"ComboScore" : 85}
-    ,"240" : {"ComboScore" : 85}
-    ,"241" : {"ComboScore" : 85}
-    ,"242" : {"ComboScore" : 86}
-    ,"243" : {"ComboScore" : 86}
-    ,"244" : {"ComboScore" : 86}
-    ,"245" : {"ComboScore" : 87}
-    ,"246" : {"ComboScore" : 87}
-    ,"247" : {"ComboScore" : 87}
-    ,"248" : {"ComboScore" : 88}
-    ,"249" : {"ComboScore" : 88}
-    ,"250" : {"ComboScore" : 88}
-    ,"251" : {"ComboScore" : 89}
-    ,"252" : {"ComboScore" : 89}
-    ,"253" : {"ComboScore" : 89}
-    ,"254" : {"ComboScore" : 90}
-    ,"255" : {"ComboScore" : 90}
-    ,"256" : {"ComboScore" : 90}
-    ,"257" : {"ComboScore" : 91}
-    ,"258" : {"ComboScore" : 91}
-    ,"259" : {"ComboScore" : 91}
-    ,"260" : {"ComboScore" : 92}
-    ,"261" : {"ComboScore" : 92}
-    ,"262" : {"ComboScore" : 92}
-    ,"263" : {"ComboScore" : 93}
-    ,"264" : {"ComboScore" : 93}
-    ,"265" : {"ComboScore" : 93}
-    ,"266" : {"ComboScore" : 94}
-    ,"267" : {"ComboScore" : 94}
-    ,"268" : {"ComboScore" : 94}
-    ,"269" : {"ComboScore" : 95}
-    ,"270" : {"ComboScore" : 95}
-    ,"271" : {"ComboScore" : 95}
-    ,"272" : {"ComboScore" : 96}
-    ,"273" : {"ComboScore" : 96}
-    ,"274" : {"ComboScore" : 96}
-    ,"275" : {"ComboScore" : 97}
-    ,"276" : {"ComboScore" : 97}
-    ,"277" : {"ComboScore" : 97}
-    ,"278" : {"ComboScore" : 98}
-    ,"279" : {"ComboScore" : 98}
-    ,"280" : {"ComboScore" : 98}
-    ,"281" : {"ComboScore" : 99}
-    ,"282" : {"ComboScore" : 99}
-    ,"283" : {"ComboScore" : 99}
-    ,"284" : {"ComboScore" : 100}
-    ,"285" : {"ComboScore" : 100}
-    ,"286" : {"ComboScore" : 100}
-    ,"287" : {"ComboScore" : 101}
-    ,"288" : {"ComboScore" : 101}
-    ,"289" : {"ComboScore" : 101}
-    ,"290" : {"ComboScore" : 102}
-    ,"291" : {"ComboScore" : 102}
-    ,"292" : {"ComboScore" : 102}
-    ,"293" : {"ComboScore" : 103}
-    ,"294" : {"ComboScore" : 103}
-    ,"295" : {"ComboScore" : 103}
-    ,"296" : {"ComboScore" : 104}
-    ,"297" : {"ComboScore" : 104}
-    ,"298" : {"ComboScore" : 104}
-    ,"299" : {"ComboScore" : 105}
-    ,"300" : {"ComboScore" : 105}
+    "1" : {"ComboScore" : 0, "Color" : 0}
+    ,"2" : {"ComboScore" : 1, "Color" : 0}
+    ,"3" : {"ComboScore" : 1, "Color" : 0}
+    ,"4" : {"ComboScore" : 2, "Color" : 0}
+    ,"5" : {"ComboScore" : 3, "Color" : 0}
+    ,"6" : {"ComboScore" : 4, "Color" : 1}
+    ,"7" : {"ComboScore" : 5, "Color" : 1}
+    ,"8" : {"ComboScore" : 5, "Color" : 1}
+    ,"9" : {"ComboScore" : 6, "Color" : 1}
+    ,"10" : {"ComboScore" : 6, "Color" : 1}
+    ,"11" : {"ComboScore" : 6, "Color" : 2}
+    ,"12" : {"ComboScore" : 7, "Color" : 2}
+    ,"13" : {"ComboScore" : 7, "Color" : 2}
+    ,"14" : {"ComboScore" : 8, "Color" : 2}
+    ,"15" : {"ComboScore" : 8, "Color" : 2}
+    ,"16" : {"ComboScore" : 9, "Color" : 2}
+    ,"17" : {"ComboScore" : 9, "Color" : 2}
+    ,"18" : {"ComboScore" : 9, "Color" : 2}
+    ,"19" : {"ComboScore" : 9, "Color" : 2}
+    ,"20" : {"ComboScore" : 10, "Color" : 3}
+    ,"21" : {"ComboScore" : 10, "Color" : 3}
+    ,"22" : {"ComboScore" : 10, "Color" : 3}
+    ,"23" : {"ComboScore" : 10, "Color" : 3}
+    ,"24" : {"ComboScore" : 10, "Color" : 3}
+    ,"25" : {"ComboScore" : 12, "Color" : 3}
+    ,"26" : {"ComboScore" : 12, "Color" : 3}
+    ,"27" : {"ComboScore" : 12, "Color" : 3}
+    ,"28" : {"ComboScore" : 12, "Color" : 3}
+    ,"29" : {"ComboScore" : 12, "Color" : 3}
+    ,"30" : {"ComboScore" : 15, "Color" : 3}
+    ,"31" : {"ComboScore" : 15, "Color" : 3}
+    ,"32" : {"ComboScore" : 15, "Color" : 3}
+    ,"33" : {"ComboScore" : 15, "Color" : 3}
+    ,"34" : {"ComboScore" : 15, "Color" : 3}
+    ,"35" : {"ComboScore" : 18, "Color" : 4}
+    ,"36" : {"ComboScore" : 18, "Color" : 4}
+    ,"37" : {"ComboScore" : 18, "Color" : 4}
+    ,"38" : {"ComboScore" : 18, "Color" : 4}
+    ,"39" : {"ComboScore" : 18, "Color" : 4}
+    ,"40" : {"ComboScore" : 18, "Color" : 4}
+    ,"41" : {"ComboScore" : 19, "Color" : 4}
+    ,"42" : {"ComboScore" : 19, "Color" : 4}
+    ,"43" : {"ComboScore" : 19, "Color" : 4}
+    ,"44" : {"ComboScore" : 20, "Color" : 4}
+    ,"45" : {"ComboScore" : 20, "Color" : 4}
+    ,"46" : {"ComboScore" : 20, "Color" : 4}
+    ,"47" : {"ComboScore" : 21, "Color" : 4}
+    ,"48" : {"ComboScore" : 21, "Color" : 4}
+    ,"49" : {"ComboScore" : 21, "Color" : 4}
+    ,"50" : {"ComboScore" : 22, "Color" : 4}
+    ,"51" : {"ComboScore" : 22, "Color" : 4}
+    ,"52" : {"ComboScore" : 22, "Color" : 4}
+    ,"53" : {"ComboScore" : 23, "Color" : 4}
+    ,"54" : {"ComboScore" : 23, "Color" : 4}
+    ,"55" : {"ComboScore" : 23, "Color" : 4}
+    ,"56" : {"ComboScore" : 24, "Color" : 4}
+    ,"57" : {"ComboScore" : 24, "Color" : 4}
+    ,"58" : {"ComboScore" : 24, "Color" : 4}
+    ,"59" : {"ComboScore" : 25, "Color" : 4}
+    ,"60" : {"ComboScore" : 25, "Color" : 4}
+    ,"61" : {"ComboScore" : 25, "Color" : 4}
+    ,"62" : {"ComboScore" : 26, "Color" : 4}
+    ,"63" : {"ComboScore" : 26, "Color" : 4}
+    ,"64" : {"ComboScore" : 26, "Color" : 4}
+    ,"65" : {"ComboScore" : 27, "Color" : 4}
+    ,"66" : {"ComboScore" : 27, "Color" : 4}
+    ,"67" : {"ComboScore" : 27, "Color" : 4}
+    ,"68" : {"ComboScore" : 28, "Color" : 4}
+    ,"69" : {"ComboScore" : 28, "Color" : 4}
+    ,"70" : {"ComboScore" : 28, "Color" : 4}
+    ,"71" : {"ComboScore" : 29, "Color" : 4}
+    ,"72" : {"ComboScore" : 29, "Color" : 4}
+    ,"73" : {"ComboScore" : 29, "Color" : 4}
+    ,"74" : {"ComboScore" : 30, "Color" : 4}
+    ,"75" : {"ComboScore" : 30, "Color" : 4}
+    ,"76" : {"ComboScore" : 30, "Color" : 4}
+    ,"77" : {"ComboScore" : 31, "Color" : 4}
+    ,"78" : {"ComboScore" : 31, "Color" : 4}
+    ,"79" : {"ComboScore" : 31, "Color" : 4}
+    ,"80" : {"ComboScore" : 32, "Color" : 4}
+    ,"81" : {"ComboScore" : 32, "Color" : 4}
+    ,"82" : {"ComboScore" : 32, "Color" : 4}
+    ,"83" : {"ComboScore" : 33, "Color" : 4}
+    ,"84" : {"ComboScore" : 33, "Color" : 4}
+    ,"85" : {"ComboScore" : 33, "Color" : 4}
+    ,"86" : {"ComboScore" : 34, "Color" : 4}
+    ,"87" : {"ComboScore" : 34, "Color" : 4}
+    ,"88" : {"ComboScore" : 34, "Color" : 4}
+    ,"89" : {"ComboScore" : 35, "Color" : 4}
+    ,"90" : {"ComboScore" : 35, "Color" : 4}
+    ,"91" : {"ComboScore" : 35, "Color" : 4}
+    ,"92" : {"ComboScore" : 36, "Color" : 4}
+    ,"93" : {"ComboScore" : 36, "Color" : 4}
+    ,"94" : {"ComboScore" : 36, "Color" : 4}
+    ,"95" : {"ComboScore" : 37, "Color" : 4}
+    ,"96" : {"ComboScore" : 37, "Color" : 4}
+    ,"97" : {"ComboScore" : 37, "Color" : 4}
+    ,"98" : {"ComboScore" : 38, "Color" : 4}
+    ,"99" : {"ComboScore" : 38, "Color" : 4}
+    ,"100" : {"ComboScore" : 38, "Color" : 4}
+    ,"101" : {"ComboScore" : 39, "Color" : 4}
+    ,"102" : {"ComboScore" : 39, "Color" : 4}
+    ,"103" : {"ComboScore" : 39, "Color" : 4}
+    ,"104" : {"ComboScore" : 40, "Color" : 4}
+    ,"105" : {"ComboScore" : 40, "Color" : 4}
+    ,"106" : {"ComboScore" : 40, "Color" : 4}
+    ,"107" : {"ComboScore" : 41, "Color" : 4}
+    ,"108" : {"ComboScore" : 41, "Color" : 4}
+    ,"109" : {"ComboScore" : 41, "Color" : 4}
+    ,"110" : {"ComboScore" : 42, "Color" : 4}
+    ,"111" : {"ComboScore" : 42, "Color" : 4}
+    ,"112" : {"ComboScore" : 42, "Color" : 4}
+    ,"113" : {"ComboScore" : 43, "Color" : 4}
+    ,"114" : {"ComboScore" : 43, "Color" : 4}
+    ,"115" : {"ComboScore" : 43, "Color" : 4}
+    ,"116" : {"ComboScore" : 44, "Color" : 4}
+    ,"117" : {"ComboScore" : 44, "Color" : 4}
+    ,"118" : {"ComboScore" : 44, "Color" : 4}
+    ,"119" : {"ComboScore" : 45, "Color" : 4}
+    ,"120" : {"ComboScore" : 45, "Color" : 4}
+    ,"121" : {"ComboScore" : 45, "Color" : 4}
+    ,"122" : {"ComboScore" : 46, "Color" : 4}
+    ,"123" : {"ComboScore" : 46, "Color" : 4}
+    ,"124" : {"ComboScore" : 46, "Color" : 4}
+    ,"125" : {"ComboScore" : 47, "Color" : 4}
+    ,"126" : {"ComboScore" : 47, "Color" : 4}
+    ,"127" : {"ComboScore" : 47, "Color" : 4}
+    ,"128" : {"ComboScore" : 48, "Color" : 4}
+    ,"129" : {"ComboScore" : 48, "Color" : 4}
+    ,"130" : {"ComboScore" : 48, "Color" : 4}
+    ,"131" : {"ComboScore" : 49, "Color" : 4}
+    ,"132" : {"ComboScore" : 49, "Color" : 4}
+    ,"133" : {"ComboScore" : 49, "Color" : 4}
+    ,"134" : {"ComboScore" : 50, "Color" : 4}
+    ,"135" : {"ComboScore" : 50, "Color" : 4}
+    ,"136" : {"ComboScore" : 50, "Color" : 4}
+    ,"137" : {"ComboScore" : 51, "Color" : 4}
+    ,"138" : {"ComboScore" : 51, "Color" : 4}
+    ,"139" : {"ComboScore" : 51, "Color" : 4}
+    ,"140" : {"ComboScore" : 52, "Color" : 4}
+    ,"141" : {"ComboScore" : 52, "Color" : 4}
+    ,"142" : {"ComboScore" : 52, "Color" : 4}
+    ,"143" : {"ComboScore" : 53, "Color" : 4}
+    ,"144" : {"ComboScore" : 53, "Color" : 4}
+    ,"145" : {"ComboScore" : 53, "Color" : 4}
+    ,"146" : {"ComboScore" : 54, "Color" : 4}
+    ,"147" : {"ComboScore" : 54, "Color" : 4}
+    ,"148" : {"ComboScore" : 54, "Color" : 4}
+    ,"149" : {"ComboScore" : 55, "Color" : 4}
+    ,"150" : {"ComboScore" : 55, "Color" : 4}
+    ,"151" : {"ComboScore" : 55, "Color" : 4}
+    ,"152" : {"ComboScore" : 56, "Color" : 4}
+    ,"153" : {"ComboScore" : 56, "Color" : 4}
+    ,"154" : {"ComboScore" : 56, "Color" : 4}
+    ,"155" : {"ComboScore" : 57, "Color" : 4}
+    ,"156" : {"ComboScore" : 57, "Color" : 4}
+    ,"157" : {"ComboScore" : 57, "Color" : 4}
+    ,"158" : {"ComboScore" : 58, "Color" : 4}
+    ,"159" : {"ComboScore" : 58, "Color" : 4}
+    ,"160" : {"ComboScore" : 58, "Color" : 4}
+    ,"161" : {"ComboScore" : 59, "Color" : 4}
+    ,"162" : {"ComboScore" : 59, "Color" : 4}
+    ,"163" : {"ComboScore" : 59, "Color" : 4}
+    ,"164" : {"ComboScore" : 60, "Color" : 4}
+    ,"165" : {"ComboScore" : 60, "Color" : 4}
+    ,"166" : {"ComboScore" : 60, "Color" : 4}
+    ,"167" : {"ComboScore" : 61, "Color" : 4}
+    ,"168" : {"ComboScore" : 61, "Color" : 4}
+    ,"169" : {"ComboScore" : 61, "Color" : 4}
+    ,"170" : {"ComboScore" : 62, "Color" : 4}
+    ,"171" : {"ComboScore" : 62, "Color" : 4}
+    ,"172" : {"ComboScore" : 62, "Color" : 4}
+    ,"173" : {"ComboScore" : 63, "Color" : 4}
+    ,"174" : {"ComboScore" : 63, "Color" : 4}
+    ,"175" : {"ComboScore" : 63, "Color" : 4}
+    ,"176" : {"ComboScore" : 64, "Color" : 4}
+    ,"177" : {"ComboScore" : 64, "Color" : 4}
+    ,"178" : {"ComboScore" : 64, "Color" : 4}
+    ,"179" : {"ComboScore" : 65, "Color" : 4}
+    ,"180" : {"ComboScore" : 65, "Color" : 4}
+    ,"181" : {"ComboScore" : 65, "Color" : 4}
+    ,"182" : {"ComboScore" : 66, "Color" : 4}
+    ,"183" : {"ComboScore" : 66, "Color" : 4}
+    ,"184" : {"ComboScore" : 66, "Color" : 4}
+    ,"185" : {"ComboScore" : 67, "Color" : 4}
+    ,"186" : {"ComboScore" : 67, "Color" : 4}
+    ,"187" : {"ComboScore" : 67, "Color" : 4}
+    ,"188" : {"ComboScore" : 68, "Color" : 4}
+    ,"189" : {"ComboScore" : 68, "Color" : 4}
+    ,"190" : {"ComboScore" : 68, "Color" : 4}
+    ,"191" : {"ComboScore" : 69, "Color" : 4}
+    ,"192" : {"ComboScore" : 69, "Color" : 4}
+    ,"193" : {"ComboScore" : 69, "Color" : 4}
+    ,"194" : {"ComboScore" : 70, "Color" : 4}
+    ,"195" : {"ComboScore" : 70, "Color" : 4}
+    ,"196" : {"ComboScore" : 70, "Color" : 4}
+    ,"197" : {"ComboScore" : 71, "Color" : 4}
+    ,"198" : {"ComboScore" : 71, "Color" : 4}
+    ,"199" : {"ComboScore" : 71, "Color" : 4}
+    ,"200" : {"ComboScore" : 72, "Color" : 4}
+    ,"201" : {"ComboScore" : 72, "Color" : 4}
+    ,"202" : {"ComboScore" : 72, "Color" : 4}
+    ,"203" : {"ComboScore" : 73, "Color" : 4}
+    ,"204" : {"ComboScore" : 73, "Color" : 4}
+    ,"205" : {"ComboScore" : 73, "Color" : 4}
+    ,"206" : {"ComboScore" : 74, "Color" : 4}
+    ,"207" : {"ComboScore" : 74, "Color" : 4}
+    ,"208" : {"ComboScore" : 74, "Color" : 4}
+    ,"209" : {"ComboScore" : 75, "Color" : 4}
+    ,"210" : {"ComboScore" : 75, "Color" : 4}
+    ,"211" : {"ComboScore" : 75, "Color" : 4}
+    ,"212" : {"ComboScore" : 76, "Color" : 4}
+    ,"213" : {"ComboScore" : 76, "Color" : 4}
+    ,"214" : {"ComboScore" : 76, "Color" : 4}
+    ,"215" : {"ComboScore" : 77, "Color" : 4}
+    ,"216" : {"ComboScore" : 77, "Color" : 4}
+    ,"217" : {"ComboScore" : 77, "Color" : 4}
+    ,"218" : {"ComboScore" : 78, "Color" : 4}
+    ,"219" : {"ComboScore" : 78, "Color" : 4}
+    ,"220" : {"ComboScore" : 78, "Color" : 4}
+    ,"221" : {"ComboScore" : 79, "Color" : 4}
+    ,"222" : {"ComboScore" : 79, "Color" : 4}
+    ,"223" : {"ComboScore" : 79, "Color" : 4}
+    ,"224" : {"ComboScore" : 80, "Color" : 4}
+    ,"225" : {"ComboScore" : 80, "Color" : 4}
+    ,"226" : {"ComboScore" : 80, "Color" : 4}
+    ,"227" : {"ComboScore" : 81, "Color" : 4}
+    ,"228" : {"ComboScore" : 81, "Color" : 4}
+    ,"229" : {"ComboScore" : 81, "Color" : 4}
+    ,"230" : {"ComboScore" : 82, "Color" : 4}
+    ,"231" : {"ComboScore" : 82, "Color" : 4}
+    ,"232" : {"ComboScore" : 82, "Color" : 4}
+    ,"233" : {"ComboScore" : 83, "Color" : 4}
+    ,"234" : {"ComboScore" : 83, "Color" : 4}
+    ,"235" : {"ComboScore" : 83, "Color" : 4}
+    ,"236" : {"ComboScore" : 84, "Color" : 4}
+    ,"237" : {"ComboScore" : 84, "Color" : 4}
+    ,"238" : {"ComboScore" : 84, "Color" : 4}
+    ,"239" : {"ComboScore" : 85, "Color" : 4}
+    ,"240" : {"ComboScore" : 85, "Color" : 4}
+    ,"241" : {"ComboScore" : 85, "Color" : 4}
+    ,"242" : {"ComboScore" : 86, "Color" : 4}
+    ,"243" : {"ComboScore" : 86, "Color" : 4}
+    ,"244" : {"ComboScore" : 86, "Color" : 4}
+    ,"245" : {"ComboScore" : 87, "Color" : 4}
+    ,"246" : {"ComboScore" : 87, "Color" : 4}
+    ,"247" : {"ComboScore" : 87, "Color" : 4}
+    ,"248" : {"ComboScore" : 88, "Color" : 4}
+    ,"249" : {"ComboScore" : 88, "Color" : 4}
+    ,"250" : {"ComboScore" : 88, "Color" : 4}
+    ,"251" : {"ComboScore" : 89, "Color" : 4}
+    ,"252" : {"ComboScore" : 89, "Color" : 4}
+    ,"253" : {"ComboScore" : 89, "Color" : 4}
+    ,"254" : {"ComboScore" : 90, "Color" : 4}
+    ,"255" : {"ComboScore" : 90, "Color" : 4}
+    ,"256" : {"ComboScore" : 90, "Color" : 4}
+    ,"257" : {"ComboScore" : 91, "Color" : 4}
+    ,"258" : {"ComboScore" : 91, "Color" : 4}
+    ,"259" : {"ComboScore" : 91, "Color" : 4}
+    ,"260" : {"ComboScore" : 92, "Color" : 4}
+    ,"261" : {"ComboScore" : 92, "Color" : 4}
+    ,"262" : {"ComboScore" : 92, "Color" : 4}
+    ,"263" : {"ComboScore" : 93, "Color" : 4}
+    ,"264" : {"ComboScore" : 93, "Color" : 4}
+    ,"265" : {"ComboScore" : 93, "Color" : 4}
+    ,"266" : {"ComboScore" : 94, "Color" : 4}
+    ,"267" : {"ComboScore" : 94, "Color" : 4}
+    ,"268" : {"ComboScore" : 94, "Color" : 4}
+    ,"269" : {"ComboScore" : 95, "Color" : 4}
+    ,"270" : {"ComboScore" : 95, "Color" : 4}
+    ,"271" : {"ComboScore" : 95, "Color" : 4}
+    ,"272" : {"ComboScore" : 96, "Color" : 4}
+    ,"273" : {"ComboScore" : 96, "Color" : 4}
+    ,"274" : {"ComboScore" : 96, "Color" : 4}
+    ,"275" : {"ComboScore" : 97, "Color" : 4}
+    ,"276" : {"ComboScore" : 97, "Color" : 4}
+    ,"277" : {"ComboScore" : 97, "Color" : 4}
+    ,"278" : {"ComboScore" : 98, "Color" : 4}
+    ,"279" : {"ComboScore" : 98, "Color" : 4}
+    ,"280" : {"ComboScore" : 98, "Color" : 4}
+    ,"281" : {"ComboScore" : 99, "Color" : 4}
+    ,"282" : {"ComboScore" : 99, "Color" : 4}
+    ,"283" : {"ComboScore" : 99, "Color" : 4}
+    ,"284" : {"ComboScore" : 100, "Color" : 4}
+    ,"285" : {"ComboScore" : 100, "Color" : 4}
+    ,"286" : {"ComboScore" : 100, "Color" : 4}
+    ,"287" : {"ComboScore" : 101, "Color" : 4}
+    ,"288" : {"ComboScore" : 101, "Color" : 4}
+    ,"289" : {"ComboScore" : 101, "Color" : 4}
+    ,"290" : {"ComboScore" : 102, "Color" : 4}
+    ,"291" : {"ComboScore" : 102, "Color" : 4}
+    ,"292" : {"ComboScore" : 102, "Color" : 4}
+    ,"293" : {"ComboScore" : 103, "Color" : 4}
+    ,"294" : {"ComboScore" : 103, "Color" : 4}
+    ,"295" : {"ComboScore" : 103, "Color" : 4}
+    ,"296" : {"ComboScore" : 104, "Color" : 4}
+    ,"297" : {"ComboScore" : 104, "Color" : 4}
+    ,"298" : {"ComboScore" : 104, "Color" : 4}
+    ,"299" : {"ComboScore" : 105, "Color" : 4}
+    ,"300" : {"ComboScore" : 105, "Color" : 4}
 }

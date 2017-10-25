@@ -36,7 +36,7 @@
     ,"34" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 33, "PropertyID" : 1, "PropertyValue" : 36, "ItemID" : "100001", "cost" : "800000"}
     ,"35" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 34, "PropertyID" : 1, "PropertyValue" : 38, "ItemID" : "100001", "cost" : "999999"}
     ,"36" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 35, "PropertyID" : 1, "PropertyValue" : 40, "ItemID" : "100001", "cost" : "999999"}
-    ,"37" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 0, "PropertyID" : 2, "PropertyValue" : 80, "ItemID" : "100001", "cost" : "20"}
+    ,"37" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 0, "PropertyID" : 2, "PropertyValue" : 65, "ItemID" : "100001", "cost" : "20"}
     ,"38" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 1, "PropertyID" : 2, "PropertyValue" : 90, "ItemID" : "100001", "cost" : "20"}
     ,"39" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 2, "PropertyID" : 2, "PropertyValue" : 90, "ItemID" : "100001", "cost" : "150"}
     ,"40" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 3, "PropertyID" : 2, "PropertyValue" : 95, "ItemID" : "100001", "cost" : "150"}
@@ -78,7 +78,7 @@
     ,"76" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 19, "PropertyID" : 3, "PropertyValue" : 515, "ItemID" : "100001", "cost" : "800000"}
     ,"77" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 20, "PropertyID" : 3, "PropertyValue" : 540, "ItemID" : "100001", "cost" : "980000"}
     ,"78" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 21, "PropertyID" : 3, "PropertyValue" : 580, "ItemID" : "100001", "cost" : "980000"}
-    ,"79" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 0, "PropertyID" : 4, "PropertyValue" : 305, "ItemID" : "100001", "cost" : "12"}
+    ,"79" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 0, "PropertyID" : 4, "PropertyValue" : 310, "ItemID" : "100001", "cost" : "12"}
     ,"80" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 1, "PropertyID" : 4, "PropertyValue" : 290, "ItemID" : "100001", "cost" : "40"}
     ,"81" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 2, "PropertyID" : 4, "PropertyValue" : 275, "ItemID" : "100001", "cost" : "40"}
     ,"82" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 3, "PropertyID" : 4, "PropertyValue" : 275, "ItemID" : "100001", "cost" : "200"}
@@ -100,28 +100,28 @@
     ,"98" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 19, "PropertyID" : 4, "PropertyValue" : 215, "ItemID" : "100001", "cost" : "780000"}
     ,"99" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 20, "PropertyID" : 4, "PropertyValue" : 200, "ItemID" : "100001", "cost" : "999999"}
     ,"100" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 21, "PropertyID" : 4, "PropertyValue" : 150, "ItemID" : "100001", "cost" : "999999"}
-    ,"101" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 0, "PropertyID" : 5, "PropertyValue" : 210, "ItemID" : "100001", "cost" : "15"}
-    ,"102" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 1, "PropertyID" : 5, "PropertyValue" : 200, "ItemID" : "100001", "cost" : "35"}
-    ,"103" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 2, "PropertyID" : 5, "PropertyValue" : 190, "ItemID" : "100001", "cost" : "35"}
-    ,"104" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 3, "PropertyID" : 5, "PropertyValue" : 190, "ItemID" : "100001", "cost" : "200"}
-    ,"105" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 4, "PropertyID" : 5, "PropertyValue" : 180, "ItemID" : "100001", "cost" : "400"}
-    ,"106" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 5, "PropertyID" : 5, "PropertyValue" : 170, "ItemID" : "100001", "cost" : "650"}
-    ,"107" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 6, "PropertyID" : 5, "PropertyValue" : 160, "ItemID" : "100001", "cost" : "650"}
-    ,"108" : {"PlayerStar" : 3, "DisplayPosition" : 1, "Level" : 7, "PropertyID" : 5, "PropertyValue" : 160, "ItemID" : "100001", "cost" : "2000"}
-    ,"109" : {"PlayerStar" : 3, "DisplayPosition" : 1, "Level" : 8, "PropertyID" : 5, "PropertyValue" : 150, "ItemID" : "100001", "cost" : "6000"}
-    ,"110" : {"PlayerStar" : 3, "DisplayPosition" : 1, "Level" : 9, "PropertyID" : 5, "PropertyValue" : 140, "ItemID" : "100001", "cost" : "8000"}
-    ,"111" : {"PlayerStar" : 3, "DisplayPosition" : 1, "Level" : 10, "PropertyID" : 5, "PropertyValue" : 130, "ItemID" : "100001", "cost" : "8000"}
-    ,"112" : {"PlayerStar" : 4, "DisplayPosition" : 1, "Level" : 11, "PropertyID" : 5, "PropertyValue" : 130, "ItemID" : "100001", "cost" : "12000"}
-    ,"113" : {"PlayerStar" : 4, "DisplayPosition" : 1, "Level" : 12, "PropertyID" : 5, "PropertyValue" : 120, "ItemID" : "100001", "cost" : "30000"}
-    ,"114" : {"PlayerStar" : 4, "DisplayPosition" : 1, "Level" : 13, "PropertyID" : 5, "PropertyValue" : 110, "ItemID" : "100001", "cost" : "52000"}
-    ,"115" : {"PlayerStar" : 4, "DisplayPosition" : 1, "Level" : 14, "PropertyID" : 5, "PropertyValue" : 100, "ItemID" : "100001", "cost" : "52000"}
-    ,"116" : {"PlayerStar" : 5, "DisplayPosition" : 1, "Level" : 15, "PropertyID" : 5, "PropertyValue" : 100, "ItemID" : "100001", "cost" : "100000"}
-    ,"117" : {"PlayerStar" : 5, "DisplayPosition" : 1, "Level" : 16, "PropertyID" : 5, "PropertyValue" : 90, "ItemID" : "100001", "cost" : "150000"}
-    ,"118" : {"PlayerStar" : 5, "DisplayPosition" : 1, "Level" : 17, "PropertyID" : 5, "PropertyValue" : 80, "ItemID" : "100001", "cost" : "200000"}
-    ,"119" : {"PlayerStar" : 5, "DisplayPosition" : 1, "Level" : 18, "PropertyID" : 5, "PropertyValue" : 70, "ItemID" : "100001", "cost" : "200000"}
-    ,"120" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 19, "PropertyID" : 5, "PropertyValue" : 70, "ItemID" : "100001", "cost" : "880000"}
-    ,"121" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 20, "PropertyID" : 5, "PropertyValue" : 50, "ItemID" : "100001", "cost" : "990000"}
-    ,"122" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 21, "PropertyID" : 5, "PropertyValue" : 30, "ItemID" : "100001", "cost" : "990000"}
+    ,"101" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 0, "PropertyID" : 5, "PropertyValue" : 25, "ItemID" : "100001", "cost" : "15"}
+    ,"102" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 1, "PropertyID" : 5, "PropertyValue" : 24, "ItemID" : "100001", "cost" : "35"}
+    ,"103" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 2, "PropertyID" : 5, "PropertyValue" : 23, "ItemID" : "100001", "cost" : "35"}
+    ,"104" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 3, "PropertyID" : 5, "PropertyValue" : 23, "ItemID" : "100001", "cost" : "200"}
+    ,"105" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 4, "PropertyID" : 5, "PropertyValue" : 22, "ItemID" : "100001", "cost" : "400"}
+    ,"106" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 5, "PropertyID" : 5, "PropertyValue" : 21, "ItemID" : "100001", "cost" : "650"}
+    ,"107" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 6, "PropertyID" : 5, "PropertyValue" : 20, "ItemID" : "100001", "cost" : "650"}
+    ,"108" : {"PlayerStar" : 3, "DisplayPosition" : 1, "Level" : 7, "PropertyID" : 5, "PropertyValue" : 20, "ItemID" : "100001", "cost" : "2000"}
+    ,"109" : {"PlayerStar" : 3, "DisplayPosition" : 1, "Level" : 8, "PropertyID" : 5, "PropertyValue" : 19, "ItemID" : "100001", "cost" : "6000"}
+    ,"110" : {"PlayerStar" : 3, "DisplayPosition" : 1, "Level" : 9, "PropertyID" : 5, "PropertyValue" : 18, "ItemID" : "100001", "cost" : "8000"}
+    ,"111" : {"PlayerStar" : 3, "DisplayPosition" : 1, "Level" : 10, "PropertyID" : 5, "PropertyValue" : 17, "ItemID" : "100001", "cost" : "8000"}
+    ,"112" : {"PlayerStar" : 4, "DisplayPosition" : 1, "Level" : 11, "PropertyID" : 5, "PropertyValue" : 17, "ItemID" : "100001", "cost" : "12000"}
+    ,"113" : {"PlayerStar" : 4, "DisplayPosition" : 1, "Level" : 12, "PropertyID" : 5, "PropertyValue" : 16, "ItemID" : "100001", "cost" : "30000"}
+    ,"114" : {"PlayerStar" : 4, "DisplayPosition" : 1, "Level" : 13, "PropertyID" : 5, "PropertyValue" : 15, "ItemID" : "100001", "cost" : "52000"}
+    ,"115" : {"PlayerStar" : 4, "DisplayPosition" : 1, "Level" : 14, "PropertyID" : 5, "PropertyValue" : 14, "ItemID" : "100001", "cost" : "52000"}
+    ,"116" : {"PlayerStar" : 5, "DisplayPosition" : 1, "Level" : 15, "PropertyID" : 5, "PropertyValue" : 14, "ItemID" : "100001", "cost" : "100000"}
+    ,"117" : {"PlayerStar" : 5, "DisplayPosition" : 1, "Level" : 16, "PropertyID" : 5, "PropertyValue" : 13, "ItemID" : "100001", "cost" : "150000"}
+    ,"118" : {"PlayerStar" : 5, "DisplayPosition" : 1, "Level" : 17, "PropertyID" : 5, "PropertyValue" : 12, "ItemID" : "100001", "cost" : "200000"}
+    ,"119" : {"PlayerStar" : 5, "DisplayPosition" : 1, "Level" : 18, "PropertyID" : 5, "PropertyValue" : 11, "ItemID" : "100001", "cost" : "200000"}
+    ,"120" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 19, "PropertyID" : 5, "PropertyValue" : 11, "ItemID" : "100001", "cost" : "880000"}
+    ,"121" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 20, "PropertyID" : 5, "PropertyValue" : 10, "ItemID" : "100001", "cost" : "990000"}
+    ,"122" : {"PlayerStar" : 6, "DisplayPosition" : 1, "Level" : 21, "PropertyID" : 5, "PropertyValue" : 9, "ItemID" : "100001", "cost" : "990000"}
     ,"123" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 0, "PropertyID" : 6, "PropertyValue" : 250, "ItemID" : "100001", "cost" : "15"}
     ,"124" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 1, "PropertyID" : 6, "PropertyValue" : 280, "ItemID" : "100001", "cost" : "15"}
     ,"125" : {"PlayerStar" : 2, "DisplayPosition" : 1, "Level" : 2, "PropertyID" : 6, "PropertyValue" : 280, "ItemID" : "100001", "cost" : "300"}
