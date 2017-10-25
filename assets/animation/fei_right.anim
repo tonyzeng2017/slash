@@ -15,7 +15,7 @@
             {
               "frame": 0,
               "value": [
-                -251,
+                -10,
                 157
               ],
               "motionPath": []
@@ -32,21 +32,21 @@
           "scaleX": [
             {
               "frame": 0.3,
-              "value": 1
+              "value": 0.8
             },
             {
               "frame": 1.4166666666666667,
-              "value": 1
+              "value": 0.8
             }
           ],
           "scaleY": [
             {
               "frame": 0.3,
-              "value": 1
+              "value": 0.8
             },
             {
               "frame": 1.4166666666666667,
-              "value": 1
+              "value": 0.8
             }
           ],
           "opacity": [

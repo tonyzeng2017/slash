@@ -1,6 +1,6 @@
 
 {
-    "1" : {"StageName" : "第1关", "WavesID" : "1,2", "MapPic" : "pingyuan", "D" : 2, "C" : 10, "B" : 21, "A" : 42, "S" : 55, "SS" : 73, "SSS" : 110, "RewardValue" : 200}
+    "1" : {"StageName" : "第1关", "WavesID" : "1,2", "MapPic" : "pingyuan", "D" : 2, "C" : 10, "B" : 21, "A" : 42, "S" : 55, "SS" : 73, "SSS" : 110, "RewardValue" : 300}
     ,"2" : {"StageName" : "第2关", "WavesID" : "3,4", "MapPic" : "pingyuan", "D" : 2, "C" : 12, "B" : 24, "A" : 48, "S" : 60, "SS" : 88, "SSS" : 128, "RewardValue" : 200}
     ,"3" : {"StageName" : "第3关", "WavesID" : "5,6", "MapPic" : "pingyuan", "D" : 3, "C" : 15, "B" : 30, "A" : 60, "S" : 86, "SS" : 138, "SSS" : 195, "RewardValue" : 200}
     ,"4" : {"StageName" : "第4关", "WavesID" : "7,8", "MapPic" : "pingyuan", "D" : 3, "C" : 18, "B" : 37, "A" : 75, "S" : 100, "SS" : 175, "SSS" : 242, "RewardValue" : 200}

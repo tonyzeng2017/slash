@@ -105,8 +105,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 36,
-      "height": 88
+      "width": 33,
+      "height": 80
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -400,7 +400,7 @@
     "fxBroken": {
       "__id__": 10
     },
-    "moveSpeed": 300,
+    "moveSpeed": 350,
     "canBreak": false
   },
   {
