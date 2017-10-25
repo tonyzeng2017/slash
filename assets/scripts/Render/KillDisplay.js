@@ -10,7 +10,7 @@ cc.Class({
     
     playKill (kills) {
         var oneSlashScore = MetaDataManager.getOneSlashDataByCount(kills);
-        var scale = oneSlashScore.Scale ? oneSlashScore.Scale : 1;
+        var scale = oneSlashScore.Scale ? oneSlashScore.Scale/100 : 1;
 
         this.node.active = true;
         this.node.scale = scale;
