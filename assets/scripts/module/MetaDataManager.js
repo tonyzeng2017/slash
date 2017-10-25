@@ -135,7 +135,7 @@ function getComboScore(count) {
 
 function getComboColor(count){
     let comboItem = _comboData[count.toString()];
-    return comboItem && comboItem.Color ? comboItem.comboItem : 0;
+    return comboItem && comboItem.Color ? comboItem.Color : 0;
 }
 
 function getSpawnDataByID(spawnID){
