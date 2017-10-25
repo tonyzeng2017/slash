@@ -3,7 +3,7 @@
   "_name": "fei_rightup",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 1.7666666666666666,
+  "_duration": 1.77,
   "sample": 60,
   "speed": 1.5,
   "wrapMode": 1,
@@ -14,15 +14,15 @@
           "scaleX": [
             {
               "frame": 0,
-              "value": 1
+              "value": 0.8
             },
             {
               "frame": 0.3,
-              "value": 0.75
+              "value": 0.6
             },
             {
               "frame": 1.0833333333333333,
-              "value": 0.6
+              "value": 0.55
             },
             {
               "frame": 1.5,
@@ -32,15 +32,15 @@
           "scaleY": [
             {
               "frame": 0,
-              "value": 1
+              "value": 0.8
             },
             {
               "frame": 0.3,
-              "value": 0.75
+              "value": 0.6
             },
             {
               "frame": 1.0833333333333333,
-              "value": 0.6
+              "value": 0.55
             },
             {
               "frame": 1.5,
@@ -51,16 +51,24 @@
             {
               "frame": 0,
               "value": [
-                -104,
-                -133
+                41.6,
+                31.3
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 1.0833333333333333,
+              "value": [
+                127,
+                165
               ],
               "motionPath": []
             },
             {
               "frame": 1.5,
               "value": [
-                165,
-                133
+                195,
+                188
               ],
               "motionPath": []
             }

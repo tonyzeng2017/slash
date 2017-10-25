@@ -2,6 +2,7 @@
   "__type__": "cc.AnimationClip",
   "_name": "camera-shake",
   "_objFlags": 0,
+  "_rawFiles": null,
   "_duration": 0.25,
   "sample": 60,
   "speed": 1,
@@ -45,6 +46,78 @@
           ]
         }
       ]
+    },
+    "paths": {
+      "InGameUI/life/icon_heart/New Sprite": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -29.9,
+                11.1
+              ]
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                67.3,
+                -11.3
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 0
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.2
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "InGameUI/life/txt_life/hit_life": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -15.7,
+                0.3000000000000007
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                -15.7,
+                -30.2
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.25,
+              "value": 0
+            }
+          ]
+        }
+      }
     }
   },
   "events": []
