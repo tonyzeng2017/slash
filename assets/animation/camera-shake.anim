@@ -48,46 +48,6 @@
       ]
     },
     "paths": {
-      "InGameUI/life/icon_heart/New Sprite": {
-        "props": {
-          "position": [
-            {
-              "frame": 0,
-              "value": [
-                -29.9,
-                11.1
-              ]
-            },
-            {
-              "frame": 0.18333333333333332,
-              "value": [
-                67.3,
-                -11.3
-              ]
-            }
-          ],
-          "scaleX": [
-            {
-              "frame": 0,
-              "value": 0.3
-            },
-            {
-              "frame": 0.18333333333333332,
-              "value": 0
-            }
-          ],
-          "scaleY": [
-            {
-              "frame": 0,
-              "value": 0.2
-            },
-            {
-              "frame": 0.18333333333333332,
-              "value": 0
-            }
-          ]
-        }
-      },
       "InGameUI/life/txt_life/hit_life": {
         "props": {
           "position": [
@@ -113,6 +73,46 @@
             },
             {
               "frame": 0.25,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "InGameUI/life/icon_heart/hit": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -38.6,
+                15.1
+              ]
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": [
+                31.8,
+                -5.1
+              ]
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.2
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.2
+            },
+            {
+              "frame": 0.16666666666666666,
               "value": 0
             }
           ]
