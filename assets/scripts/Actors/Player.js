@@ -217,7 +217,7 @@ cc.Class({
             GameManager.instance.playSound(this.audio_move_right, false, 1);
         }
 
-        let moveAction = cc.moveTo(this.atkDuration/1000, targetPos).easing(cc.easeCubicActionIn());
+        let moveAction = cc.moveTo(this.atkDuration/1000, targetPos).easing(cc.easeCubicActionOut());
         let delay = cc.delayTime(this.atkStun/1000);
         let callback = cc.callFunc(this.onAtkFinished, this);
         this.node.runAction(cc.sequence(moveAction, delay, callback));
