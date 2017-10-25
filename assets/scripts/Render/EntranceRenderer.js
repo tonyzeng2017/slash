@@ -2,6 +2,7 @@ const MetaDataManager = require("MetaDataManager");
 var UserDataManager = require("UserDataManager");
 var ShaderUtil = require("ShaderUtil");
 var GameManager = require("GameManager");
+var TipsManager = require("TipsManager");
 
 cc.Class({
     extends: cc.Component,
@@ -57,6 +58,18 @@ cc.Class({
 
          if(!isEntranceEnable){
              ShaderUtil.setShader(this.bg, "gray");
+             var self = this;
+             if(cc.sys.isMobile){
+                 this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
+                     console.log('Mouse down entrance: %s', self.entranceID);
+                     TipsManager.init.showTips("开启前一关，并且星级达到：" + entranceData.OpenStar+"级" );
+                 }, self);
+             }else{
+                 this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
+                     console.log('Mouse down entrance: %s', self.entranceID);
+                     TipsManager.init.showTips("开启前一关，并且星级达到：" + entranceData.OpenStar+"级" );
+                 }, self);
+             }
          }else{
              var self = this;
              if(cc.sys.isMobile){
