@@ -8640,7 +8640,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 38,
+      "x": 37,
       "y": 10
     },
     "_skewX": 0,
@@ -8661,8 +8661,8 @@
     "_useOriginalSize": false,
     "_actualFontSize": 100,
     "_fontSize": 100,
-    "_lineHeight": 0,
-    "_enableWrapText": true,
+    "_lineHeight": 100,
+    "_enableWrapText": false,
     "_N$file": {
       "__uuid__": "64b59da9-f827-464e-bc99-0a891112b42d"
     },
@@ -8836,37 +8836,37 @@
     "comboColors": [
       {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 0,
-        "b": 0,
+        "r": 40,
+        "g": 85,
+        "b": 59,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 61,
-        "b": 0,
+        "r": 47,
+        "g": 83,
+        "b": 88,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 143,
-        "b": 0,
+        "r": 50,
+        "g": 60,
+        "b": 99,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 235,
-        "b": 0,
+        "r": 68,
+        "g": 43,
+        "b": 82,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 0,
-        "b": 255,
+        "r": 168,
+        "g": 145,
+        "b": 68,
         "a": 255
       }
     ],

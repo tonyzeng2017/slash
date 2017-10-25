@@ -24,6 +24,10 @@ cc.Class({
         this.showTimer = 0;
     },
 
+    trim(str){ //删除左右两端的空格
+        return str.replace(/(^\s*)|(\s*$)/g, "");
+    },
+
     // use this for initialization
     playCombo () {
         this.comboCount++;
@@ -34,7 +38,7 @@ cc.Class({
         let colorIdx =  MetaDataManager.getComboColor(this.comboCount);
         this.spFlare.node.color = this.comboColors[colorIdx];
         this.labelCombo.node.color = this.comboColors[colorIdx];
-        this.labelCombo.string = this.comboCount;
+        this.labelCombo.string = this.trim(this.comboCount.toString());
         this.anim.play('combo-pop');
         this.showTimer = 0;
         // this.scheduleOnce(this.hide.bind(this), this.showDuration );
