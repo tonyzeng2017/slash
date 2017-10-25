@@ -10191,7 +10191,7 @@
     ],
     "_prefab": null,
     "_id": "5b140C2lClM+ot2M1udHn+a",
-    "_opacity": 255,
+    "_opacity": 100,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -10271,7 +10271,7 @@
     ],
     "_prefab": null,
     "_id": "13662d1P0lDW4xRU+kO/NRP",
-    "_opacity": 255,
+    "_opacity": 100,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,

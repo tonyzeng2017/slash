@@ -56,11 +56,11 @@
           "scaleX": [
             {
               "frame": 0,
-              "value": 1
+              "value": 0.8
             },
             {
               "frame": 0.25,
-              "value": 0.7
+              "value": 0.6
             },
             {
               "frame": 1.5,
@@ -70,11 +70,11 @@
           "scaleY": [
             {
               "frame": 0,
-              "value": 1
+              "value": 0.8
             },
             {
               "frame": 0.25,
-              "value": 0.7
+              "value": 0.6
             },
             {
               "frame": 1.5,
