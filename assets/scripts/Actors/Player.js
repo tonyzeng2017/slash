@@ -309,7 +309,7 @@ cc.Class({
 
     dead () {
         if (this.invincible) return;
-        if (this.isAlive) return;
+        if (!this.isAlive) return;
 
         this.life--;
         cc.log("player life: " + this.life);
