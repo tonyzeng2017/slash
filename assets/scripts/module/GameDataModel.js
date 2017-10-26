@@ -97,6 +97,7 @@ var GameDataModel = cc.Class({
         var curScore = this.getFinalScore();
         if(curScore > this.highestScore){
             this.highestScore = curScore;
+            this.saveData();
         }
     },
 
@@ -124,7 +125,7 @@ var GameDataModel = cc.Class({
 
     clear: function(){
         this.totalScore = 0;
-        this.highestScore = 0;
+        // this.highestScore = 0;
         this.highestCombo = 0;
         this.highestSlashCount = 0;
         this.comboReward = 0;
