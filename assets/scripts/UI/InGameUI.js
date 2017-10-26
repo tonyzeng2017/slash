@@ -12,7 +12,6 @@ cc.Class({
         txt_life: cc.Label,
         txt_score: cc.Label,
         txt_level:cc.Label,
-        lifeAni: cc.Animation,
         // waveProgress: cc.Node
         pausePrefab: cc.Prefab,
         bg: cc.Sprite,
@@ -43,13 +42,8 @@ cc.Class({
         cc.log("bg name: %s", stageData.MapPic);
     },
 
-    updateLife(costLife){
+    updateLife(){
         this.txt_life.string = this._game.player.life;
-        if(this.lifeAni && costLife){
-            this.lifeAni.node.active = true;
-            this.lifeAni.play();
-            // cc.log("life animation played~~~~~~")
-        }
     },
 
     showWave (num) {
