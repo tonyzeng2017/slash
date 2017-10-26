@@ -38,7 +38,7 @@ var UserDataModel = cc.Class({
     },
 
     addRevive: function(){
-        this._reviveCount++;
+        this,_reviveCount++;
         this.saveData();
     },
 
