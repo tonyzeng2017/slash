@@ -1,0 +1,85 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "life",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.15,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "hit": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -647,
+                276.3
+              ]
+            },
+            {
+              "frame": 0.15,
+              "value": [
+                -534.1,
+                243.9
+              ]
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.15,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0.3
+            },
+            {
+              "frame": 0.15,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "hit_life": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                -536.2,
+                259
+              ]
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": [
+                -536.2,
+                222.6
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
