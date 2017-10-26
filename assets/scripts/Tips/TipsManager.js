@@ -21,7 +21,8 @@ var TipsManager = cc.Class({
         var node = cc.instantiate(this.tipsPrefab);
         node.parent = this.node;
         node.position = cc.p(0, 0);
-        var label = node.getChildByName("label").getComponent(cc.Label);
-        label.string = message || "没有添加消息！";
+        //var label = node.getChildByName("label").getComponent(cc.Label);
+        var text = message || "没有添加消息！";
+        node.getComponent("Tips").setText(text);
     }
 });
