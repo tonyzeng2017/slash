@@ -18,7 +18,11 @@ cc.Class({
         nodeLevels: [cc.Node],
         scoreDetail: cc.Node,
         newbieLevelUp: cc.Node,
-        audioTouch: cc.AudioClip
+        audioTouch: cc.AudioClip,
+        isAniFinished: {
+            visible: false,
+            default: false
+        },
     },
 
     init: function(game){
@@ -30,6 +34,15 @@ cc.Class({
         this._scoreRenderer = this.node.getComponent("PanelScoreRenderer");
         this._rewardRenderer = this.node.getComponent("PanelRewardRenderer");
         this.newbieLevelUp.active = !UserDataManager.instance.getNewbieData().isAttrLevelUpFinished;
+    },
+
+    start: function(){
+        this.node.getComponent(cc.Animation).on('finished',  this.onFinished, this);
+    },
+
+    onFinished: function(){
+        this.isAniFinished = true;
+        this.node.getComponent(cc.Animation).off("finished", this.onFinished, this);
     },
 
     render: function(){
@@ -64,11 +77,19 @@ cc.Class({
     },
 
     onHome: function(){
+        if(!this.isAniFinished){
+            return;
+        }
+
         cc.director.loadScene("MapGame" + GameManager.instance.entranceID);
         GameManager.instance.playSound(this.audioTouch);
     },
 
     onRestart: function(){
+        if(!this.isAniFinished){
+            return;
+        }
+
         cc.director.loadScene("PlayGame");
         GameManager.instance.playSound(this.audioTouch);
     },

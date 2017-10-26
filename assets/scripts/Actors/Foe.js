@@ -42,7 +42,7 @@ cc.Class({
         fxBlood: cc.Animation,
         fxBlade: cc.Animation,
         audioDead: cc.AudioClip,
-        audioAttacked: cc.AudioClip,
+        audioAttacked: [cc.AudioClip],
 
         isBoss: {
             visible: false,
@@ -227,7 +227,7 @@ cc.Class({
             this.isAttacking = true;
 
             var atkAniName = AttackAnimations[this.sfAtkDirs.indexOf(this.spFoe.spriteFrame)];
-            cc.log("atk animation name: %s", atkAniName);
+            // cc.log("atk animation name: %s", atkAniName);
             this.anim.play(atkAniName);
         } else {
             if (this.projectileType === ProjectileType.None) {
@@ -264,7 +264,7 @@ cc.Class({
         if (--this.hp > 0) {
             this.isInvincible = true;
             this.scheduleOnce(this.invincible, this.bloodDuration);
-            GameManager.instance.playSound(this.audioAttacked, false, 1);
+            this.playAttacked();
         } else {
             this.player.addKills(this.killScore);
             // this.player.addScore();
@@ -272,13 +272,19 @@ cc.Class({
             this.isAlive = false;
             this.scheduleOnce(this.corpse, this.deadDuation);
             this.waveMng.killFoe();
-            GameManager.instance.playSound(this.audioAttacked, false, 1);
+            this.playAttacked();
             cc.log("dead duration: %s~~~~~~~~~~~~", this.deadDuation);
         }
 
         if(this.isBoss){
             this.waveMng.hitBoss();
         }
+    },
+
+    playAttacked(){
+        var random = cc.random0To1();
+        var index = random>0.6 ? 0 : 1;
+        GameManager.instance.playSound(this.audioAttacked[index], false, 1);
     },
 
     invincible () {

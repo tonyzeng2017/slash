@@ -233,7 +233,9 @@ cc.Class({
         // cc.log("attack finished, position: %s, %s", this.node.position.x, this.node.position.y);
         if (this.nextPoseSF) {
             this.spPlayer.spriteFrame = this.nextPoseSF;
-            this.playStand();
+            if(this.isAlive){
+                this.playStand();
+            }
         }
         this.spSlash.enabled = false;
         this.inputEnabled = true;
@@ -313,7 +315,7 @@ cc.Class({
 
         this.life--;
         cc.log("player life: " + this.life);
-        this.game.inGameUI.updateLife();
+        this.game.inGameUI.updateLife(true);
         if(this.life <= 0){
             this.node.emit('freeze');
             this.isAlive = false;
