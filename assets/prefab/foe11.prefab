@@ -645,9 +645,14 @@
     "audioDead": {
       "__uuid__": "57e5fd2c-2c4e-4e32-9800-e0cfe006af03"
     },
-    "audioAttacked": {
-      "__uuid__": "a3989d9a-bc3f-40ba-9b25-bc21d306700d"
-    },
+    "audioAttacked": [
+      {
+        "__uuid__": "a3989d9a-bc3f-40ba-9b25-bc21d306700d"
+      },
+      {
+        "__uuid__": "c00f1d21-d734-4ed4-b0b9-b4c656e5b6d5"
+      }
+    ],
     "isBoss": false
   },
   {
