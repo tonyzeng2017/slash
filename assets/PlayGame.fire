@@ -9934,7 +9934,7 @@
     "_actualFontSize": 100,
     "_fontSize": 100,
     "_lineHeight": 100,
-    "_enableWrapText": false,
+    "_enableWrapText": true,
     "_N$file": {
       "__uuid__": "64b59da9-f827-464e-bc99-0a891112b42d"
     },
@@ -10108,37 +10108,37 @@
     "comboColors": [
       {
         "__type__": "cc.Color",
-        "r": 40,
-        "g": 85,
-        "b": 59,
+        "r": 255,
+        "g": 0,
+        "b": 0,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 47,
-        "g": 83,
-        "b": 88,
+        "r": 255,
+        "g": 82,
+        "b": 0,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 50,
-        "g": 60,
-        "b": 99,
+        "r": 255,
+        "g": 163,
+        "b": 0,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 68,
-        "g": 43,
-        "b": 82,
+        "r": 255,
+        "g": 214,
+        "b": 0,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 168,
-        "g": 145,
-        "b": 68,
+        "r": 255,
+        "g": 0,
+        "b": 194,
         "a": 255
       }
     ],
