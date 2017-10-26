@@ -260,14 +260,15 @@ cc.Class({
         this.unscheduleAllCallbacks();
         this.node.stopAllActions();
         this.waveMng.hitFoe();
-        this.player.addKills();
-        this.player.addScore(this.killScore);
 
         if (--this.hp > 0) {
             this.isInvincible = true;
             this.scheduleOnce(this.invincible, this.bloodDuration);
             GameManager.instance.playSound(this.audioAttacked, false, 1);
         } else {
+            this.player.addKills(this.killScore);
+            // this.player.addScore();
+
             this.isAlive = false;
             this.scheduleOnce(this.corpse, this.deadDuation);
             this.waveMng.killFoe();

@@ -180,7 +180,7 @@ cc.Class({
         this.startSpawn();
         this.game.inGameUI.showWave(this.waveIdx + 1);
         GameManager.instance.playSound(this.audioNewWave, false, 1);
-        cc.log("wave totalFoes: %s", this.waveTotalFoes);
+        cc.log("wave killedFoe: %s", this.killedFoe);
     },
 
     startBoss (bossSpawnID) {

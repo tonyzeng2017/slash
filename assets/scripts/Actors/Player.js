@@ -278,7 +278,7 @@ cc.Class({
         GameManager.instance.playSound(audio);
     },
     
-    addKills () {
+    addKills (score) {
         this.oneSlashKills++;
         this.game.inGameUI.addCombo();
         UserDataManager.instance.getGameData().addKillCount();
@@ -286,14 +286,14 @@ cc.Class({
         let comboCount = this.game.inGameUI.getCombo();
         UserDataManager.instance.getGameData().updateCombo(comboCount);
 
+        cc.log("to add score: %s", score);
+        UserDataManager.instance.getGameData().addScore(score);
+        // let comboCount = this.game.inGameUI.getCombo();
+        UserDataManager.instance.getGameData().addComboScore(comboCount);
+        this.game.inGameUI.showScore();
     },
 
     addScore(score){
-        cc.log("to add score: %s", score);
-        UserDataManager.instance.getGameData().addScore(score);
-        let comboCount = this.game.inGameUI.getCombo();
-        UserDataManager.instance.getGameData().addComboScore(comboCount);
-        this.game.inGameUI.showScore();
     },
 
     revive () {
