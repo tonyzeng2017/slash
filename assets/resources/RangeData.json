@@ -1,18 +1,18 @@
 
 {
     "1" : {"Xpoint" : -600, "Ypoint" : -320, "Width" : "426", "Height" : 173}
-    ,"2" : {"Xpoint" : -600, "Ypoint" : 49, "Width" : "426", "Height" : 173}
-    ,"3" : {"Xpoint" : -600, "Ypoint" : 289, "Width" : "426", "Height" : 173}
+    ,"2" : {"Xpoint" : -600, "Ypoint" : -114, "Width" : "426", "Height" : 173}
+    ,"3" : {"Xpoint" : -600, "Ypoint" : 92, "Width" : "426", "Height" : 173}
     ,"4" : {"Xpoint" : -174, "Ypoint" : -320, "Width" : "426", "Height" : 173}
-    ,"5" : {"Xpoint" : -174, "Ypoint" : 49, "Width" : "426", "Height" : 173}
-    ,"6" : {"Xpoint" : -174, "Ypoint" : 289, "Width" : "426", "Height" : 173}
+    ,"5" : {"Xpoint" : -174, "Ypoint" : -114, "Width" : "426", "Height" : 173}
+    ,"6" : {"Xpoint" : -174, "Ypoint" : 92, "Width" : "426", "Height" : 173}
     ,"7" : {"Xpoint" : 252, "Ypoint" : -320, "Width" : "426", "Height" : 173}
-    ,"8" : {"Xpoint" : 252, "Ypoint" : 49, "Width" : "426", "Height" : 173}
-    ,"9" : {"Xpoint" : 252, "Ypoint" : 289, "Width" : "426", "Height" : 173}
+    ,"8" : {"Xpoint" : 252, "Ypoint" : -114, "Width" : "426", "Height" : 173}
+    ,"9" : {"Xpoint" : 252, "Ypoint" : 92, "Width" : "426", "Height" : 173}
     ,"10" : {"Xpoint" : -600, "Ypoint" : -320, "Width" : "1150", "Height" : 670}
     ,"11" : {"Xpoint" : -274, "Ypoint" : -224, "Width" : "626", "Height" : 396}
     ,"12" : {"Xpoint" : -387, "Ypoint" : -4, "Width" : "10", "Height" : 10}
     ,"13" : {"Xpoint" : 40, "Ypoint" : -244, "Width" : "10", "Height" : 10}
-    ,"14" : {"Xpoint" : 40, "Ypoint" : 236, "Width" : "10", "Height" : 10}
+    ,"14" : {"Xpoint" : 40, "Ypoint" : 100, "Width" : "10", "Height" : 10}
     ,"15" : {"Xpoint" : 465, "Ypoint" : -4, "Width" : "10", "Height" : 10}
 }
