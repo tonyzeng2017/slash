@@ -29,6 +29,7 @@ cc.Class({
         audioTouch: cc.AudioClip,
         newbieShowAttribute: cc.Node,
         newbieTapLeft: cc.Node,
+        newbieTip: cc.Node,
         btnUpgradeMax: cc.Node,
         btnUpgradeStar: cc.Node,
         labelCD: cc.Label
@@ -149,7 +150,7 @@ cc.Class({
 
     onNewbieAttrFinished: function () {
         this.newbieShowAttribute.active = false;
-        this.newbieTapLeft.active = true;
+        this.newbieTip.active = true;
         cc.log("onNewbieAttrFinished called~~~~~~~~~~~~~");
     },
     
@@ -161,6 +162,11 @@ cc.Class({
         this.onLeft();
         cc.log("onNewbieTapLeft called~~~~~~~~~~");
     },
+
+    onNewbieTip: function(){
+        this.newbieTip.active = false;
+        this.showDetail();
+    },
     
     showDetail: function () {
         this.detailUI.getComponent("CommonUI").show();
@@ -168,6 +174,10 @@ cc.Class({
     
     hideDetail: function () {
         this.detailUI.getComponent("CommonUI").hide();
+        if(UserDataManager.instance.getNewbieData().isNewBieLevelUpStarted ){
+            // this.newbieTip.active = false;
+            this.newbieTapLeft.active = true;
+        }
     }
 
     // called every frame, uncomment this function to activate update callback

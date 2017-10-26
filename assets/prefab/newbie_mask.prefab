@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "newbie_mask",
+    "_name": "newbie_tip",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -112,8 +112,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 650,
-      "height": 200
+      "width": 80,
+      "height": 80
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -121,8 +121,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -313,
-      "y": 257
+      "x": 145,
+      "y": 207
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -175,8 +175,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 313,
-      "y": -257
+      "x": -145,
+      "y": -207
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -296,8 +296,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 300,
-      "height": 68
+      "width": 240,
+      "height": 75
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -305,8 +305,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -321,
-      "y": 102
+      "x": 58.5,
+      "y": 113
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -350,8 +350,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 250,
-      "height": 40
+      "width": 200,
+      "height": 60
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -380,12 +380,12 @@
     "_useOriginalSize": false,
     "_actualFontSize": 25,
     "_fontSize": 25,
-    "_lineHeight": 40,
+    "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "点击进入选择关卡界面",
+    "_N$string": "点击这里可看到\n每个属性的说明哦",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -495,8 +495,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -689,
-      "y": 76
+      "x": -328,
+      "y": 33
     },
     "_skewX": 0,
     "_skewY": 0,
