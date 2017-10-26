@@ -105,6 +105,7 @@ cc.Class({
             default: 0
         },
         waveProgress: cc.Node,
+        bossAppearAni: cc.Animation,
         bossProgress: cc.Node,
         audioNewWave: cc.AudioClip,
         audioProjectiles: [cc.AudioClip]
@@ -186,6 +187,14 @@ cc.Class({
     startBoss (bossSpawnID) {
         this.game.bossMng.startBoss(bossSpawnID);
         this.bossProgress.show();
+
+        if(this.bossAppearAni){
+            this.bossAppearAni.node.active = true;
+            this.bossAppearAni.play();
+            cc.log("the boss appeared~~~~~~~~~");
+        }else{
+            cc.log("the boss animation not exist~~~~~~");
+        }
     },
 
     endWave () {
