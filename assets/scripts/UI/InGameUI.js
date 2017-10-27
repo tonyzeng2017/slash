@@ -52,8 +52,10 @@ cc.Class({
             this.lifeAni.play();
 
             if(this._game.player.life == Constant.instance.WARNING_LIFE && this.warning_bg){
-                let blink = cc.blink(0.5, Number.MAX_SAFE_INTEGER);
-                this.warning_bg.runAction(blink);
+                this.warning_bg.node.active = true;
+                // let blink = cc.blink(10000, 10000);
+                let seq = cc.sequence(cc.fadeIn(0.5), cc.fadeOut(0.5));
+                this.warning_bg.node.runAction(cc.repeatForever(seq));
             }
             // cc.log("life animation played~~~~~~")
         }
@@ -61,9 +63,14 @@ cc.Class({
 
     dead: function(){
         if(this.warning_bg){
-            this.warning_bg.stopAllActions();
-            this.warning_bg.node.opacity = 0;
+            this.warning_bg.node.stopAllActions();
+            this.warning_bg.node.active = false;
         }
+    },
+
+    hideWarning: function(){
+        this.warning_bg.node.stopAllActions();
+        this.warning_bg.node.active = false;
     },
 
     showWave (num) {

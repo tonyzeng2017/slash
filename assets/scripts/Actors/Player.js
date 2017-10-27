@@ -303,6 +303,7 @@ cc.Class({
 
         this.initProperties();
         this.game.inGameUI.updateLife();
+        this.game.inGameUI.hideWarning();
         cc.log("player revived, life: %s", this.life);
     },
 
@@ -320,7 +321,7 @@ cc.Class({
             this.inputEnabled = false;
             this.anim.play('dead');
             GameManager.instance.playSound(this.audioDead, false, 1);
-            this.game.inGameUI.dead();
+            // this.game.inGameUI.dead();
         }
         else{
             GameManager.instance.playSound(this.audioHit, false, 1);
