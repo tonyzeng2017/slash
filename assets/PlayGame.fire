@@ -7906,7 +7906,7 @@
       "__id__": 227
     },
     "_enabled": true,
-    "_N$totalLength": 405,
+    "_N$totalLength": 295,
     "_N$barSprite": {
       "__id__": 233
     },
@@ -11443,7 +11443,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 171.025,
+      "x": 174.05,
       "y": 69
     },
     "_skewX": 0,
@@ -11629,7 +11629,7 @@
     "isAlignOnce": false,
     "_target": null,
     "_alignFlags": 9,
-    "_left": 147.8,
+    "_left": 150.82500000000002,
     "_right": 0,
     "_top": -89,
     "_bottom": 282,
