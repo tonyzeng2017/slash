@@ -1,6 +1,7 @@
 var GameManager = require("GameManager");
 var UserDataManager = require("UserDataManager");
 var MetaDataManager = require("MetaDataManager");
+var Constant = require("Constant");
 
 cc.Class({
     extends: cc.Component,
@@ -17,6 +18,7 @@ cc.Class({
         pausePrefab: cc.Prefab,
         bg: cc.Sprite,
         audioPause: cc.AudioClip,
+        warning_bg: cc.Sprite
     },
 
     // use this for initialization
@@ -48,7 +50,19 @@ cc.Class({
         if(this.lifeAni && costLife){
             this.lifeAni.node.active = true;
             this.lifeAni.play();
+
+            if(this._game.player.life == Constant.instance.WARNING_LIFE && this.warning_bg){
+                let blink = cc.blink(0.5, Number.MAX_SAFE_INTEGER);
+                this.warning_bg.runAction(blink);
+            }
             // cc.log("life animation played~~~~~~")
+        }
+    },
+
+    dead: function(){
+        if(this.warning_bg){
+            this.warning_bg.stopAllActions();
+            this.warning_bg.node.opacity = 0;
         }
     },
 

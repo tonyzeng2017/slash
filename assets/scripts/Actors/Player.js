@@ -295,9 +295,6 @@ cc.Class({
         this.game.inGameUI.showScore();
     },
 
-    addScore(score){
-    },
-
     revive () {
         let hideCB = cc.callFunc(function() {
             this.node.active = false;
@@ -314,8 +311,8 @@ cc.Class({
         if (!this.isAlive) return;
 
         this.life--;
-        cc.log("player life: " + this.life);
         this.game.inGameUI.updateLife(true);
+
         if(this.life <= 0){
             this.node.emit('freeze');
             this.isAlive = false;
@@ -323,6 +320,7 @@ cc.Class({
             this.inputEnabled = false;
             this.anim.play('dead');
             GameManager.instance.playSound(this.audioDead, false, 1);
+            this.game.inGameUI.dead();
         }
         else{
             GameManager.instance.playSound(this.audioHit, false, 1);
