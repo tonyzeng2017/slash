@@ -25,7 +25,7 @@ cc.Class({
         }
         else{
             var self = this;
-            UserDataManager.instance.getNewbieData().finishInGame();
+            // UserDataManager.instance.getNewbieData().finishInGame();
             this.newBieAnim.node.active = true;
             this.newBieAnim.play();
             this.newBieAnim.on('finished',  function(){

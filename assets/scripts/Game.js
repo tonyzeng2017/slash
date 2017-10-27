@@ -21,6 +21,7 @@ cc.Class({
         reviveUIPrefab: cc.Prefab,
         audioGameWin: cc.AudioClip,
         audioGameFail: cc.AudioClip,
+        newbieLife: cc.Node,
 
         startTime: {
             default: 0,
@@ -137,10 +138,20 @@ cc.Class({
     playerReady: function (isRevive) {
         this.resume();
         if(!isRevive){
-            this.waveMng.startWave();
+            if(!UserDataManager.instance.getNewbieData().isInGameFinished){
+                this.newbieLife.active = true;
+            }else{
+                this.waveMng.startWave();
+            }
         }
         this.player.node.active = true;
         this.player.ready();
+    },
+
+    onNewbieLife: function(){
+        UserDataManager.instance.getNewbieData().finishInGame();
+        this.newbieLife.active = false;
+        this.waveMng.startWave();
     },
 
     createRevive: function() {
