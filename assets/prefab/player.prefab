@@ -28,7 +28,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 30
@@ -783,7 +783,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 28
@@ -1138,6 +1138,9 @@
         "__uuid__": "5ff12a10-9485-449c-9c91-ca5a96dec569"
       }
     ],
+    "hitAnim": {
+      "__id__": 28
+    },
     "postAtkIndex": 2,
     "spPlayer": {
       "__id__": 13
@@ -1180,7 +1183,13 @@
       {
         "__uuid__": "b8dc71c5-853e-4e02-8237-9e9d732bb630"
       }
-    ]
+    ],
+    "audio_move_left": {
+      "__uuid__": "78f6b3a4-e898-4e19-891f-b405b35ae830"
+    },
+    "audio_move_right": {
+      "__uuid__": "139d8d5d-a55b-4e2c-9f0a-136e8a1bde13"
+    }
   },
   {
     "__type__": "03fecYvs+9L07SPviQLuLj3",

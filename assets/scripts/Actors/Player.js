@@ -21,6 +21,7 @@ cc.Class({
         sfAtkDirs: [cc.SpriteFrame],
         attachPoints: [cc.Vec2],
         sfPostAtks: [cc.SpriteFrame],
+        hitAnim: cc.Animation,
 
         postAtkIndex: {
             visible: false,
@@ -313,6 +314,7 @@ cc.Class({
 
         this.life--;
         this.game.inGameUI.updateLife(true);
+        this.playHit();
 
         if(this.life <= 0){
             this.node.emit('freeze');
@@ -326,6 +328,11 @@ cc.Class({
         else{
             GameManager.instance.playSound(this.audioHit, false, 1);
         }
+    },
+
+    playHit(){
+        this.hitAnim.node.active = true;
+        this.hitAnim.play();
     },
 
     isDead(){
