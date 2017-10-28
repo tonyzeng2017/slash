@@ -3,7 +3,7 @@
   "_name": "panelstore",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.43333333333333335,
+  "_duration": 0.43,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -160,20 +160,6 @@
           ]
         }
       },
-      "btn_right": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.3333333333333333,
-              "value": 0
-            },
-            {
-              "frame": 0.43333333333333335,
-              "value": 255
-            }
-          ]
-        }
-      },
       "label_have": {
         "props": {
           "opacity": [
@@ -207,6 +193,44 @@
           "opacity": [
             {
               "frame": 0.35,
+              "value": 0
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "scrollView": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "arrow_right": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.3333333333333333,
               "value": 0
             },
             {

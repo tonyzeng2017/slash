@@ -100,6 +100,7 @@ cc.Class({
 
     show: function(){
         this.node.active = true;
+        this.node.getComponent(cc.Animation).play();
         GameManager.instance.playSound(this.audioShop, false, 1);
         cc.log("storeUI show called~~~~~~~~~~~~~, audio: %s", this.audioShop);
         TDProxy.onEvent("enter_shop", "");
