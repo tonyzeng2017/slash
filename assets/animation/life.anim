@@ -3,8 +3,8 @@
   "_name": "life",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.15,
-  "sample": 60,
+  "_duration": 0.225,
+  "sample": 40,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
@@ -20,7 +20,7 @@
               ]
             },
             {
-              "frame": 0.15,
+              "frame": 0.225,
               "value": [
                 -534.1,
                 243.9
@@ -33,7 +33,7 @@
               "value": 0.3
             },
             {
-              "frame": 0.15,
+              "frame": 0.225,
               "value": 0
             }
           ],
@@ -43,7 +43,7 @@
               "value": 0.3
             },
             {
-              "frame": 0.15,
+              "frame": 0.225,
               "value": 0
             }
           ]
@@ -60,7 +60,7 @@
               ]
             },
             {
-              "frame": 0.13333333333333333,
+              "frame": 0.2,
               "value": [
                 -536.2,
                 222.6
@@ -73,7 +73,7 @@
               "value": 255
             },
             {
-              "frame": 0.13333333333333333,
+              "frame": 0.2,
               "value": 0
             }
           ]

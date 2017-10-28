@@ -3,8 +3,8 @@
   "_name": "player_hit",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.45,
-  "sample": 60,
+  "_duration": 0.675,
+  "sample": 40,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
@@ -17,11 +17,11 @@
               "value": 0
             },
             {
-              "frame": 0.13333333333333333,
+              "frame": 0.2,
               "value": 1.5
             },
             {
-              "frame": 0.45,
+              "frame": 0.675,
               "value": 2
             }
           ],
@@ -31,11 +31,11 @@
               "value": 0
             },
             {
-              "frame": 0.13333333333333333,
+              "frame": 0.2,
               "value": 1.5
             },
             {
-              "frame": 0.45,
+              "frame": 0.675,
               "value": 2
             }
           ],
@@ -45,11 +45,11 @@
               "value": 255
             },
             {
-              "frame": 0.13333333333333333,
+              "frame": 0.2,
               "value": 255
             },
             {
-              "frame": 0.45,
+              "frame": 0.675,
               "value": 0
             }
           ]
@@ -63,7 +63,7 @@
               "value": 0.3
             },
             {
-              "frame": 0.23333333333333334,
+              "frame": 0.35,
               "value": 0.5
             }
           ],
@@ -73,17 +73,17 @@
               "value": 0.3
             },
             {
-              "frame": 0.23333333333333334,
+              "frame": 0.35,
               "value": 0.5
             }
           ],
           "opacity": [
             {
-              "frame": 0.25,
+              "frame": 0.375,
               "value": 255
             },
             {
-              "frame": 0.26666666666666666,
+              "frame": 0.4,
               "value": 0
             }
           ]
@@ -96,43 +96,43 @@
                 "value": null
               },
               {
-                "frame": 0.03333333333333333,
+                "frame": 0.05,
                 "value": {
                   "__uuid__": "8b4db777-4722-4d07-95ef-09d849373805"
                 }
               },
               {
-                "frame": 0.06666666666666667,
+                "frame": 0.1,
                 "value": {
                   "__uuid__": "ffc29d58-3fe0-408d-bcb8-c57716169e0e"
                 }
               },
               {
-                "frame": 0.1,
+                "frame": 0.15,
                 "value": {
                   "__uuid__": "330a68c4-91da-49bf-98c3-4d6e1c10db6d"
                 }
               },
               {
-                "frame": 0.13333333333333333,
+                "frame": 0.2,
                 "value": {
                   "__uuid__": "97075c97-f8e9-45e4-83e6-deb8287f1db9"
                 }
               },
               {
-                "frame": 0.16666666666666666,
+                "frame": 0.25,
                 "value": {
                   "__uuid__": "9e417a03-85e3-4a52-964a-1496c30d2e21"
                 }
               },
               {
-                "frame": 0.2,
+                "frame": 0.3,
                 "value": {
                   "__uuid__": "c1c6b130-49c5-41c8-9751-1eba7c7e7b9c"
                 }
               },
               {
-                "frame": 0.23333333333333334,
+                "frame": 0.35,
                 "value": {
                   "__uuid__": "49de6d0f-a954-4ad8-8da1-fa921810354e"
                 }
