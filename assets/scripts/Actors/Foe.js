@@ -10,7 +10,7 @@ const AttackType = cc.Enum({
     Range: -1
 });
 
-const AttackAnimations = ["atk_down", "atk_right", "atk_up"];
+const AttackAnimations = ["atk_up", "atk_right", "atk_down"];
 
 cc.Class({
     extends: cc.Component,
@@ -216,26 +216,30 @@ cc.Class({
             this.spFoe.spriteFrame = getAtkSF(mag, this.sfAtkDirs);
             // GameManager.instance.playSound(this.audioSlashRight, false, 1);
         }
+        var atkAniName = AttackAnimations[this.sfAtkDirs.indexOf(this.spFoe.spriteFrame)];
+        cc.log("atk animation name: %s, index: %s", atkAniName, this.sfAtkDirs.indexOf(this.spFoe.spriteFrame));
+        this.anim.play(atkAniName);
 
         let delay = cc.delayTime(this.atkStun);
         let callback = cc.callFunc(this.onAtkFinished, this);
-
         if (this.atkType === AttackType.Melee) {
             let moveAction = cc.moveTo(this.atkDuration, targetPos).easing(cc.easeQuinticActionOut());
              // let moveAction = cc.moveTo(2.0, targetPos).easing(cc.easeQuinticActionOut());
             this.node.runAction(cc.sequence(moveAction, delay, callback));
             this.isAttacking = true;
 
-            var atkAniName = AttackAnimations[this.sfAtkDirs.indexOf(this.spFoe.spriteFrame)];
-            // cc.log("atk animation name: %s", atkAniName);
-            this.anim.play(atkAniName);
+            GameManager.instance.playSound(this.audioDead, false, 1);
         } else {
             if (this.projectileType === ProjectileType.None) {
                 return;
             }
+            
             var startPos = cc.p(this.node.position.x, this.node.position.y + 20);
-            this.waveMng.spawnProjectile(this.projectileType, startPos, atkDir);
-            this.node.runAction(cc.sequence(delay, callback));
+            var delayCall = cc.callFunc(function(){
+                this.waveMng.spawnProjectile(this.projectileType, startPos, atkDir);
+                this.node.runAction(cc.sequence(delay, callback));
+            }.bind(this));
+            this.node.runAction(cc.sequence(cc.delayTime(0.4), delayCall));
         }
     },
 
@@ -300,7 +304,6 @@ cc.Class({
     },
 
     corpse () {
-        GameManager.instance.playSound(this.audioDead, false, 1);
         this.anim.play('corpse');
         this.fxBlood.node.active = false;
         this.scheduleOnce(this.recycle, this.corpseDuration);
