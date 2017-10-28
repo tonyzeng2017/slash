@@ -77,46 +77,6 @@
             }
           ]
         }
-      },
-      "InGameUI/life/icon_heart/hit": {
-        "props": {
-          "position": [
-            {
-              "frame": 0,
-              "value": [
-                -38.6,
-                15.1
-              ]
-            },
-            {
-              "frame": 0.16666666666666666,
-              "value": [
-                31.8,
-                -5.1
-              ]
-            }
-          ],
-          "scaleX": [
-            {
-              "frame": 0,
-              "value": 0.2
-            },
-            {
-              "frame": 0.16666666666666666,
-              "value": 0
-            }
-          ],
-          "scaleY": [
-            {
-              "frame": 0,
-              "value": 0.2
-            },
-            {
-              "frame": 0.16666666666666666,
-              "value": 0
-            }
-          ]
-        }
       }
     }
   },

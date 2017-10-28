@@ -566,7 +566,7 @@
         "__uuid__": "10e7df0d-044b-4e20-9b9c-a776e0518c05"
       }
     ],
-    "playOnLoad": false
+    "playOnLoad": true
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -4125,7 +4125,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 138
@@ -7279,7 +7279,8 @@
     },
     "audioTouch": {
       "__uuid__": "1323c45a-6885-4b43-8c04-9eeeb0ef74e4"
-    }
+    },
+    "isAniFinished": false
   },
   {
     "__type__": "663682x+a9ObqCNN5jvJROF",
