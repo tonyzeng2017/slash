@@ -40,7 +40,7 @@ cc.Class({
 
     onScrolling: function(){
         this.btnLeft.active = this.content.x < -640;
-        this.btnRight.active = this.content.x > -2890;
+        this.btnRight.active = this.content.x > -640 - (this.node.width - 1280);
         // cc.log("on scrolling content x:%s", this.content.x);
     },
 
