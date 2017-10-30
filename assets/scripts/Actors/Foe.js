@@ -306,7 +306,7 @@ cc.Class({
     corpse () {
         this.anim.play('corpse');
         this.fxBlood.node.active = false;
-        this.scheduleOnce(this.recycle, this.corpseDuration);
+        this.scheduleOnce(this.recycle, 1.4);
         cc.log("foe corpse called~~~~~~~~~~~~~~~duration: %s", this.corpseDuration);
     },
 
