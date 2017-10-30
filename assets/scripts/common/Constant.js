@@ -31,7 +31,7 @@ var Constant = cc.Class({
         this.CD_DURATION = 72 * 3600;
         this.FAILED_SCORE_RATIO = Number(MetaDataManager.getValueDataByID("19").Num)/100;
         this.REWARD_RATIO = Number(MetaDataManager.getValueDataByID("20").Num)/100;
-        this.WARNING_LIFE = 5;
+        this.WARNING_LIFE = Number(MetaDataManager.getValueDataByID("21").Num)/100;
     }
 });
 

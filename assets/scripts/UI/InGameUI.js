@@ -51,7 +51,8 @@ cc.Class({
             this.lifeAni.node.active = true;
             this.lifeAni.play();
 
-            if(this._game.player.life == Constant.instance.WARNING_LIFE && this.warning_bg){
+            let life_limit = Math.ceil( Constant.instance.WARNING_LIFE * this._game.player.life );
+            if(this._game.player.life == life_limit && this.warning_bg){
                 this.warning_bg.node.active = true;
                 // let blink = cc.blink(10000, 10000);
                 let seq = cc.sequence(cc.fadeIn(0.5), cc.fadeOut(0.5));
