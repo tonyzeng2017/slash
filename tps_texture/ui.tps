@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.5.0</string>
         <key>fileName</key>
-        <string>E:/Github/slash/tps_texture/ui.tps</string>
+        <string>E:/cocos2D/Github/slash/tps_texture/ui.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -227,6 +227,19 @@
                 <rect>79,8,157,16</rect>
                 <key>scale9Paddings</key>
                 <rect>79,8,157,16</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
+            <key type="filename">ui/battle/bar_bg.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>161,23,323,46</rect>
+                <key>scale9Paddings</key>
+                <rect>161,23,323,46</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
