@@ -154,6 +154,7 @@ cc.Class({
     startBossSpawn (bossSpawn) {
         this.bossSpawn = bossSpawn;
         this.waveTotalFoes += bossSpawn.total;
+        this.stageTotalFoes += bossSpawn.total;
         // this.killedFoe = 0;
         this.schedule(this.spawnBossFoe, bossSpawn.spawnInterval);
     },
