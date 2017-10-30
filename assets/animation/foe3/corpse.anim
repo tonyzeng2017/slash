@@ -75,14 +75,24 @@
       }
     },
     "props": {
-      "y": [
-        {
-          "frame": 0,
-          "value": -30
-        },
+      "scaleX": [
         {
           "frame": 0.025,
-          "value": -7
+          "value": 1
+        },
+        {
+          "frame": 0.05,
+          "value": 2
+        }
+      ],
+      "scaleY": [
+        {
+          "frame": 0.025,
+          "value": 1
+        },
+        {
+          "frame": 0.05,
+          "value": 2
         }
       ]
     }
