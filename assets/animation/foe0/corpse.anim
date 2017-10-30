@@ -3,7 +3,7 @@
   "_name": "corpse",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.28,
+  "_duration": 0.275,
   "sample": 40,
   "speed": 1,
   "wrapMode": 1,
@@ -80,14 +80,7 @@
         ]
       }
     },
-    "props": {
-      "y": [
-        {
-          "frame": 0.025,
-          "value": -37
-        }
-      ]
-    }
+    "props": {}
   },
   "events": []
 }
