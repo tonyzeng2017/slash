@@ -28,7 +28,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 42
@@ -795,7 +795,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 40
@@ -1511,7 +1511,7 @@
       }
     ],
     "hitAnim": {
-      "__id__": 28
+      "__id__": 40
     },
     "postAtkIndex": 2,
     "spPlayer": {
