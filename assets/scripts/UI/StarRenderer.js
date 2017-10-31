@@ -33,12 +33,12 @@ cc.Class({
         }
     },
 
-    // resignStars: function(){
-    //     for(let i = 0; i < 6; i++ ) {
-    //         this.stars_dark[i].setPosition(- 403 + 700 * (i+1)/6, -287);
-    //         this.stars_light[i].setPosition( - 403 + 700 * (i+1)/6, -287);
-    //     }
-    // }
+    resignStars: function(){
+        for(let i = 0; i < 6; i++ ) {
+            this.stars_dark[i].setPosition(- 403 + 700 * (i+1)/6, -287);
+            this.stars_light[i].setPosition( - 403 + 700 * (i+1)/6, -287);
+        }
+    }
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {

@@ -44,7 +44,7 @@ cc.Class({
     playRevive () {
         this.reviveAnim.node.active = true;
         this.reviveAnim.node.setPosition(this.game.player.node.position);
-        this.reviveAnim.play('revive2');
+        this.reviveAnim.play('revive');
         GameManager.instance.playSound(this.audioRevive, false, 1);
     },
 
