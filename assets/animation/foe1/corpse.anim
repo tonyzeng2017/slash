@@ -3,7 +3,7 @@
   "_name": "corpse",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.28,
+  "_duration": 0.45,
   "sample": 40,
   "speed": 1,
   "wrapMode": 1,
@@ -76,22 +76,53 @@
             "value": {
               "__uuid__": "fa05efc7-f402-4252-86a6-da979f337742"
             }
+          },
+          {
+            "frame": 0.275,
+            "value": {
+              "__uuid__": "f3789d00-329d-4ee8-9fb4-85a23530d404"
+            }
+          },
+          {
+            "frame": 0.3,
+            "value": {
+              "__uuid__": "31898e29-d94e-4700-9f40-4dbe2a0745b0"
+            }
+          },
+          {
+            "frame": 0.325,
+            "value": {
+              "__uuid__": "9936acd9-db57-41c1-b0e1-b12432e3c958"
+            }
+          },
+          {
+            "frame": 0.35,
+            "value": {
+              "__uuid__": "b3658843-ac6b-4cce-96c3-ec5fe84db0f0"
+            }
+          },
+          {
+            "frame": 0.375,
+            "value": {
+              "__uuid__": "75194010-db74-4fd3-909f-e24c2ba4d246"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "4e662010-328c-4abb-a7a5-dd73818c5495"
+            }
+          },
+          {
+            "frame": 0.425,
+            "value": {
+              "__uuid__": "6817d5ab-bc67-4154-9767-e7ed8c26dc81"
+            }
           }
         ]
       }
     },
-    "props": {
-      "y": [
-        {
-          "frame": 0,
-          "value": -30
-        },
-        {
-          "frame": 0.025,
-          "value": 27
-        }
-      ]
-    }
+    "props": {}
   },
   "events": []
 }
