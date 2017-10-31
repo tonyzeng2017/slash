@@ -18,7 +18,7 @@ cc.Class({
         // ...
 
         playerUI: cc.Node,
-        starBar: cc.Node,
+        // starBar: cc.Node,
         attrItemRenderers: [cc.Node],
         btnStar: cc.Node,
         audioStar: cc.AudioClip,
@@ -31,10 +31,10 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         let star = UserDataManager.instance.getUserData().star;
-        this.starBar.width = 700 * star / 6 ;
+        // this.starBar.width = 700 * star / 6 ;
 
-        let starRenderer = this.getComponent("StarRenderer");
-        starRenderer.resignStars();
+        // let starRenderer = this.getComponent("StarRenderer");
+        // starRenderer.resignStars();
 
         this.updateItemRenderers();
         this.btnStar.active = this.isButtonStarVisible();
