@@ -862,9 +862,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 0,
+      "r": 0,
+      "g": 122,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -953,9 +953,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 107,
-      "g": 255,
-      "b": 160,
+      "r": 0,
+      "g": 143,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -1042,9 +1042,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 133,
-      "g": 255,
-      "b": 191,
+      "r": 0,
+      "g": 143,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -1131,8 +1131,8 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
+      "r": 0,
+      "g": 143,
       "b": 255,
       "a": 255
     },
@@ -1221,8 +1221,8 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 0,
-      "g": 255,
-      "b": 153,
+      "g": 52,
+      "b": 82,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -1311,9 +1311,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 197,
+      "r": 255,
       "g": 255,
-      "b": 232,
+      "b": 255,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
