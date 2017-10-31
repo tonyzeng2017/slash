@@ -3,7 +3,7 @@
   "_name": "NewWinglow",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 1.3333333333333333,
+  "_duration": 1.65,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -18,7 +18,7 @@
           ]
         },
         {
-          "frame": 1.3333333333333333,
+          "frame": 1.65,
           "value": [
             151,
             127

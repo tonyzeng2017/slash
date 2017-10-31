@@ -41,11 +41,11 @@
                 <key>spriteOffset</key>
                 <string>{0,0}</string>
                 <key>spriteSize</key>
-                <string>{645,91}</string>
+                <string>{727,91}</string>
                 <key>spriteSourceSize</key>
-                <string>{645,91}</string>
+                <string>{727,91}</string>
                 <key>textureRect</key>
-                <string>{{2,321},{645,91}}</string>
+                <string>{{2,321},{727,91}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -810,7 +810,7 @@
                 <key>spriteSourceSize</key>
                 <string>{63,91}</string>
                 <key>textureRect</key>
-                <string>{{649,321},{63,91}}</string>
+                <string>{{731,321},{63,91}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -825,7 +825,7 @@
                 <key>spriteSourceSize</key>
                 <string>{63,91}</string>
                 <key>textureRect</key>
-                <string>{{714,321},{63,91}}</string>
+                <string>{{796,321},{63,91}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -840,7 +840,7 @@
                 <key>spriteSourceSize</key>
                 <string>{97,92}</string>
                 <key>textureRect</key>
-                <string>{{779,321},{97,92}}</string>
+                <string>{{861,321},{97,92}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -903,7 +903,7 @@
             <key>size</key>
             <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:38b6a03cf305dc6979906a0048ab948c:0029d51a8676167a67aefd089d93622a:e489eb72a1dac3e9a97caaf8aad1ac42$</string>
+            <string>$TexturePacker:SmartUpdate:4d950382d41d9067add220eb935d1cd7:00a356651d3eece22f243a863d72cf8f:e489eb72a1dac3e9a97caaf8aad1ac42$</string>
             <key>textureFileName</key>
             <string>ui.png</string>
         </dict>

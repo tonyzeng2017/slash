@@ -3,7 +3,7 @@
   "_name": "PanelSetting",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.36666666666666664,
+  "_duration": 0.4,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -11,42 +11,37 @@
     "paths": {
       "btn_close": {
         "props": {
-          "scaleX": [
-            {
-              "frame": 0.18333333333333332,
-              "value": 1
-            },
-            {
-              "frame": 0.2833333333333333,
-              "value": 1.3
-            },
-            {
-              "frame": 0.36666666666666664,
-              "value": 1
-            }
-          ],
-          "scaleY": [
-            {
-              "frame": 0.18333333333333332,
-              "value": 1
-            },
-            {
-              "frame": 0.2833333333333333,
-              "value": 1.3
-            },
-            {
-              "frame": 0.36666666666666664,
-              "value": 1
-            }
-          ],
           "opacity": [
             {
               "frame": 0.18333333333333332,
               "value": 0
             },
             {
-              "frame": 0.2833333333333333,
+              "frame": 0.4,
               "value": 255
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.18333333333333332,
+              "value": [
+                336,
+                149
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                238,
+                149
+              ]
+            },
+            {
+              "frame": 0.4,
+              "value": [
+                196.7,
+                149.4
+              ]
             }
           ]
         }
@@ -87,96 +82,120 @@
       },
       "btn_sound_off": {
         "props": {
-          "scaleX": [
+          "opacity": [
             {
               "frame": 0.16666666666666666,
               "value": 0
             },
             {
               "frame": 0.2833333333333333,
-              "value": 1
+              "value": 255
             }
           ],
-          "scaleY": [
+          "position": [
             {
               "frame": 0.16666666666666666,
-              "value": 0
+              "value": [
+                -200,
+                -35
+              ]
             },
             {
               "frame": 0.2833333333333333,
-              "value": 1
+              "value": [
+                -95,
+                -34.9
+              ]
             }
           ]
         }
       },
       "btn_sound_on": {
         "props": {
-          "scaleX": [
+          "position": [
             {
               "frame": 0.16666666666666666,
-              "value": 0
+              "value": [
+                -200,
+                -34.9
+              ]
             },
             {
               "frame": 0.2833333333333333,
-              "value": 1
+              "value": [
+                -95,
+                -34.9
+              ]
             }
           ],
-          "scaleY": [
+          "opacity": [
             {
               "frame": 0.16666666666666666,
               "value": 0
             },
             {
               "frame": 0.2833333333333333,
-              "value": 1
+              "value": 255
             }
           ]
         }
       },
       "btn_music_on": {
         "props": {
-          "scaleX": [
+          "position": [
             {
               "frame": 0.16666666666666666,
-              "value": 0
+              "value": [
+                200,
+                -34
+              ]
             },
             {
               "frame": 0.2833333333333333,
-              "value": 1
+              "value": [
+                97,
+                -34
+              ]
             }
           ],
-          "scaleY": [
+          "opacity": [
             {
               "frame": 0.16666666666666666,
               "value": 0
             },
             {
               "frame": 0.2833333333333333,
-              "value": 1
+              "value": 255
             }
           ]
         }
       },
       "btn_music_off": {
         "props": {
-          "scaleX": [
+          "position": [
             {
               "frame": 0.16666666666666666,
-              "value": 0
+              "value": [
+                200,
+                -33
+              ]
             },
             {
               "frame": 0.2833333333333333,
-              "value": 1
+              "value": [
+                97,
+                -33
+              ]
             }
           ],
-          "scaleY": [
+          "opacity": [
             {
               "frame": 0.16666666666666666,
               "value": 0
             },
             {
               "frame": 0.2833333333333333,
-              "value": 1
+              "value": 255
             }
           ]
         }
