@@ -13,6 +13,11 @@ cc.Class({
         projectilePools: {
             default: [],
             type: NodePool
+        },
+
+        buffItemPools: {
+            default: [],
+            type: NodePool
         }
     },
 
@@ -66,5 +71,25 @@ cc.Class({
             cc.log('Return obj to a full pool, something has gone wrong');
             return;
         }
+    },
+
+    requestBuffItem(type){
+        let thePool = this.buffItemPools[type];
+        if (thePool.idx >= 0) {
+            return thePool.request();
+        } else {
+            return null;
+        }
+    },
+
+    returnBuffItem(type, obj){
+        let thePool = this.buffItemPools[type];
+        if (thePool.idx < thePool.size) {
+            thePool.return(obj);
+        } else {
+            cc.log('Return obj to a full pool, something has gone wrong');
+            return;
+        }
     }
+
 });
