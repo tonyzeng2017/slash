@@ -18,7 +18,8 @@ var GameDataModel = cc.Class({
         slashReward: 0,
         totalReward: 0,
         reviveCount: 0,
-        slashCount: 0
+        slashCount: 0,
+        max_score_level: 6
     },
 
     getTotalReward: function(isWin){
@@ -54,6 +55,21 @@ var GameDataModel = cc.Class({
     getFinalScore: function(){
         let entranceData = MetaDataManager.getEntranceData(GameManager.instance.entranceID);
         return Math.round(this.totalScore * entranceData.StageRewardValue);
+    },
+
+    getScoreByLevel: function(level){
+        let stageData = MetaDataManager.getStageDataByID(GameManager.instance.curStageID);
+        let scores = [stageData.D, stageData.C, stageData.B, stageData.A, stageData.S, stageData.SS, stageData.SSS];
+
+        return scores[level];
+    },
+
+    isMaxLevel: function(level){
+        return level == this.max_score_level;
+    },
+
+    getMaxLevelScore: function(){
+        return this.getScoreByLevel(this.max_score_level);
     },
 
     getScoreLevel: function(){
