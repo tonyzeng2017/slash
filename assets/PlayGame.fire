@@ -1113,8 +1113,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 148,
-      "height": 160
+      "width": 127,
+      "height": 137
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -5095,7 +5095,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 180,
-      "height": 80
+      "height": 60
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -5103,8 +5103,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -544,
-      "y": 267
+      "x": -363,
+      "y": 324
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5157,8 +5157,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 544,
-      "y": -267
+      "x": 363,
+      "y": -324
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -5728,8 +5728,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 167,
+      "y": 9
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -8214,7 +8214,8 @@
       {
         "__id__": 267
       }
-    ]
+    ],
+    "buffItemPools": []
   },
   {
     "__type__": "NodePool",

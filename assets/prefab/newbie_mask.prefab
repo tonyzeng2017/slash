@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "newbie_tip",
+    "_name": "newbie_mask",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -112,8 +112,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 80,
-      "height": 80
+      "width": 180,
+      "height": 60
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -121,8 +121,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 145,
-      "y": 207
+      "x": -363,
+      "y": 324
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -175,8 +175,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -145,
-      "y": -207
+      "x": 363,
+      "y": -324
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -296,7 +296,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 240,
+      "width": 320,
       "height": 75
     },
     "_rotationX": 0,
@@ -305,8 +305,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 58.5,
-      "y": 113
+      "x": -468,
+      "y": 153
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -350,7 +350,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 200,
+      "width": 300,
       "height": 60
     },
     "_rotationX": 0,
@@ -385,7 +385,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "点击这里可看到\n每个属性的说明哦",
+    "_N$string": "这里是拥有的生命，当生命\n全部失去时，游失败。",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -495,8 +495,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -328,
-      "y": 33
+      "x": -945,
+      "y": 132
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -735,8 +735,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 167,
+      "y": 9
     },
     "_skewX": 0,
     "_skewY": 0,
