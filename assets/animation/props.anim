@@ -128,6 +128,202 @@
       },
       "pickup": {
         "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "pickup/glow": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 3
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": 3
+            }
+          ]
+        }
+      },
+      "pickup/lizi": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0.18333333333333332,
+                "value": 100
+              },
+              {
+                "frame": 0.23333333333333334,
+                "value": 0
+              }
+            ],
+            "posVar": [
+              {
+                "frame": 0.18333333333333332,
+                "value": {
+                  "__type__": "cc.Vec2",
+                  "x": 0,
+                  "y": 0
+                }
+              }
+            ],
+            "life": [
+              {
+                "frame": 0.18333333333333332,
+                "value": 0.2
+              }
+            ],
+            "tangentialAccel": [
+              {
+                "frame": 0.18333333333333332,
+                "value": 100
+              },
+              {
+                "frame": 0.25,
+                "value": 0
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0.18333333333333332,
+                "value": 100
+              },
+              {
+                "frame": 0.25,
+                "value": 0
+              }
+            ],
+            "gravity": [
+              {
+                "frame": 0.18333333333333332,
+                "value": {
+                  "__type__": "cc.Vec2",
+                  "x": 0,
+                  "y": 0
+                }
+              }
+            ],
+            "startSize": [
+              {
+                "frame": 0.18333333333333332,
+                "value": 30
+              }
+            ]
+          }
+        }
+      },
+      "pickup/quan": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 0.9
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1.2
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 0.9
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1.2
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 2558
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "pickup/helix": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.25,
+              "value": 0
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.25,
+              "value": -180
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.25,
+              "value": 0
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.25,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "pickup/kuosan": {
+        "props": {
           "scaleX": [
             {
               "frame": 0,
@@ -135,11 +331,11 @@
             },
             {
               "frame": 0.1,
-              "value": 1
+              "value": 0.55
             },
             {
-              "frame": 0.23333333333333334,
-              "value": 1.2
+              "frame": 0.25,
+              "value": 0.7
             }
           ],
           "scaleY": [
@@ -149,11 +345,11 @@
             },
             {
               "frame": 0.1,
-              "value": 1
+              "value": 0.55
             },
             {
-              "frame": 0.23333333333333334,
-              "value": 1.2
+              "frame": 0.25,
+              "value": 0.7
             }
           ],
           "opacity": [
@@ -162,7 +358,11 @@
               "value": 255
             },
             {
-              "frame": 0.23333333333333334,
+              "frame": 0.1,
+              "value": 255
+            },
+            {
+              "frame": 0.25,
               "value": 0
             }
           ]

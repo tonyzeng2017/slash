@@ -1,0 +1,178 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "props_life",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.75,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "hurt_glow": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.2,
+              "value": 1.3
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": 0.9
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.2,
+              "value": 1.3
+            },
+            {
+              "frame": 0.26666666666666666,
+              "value": 0.9
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "hurt_glow/hurt_glowup": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.31666666666666665,
+              "value": 0
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 255
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.6,
+              "value": 1.76
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.16666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.6,
+              "value": 2
+            }
+          ]
+        }
+      },
+      "hurt_glow/hurt_glowmiddle/hurt_glowmiddleup": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0.31666666666666665,
+              "value": 0
+            },
+            {
+              "frame": 0.75,
+              "value": 0.85
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.31666666666666665,
+              "value": 0
+            },
+            {
+              "frame": 0.45,
+              "value": 255
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.31666666666666665,
+              "value": 0
+            },
+            {
+              "frame": 0.75,
+              "value": 1.66
+            }
+          ]
+        }
+      },
+      "hurt_glow/lizi": {
+        "props": {},
+        "comps": {
+          "cc.ParticleSystem": {}
+        }
+      },
+      "hurt_glow/hurt": {
+        "props": {}
+      },
+      "pickup": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.18333333333333332,
+              "value": 255
+            },
+            {
+              "frame": 0.6166666666666667,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": 2
+            },
+            {
+              "frame": 0.45,
+              "value": 2.3
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.13333333333333333,
+              "value": 2
+            },
+            {
+              "frame": 0.45,
+              "value": 2.3
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
