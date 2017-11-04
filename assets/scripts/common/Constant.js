@@ -32,7 +32,14 @@ var Constant = cc.Class({
         this.FAILED_SCORE_RATIO = Number(MetaDataManager.getValueDataByID("19").Num)/100;
         this.REWARD_RATIO = Number(MetaDataManager.getValueDataByID("20").Num)/100;
         this.WARNING_LIFE = Number(MetaDataManager.getValueDataByID("21").Num)/100;
-    }
+
+        this.MAX_BUFF_STR = MetaDataManager.getValueDataByID("22");
+    },
+
+    getMaxBuffCount: function(type){
+        var max_numbers = this.MAX_BUFF_STR.split(",");
+        return Number(max_numbers[type]);
+    },
 });
 
 Constant.instance = new Constant();

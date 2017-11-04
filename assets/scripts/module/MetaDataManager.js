@@ -211,11 +211,51 @@ function getOneSlashDataByCount(count) {
     return _cutData[_cutData.length - 1].CutScore;
 }
 
+var _battleFieldStoreData;
+
+function randomItemInSore(storeID){
+    var storeItems = [];
+    var totalWeight = 0;
+    for(var id in _battleFieldStoreData){
+        var storeItem = _battleFieldStoreData[id];
+        if(storeItem.StoreID == storeID){
+            storeItems.push(storeItem);
+            totalWeight += storeItem.Weight;
+        }
+    }
+
+    var randomNumber = Math.random() * totalWeight;
+    var curWeight = 0;
+    var resultIndex = storeItems.length-1;
+    for(var i = 0; i < storeItems.length; i ++){
+        curWeight += storeItems[i].Weight;
+        if(randomNumber< curWeight){
+            resultIndex = i;
+            break;
+        }
+    }
+
+    var itemID = storeItems[i].FightingItem
+    cc.log("store item key: %s", itemID);
+    return getBuffItemByID(itemID);
+}
+
+var _battleFieldItemData;
+function getBuffItemByID(itemID){
+    for(var key in _battleFieldItemData){
+        if(itemID == _battleFieldItemData[key].FightingItem){
+            return _battleFieldItemData[key].FightingItem
+        }
+    }
+    return null;
+}
+
 function loadData(completeCallback, progressCallback, target) {
     let metaNames   = ["ValueData", "StageOpenData", "StageData", "MonsterData",
                         "SpawnsData", "WavesData", "ComboData", "PlayerData","PropertyData",
                         "ShopData", "RewardData", "EntranceData", "RangeData",
-                        "BossSpawnsData", "CutData", "RatingValueData"];
+                        "BossSpawnsData", "CutData", "RatingValueData", "BattlefildItemData",
+                        "BattlefieldStoreData"];
     //var scheduler = cc.director.getScheduler();
     let count = 0;
     let completed = 0;
@@ -249,6 +289,15 @@ function loadData(completeCallback, progressCallback, target) {
                                     },
                         "RatingValueData": function(data){
                                         _ratingData = data;
+                                        updateProgress();
+                                    },
+                        "BattlefieldItemData": function(data){
+                                        _battleFieldItemData = data;
+                                        updateProgress();
+                                    },
+                        "BattlefieldStoreData": function(data){
+                                        _battleFieldStoreData = data;
+                                        updateProgress();
                                     }
                     };
 
@@ -305,4 +354,5 @@ module.exports = {
     getBossSpawnData: getBossSpawnData,
     getOneSlashDataByCount: getOneSlashDataByCount,
     getRatingData: getRatingData,
+    randomItemInSore: randomItemInSore,
 };

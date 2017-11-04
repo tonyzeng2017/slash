@@ -348,6 +348,25 @@ cc.Class({
     death () {
         this.game.death();
     },
+
+    addBuff(buffData){
+        if(buffData.ItemType == 6){
+            //buff on the move speed.
+            var curSpeed = this.getComponent('Move').moveSpeed;
+            var newSpeed = curSpeed * (1 + buffData.AddValue/100);
+            this.getComponent('Move').moveSpeed = newSpeed;
+        }else{
+            //buff on other property.
+            var curValue = this[propertyMap[buffData.ItemType]];
+            var newValue = curValue * (1 + buffData.AddValue/100);
+            this[propertyMap[buffData.ItemType]] = newValue;
+        }
+    },
+
+    updateBuffDisplay: function(){
+        //to refresh the buff animations, 
+        //according to the active buff on the player;
+    },
     
     shouldStopAttacking () {
         let curWorldPos = this.node.parent.convertToWorldSpaceAR(this.node.position);

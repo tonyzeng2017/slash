@@ -265,8 +265,23 @@ cc.Class({
         }
     },
 
+    spawnBuffItem (buffData) {
+        let buffItem = this.game.poolMng.requestBuffItem(buffData.ItemType);
+        if(buffItem){
+            this.foeGroup.addChild(buffItem);
+            let pos = this.getBuffItemPosition();
+            buffItem.setPosition(pos);
+            buffItem.getComponent('BuffItem').init(this.game, buffData);
+            cc.log("request a buff item~~~~~~");
+        }else{
+            cc.log("requesting too many buffitems! please increase size")
+        }
+    },
+
     killFoe () {
         this.killedFoe++;
+
+        this.createBuffItem();
     },
     
     hitFoe () {
@@ -276,6 +291,20 @@ cc.Class({
     hitBoss(){
         this.game.bossMng.hitBoss();
         this.bossProgress.updateProgress();
+    },
+
+    createBuffItem(){
+        var curStageData = GameManager.instance.getCurStageData();
+
+        if(Math.random() * 100 < curStageData.Probability ){
+            var buffItemData = MetaDataManager.randomItemInSore(curStageData.ItemStore);
+            var buffAddSuccess = UserDataManager.instance.getGameData().addBuff(buffItemData);
+            if(buffAddSuccess){
+                this.spawnBuffItem(buffItemData);
+            }else{
+                cc.log("the type of buff: %s reached the max count~~~~");
+            }
+        }
     },
 
     despawnFoe (foe) {
@@ -298,4 +327,11 @@ cc.Class({
         // cc.log("randx: %s, randy: %s", randX, randY);
         return cc.p(randX, randY);
     },
+
+    getBuffItemPosition(){
+        var randX = cc.randomMinus1To1() * (this.foeGroup.width - this.spawnMargin)/2;
+        var randY = cc.randomMinus1To1() * (this.foeGroup.height - this.spawnMargin)/2;
+        cc.log("randx: %s, randy: %s", randX, randY);
+        return cc.p(randX, randY);
+    }
 });

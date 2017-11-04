@@ -30,6 +30,10 @@ cc.Class({
         for (let i = 0; i < this.projectilePools.length; ++i) {
             this.projectilePools[i].init();
         }
+
+        for (let i = 0; i < this.buffItemPools.length; ++i) {
+            this.buffItemPools[i].init();
+        }
     },
 
     requestFoe (foeType) {
