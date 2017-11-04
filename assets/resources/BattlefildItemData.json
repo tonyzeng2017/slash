@@ -1,0 +1,9 @@
+
+{
+    "1" : {"FightingItem" : "190001", "ItemType" : 1, "AddValue" : 10, "BuffDisplay" : 10}
+    ,"2" : {"FightingItem" : "190002", "ItemType" : 2, "AddValue" : 10, "BuffDisplay" : 10}
+    ,"3" : {"FightingItem" : "190003", "ItemType" : 3, "AddValue" : 10, "BuffDisplay" : 10}
+    ,"4" : {"FightingItem" : "190004", "ItemType" : 4, "AddValue" : -10, "BuffDisplay" : 10}
+    ,"5" : {"FightingItem" : "190005", "ItemType" : 5, "AddValue" : -1, "BuffDisplay" : 10}
+    ,"6" : {"FightingItem" : "190006", "ItemType" : 6, "AddValue" : 10, "BuffDisplay" : 10}
+}
