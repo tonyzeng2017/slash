@@ -19,7 +19,8 @@ var GameDataModel = cc.Class({
         totalReward: 0,
         reviveCount: 0,
         slashCount: 0,
-        max_score_level: 6
+        max_score_level: 6,
+        activeBuffData: {},
     },
 
     getTotalReward: function(isWin){
@@ -117,6 +118,26 @@ var GameDataModel = cc.Class({
         }
     },
 
+    addBuff: function(buffData){
+        var buffType = buffData.ItemType;
+        var activeBuffCount = this.getBuffCount(buffType);
+        var maxBuffCount = Constant.instance.getMaxBuffCount(buffType);
+        if(activeBuffCount < maxBuffCount){
+            if(!this.activeBuffData[buffType]){
+                this.activeBuffData[buffType] = [];
+            }
+            this.activeBuffData[buffType].push(buffData);
+            return true;
+        }else{
+            return false;
+        }
+    },
+
+    getBuffCount: function(type){
+        var buffs = this.activeBuffData[type];
+        return buffs === undefined ? 0 : buffs.length;
+    },
+
     addRevive: function(){
         this.reviveCount++;
     },
@@ -150,6 +171,7 @@ var GameDataModel = cc.Class({
         this.killedCount = 0;
         this.slashReward = 0;
         this.reviveCount = 0;
+        this.activeBuffData = {};
     },
 
     ctor: function() {

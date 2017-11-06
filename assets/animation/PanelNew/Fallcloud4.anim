@@ -3,7 +3,7 @@
   "_name": "Fallcloud4",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 4.766666666666667,
+  "_duration": 7.966666666666667,
   "sample": 60,
   "speed": 1,
   "wrapMode": 2,
@@ -11,21 +11,21 @@
     "props": {
       "position": [
         {
-          "frame": 0.7333333333333333,
+          "frame": 0,
           "value": [
             255.6,
             40.6
           ]
         },
         {
-          "frame": 2.716666666666667,
+          "frame": 3.9833333333333334,
           "value": [
-            316,
+            291.3,
             41
           ]
         },
         {
-          "frame": 4.766666666666667,
+          "frame": 7.966666666666667,
           "value": [
             255,
             41

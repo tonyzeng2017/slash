@@ -13,7 +13,7 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
-        buffAnimation: cc.Animation,
+        attributeID: 0,
 
         isReturned: {
             visible: false,
@@ -31,39 +31,37 @@ cc.Class({
         }
     },
 
-    init: function(game){
+    init: function(game, buffData){
         this.game = game;
+        this.buffData = buffData;
     },
 
     // use this for initialization
     onLoad: function () {
-
+        this.playShow();
     },
 
     playHide: function(){
         this.isPlayingHide = true;
-        this.buffAnimation.play("hide");
-        this.buffAnimation.on("finished", this.onHideFinished, true);
-        this.game.poolMng.returnBuffItem(this.node);
+        this.node.getComponent(cc.Animation).play("buff_hide");
     },
 
-    onHideFinished: function(){
+    onHideFinish: function(){
         this.isPlayingHide = false;
         this.isReturned = true;
-
-        this.buffAnimation.off("finished", this.onHideFinished, false);
+        this.game.poolMng.returnBuffItem(this.attributeID, this.node);
     },
 
     playShow: function(){
         this.isPlayingShow = true;
-        this.buffAnimation.play("show");
-        this.buffAnimation.on("finished", this.onShowFinished, true);
+        this.node.getComponent(cc.Animation).play("buff_show");
+        cc.log("playshow222~~~~~~~~~~~~~~~");
     },
 
-    onShowFinished: function(){
+    onShowFinish: function(){
         this.isPlayingShow = false;
         cc.log("animation finished444~~~~~~~");
-        this.buffAnimation.off("finished", this.onShowFinished, false);
+        // this.buffAnimation.off("finish", this.onShowFinished, false);
     },
 
     // called every frame, uncomment this function to activate update callback
@@ -81,7 +79,8 @@ cc.Class({
         }
 
         let dist = cc.pDistance(this.game.player.node.position, this.node.position);
-        if (dist < 35 && this.game.player.isAlive) {
+        if (dist < 50 && this.game.player.isAlive) {
+            cc.log("going to play hide~~~~~~~~~~~");
             this.playHide();
         }
 

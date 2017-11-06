@@ -1325,6 +1325,257 @@
             }
           ]
         }
+      },
+      "sword": {
+        "props": {}
+      },
+      "sword/jian": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.25,
+              "value": 0
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "sword/arrow_current": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                0,
+                -84
+              ]
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": [
+                0,
+                200.5
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.4166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.8666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.9833333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "sword/arrow_next": {
+        "props": {
+          "position": [
+            {
+              "frame": 0.55,
+              "value": [
+                132,
+                100
+              ]
+            },
+            {
+              "frame": 0.6,
+              "value": [
+                -5,
+                99.8
+              ]
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.55,
+              "value": 0
+            },
+            {
+              "frame": 0.6,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "sword/arrow_best": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5833333333333334,
+              "value": 0
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": 255
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.5833333333333334,
+              "value": [
+                132,
+                200.4
+              ]
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": [
+                1,
+                200.4
+              ]
+            }
+          ]
+        }
+      },
+      "sword/jian_mask/jian_pg": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 0.9166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.5833333333333334,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 2
+            }
+          ]
+        }
+      },
+      "sword/jian_mask/jian_bar": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.9166666666666666,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "sword/par": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0.8833333333333333,
+                "value": 0
+              },
+              {
+                "frame": 0.9666666666666667,
+                "value": 100
+              },
+              {
+                "frame": 1.3,
+                "value": 0
+              }
+            ],
+            "gravity": [
+              {
+                "frame": 0.8833333333333333,
+                "value": {
+                  "__type__": "cc.Vec2",
+                  "x": 0,
+                  "y": 2000
+                }
+              },
+              {
+                "frame": 0.9666666666666667,
+                "value": {
+                  "__type__": "cc.Vec2",
+                  "x": 0,
+                  "y": 200
+                }
+              }
+            ],
+            "posVar": [
+              {
+                "frame": 0.8833333333333333,
+                "value": {
+                  "__type__": "cc.Vec2",
+                  "x": 10,
+                  "y": 200
+                }
+              }
+            ],
+            "startSize": [
+              {
+                "frame": 0.8833333333333333,
+                "value": 40
+              }
+            ],
+            "startColor": [
+              {
+                "frame": 0.8833333333333333,
+                "value": {
+                  "__type__": "cc.Color",
+                  "r": 255,
+                  "g": 239,
+                  "b": 177,
+                  "a": 255
+                }
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0.8833333333333333,
+                "value": 400
+              },
+              {
+                "frame": 1.2333333333333334,
+                "value": 30
+              }
+            ],
+            "life": [
+              {
+                "frame": 0.8833333333333333,
+                "value": 0.3
+              }
+            ],
+            "tangentialAccel": [
+              {
+                "frame": 0.8833333333333333,
+                "value": 0
+              }
+            ],
+            "radialAccel": [
+              {
+                "frame": 0.8833333333333333,
+                "value": 1000
+              }
+            ]
+          }
+        }
       }
     }
   },

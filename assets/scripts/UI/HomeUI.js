@@ -51,7 +51,6 @@ cc.Class({
         //     this.menuAnim.play();
         //     this.menuParticle.enabled = false;
         // }.bind(this), 2);
-
         cc.log("animation name or arrow: %s", Types.ProjectileBrokeAnimation[Types.ProjectileType.Javelin]);
     },
 
