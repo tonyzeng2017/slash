@@ -425,7 +425,7 @@
       "__id__": 12
     },
     "_enabled": true,
-    "_custom": false,
+    "_custom": true,
     "_file": {
       "__uuid__": "2335d051-73ec-453c-8c51-8abe1373bb15"
     },
@@ -436,16 +436,16 @@
     "_dstBlendFactor": 771,
     "playOnLoad": true,
     "_autoRemoveOnFinish": false,
-    "_totalParticles": 150,
+    "_totalParticles": 25,
     "_duration": -1,
-    "_emissionRate": 100,
+    "_emissionRate": 25,
     "_life": 1,
-    "_lifeVar": 0,
+    "_lifeVar": 0.7,
     "_startColor": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 255,
-      "b": 255,
+      "g": 0,
+      "b": 0,
       "a": 255
     },
     "_startColorVar": {
@@ -458,27 +458,27 @@
     "_endColor": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 0
+      "g": 0,
+      "b": 0,
+      "a": 255
     },
     "_endColorVar": {
       "__type__": "cc.Color",
       "r": 0,
       "g": 0,
       "b": 0,
-      "a": 0
+      "a": 255
     },
-    "_angle": 90,
-    "_angleVar": 20,
+    "_angle": 360,
+    "_angleVar": 360,
     "_startSize": 50,
-    "_startSizeVar": 0,
+    "_startSizeVar": 100,
     "_endSize": 0,
     "_endSizeVar": 0,
     "_startSpin": 0,
-    "_startSpinVar": 0,
-    "_endSpin": 0,
-    "_endSpinVar": 0,
+    "_startSpinVar": 50,
+    "_endSpin": 36,
+    "_endSpinVar": 100,
     "_sourcePos": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -486,24 +486,24 @@
     },
     "_posVar": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 150,
+      "y": 150
     },
     "_positionType": 0,
     "_emitterMode": 0,
     "_gravity": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 0.25,
+      "y": 0.8600000143051147
     },
-    "_speed": 180,
-    "_speedVar": 50,
-    "_tangentialAccel": 80,
+    "_speed": 0,
+    "_speedVar": 0,
+    "_tangentialAccel": 0,
     "_tangentialAccelVar": 0,
     "_radialAccel": 0,
     "_radialAccelVar": 0,
     "_rotationIsDir": false,
-    "_startRadius": 0,
+    "_startRadius": 100,
     "_startRadiusVar": 0,
     "_endRadius": 0,
     "_endRadiusVar": 0,
