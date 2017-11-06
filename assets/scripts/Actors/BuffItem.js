@@ -14,6 +14,8 @@ cc.Class({
         // },
         // ...
         attributeID: 0,
+        showNode: cc.Node,
+        hideNode: cc.Node,
 
         isReturned: {
             visible: false,
@@ -39,29 +41,50 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         this.playShow();
+        // this.playHide();
     },
 
     playHide: function(){
         this.isPlayingHide = true;
-        this.node.getComponent(cc.Animation).play("buff_hide");
+        this.hideNode.active = true;
+        this.showNode.active = false;
+        var hideAnim = this.node.getComponent(cc.Animation);
+        var self = this;
+
+        var onHideFinish = function(){
+            self.isPlayingHide = false;
+            self.isReturned = true;
+    
+            hideAnim.off("finished", onHideFinish, false);
+            cc.log("hide animation finished555~~~~~~~");
+            self.game.poolMng.returnBuffItem(self.attributeID, self.node);
+        };
+
+        hideAnim.on("finished", onHideFinish, true);
+        hideAnim.play();
     },
 
     onHideFinish: function(){
-        this.isPlayingHide = false;
-        this.isReturned = true;
-        this.game.poolMng.returnBuffItem(this.attributeID, this.node);
+
     },
 
     playShow: function(){
         this.isPlayingShow = true;
-        this.node.getComponent(cc.Animation).play("buff_show");
+        var showAnim = this.node.getComponent(cc.Animation);
+        var self = this;
+
+        var onShowFinish = function(){
+            self.isPlayingShow = false;
+            cc.log("show animation finished444~~~~~~~");
+            showAnim.off("finished", onShowFinish, false);
+        };
+
+        showAnim.on("finished", onShowFinish, true);
+        showAnim.play();
         cc.log("playshow222~~~~~~~~~~~~~~~");
     },
 
     onShowFinish: function(){
-        this.isPlayingShow = false;
-        cc.log("animation finished444~~~~~~~");
-        // this.buffAnimation.off("finish", this.onShowFinished, false);
     },
 
     // called every frame, uncomment this function to activate update callback

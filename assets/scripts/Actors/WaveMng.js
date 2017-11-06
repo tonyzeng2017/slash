@@ -266,7 +266,7 @@ cc.Class({
     },
 
     spawnBuffItem (buffData) {
-        let buffItem = this.game.poolMng.requestBuffItem(buffData.ItemType);
+        let buffItem = this.game.poolMng.requestBuffItem(buffData.ItemType - 1);
         if(buffItem){
             this.foeGroup.addChild(buffItem);
             let pos = this.getBuffItemPosition();
@@ -297,6 +297,8 @@ cc.Class({
         var curStageData = GameManager.instance.getCurStageData();
 
         if(Math.random() * 100 < curStageData.Probability ){
+            cc.log('curStageData: %s', curStageData.ItemStore);
+
             var buffItemData = MetaDataManager.randomItemInSore(curStageData.ItemStore);
             var buffAddSuccess = UserDataManager.instance.getGameData().addBuff(buffItemData);
             if(buffAddSuccess){

@@ -26,10 +26,13 @@
     "_components": [
       {
         "__id__": 42
+      },
+      {
+        "__id__": 43
       }
     ],
     "_prefab": {
-      "__id__": 43
+      "__id__": 44
     },
     "_id": "",
     "_opacity": 255,
@@ -1459,7 +1462,26 @@
         "__uuid__": "757f38dc-0e20-455b-a3c9-e31ecb603c88"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
+  },
+  {
+    "__type__": "de021Y/Cn1G7KLL4cQuKULk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "attributeID": 2,
+    "showNode": {
+      "__id__": 2
+    },
+    "hideNode": {
+      "__id__": 21
+    },
+    "isReturned": false,
+    "isPlayingShow": false,
+    "isPlayingHide": false
   },
   {
     "__type__": "cc.PrefabInfo",

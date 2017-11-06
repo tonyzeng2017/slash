@@ -20,7 +20,7 @@ var GameDataModel = cc.Class({
         reviveCount: 0,
         slashCount: 0,
         max_score_level: 6,
-        activeBuffData: {},
+        activeBuffData: null
     },
 
     getTotalReward: function(isWin){
@@ -177,6 +177,7 @@ var GameDataModel = cc.Class({
     ctor: function() {
         var gameData = IOUtil.readData(dataKey);
         this.highestScore = gameData && gameData.highestScore ? gameData.highestScore : 0;
+        this.activeBuffData = {};
     }
 });
 

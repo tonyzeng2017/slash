@@ -223,6 +223,7 @@ function randomItemInSore(storeID){
             totalWeight += storeItem.Weight;
         }
     }
+    cc.log("storeItems: %s", storeItems.length);
 
     var randomNumber = Math.random() * totalWeight;
     var curWeight = 0;
@@ -242,19 +243,14 @@ function randomItemInSore(storeID){
 
 var _battleFieldItemData;
 function getBuffItemByID(itemID){
-    for(var key in _battleFieldItemData){
-        if(itemID == _battleFieldItemData[key].FightingItem){
-            return _battleFieldItemData[key].FightingItem
-        }
-    }
-    return null;
+    return _battleFieldItemData[itemID];
 }
 
 function loadData(completeCallback, progressCallback, target) {
     let metaNames   = ["ValueData", "StageOpenData", "StageData", "MonsterData",
                         "SpawnsData", "WavesData", "ComboData", "PlayerData","PropertyData",
                         "ShopData", "RewardData", "EntranceData", "RangeData",
-                        "BossSpawnsData", "CutData", "RatingValueData", "BattlefildItemData",
+                        "BossSpawnsData", "CutData", "RatingValueData", "BattleFieldItemData",
                         "BattlefieldStoreData"];
     //var scheduler = cc.director.getScheduler();
     let count = 0;
@@ -291,7 +287,7 @@ function loadData(completeCallback, progressCallback, target) {
                                         _ratingData = data;
                                         updateProgress();
                                     },
-                        "BattlefieldItemData": function(data){
+                        "BattleFieldItemData": function(data){
                                         _battleFieldItemData = data;
                                         updateProgress();
                                     },

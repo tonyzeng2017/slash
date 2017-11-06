@@ -33,10 +33,11 @@ var Constant = cc.Class({
         this.REWARD_RATIO = Number(MetaDataManager.getValueDataByID("20").Num)/100;
         this.WARNING_LIFE = Number(MetaDataManager.getValueDataByID("21").Num)/100;
 
-        this.MAX_BUFF_STR = MetaDataManager.getValueDataByID("22");
+        this.MAX_BUFF_STR = MetaDataManager.getValueDataByID("22").Num;
     },
 
     getMaxBuffCount: function(type){
+        cc.log("max_buff_str: %s", this.MAX_BUFF_STR);
         var max_numbers = this.MAX_BUFF_STR.split(",");
         return Number(max_numbers[type]);
     },
