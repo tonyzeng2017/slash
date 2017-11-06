@@ -1,0 +1,9 @@
+
+{
+    "190001" : {"ItemType" : 1, "AddValue" : 10, "BuffDisplay" : 10}
+    ,"190002" : {"ItemType" : 2, "AddValue" : 10, "BuffDisplay" : 10}
+    ,"190003" : {"ItemType" : 3, "AddValue" : 10, "BuffDisplay" : 10}
+    ,"190004" : {"ItemType" : 4, "AddValue" : -10, "BuffDisplay" : 10}
+    ,"190005" : {"ItemType" : 5, "AddValue" : -1, "BuffDisplay" : 10}
+    ,"190006" : {"ItemType" : 6, "AddValue" : 10, "BuffDisplay" : 10}
+}
