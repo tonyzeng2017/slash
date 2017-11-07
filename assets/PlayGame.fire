@@ -9586,7 +9586,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 32.13,
+      "width": 84.96,
       "height": 100
     },
     "_rotationX": 0,
@@ -9623,7 +9623,7 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "1",
+    "_N$string": "15",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -9791,37 +9791,37 @@
     "comboColors": [
       {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 0,
-        "b": 0,
+        "r": 219,
+        "g": 186,
+        "b": 50,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 82,
-        "b": 0,
+        "r": 224,
+        "g": 129,
+        "b": 40,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 163,
-        "b": 0,
+        "r": 236,
+        "g": 107,
+        "b": 47,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 214,
-        "b": 0,
+        "r": 241,
+        "g": 76,
+        "b": 76,
         "a": 255
       },
       {
         "__type__": "cc.Color",
-        "r": 255,
-        "g": 0,
-        "b": 194,
+        "r": 230,
+        "g": 52,
+        "b": 159,
         "a": 255
       }
     ],

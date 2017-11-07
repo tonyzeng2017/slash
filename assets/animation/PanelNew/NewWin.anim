@@ -1344,42 +1344,7 @@
         }
       },
       "sword/arrow_current": {
-        "props": {
-          "position": [
-            {
-              "frame": 0.5833333333333334,
-              "value": [
-                0,
-                -84
-              ]
-            },
-            {
-              "frame": 0.9833333333333333,
-              "value": [
-                0,
-                200.5
-              ]
-            }
-          ],
-          "opacity": [
-            {
-              "frame": 0.4166666666666667,
-              "value": 0
-            },
-            {
-              "frame": 0.4666666666666667,
-              "value": 255
-            },
-            {
-              "frame": 0.8666666666666667,
-              "value": 255
-            },
-            {
-              "frame": 0.9833333333333333,
-              "value": 0
-            }
-          ]
-        }
+        "props": {}
       },
       "sword/arrow_next": {
         "props": {
@@ -1442,46 +1407,10 @@
         }
       },
       "sword/jian_mask/jian_pg": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.5833333333333334,
-              "value": 255
-            },
-            {
-              "frame": 0.9166666666666666,
-              "value": 255
-            },
-            {
-              "frame": 1,
-              "value": 0
-            }
-          ],
-          "scaleY": [
-            {
-              "frame": 0.5833333333333334,
-              "value": 0
-            },
-            {
-              "frame": 1,
-              "value": 2
-            }
-          ]
-        }
+        "props": {}
       },
       "sword/jian_mask/jian_bar": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0.9166666666666666,
-              "value": 0
-            },
-            {
-              "frame": 1,
-              "value": 255
-            }
-          ]
-        }
+        "props": {}
       },
       "sword/par": {
         "comps": {
