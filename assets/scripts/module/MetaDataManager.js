@@ -246,6 +246,16 @@ function getBuffItemByID(itemID){
     return _battleFieldItemData[itemID];
 }
 
+function getBuffItemByType(type){
+    for(var key  in _battleFieldItemData){
+        if(_battleFieldItemData[key].ItemType == type){
+            return _battleFieldItemData[key];
+        }
+    }
+
+    return null;
+}
+
 function loadData(completeCallback, progressCallback, target) {
     let metaNames   = ["ValueData", "StageOpenData", "StageData", "MonsterData",
                         "SpawnsData", "WavesData", "ComboData", "PlayerData","PropertyData",
@@ -351,4 +361,5 @@ module.exports = {
     getOneSlashDataByCount: getOneSlashDataByCount,
     getRatingData: getRatingData,
     randomItemInSore: randomItemInSore,
+    getBuffItemByType: getBuffItemByType
 };

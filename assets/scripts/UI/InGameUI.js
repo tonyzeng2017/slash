@@ -18,7 +18,8 @@ cc.Class({
         pausePrefab: cc.Prefab,
         bg: cc.Sprite,
         audioPause: cc.AudioClip,
-        warning_bg: cc.Sprite
+        warning_bg: cc.Sprite,
+        buffDisplay: cc.Node,
     },
 
     // use this for initialization
@@ -85,6 +86,10 @@ cc.Class({
     
     addCombo () {
         this.comboDisplay.playCombo();
+    },
+
+    addBuffDisplay(buffType){
+        this.buffDisplay.getComponent("BuffDisplayer").addBuffItem(buffType);
     },
 
     getCombo(){
