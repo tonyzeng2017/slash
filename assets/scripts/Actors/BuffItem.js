@@ -57,6 +57,7 @@ cc.Class({
     
             hideAnim.off("finished", onHideFinish, false);
             cc.log("hide animation finished555~~~~~~~");
+            self.game.player.addBuff(self.buffData);
             self.game.poolMng.returnBuffItem(self.attributeID, self.node);
         };
 

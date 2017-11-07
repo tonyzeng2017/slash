@@ -361,11 +361,9 @@ cc.Class({
             var newValue = curValue * (1 + buffData.AddValue/100);
             this[propertyMap[buffData.ItemType]] = newValue;
         }
-    },
 
-    updateBuffDisplay: function(){
-        //to refresh the buff animations, 
-        //according to the active buff on the player;
+        this.game.inGameUI.addBuffDisplay(buffData.ItemType);
+        cc.log("player buff added~~~~~~~~~~");
     },
     
     shouldStopAttacking () {
