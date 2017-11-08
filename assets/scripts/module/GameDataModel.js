@@ -8,7 +8,7 @@ var GameDataModel = cc.Class({
     name: 'GameDataModel',
     properties: {
         totalScore: 0,
-        highestScore: 0,
+        highestScores: 0,
         highestCombo: 0,
         highestSlashCount: 0,
         killedCount:  0,
