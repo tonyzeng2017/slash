@@ -685,7 +685,7 @@
       "__id__": 23
     },
     "_id": "",
-    "_opacity": 255,
+    "_opacity": 100,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -778,7 +778,7 @@
       "__id__": 26
     },
     "_id": "",
-    "_opacity": 255,
+    "_opacity": 100,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,

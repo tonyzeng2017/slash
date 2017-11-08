@@ -749,8 +749,8 @@
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 72,
-      "b": 37,
+      "g": 0,
+      "b": 0,
       "a": 255
     },
     "_cascadeOpacityEnabled": true,
@@ -853,10 +853,10 @@
     "_dstBlendFactor": 771,
     "playOnLoad": true,
     "_autoRemoveOnFinish": false,
-    "_totalParticles": 30,
-    "_duration": 0.6,
+    "_totalParticles": 100,
+    "_duration": 1,
     "_emissionRate": 20,
-    "_life": 0.4,
+    "_life": 0.7,
     "_lifeVar": 0.5,
     "_startColor": {
       "__type__": "cc.Color",
@@ -889,7 +889,7 @@
     "_angle": 360,
     "_angleVar": 360,
     "_startSize": 10,
-    "_startSizeVar": 20,
+    "_startSizeVar": 10,
     "_endSize": 0,
     "_endSizeVar": 0,
     "_startSpin": 0,
@@ -911,7 +911,7 @@
     "_gravity": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 150
+      "y": 50
     },
     "_speed": 0,
     "_speedVar": 0,

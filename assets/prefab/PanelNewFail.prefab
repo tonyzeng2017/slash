@@ -366,14 +366,14 @@
       "width": 184,
       "height": 42
     },
-    "_rotationX": 0,
-    "_rotationY": 0,
+    "_rotationX": 180,
+    "_rotationY": 180,
     "_scaleX": 1,
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -219.8,
-      "y": 135.8
+      "x": 84,
+      "y": 228
     },
     "_skewX": 0,
     "_skewY": 0,

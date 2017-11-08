@@ -171,6 +171,11 @@
             }
           ]
         }
+      },
+      "pickup/life": {
+        "props": {
+          "opacity": []
+        }
       }
     }
   },

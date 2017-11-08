@@ -2731,7 +2731,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -14,
-      "y": 14
+      "y": 188
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2819,16 +2819,16 @@
       "x": 0,
       "y": 150
     },
-    "_speed": 0,
+    "_speed": 400,
     "_speedVar": 0,
     "_tangentialAccel": 0,
     "_tangentialAccelVar": 0,
     "_radialAccel": 0,
     "_radialAccelVar": 0,
     "_rotationIsDir": false,
-    "_startRadius": 100,
-    "_startRadiusVar": 0,
-    "_endRadius": 0,
+    "_startRadius": 0,
+    "_startRadiusVar": 1,
+    "_endRadius": 100,
     "_endRadiusVar": 0,
     "_rotatePerS": 0,
     "_rotatePerSVar": 0,
