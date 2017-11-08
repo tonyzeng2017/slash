@@ -355,10 +355,13 @@ cc.Class({
             var curSpeed = this.getComponent('Move').moveSpeed;
             var newSpeed = curSpeed * (1 + buffData.AddValue/100);
             this.getComponent('Move').moveSpeed = newSpeed;
+        }else if(buffData.ItemType == 1){
+            //if it is life then
+            this.life += buffData.AddValue
         }else{
             //buff on other property.
             var curValue = this[propertyMap[buffData.ItemType]];
-            var newValue = curValue * (1 + buffData.AddValue/100);
+            var newValue = Math.ceil(curValue * (1 + buffData.AddValue/100));
             this[propertyMap[buffData.ItemType]] = newValue;
         }
 

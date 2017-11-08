@@ -90,6 +90,7 @@ cc.Class({
 
     addBuffDisplay(buffType){
         this.buffDisplay.getComponent("BuffDisplayer").addBuffItem(buffType);
+        this.updateLife();
     },
 
     getCombo(){

@@ -1,9 +1,9 @@
 
 {
-    "190001" : {"ItemType" : 1, "AddValue" : 10, "BuffDisplay" : "+100%"}
+    "190001" : {"ItemType" : 1, "AddValue" : 1, "BuffDisplay" : "+100%"}
     ,"190002" : {"ItemType" : 2, "AddValue" : 10, "BuffDisplay" : "+100%"}
     ,"190003" : {"ItemType" : 3, "AddValue" : 10, "BuffDisplay" : "+100%"}
     ,"190004" : {"ItemType" : 4, "AddValue" : -10, "BuffDisplay" : "+100%"}
-    ,"190005" : {"ItemType" : 5, "AddValue" : -1, "BuffDisplay" : "+100%"}
+    ,"190005" : {"ItemType" : 5, "AddValue" : -10, "BuffDisplay" : "+100%"}
     ,"190006" : {"ItemType" : 6, "AddValue" : 10, "BuffDisplay" : "+100%"}
 }
