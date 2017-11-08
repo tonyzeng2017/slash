@@ -260,7 +260,7 @@ function loadData(completeCallback, progressCallback, target) {
     let metaNames   = ["ValueData", "StageOpenData", "StageData", "MonsterData",
                         "SpawnsData", "WavesData", "ComboData", "PlayerData","PropertyData",
                         "ShopData", "RewardData", "EntranceData", "RangeData",
-                        "BossSpawnsData", "CutData", "RatingValueData", "BattleFieldItemData",
+                        "BossSpawnsData", "CutData", "RatingValueData", "BattlefieldItemData",
                         "BattlefieldStoreData"];
     //var scheduler = cc.director.getScheduler();
     let count = 0;
@@ -297,7 +297,7 @@ function loadData(completeCallback, progressCallback, target) {
                                         _ratingData = data;
                                         updateProgress();
                                     },
-                        "BattleFieldItemData": function(data){
+                        "BattlefieldItemData": function(data){
                                         _battleFieldItemData = data;
                                         updateProgress();
                                     },
