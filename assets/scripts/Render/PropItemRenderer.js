@@ -17,7 +17,7 @@ cc.Class({
         frames: [cc.SpriteFrame],
         displayText: cc.Label,
         icon: cc.Sprite
-    },
+    }, 
 
     // use this for initialization
     onLoad: function () {

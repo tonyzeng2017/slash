@@ -23,6 +23,7 @@ cc.Class({
             visible: false,
             default: false
         },
+        sword: cc.Node,
     },
 
     init: function(game){
@@ -33,6 +34,7 @@ cc.Class({
     onLoad: function () {
         this._scoreRenderer = this.node.getComponent("PanelScoreRenderer");
         this._rewardRenderer = this.node.getComponent("PanelRewardRenderer");
+        this._swordRenderer = this.sword.getComponent("SwordScoreRenderer");
         this.newbieLevelUp.active = !UserDataManager.instance.getNewbieData().isAttrLevelUpFinished;
     },
 
@@ -103,6 +105,11 @@ cc.Class({
     toogleDetail: function(){
         this.scoreDetail.active = !this.scoreDetail.active;
         GameManager.instance.playSound(this.audioTouch);
+    },
+
+    onPlayScore: function(){
+        cc.log("start to play score~~~~~~~~~");
+        this._swordRenderer.playAnim();
     },
     
     onNewbieLevelUp: function () {
