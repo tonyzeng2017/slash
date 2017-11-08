@@ -112,9 +112,8 @@ var GameDataModel = cc.Class({
 
     updateHighestScore: function(){
         var curScore = this.getFinalScore();
-        if(curScore > this.highestScore){
-            this.highestScore = curScore;
-            this.saveData();
+        if(curScore > this.getStageHighestScore()){
+            this.setStageHighestScore(curScore);
         }
     },
 
@@ -138,6 +137,16 @@ var GameDataModel = cc.Class({
         return buffs === undefined ? 0 : buffs.length;
     },
 
+    getStageHighestScore: function(){
+        var score = this.highestScores[ GameManager.instance.curStageID ];
+        return  score ? score : 0;
+    },
+
+    setStageHighestScore: function(score){
+        this.highestScores[ GameManager.instance.curStageID ] = score;
+        this.saveData();
+    },
+
     addRevive: function(){
         this.reviveCount++;
     },
@@ -152,7 +161,7 @@ var GameDataModel = cc.Class({
 
     getData: function(){
         return {
-            highestScore: this.highestScore
+            highestScores: this.highestScores
         };
     },
 
@@ -176,7 +185,7 @@ var GameDataModel = cc.Class({
 
     ctor: function() {
         var gameData = IOUtil.readData(dataKey);
-        this.highestScore = gameData && gameData.highestScore ? gameData.highestScore : 0;
+        this.highestScores = gameData && gameData.highestScores ? gameData.highestScores : {};
         this.activeBuffData = {};
     }
 });

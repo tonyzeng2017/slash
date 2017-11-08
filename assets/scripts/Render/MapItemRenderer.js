@@ -97,7 +97,6 @@ cc.Class({
                         touched = true;
                         GameManager.instance.playSound(self.audio, false, 1);
                         if(!self.player){
-                            cc.log("player MOUSE_UP~~`");
                             console.log('Mouse down stage: %s', self.stageID);
                             self.enterGame();
                         }else{
