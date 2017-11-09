@@ -20,6 +20,7 @@ var GameDataModel = cc.Class({
         reviveCount: 0,
         slashCount: 0,
         max_score_level: 6,
+        lastCreateBuffTime: 0,
         activeBuffData: null
     },
 
@@ -63,6 +64,15 @@ var GameDataModel = cc.Class({
         let scores = [stageData.D, stageData.C, stageData.B, stageData.A, stageData.S, stageData.SS, stageData.SSS];
 
         return scores[level];
+    },
+
+    isBuffTimeReached: function(){
+        cc.log("time diff: %s, interval: %s", Date.now() - this.lastCreateBuffTime, Constant.instance.MIN_BUFF_INTERVAL);
+        return Date.now() - this.lastCreateBuffTime >= Constant.instance.MIN_BUFF_INTERVAL
+    },
+
+    updateBuffCreateTime: function(){
+        this.lastCreateBuffTime = Date.now();
     },
 
     isMaxLevel: function(level){
@@ -126,6 +136,7 @@ var GameDataModel = cc.Class({
                 this.activeBuffData[buffType] = [];
             }
             this.activeBuffData[buffType].push(buffData);
+            this.updateBuffCreateTime();
             return true;
         }else{
             return false;

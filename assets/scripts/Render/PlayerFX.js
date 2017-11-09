@@ -10,7 +10,8 @@ cc.Class({
         newBieAnim: cc.Animation,
         audioIntro: cc.AudioClip,
         audioRevive: cc.AudioClip,
-        changeSceneAnim: cc.Animation
+        changeSceneAnim: cc.Animation,
+        inGameUI: cc.Node,
     },
 
     // use this for initialization
@@ -23,8 +24,10 @@ cc.Class({
     playIntro () {
         var self = this;
         if(UserDataManager.instance.getNewbieData().isInGameFinished){
+            this.inGameUI.active = false;
             this.changeSceneAnim.on("finished", function(){
                 self.startIntro();
+                self.inGameUI.active = true;
             });
         }
         else{

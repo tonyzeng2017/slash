@@ -34,6 +34,7 @@ var Constant = cc.Class({
         this.WARNING_LIFE = Number(MetaDataManager.getValueDataByID("21").Num)/100;
 
         this.MAX_BUFF_STR = MetaDataManager.getValueDataByID("22").Num;
+        this.MIN_BUFF_INTERVAL = Number(MetaDataManager.getValueDataByID("23").Num);
     },
 
     getMaxBuffCount: function(type){

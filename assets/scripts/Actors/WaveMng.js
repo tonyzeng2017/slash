@@ -296,9 +296,8 @@ cc.Class({
     createBuffItem(){
         var curStageData = GameManager.instance.getCurStageData();
 
-        if(Math.random() * 100 < curStageData.Probability ){
+        if(Math.random() * 100 < curStageData.Probability && UserDataManager.instance.getGameData().isBuffTimeReached()){
             cc.log('curStageData: %s', curStageData.ItemStore);
-
             var buffItemData = MetaDataManager.randomItemInSore(curStageData.ItemStore);
             var buffAddSuccess = UserDataManager.instance.getGameData().addBuff(buffItemData);
             if(buffAddSuccess){
