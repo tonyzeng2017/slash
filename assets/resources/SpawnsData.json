@@ -2176,6 +2176,6 @@
     ,"8430" : {"MonsterID" : "8", "MonsterNum" : 30, "TimeInterval" : 0, "Range" : 9}
     ,"9101" : {"MonsterID" : "9", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
     ,"9201" : {"MonsterID" : "10", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
-    ,"9301" : {"MonsterID" : "11", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
-    ,"9401" : {"MonsterID" : "12", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
+    ,"9301" : {"MonsterID" : "12", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
+    ,"9401" : {"MonsterID" : "11", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
 }
