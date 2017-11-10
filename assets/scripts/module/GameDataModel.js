@@ -87,7 +87,8 @@ var GameDataModel = cc.Class({
         let stageData = MetaDataManager.getStageDataByID(GameManager.instance.curStageID);
         let finalScore = this.getFinalScore();
 
-        let scores = [stageData.D, stageData.C, stageData.B, stageData.A, stageData.S, stageData.SS, stageData.SSS];
+        // let scores = [stageData.D, stageData.C, stageData.B, stageData.A, stageData.S, stageData.SS, stageData.SSS];
+        let scores = [stageData.C, stageData.B, stageData.A, stageData.S, stageData.SS, stageData.SSS];
         for(let i = 0; i < scores.length; i++){
             if(finalScore <= scores[i]){
                 return i;
