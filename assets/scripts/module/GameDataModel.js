@@ -90,12 +90,12 @@ var GameDataModel = cc.Class({
         // let scores = [stageData.D, stageData.C, stageData.B, stageData.A, stageData.S, stageData.SS, stageData.SSS];
         let scores = [stageData.C, stageData.B, stageData.A, stageData.S, stageData.SS, stageData.SSS];
         for(let i = 0; i < scores.length; i++){
-            if(finalScore <= scores[i]){
+            if(finalScore < scores[i]){
                 return i;
             }
         }
 
-        return scores.length - 1;
+        return scores.length;
     },
 
     updateReward: function(){
