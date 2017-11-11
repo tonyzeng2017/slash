@@ -2,6 +2,7 @@ var MetaDataManager = require("MetaDataManager");
 // var CryptoJS = require("crypto-js");
 var UserDataManager = require("UserDataManager");
 var Constant = require("Constant");
+var preLoadScenes = ["EntranceGame","MapGame1", "PlayGame"];
 
 cc.Class({
     extends: cc.Component,
@@ -19,7 +20,32 @@ cc.Class({
         // ...
         isCompleted: false,
         btnStart: cc.Node,
-        loadingUI: cc.Node
+        loadingUI: cc.Node,
+    },
+
+    preloadScene: function(index){
+        var self = this;
+
+        this.node.runAction(cc.sequence(
+            cc.delayTime(0.01 * index),
+            cc.callFunc( function(){
+                cc.log("%s preloaded~~~~~, index: %s", preLoadScenes[index], index);
+                cc.director.preloadScene(preLoadScenes[index] , function(){
+                    cc.log("%s preloaded~~~~~", preLoadScenes[index]);
+
+                    if(index ==  0){
+                        self.onLoadCompleted();
+                    }
+                });
+            })
+        ))
+    },
+
+    onLoadCompleted: function(){
+        this.isCompleted = true;
+        this.loadingUI.active = false;
+        this.btnStart.active = true;
+        TDProxy.onEvent("game_load_completed", UserDataManager.instance.getUserData().getDCData());
     },
 
     // use this for initialization
@@ -32,18 +58,11 @@ cc.Class({
             function () {
                 Constant.instance.init();
 
-                cc.director.preloadScene("MapGame1", function(){
-                    cc.log("map game preloaded~~~~~");
-                });
+                for(var i = 0; i < preLoadScenes.length; i++){
+                    self.preloadScene(i);
+                }
 
-                cc.director.preloadScene("PlayGame", function(){
-                    cc.log("play game preloaded~~~~~~");
-                });
-
-                self.isCompleted = true;
-                self.loadingUI.active = false;
-                self.btnStart.active = true;
-                TDProxy.onEvent("game_load_completed", UserDataManager.instance.getUserData().getDCData());
+                // self.onLoadCompleted();
             },
 
             function (progress) {

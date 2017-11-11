@@ -25,7 +25,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 30
@@ -385,7 +385,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "这里是拥有的生命，当生命\n全部失去时，游失败。",
+    "_N$string": "这里是拥有的生命，当生命\n全部失去时，游戏失败。",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -549,8 +549,8 @@
     "_scaleY": 0.15,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 460.4,
-      "y": 129.3
+      "x": 586,
+      "y": 179
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -642,8 +642,8 @@
     "_scaleY": 0.3,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 460.4,
-      "y": 129.3
+      "x": 586,
+      "y": 179
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -792,8 +792,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 550.1,
-      "y": 115.8
+      "x": 489,
+      "y": 119
     },
     "_skewX": 0,
     "_skewY": 0,
