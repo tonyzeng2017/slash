@@ -36,7 +36,7 @@ cc.Class({
     updateCount(leftCount, totalCount){
         // if(this.textCount){
             this.textCount.string = "怪物数量: " + leftCount + "/" + totalCount;
-            cc.log("text updated~~~~~~~~~: %s, %s", leftCount, totalCount);
+            // cc.log("text updated~~~~~~~~~: %s, %s", leftCount, totalCount);
         // }
         // else{
             // cc.log("this.text don't exist~~~");

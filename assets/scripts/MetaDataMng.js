@@ -53,7 +53,9 @@ cc.Class({
         var self = this;
 
         TDProxy.onEvent("enter_game", UserDataManager.instance.getUserData().getDCData());
+        // cc.Texture2D.defaultPixelFormat = cc.Texture2D.PIXEL_FORMAT_RGBA4444;
 
+        cc.log("texture format: %s", cc.Texture2D.defaultPixelFormat);
         MetaDataManager.loadData(
             function () {
                 Constant.instance.init();

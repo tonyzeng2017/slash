@@ -41,7 +41,9 @@ cc.Class({
         var stageData = MetaDataManager.getStageDataByID(GameManager.instance.curStageID);
         var self = this;
         cc.loader.loadRes("stage_bg/" + stageData.MapPic, cc.SpriteFrame, function (err, spriteFrame) {
+            // cc.Texture2D.defaultPixelFormat = cc.Texture2D.PIXEL_FORMAT_RGB888;
             self.bg.spriteFrame = spriteFrame;
+            // cc.Texture2D.defaultPixelFormat = cc.Texture2D.PIXEL_FORMAT_RGBA4444;
         });
         cc.log("bg name: %s", stageData.MapPic);
     },
