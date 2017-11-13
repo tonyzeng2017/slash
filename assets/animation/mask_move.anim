@@ -1,0 +1,25 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "mask_move",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2.6666666666666665,
+  "sample": 30,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "width": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 2.6666666666666665,
+          "value": 810
+        }
+      ]
+    }
+  },
+  "events": []
+}
