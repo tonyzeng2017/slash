@@ -17,7 +17,7 @@
         "__id__": 2
       },
       {
-        "__id__": 115
+        "__id__": 116
       }
     ],
     "_tag": -1,
@@ -90,10 +90,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 113
+        "__id__": 114
       },
       {
-        "__id__": 114
+        "__id__": 115
       }
     ],
     "_prefab": null,
@@ -3878,6 +3878,9 @@
       },
       {
         "__id__": 111
+      },
+      {
+        "__id__": 113
       }
     ],
     "_prefab": null,
@@ -4017,6 +4020,32 @@
     "customEventData": ""
   },
   {
+    "__type__": "cc.Widget",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 109
+    },
+    "_enabled": true,
+    "isAlignOnce": true,
+    "_target": null,
+    "_alignFlags": 33,
+    "_left": 0,
+    "_right": 0.2999999999999545,
+    "_top": 1.1000000000000227,
+    "_bottom": 0,
+    "_verticalCenter": 0,
+    "_horizontalCenter": 0,
+    "_isAbsLeft": true,
+    "_isAbsRight": true,
+    "_isAbsTop": true,
+    "_isAbsBottom": true,
+    "_isAbsHorizontalCenter": true,
+    "_isAbsVerticalCenter": true,
+    "_originalWidth": 0,
+    "_originalHeight": 0
+  },
+  {
     "__type__": "cc.Canvas",
     "_name": "",
     "_objFlags": 0,
@@ -4056,7 +4085,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 116
+        "__id__": 117
       }
     ],
     "_prefab": null,
@@ -4101,7 +4130,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 115
+      "__id__": 116
     },
     "_enabled": true,
     "tipsPrefab": {
