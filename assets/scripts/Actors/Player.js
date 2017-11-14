@@ -355,6 +355,7 @@ cc.Class({
             var curSpeed = this.getComponent('Move').moveSpeed;
             var newSpeed = curSpeed * (1 + buffData.AddValue/100);
             this.getComponent('Move').moveSpeed = newSpeed;
+            this.game.inGameUI.addBuffDisplay(buffData.ItemType);
         }else if(buffData.ItemType == 1){
             //if it is life then
             this.life += buffData.AddValue
@@ -363,9 +364,8 @@ cc.Class({
             var curValue = this[propertyMap[buffData.ItemType]];
             var newValue = Math.ceil(curValue * (1 + buffData.AddValue/100));
             this[propertyMap[buffData.ItemType]] = newValue;
+            this.game.inGameUI.addBuffDisplay(buffData.ItemType);
         }
-
-        this.game.inGameUI.addBuffDisplay(buffData.ItemType);
         cc.log("player buff added~~~~~~~~~~");
     },
     

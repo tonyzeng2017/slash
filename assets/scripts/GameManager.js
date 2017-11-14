@@ -25,7 +25,10 @@ var GameManager = cc.Class({
         curSceneType: 0,
 
         //礼包倒计时时间戳
-        lastTimeStamp: 0
+        lastTimeStamp: 0,
+
+        //已播放的剧情动画
+        playedStories: []
     },
 
     isStageInEntrance: function(){
@@ -41,6 +44,7 @@ var GameManager = cc.Class({
         let count = data ? data.deadCount : 0;
         this.deadCount = count == undefined ? 0 : count;
 
+        this.playedStories = data.playedStories ? data.playedStories : [];
         cc.audioEngine.setMaxAudioInstance(20);
     },
 
@@ -135,9 +139,22 @@ var GameManager = cc.Class({
         return MetaDataManager.getStageDataByID(this.curStageID);
     },
 
+    getCurEntranceData: function () {
+        return MetaDataManager.getEntranceData(this.entranceID);
+    },
+
     resetTimeStamp: function(){
         var timeStamp = Math.round(new Date().getTime()/1000);
         this.lastTimeStamp = timeStamp;
+        this.saveData();
+    },
+
+    storyEnabled: function(storyID){
+        return Number(storyID) != -1 && this.playedStories.indexOf(storyID.toString()) <= 0; 
+    },
+
+    playStory: function(storyID){
+        this.playedStories.push(storyID.toString());
         this.saveData();
     },
 
@@ -146,7 +163,8 @@ var GameManager = cc.Class({
             isMusicOn: this.isMusicOn,
             isSoundOn: this.isSoundOn,
             deadCount: this.deadCount,
-            lastTimeStamp: this.lastTimeStamp
+            lastTimeStamp: this.lastTimeStamp,
+            playedStories: this.playedStories
         };
 
         IOUtil.writeData(dataKey, data);

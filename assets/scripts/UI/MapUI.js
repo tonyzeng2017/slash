@@ -21,7 +21,8 @@ cc.Class({
         audioReturn: cc.AudioClip,
         audioTouch: cc.AudioClip,
         newbieEnterPlayer: cc.Node,
-        textGold: cc.Label
+        textGold: cc.Label,
+        story: cc.Prefab
     },
 
     // use this for initialization
@@ -43,6 +44,19 @@ cc.Class({
             // event.stopPropagation();
             self.updateGold();
         });
+
+        this.initStory();
+    },
+
+    initStory: function(){
+           var entranceData = GameManager.instance.getCurEntranceData();
+           if(GameManager.instance.storyEnabled(entranceData.Story)){
+                var storyUI = cc.instantiate(this.story);
+                storyUI.getComponent("StoryRenderer").setStoryAndCallback(entranceData.Story);
+                this.node.addChild(storyUI);
+
+                GameManager.instance.playStory(entranceData.Story);
+           }
     },
 
     updateGold: function(){

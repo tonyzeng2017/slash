@@ -256,12 +256,17 @@ function getBuffItemByType(type){
     return null;
 }
 
+var _storyData;
+function getStoryDataByID(ID){
+    return _storyData[ID.toString()];
+}
+
 function loadData(completeCallback, progressCallback, target) {
     let metaNames   = ["ValueData", "StageOpenData", "StageData", "MonsterData",
                         "SpawnsData", "WavesData", "ComboData", "PlayerData","PropertyData",
                         "ShopData", "RewardData", "EntranceData", "RangeData",
                         "BossSpawnsData", "CutData", "RatingValueData", "BattlefieldItemData",
-                        "BattlefieldStoreData"];
+                        "BattlefieldStoreData", "StoryData"];
     //var scheduler = cc.director.getScheduler();
     let count = 0;
     let completed = 0;
@@ -304,7 +309,11 @@ function loadData(completeCallback, progressCallback, target) {
                         "BattlefieldStoreData": function(data){
                                         _battleFieldStoreData = data;
                                         updateProgress();
-                                    }
+                                    },
+                        "StoryData": function(data){
+                                _storyData = data;
+                                updateProgress();
+                        },
                     };
 
     var loadFunc = function() {
@@ -361,5 +370,6 @@ module.exports = {
     getOneSlashDataByCount: getOneSlashDataByCount,
     getRatingData: getRatingData,
     randomItemInSore: randomItemInSore,
-    getBuffItemByType: getBuffItemByType
+    getBuffItemByType: getBuffItemByType,
+    getStoryDataByID: getStoryDataByID
 };

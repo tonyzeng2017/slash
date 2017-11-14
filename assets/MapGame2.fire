@@ -11524,6 +11524,9 @@
     "newbieEnterPlayer": null,
     "textGold": {
       "__id__": 306
+    },
+    "story": {
+      "__uuid__": "aac724e3-4271-4e02-8f16-f225d7133c9d"
     }
   }
 ]

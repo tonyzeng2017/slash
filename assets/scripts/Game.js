@@ -19,6 +19,7 @@ cc.Class({
         gameWinPrefab: cc.Prefab,
         gameFailPrefab: cc.Prefab,
         reviveUIPrefab: cc.Prefab,
+        story: cc.Prefab,
         audioGameWin: cc.AudioClip,
         audioGameFail: cc.AudioClip,
         newbieLife: cc.Node,
@@ -58,6 +59,32 @@ cc.Class({
         this.sortMng.init();
 
         this.startTime = 0;
+    },
+
+    playStory: function(storyID, callback){
+
+        var self = this;
+        var onFinished = function(){
+            if(self._storyUI){
+                self.node.removeChild(self._storyUI);
+            }
+            if(callback){
+                callback();
+            }
+        }
+
+        if(GameManager.instance.storyEnabled(storyID)){
+            this._storyUI = cc.instantiate(this.story);
+            this._storyUI.x = cc.director.getWinSize().width/2;
+            this._storyUI.y = cc.director.getWinSize().height/2;
+            cc.log("storyID: %s", storyID);
+            this._storyUI.getComponent("StoryRenderer").setStoryAndCallback(storyID, onFinished);
+            this.node.addChild(this._storyUI);
+
+            GameManager.instance.playStory(storyID);
+       }else{
+            onFinished();
+       }
     },
 
     start () {
@@ -203,26 +230,32 @@ cc.Class({
     },
 
     gameOver: function (isWin) {
-        GameManager.instance.pauseMusic();
-        UserDataManager.instance.getGameData().saveData();
-        this.hideRevive();
 
-        TDProxy.onEvent("play_finish", {duration: Date.now() - this.startTime, result: isWin});
-        this.startTime = 0;
-
-        if(isWin){
-            var curStage = GameManager.instance.curStageID;
-            UserDataManager.instance.getUserData().openStage(curStage);
-            // this.gameWinUI.show();
-            this.showGameWin();
-        }else{
-            this.showGameFail();
-            if(GameManager.instance.isFirstDead()){
-                TDProxy.onEvent("first_dead", {mapID: GameManager.instance.mapID, stageID: GameManager.instance.curStageID});
+        var self = this;
+        var doGameOver = function(){
+            GameManager.instance.pauseMusic();
+            UserDataManager.instance.getGameData().saveData();
+            self.hideRevive();
+    
+            TDProxy.onEvent("play_finish", {duration: Date.now() - self.startTime, result: isWin});
+            self.startTime = 0;
+    
+            if(isWin){
+                var curStage = GameManager.instance.curStageID;
+                UserDataManager.instance.getUserData().openStage(curStage);
+                // this.gameWinUI.show();
+                self.showGameWin();
+            }else{
+                self.showGameFail();
+                if(GameManager.instance.isFirstDead()){
+                    TDProxy.onEvent("first_dead", {mapID: GameManager.instance.mapID, stageID: GameManager.instance.curStageID});
+                }
+                GameManager.instance.countDead();
             }
-            GameManager.instance.countDead();
         }
 
+        var stageData = GameManager.instance.getCurStageData();
+        this.playStory(stageData.StoryComplete, doGameOver);
     },
 
     restart: function () {

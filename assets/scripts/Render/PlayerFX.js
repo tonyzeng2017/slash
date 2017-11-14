@@ -12,6 +12,7 @@ cc.Class({
         audioRevive: cc.AudioClip,
         changeSceneAnim: cc.Animation,
         inGameUI: cc.Node,
+        story: cc.Prefab
     },
 
     // use this for initialization
@@ -21,25 +22,46 @@ cc.Class({
         this.reviveAnim.node.active = false;
     },
 
-    playIntro () {
+    playIntro: function(){
         var self = this;
-        if(UserDataManager.instance.getNewbieData().isInGameFinished){
-            this.inGameUI.active = false;
-            this.changeSceneAnim.on("finished", function(){
-                self.startIntro();
-                self.inGameUI.active = true;
-            });
+        var doPlayIntro = function() {
+
+            if(UserDataManager.instance.getNewbieData().isInGameFinished){
+                self.inGameUI.active = false;
+                self.changeSceneAnim.on("finished", function(){
+                    self.startIntro();
+                    self.inGameUI.active = true;
+                });
+                self.changeSceneAnim.play();
+            }
+            else{
+                // UserDataManager.instance.getNewbieData().finishInGame();
+                self.newBieAnim.node.active = true;
+                self.newBieAnim.play();
+                self.newBieAnim.on('finished',  function(){
+                    self.newBieAnim.node.active = false;
+                    self.startIntro();
+                }, self);
+            }
         }
-        else{
-            // UserDataManager.instance.getNewbieData().finishInGame();
-            this.newBieAnim.node.active = true;
-            this.newBieAnim.play();
-            this.newBieAnim.on('finished',  function(){
-                self.newBieAnim.node.active = false;
-                self.startIntro();
-            }, self);
-        }
+
+        var stageData = GameManager.instance.getCurStageData();
+        // if(GameManager.instance.storyEnabled(stageData.Story)){
+        //      var storyUI = cc.instantiate(this.story);
+        //      storyUI.x = cc.director.getWinSize().width/2;
+        //      storyUI.y = cc.director.getWinSize().height/2;
+        //      cc.log("storyID: %s", stageData.Story);
+        //      storyUI.getComponent("StoryRenderer").setStoryAndCallback(stageData.Story, doPlayIntro);
+        //      this.game.node.addChild(storyUI);
+
+        //      GameManager.instance.playStory(stageData.Story);
+        // }else{
+        //      doPlayIntro();
+        // }
+
+        this.game.playStory(stageData.StoryStart,  doPlayIntro);
     },
+
 
     startIntro(){
         this.introAnim.node.active = true;
