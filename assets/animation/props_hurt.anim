@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "props",
+  "_name": "props_hurt",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 1.05,
@@ -390,6 +390,82 @@
               "value": 2
             }
           ]
+        }
+      },
+      "lightball2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.8166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 160,
+                "b": 58,
+                "a": 255
+              }
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 720
+            }
+          ]
+        }
+      },
+      "lightball2/lightball": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0.7333333333333333,
+                "value": 30
+              },
+              {
+                "frame": 1,
+                "value": 0
+              }
+            ],
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "__type__": "cc.Color",
+                  "r": 255,
+                  "g": 218,
+                  "b": 122,
+                  "a": 255
+                }
+              }
+            ],
+            "endColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "__type__": "cc.Color",
+                  "r": 255,
+                  "g": 198,
+                  "b": 136,
+                  "a": 255
+                }
+              }
+            ]
+          }
         }
       }
     }

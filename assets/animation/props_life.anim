@@ -3,7 +3,7 @@
   "_name": "props_life",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.75,
+  "_duration": 1,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -175,6 +175,82 @@
       "pickup/life": {
         "props": {
           "opacity": []
+        }
+      },
+      "lightball2": {
+        "props": {
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1,
+              "value": 720
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.8,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 44,
+                "b": 25,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "lightball2/lightball": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0.8333333333333334,
+                "value": 30
+              },
+              {
+                "frame": 1,
+                "value": 30
+              }
+            ],
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "__type__": "cc.Color",
+                  "r": 255,
+                  "g": 173,
+                  "b": 85,
+                  "a": 255
+                }
+              }
+            ],
+            "endColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "__type__": "cc.Color",
+                  "r": 255,
+                  "g": 92,
+                  "b": 0,
+                  "a": 255
+                }
+              }
+            ]
+          }
         }
       }
     }
