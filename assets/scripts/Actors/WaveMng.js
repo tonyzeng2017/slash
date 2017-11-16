@@ -330,8 +330,8 @@ cc.Class({
     },
 
     getBuffItemPosition(){
-        var randX = cc.randomMinus1To1() * (this.foeGroup.width - this.spawnMargin)/2;
-        var randY = cc.randomMinus1To1() * (this.foeGroup.height - this.spawnMargin)/2;
+        var randX = cc.randomMinus1To1() * (this.foeGroup.width - 100)/2;
+        var randY = cc.randomMinus1To1() * (this.foeGroup.height - 100)/2;
         cc.log("randx: %s, randy: %s", randX, randY);
         return cc.p(randX, randY);
     }

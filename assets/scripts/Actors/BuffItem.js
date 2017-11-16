@@ -16,6 +16,7 @@ cc.Class({
         attributeID: 0,
         showNode: cc.Node,
         hideNode: cc.Node,
+        flyNode: cc.Node,
 
         isReturned: {
             visible: false,
@@ -44,6 +45,34 @@ cc.Class({
         // this.playHide();
     },
 
+    playFly: function(){
+
+        var self = this;
+        var onFlyFinished = function(){
+            self.flyNode.active = false;
+            self.game.player.addBuff(self.buffData);
+            self.game.poolMng.returnBuffItem(self.attributeID, self.node);
+            cc.log("fly finished~~~~~~~~~~~~~");
+        };
+
+        var targetPos = this.game.inGameUI.buffDisplay.position;
+        if(this.attributeID == 0){//if it is life.
+            targetPos = this.game.inGameUI.txt_life.node.parent.position;
+            // targetPos = this.game.inGameUI.txt_life.node.convertToWorldSpace(cc.v2(0, 0));
+        }
+
+        let dir = cc.pSub(targetPos, this.node.position);
+        let rad = cc.pToAngle(dir);
+        let deg = cc.radiansToDegrees(rad);
+        this.node.rotation = 90 - deg;
+
+        this.flyNode.active = true;
+        var flyAnimation = this.node.getComponent(cc.Animation);
+        flyAnimation.play();
+
+        this.node.runAction(cc.sequence(cc.moveTo(1.0, targetPos),  cc.callFunc(onFlyFinished)));
+    },
+
     playHide: function(){
         this.isPlayingHide = true;
         this.hideNode.active = true;
@@ -54,19 +83,14 @@ cc.Class({
         var onHideFinish = function(){
             self.isPlayingHide = false;
             self.isReturned = true;
-    
+            self.hideNode.active = false;
             hideAnim.off("finished", onHideFinish, false);
-            cc.log("hide animation finished555~~~~~~~");
-            self.game.player.addBuff(self.buffData);
-            self.game.poolMng.returnBuffItem(self.attributeID, self.node);
+            // cc.log("hide animation finished555~~~~~~~");
+            self.playFly();
         };
 
         hideAnim.on("finished", onHideFinish, true);
         hideAnim.play();
-    },
-
-    onHideFinish: function(){
-
     },
 
     playShow: function(){
@@ -76,7 +100,7 @@ cc.Class({
 
         var onShowFinish = function(){
             self.isPlayingShow = false;
-            cc.log("show animation finished444~~~~~~~");
+            // cc.log("show animation finished444~~~~~~~");
             showAnim.off("finished", onShowFinish, false);
         };
 

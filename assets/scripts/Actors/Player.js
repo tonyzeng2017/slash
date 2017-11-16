@@ -358,7 +358,8 @@ cc.Class({
             this.game.inGameUI.addBuffDisplay(buffData.ItemType);
         }else if(buffData.ItemType == 1){
             //if it is life then
-            this.life += buffData.AddValue
+            this.life += buffData.AddValue;
+            this.game.inGameUI.updateLife();
         }else{
             //buff on other property.
             var curValue = this[propertyMap[buffData.ItemType]];
