@@ -3,7 +3,7 @@
   "_name": "props_hurt",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 1.05,
+  "_duration": 1.17,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -127,22 +127,7 @@
         "props": {}
       },
       "pickup": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 0,
-              "value": 255
-            },
-            {
-              "frame": 0.43333333333333335,
-              "value": 255
-            },
-            {
-              "frame": 0.7166666666666667,
-              "value": 0
-            }
-          ]
-        }
+        "props": {}
       },
       "pickup/glow": {
         "props": {
@@ -152,8 +137,8 @@
               "value": 0
             },
             {
-              "frame": 0.4166666666666667,
-              "value": 3
+              "frame": 0.3333333333333333,
+              "value": 2.5
             }
           ],
           "scaleX": [
@@ -162,8 +147,22 @@
               "value": 0
             },
             {
-              "frame": 0.4166666666666667,
-              "value": 3
+              "frame": 0.3333333333333333,
+              "value": 2.5
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.21666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
             }
           ]
         }
@@ -240,39 +239,43 @@
         "props": {
           "scaleY": [
             {
-              "frame": 0.06666666666666667,
+              "frame": 0.08333333333333333,
               "value": 0
             },
             {
-              "frame": 0.3333333333333333,
+              "frame": 0.25,
               "value": 0.8
             },
             {
-              "frame": 0.8666666666666667,
+              "frame": 0.6666666666666666,
               "value": 1.1
             }
           ],
           "scaleX": [
             {
-              "frame": 0.06666666666666667,
+              "frame": 0.08333333333333333,
               "value": 0
             },
             {
-              "frame": 0.3333333333333333,
+              "frame": 0.25,
               "value": 0.8
             },
             {
-              "frame": 0.8666666666666667,
+              "frame": 0.6666666666666666,
               "value": 1.1
             }
           ],
           "opacity": [
             {
-              "frame": 0.06666666666666667,
-              "value": 2558
+              "frame": 0.08333333333333333,
+              "value": 255
             },
             {
-              "frame": 0.8666666666666667,
+              "frame": 0.5,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
               "value": 0
             }
           ]
@@ -286,7 +289,7 @@
               "value": 255
             },
             {
-              "frame": 0.5,
+              "frame": 0.4166666666666667,
               "value": 0
             }
           ],
@@ -296,7 +299,7 @@
               "value": 0
             },
             {
-              "frame": 0.5,
+              "frame": 0.4166666666666667,
               "value": -360
             }
           ],
@@ -306,7 +309,7 @@
               "value": 1
             },
             {
-              "frame": 0.5,
+              "frame": 0.4166666666666667,
               "value": 0
             }
           ],
@@ -316,7 +319,7 @@
               "value": 1
             },
             {
-              "frame": 0.5,
+              "frame": 0.4166666666666667,
               "value": 0
             }
           ]
@@ -330,11 +333,11 @@
               "value": 0
             },
             {
-              "frame": 0.4666666666666667,
+              "frame": 0.38333333333333336,
               "value": 0.45
             },
             {
-              "frame": 1.05,
+              "frame": 0.9166666666666666,
               "value": 0.5
             }
           ],
@@ -344,11 +347,11 @@
               "value": 0
             },
             {
-              "frame": 0.4666666666666667,
+              "frame": 0.38333333333333336,
               "value": 0.45
             },
             {
-              "frame": 1.05,
+              "frame": 0.9166666666666666,
               "value": 0.5
             }
           ],
@@ -358,11 +361,11 @@
               "value": 255
             },
             {
-              "frame": 0.4666666666666667,
+              "frame": 0.38333333333333336,
               "value": 255
             },
             {
-              "frame": 1.05,
+              "frame": 0.9166666666666666,
               "value": 0
             }
           ]
@@ -376,7 +379,7 @@
               "value": 0
             },
             {
-              "frame": 0.8166666666666667,
+              "frame": 0.6,
               "value": 2
             }
           ],
@@ -386,8 +389,22 @@
               "value": 0
             },
             {
-              "frame": 0.8166666666666667,
+              "frame": 0.6,
               "value": 2
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
             }
           ]
         }
@@ -466,6 +483,130 @@
               }
             ]
           }
+        }
+      },
+      "pickup/lightball2": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 166,
+                "b": 83,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "pickup/lightball2/trail": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.8333333333333334,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.8333333333333334,
+              "value": 0.5
+            },
+            {
+              "frame": 1.1666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "pickup/lightball2/lightball": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "startColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "__type__": "cc.Color",
+                  "r": 255,
+                  "g": 244,
+                  "b": 162,
+                  "a": 255
+                }
+              }
+            ],
+            "endColor": [
+              {
+                "frame": 0,
+                "value": {
+                  "__type__": "cc.Color",
+                  "r": 255,
+                  "g": 159,
+                  "b": 95,
+                  "a": 255
+                }
+              }
+            ],
+            "emissionRate": [
+              {
+                "frame": 1,
+                "value": 30
+              },
+              {
+                "frame": 1.1666666666666667,
+                "value": 0
+              }
+            ]
+          }
+        }
+      },
+      "pickup/lightball2/lightball3": {
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 217,
+                "b": 15,
+                "a": 255
+              }
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 238
+            },
+            {
+              "frame": 0.75,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "pickup/lightball2/lightball1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.7666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 1,
+              "value": 0
+            }
+          ]
         }
       }
     }
