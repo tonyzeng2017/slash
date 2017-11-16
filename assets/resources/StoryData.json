@@ -1,22 +1,23 @@
 
 {
-    "1" : {"Name" : "壹", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"2" : {"Name" : "贰", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"3" : {"Name" : "叁", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"4" : {"Name" : "肆", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"5" : {"Name" : "伍", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"6" : {"Name" : "陆", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"7" : {"Name" : "柒", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"8" : {"Name" : "捌", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"9" : {"Name" : "玖", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"10" : {"Name" : "拾", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"11" : {"Name" : "壹拾壹", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"12" : {"Name" : "壹拾贰", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"13" : {"Name" : "壹拾叁", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"14" : {"Name" : "壹拾肆", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"15" : {"Name" : "壹拾伍", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"16" : {"Name" : "壹拾陆", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"17" : {"Name" : "壹拾柒", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"18" : {"Name" : "壹拾捌", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
-    ,"19" : {"Name" : "壹拾玖", "Word" : "啊啊啊啊啊啊", "Pic" : "guochang"}
+    "1" : {"Name" : "壹", "Word" : "“玄，你终于来了，终于来了！”|“怜，是你么！是你回来了么？！”", "Pic" : "guochang"}
+    ,"2" : {"Name" : "贰", "Word" : "“还能，再见到你吧？”", "Pic" : "guochang"}
+    ,"3" : {"Name" : "叁", "Word" : "为何上天要让你离我而去？", "Pic" : "guochang"}
+    ,"4" : {"Name" : "肆", "Word" : "这里，有你的气息", "Pic" : "guochang"}
+    ,"5" : {"Name" : "5", "Word" : "你们是谁！你们将怜怎么了！为什么会有她的气息，妖魔鬼怪斩尽杀绝！斩！斩！斩！", "Pic" : "guochang"}
+    ,"6" : {"Name" : "陆", "Word" : "你是谁？！你们又是谁？！我的怜在哪里！她在哪里！！！", "Pic" : "guochang"}
+    ,"7" : {"Name" : "柒", "Word" : "怜，你做的饭菜真好吃；怜！怎么这么不小心！疼么？", "Pic" : "guochang"}
+    ,"8" : {"Name" : "捌", "Word" : "我应该怎么办，怜，告诉我……", "Pic" : "guochang"}
+    ,"9" : {"Name" : "玖", "Word" : "怜，你会没事的相信我，没有人能从我手里夺走你，天！也不行！", "Pic" : "guochang"}
+    ,"10" : {"Name" : "拾", "Word" : "马上就好了，马上我们就要相见了，怜，等着我", "Pic" : "guochang"}
+    ,"11" : {"Name" : "壹拾壹", "Word" : "怜！怜！为什么?!为什么?！贼老天，啊啊啊啊啊！", "Pic" : "guochang"}
+    ,"12" : {"Name" : "壹拾贰", "Word" : "对不起，对不起，怜，是我害了你，都是我的错啊……", "Pic" : "guochang"}
+    ,"13" : {"Name" : "壹拾叁", "Word" : "原来，这一切都是你，只怪我为了给你续命，反而将你变成了怪物为祸人间。", "Pic" : "guochang"}
+    ,"14" : {"Name" : "壹拾肆", "Word" : "怜，你会理解我的对吧！让我终结掉你这错误的形态吧！我会去轮回中寻你……", "Pic" : "guochang"}
+    ,"15" : {"Name" : "壹拾伍", "Word" : "剑伴孤影云海间，为寻伊人踏千山。|
+玄晶血染霜花碎，鬼嚎幽谷几人还。|
+出鞘激荡山峦移，回手翻转乾坤乱。|
+屠尽邪魔九万万，看我一剑破苍天。|
+男儿一世英雄梦，山海之痕自在斩!|
+轮回辗转，不为成仙，只为在红尘中等你归来。|", "Pic" : "guochang"}
 }
