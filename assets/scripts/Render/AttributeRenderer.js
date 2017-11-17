@@ -32,6 +32,7 @@ cc.Class({
         cc.loader.loadRes("tps/ui", cc.SpriteAtlas, function (err, atlas) {
             var frame = atlas.getSpriteFrame("battle-" + attrData.Pic);
             self.iconAttr.spriteFrame = frame;
+            cc.loader.setAutoReleaseRecursively(atlas, true);
         });
 
     }

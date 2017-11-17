@@ -44,6 +44,7 @@ cc.Class({
             // cc.Texture2D.defaultPixelFormat = cc.Texture2D.PIXEL_FORMAT_RGB888;
             self.bg.spriteFrame = spriteFrame;
             // cc.Texture2D.defaultPixelFormat = cc.Texture2D.PIXEL_FORMAT_RGBA4444;
+            cc.loader.setAutoReleaseRecursively(spriteFrame, true);
         });
         cc.log("bg name: %s", stageData.MapPic);
     },
