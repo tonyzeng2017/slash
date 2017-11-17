@@ -753,7 +753,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": {
       "__id__": 40
@@ -1441,7 +1441,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 54
@@ -1987,6 +1987,9 @@
     },
     "hideNode": {
       "__id__": 21
+    },
+    "flyNode": {
+      "__id__": 41
     },
     "isReturned": false,
     "isPlayingShow": false,

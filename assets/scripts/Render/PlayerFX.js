@@ -31,6 +31,7 @@ cc.Class({
                 self.changeSceneAnim.on("finished", function(){
                     self.startIntro();
                     self.inGameUI.active = true;
+                    self.changeSceneAnim.node.active = false;
                 });
                 self.changeSceneAnim.play();
             }

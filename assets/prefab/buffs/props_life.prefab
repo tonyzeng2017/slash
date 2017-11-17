@@ -738,7 +738,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 25
@@ -1001,7 +1001,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 40
@@ -1547,6 +1547,9 @@
     },
     "hideNode": {
       "__id__": 21
+    },
+    "flyNode": {
+      "__id__": 27
     },
     "isReturned": false,
     "isPlayingShow": false,

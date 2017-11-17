@@ -51,6 +51,8 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         var self = this;
+        var size = cc.director.getVisibleSize();
+        cc.log("width: %, height: %s", size.width, size.height)
 
         TDProxy.onEvent("enter_game", UserDataManager.instance.getUserData().getDCData());
         // cc.Texture2D.defaultPixelFormat = cc.Texture2D.PIXEL_FORMAT_RGBA4444;

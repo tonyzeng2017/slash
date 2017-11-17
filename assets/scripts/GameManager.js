@@ -152,13 +152,15 @@ var GameManager = cc.Class({
     },
 
     storyEnabled: function(storyID){
-        return Number(storyID) != -1 && this.playedStories.indexOf(storyID.toString()) < 0; 
+        return Number(storyID) != -1 //&& this.playedStories.indexOf(storyID.toString()) < 0; 
     },
 
     playStory: function(storyID){
         cc.log("all of the played stories: %s", this.playedStories);
-        this.playedStories.push(storyID.toString());
-        this.saveData();
+        if(this.playedStories.indexOf(storyID.toString()) < 0){
+            this.playedStories.push(storyID.toString());
+            this.saveData();
+        }
     },
 
     saveData: function(){

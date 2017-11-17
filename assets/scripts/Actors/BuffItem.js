@@ -70,7 +70,9 @@ cc.Class({
         var flyAnimation = this.node.getComponent(cc.Animation);
         flyAnimation.play();
 
-        this.node.runAction(cc.sequence(cc.moveTo(1.0, targetPos),  cc.callFunc(onFlyFinished)));
+        var distance = cc.pDistance(targetPos, this.node.position);
+        var duration = 1.0 * distance/cc.director.getWinSize().width;
+        this.node.runAction(cc.sequence(cc.moveTo(duration, targetPos),  cc.callFunc(onFlyFinished)));
     },
 
     playHide: function(){

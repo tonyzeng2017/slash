@@ -48,6 +48,18 @@ cc.Class({
     playAnimation: function(){
         var self = this;
         var count = 0;
+
+        var doDelay = function(){
+
+            self.node.runAction(cc.sequence(cc.delayTime(1), cc.callFunc(
+                function(){
+                    self.node.active = false;
+                    if(self._finishCallback){
+                        self._finishCallback();
+                    }
+                })));
+        };
+
         var finished = function(){
             cc.log("animation finished: %s", count);
             count++;
@@ -57,10 +69,8 @@ cc.Class({
                 for(var i = 0; i < self.animations.length; i++){ 
                     self.animations[i].off("finished", finished, true);
                 }
-                self.node.active = false;
-                if(self._finishCallback){
-                    self._finishCallback();
-                }
+
+                doDelay();
             }
         }
 
