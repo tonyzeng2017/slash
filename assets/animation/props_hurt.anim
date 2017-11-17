@@ -480,6 +480,12 @@
           "cc.Sprite": {
             "spriteFrame": [
               {
+                "frame": 0,
+                "value": {
+                  "__uuid__": "f8d4ba92-1f96-44be-a19e-04c0203032f8"
+                }
+              },
+              {
                 "frame": 0.016666666666666666,
                 "value": {
                   "__uuid__": "f8d4ba92-1f96-44be-a19e-04c0203032f8"
@@ -661,6 +667,20 @@
               }
             ]
           }
+        },
+        "props": {
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 255,
+                "g": 168,
+                "b": 73,
+                "a": 255
+              }
+            }
+          ]
         }
       }
     }
