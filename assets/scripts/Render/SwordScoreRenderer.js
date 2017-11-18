@@ -34,6 +34,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+        this.arrowCurrent.active = false;
         this.gameDataModel = UserDataManager.instance.getGameData();
         this.showScore();
     },
