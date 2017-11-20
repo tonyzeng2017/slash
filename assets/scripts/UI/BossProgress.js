@@ -14,6 +14,9 @@ cc.Class({
 
     updateProgress(){
         this.bar.width = this.totalWidth * (1-this.bossManager.getHPPercent());
+        if(this.bossManager.getHPPercent() >= 1){
+            this.hide();
+        }
     },
 
     show () {

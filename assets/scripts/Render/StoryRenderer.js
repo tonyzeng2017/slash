@@ -17,7 +17,9 @@ cc.Class({
 
         animations: [cc.Animation],
         labels: [cc.Label],
-        storyID: cc.String
+        storyID: cc.String,
+        btnSkip: cc.Node,
+        btnNext: cc.Node
     },
 
     // use this for initialization
@@ -81,8 +83,25 @@ cc.Class({
         if(this._words[count]){
             this.animations[count].play();
         }
-    }
+    },
 
+    onSkip: function(){
+        this.node.stopAllActions();
+        for(var i = 0; i < this.animations.length; i++){
+            this.animations[i].stop();
+            this.animations[i].node.width = 810;
+        }
+
+        this.btnNext.active = true;
+        this.btnSkip.active = false;
+    },
+
+    onNext: function(){
+        this.node.active = false;
+        if(this._finishCallback){
+            this._finishCallback();
+        }
+    }
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {

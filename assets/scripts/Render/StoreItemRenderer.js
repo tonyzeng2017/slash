@@ -42,6 +42,7 @@ cc.Class({
             var frame = atlas.getSpriteFrame(self._itemData.Pic);
             cc.log("store item rendered pic: %s", self._itemData.Pic);
             self.iconItem.spriteFrame = frame;
+            cc.loader.setAutoReleaseRecursively(atlas, true);
         });
     },
 

@@ -152,7 +152,7 @@ var GameManager = cc.Class({
     },
 
     storyEnabled: function(storyID){
-        return Number(storyID) != -1 //&& this.playedStories.indexOf(storyID.toString()) < 0; 
+        return Number(storyID) != -1;//&& this.playedStories.indexOf(storyID.toString()) < 0; 
     },
 
     playStory: function(storyID){

@@ -151,10 +151,12 @@ cc.Class({
                     let atkPos = self.node.parent.convertToNodeSpaceAR(touchLoc);
                     let atkDir = cc.pSub(atkPos, self.node.position);
                     self.atkTargetPos = cc.pAdd( self.node.position, cc.pMult(cc.pNormalize(atkDir), self.atkDist));
-                    self.atkTargetPos.x  = Math.max(self.atkTargetPos.x, -self.node.parent.width/2 + 10);
-                    self.atkTargetPos.y  = Math.max(self.atkTargetPos.y, -self.node.parent.height/2 + 15);
-                    self.atkTargetPos.x  = Math.min(self.atkTargetPos.x, self.node.parent.width/2 - 10);
-                    self.atkTargetPos.y  = Math.min(self.atkTargetPos.y, self.node.parent.height/2 - 15);
+
+                    var visibleSize = cc.director.getVisibleSize();
+                    self.atkTargetPos.x  = Math.max(self.atkTargetPos.x, -visibleSize.width/2 + 10);
+                    self.atkTargetPos.y  = Math.max(self.atkTargetPos.y, -visibleSize.height/2 + 15);
+                    self.atkTargetPos.x  = Math.min(self.atkTargetPos.x, visibleSize.width/2 - 10);
+                    self.atkTargetPos.y  = Math.min(self.atkTargetPos.y, visibleSize.height/2 - 15);
 
                     // cc.log("target position: %s, %s", self.atkTargetPos.x, self.atkTargetPos.y);
                     let atkPosWorld = self.node.parent.convertToWorldSpaceAR(self.atkTargetPos);
