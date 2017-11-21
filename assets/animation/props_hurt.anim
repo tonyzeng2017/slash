@@ -643,5 +643,11 @@
       }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0.6,
+      "func": "onDispear",
+      "params": []
+    }
+  ]
 }

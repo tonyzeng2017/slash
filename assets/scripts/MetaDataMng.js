@@ -22,6 +22,7 @@ cc.Class({
         btnStart: cc.Node,
         loadingUI: cc.Node,
         bar: cc.Node,
+        barbg: cc.Node,
         textPercent: cc.Label
     },
 
@@ -111,6 +112,12 @@ cc.Class({
         }
         var progress = cc.lerp(this.curProgress, this.destProgress, this.timer/this.lerpDuration);
         this.bar.width = 1120 * progress;
+
+        if(progress >= 1.0){
+            this.bar.active = false;
+            this.textPercent.node.active = false;
+            this.barbg.active = false;
+        }
     }
 
 });

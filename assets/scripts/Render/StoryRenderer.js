@@ -18,8 +18,11 @@ cc.Class({
         animations: [cc.Animation],
         labels: [cc.Label],
         storyID: cc.String,
-        btnSkip: cc.Node,
-        btnNext: cc.Node
+
+        skipTimeStamp: {
+            default: 0,
+            visible: false
+        }
     },
 
     // use this for initialization
@@ -39,6 +42,7 @@ cc.Class({
             }
         }
 
+        this._animationFinished = false;
         this._words = words;
     },
 
@@ -54,7 +58,7 @@ cc.Class({
         var doDelay = function(){
 
             self.node.runAction(cc.sequence(cc.delayTime(1), cc.callFunc(
-                function(){
+                function(){     
                     self.node.active = false;
                     if(self._finishCallback){
                         self._finishCallback();
@@ -72,6 +76,7 @@ cc.Class({
                     self.animations[i].off("finished", finished, true);
                 }
 
+                this._animationFinished = true;
                 doDelay();
             }
         }
@@ -91,15 +96,28 @@ cc.Class({
             this.animations[i].stop();
             this.animations[i].node.width = 810;
         }
-
-        this.btnNext.active = true;
-        this.btnSkip.active = false;
+        this.skipTimeStamp = new Date().getTime();
     },
 
     onNext: function(){
         this.node.active = false;
         if(this._finishCallback){
             this._finishCallback();
+        }
+    },
+
+    onGlobalTap: function(){
+        if(this._animationFinished){
+            this.onNext();
+        }else{
+            if(this.skipTimeStamp == 0){
+                this.onSkip();
+            }else{
+                var now = new Date().getTime();
+                if(now - this.skipTimeStamp>=1000){
+                    this.onNext();
+                }
+            }
         }
     }
 

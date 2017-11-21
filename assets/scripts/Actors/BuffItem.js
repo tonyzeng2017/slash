@@ -92,7 +92,12 @@ cc.Class({
         };
 
         hideAnim.on("finished", onHideFinish, true);
+        // hideAnim.on("onDispear", onDispear, true);
         hideAnim.play();
+    },
+
+    onDispear: function(){
+        cc.log("onDispear function called~~~~~~~~");
     },
 
     playShow: function(){
