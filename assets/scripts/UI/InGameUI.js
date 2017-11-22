@@ -66,6 +66,12 @@ cc.Class({
         }
     },
 
+    updateEnergy: function(){
+        var totalEnergy = UserDataManager.instance.getEnergyData().totalEnergy;
+        //update the renderer according to the energy.
+        
+    },  
+
     dead: function(){
         if(this.warning_bg){
             this.warning_bg.node.stopAllActions();

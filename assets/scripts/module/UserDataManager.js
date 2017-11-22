@@ -1,6 +1,7 @@
 var UserDataModel  = require("UserDataModel");
 var GameDataModel = require("GameDataModel");
 var NewBieDataModel = require("NewBieDataModel");
+var EnergyDataModel = require("EnergyDataModel");
 
 var UserDataManager = cc.Class({
     statics: {
@@ -32,6 +33,15 @@ var UserDataManager = cc.Class({
         }
 
         return this._newBieData;
+    },
+
+    getEnergyData: function(){
+        if(!this._energyData){
+            this._energyData = new EnergyDataModel();
+            cc.log("energy data model");
+        }
+
+        return this._energyData;
     }
 });
 

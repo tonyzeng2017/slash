@@ -35,6 +35,10 @@ var Constant = cc.Class({
 
         this.MAX_BUFF_STR = MetaDataManager.getValueDataByID("22").Num;
         this.MIN_BUFF_INTERVAL = Number(MetaDataManager.getValueDataByID("23").Num);
+        
+        this.MAX_ENERGY = Number(MetaDataManager.getValueDataByID("24").Num);
+        this.MIN_REQUIRED_ENERGY = Number(MetaDataManager.getValueDataByID("26").Num);
+        this.SKILL_DAMAGE = Number(MetaDataManager.getValueDataByID("25").Num);
     },
 
     getMaxBuffCount: function(type){

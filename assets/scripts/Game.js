@@ -162,6 +162,21 @@ cc.Class({
         }
     },
 
+    releaseSkills(){
+        let nodeList = this.foeGroup.children;
+        for (let i = 0; i < nodeList.length; ++i) {
+            let foe = nodeList[i].getComponent('Foe');
+            if (foe) {
+                foe.dead(true);                
+            } else {
+                let projectile = nodeList[i].getComponent('Projectile');
+                if (projectile) {
+                    projectile.broke();                    
+                }
+            }
+        }
+    },
+
     playerReady: function (isRevive) {
         this.resume();
         if(!isRevive){

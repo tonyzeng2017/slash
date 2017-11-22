@@ -280,8 +280,12 @@ cc.Class({
 
     killFoe () {
         this.killedFoe++;
-
         this.createBuffItem();
+    },
+
+    chargeEnergy: function(energy){
+        UserDataManager.instance.getEnergyData().addEnergy(energy);
+        this.game.inGameUI.updateEnergy();
     },
     
     hitFoe () {

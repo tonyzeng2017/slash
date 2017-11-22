@@ -4,6 +4,7 @@ const FoeTypeMap = require('Types').FoeTypeMap;
 const ProjectileType = require('Types').ProjectileType;
 const MetaDataManager = require("MetaDataManager");
 var GameManager = require("GameManager");
+var UserDataManager = require("UserDataManager");
 
 const AttackType = cc.Enum({
     Melee: -1,
@@ -47,6 +48,11 @@ cc.Class({
         isBoss: {
             visible: false,
             default: false
+        },
+
+        atkEnergy: {
+            visible: false,
+            default: 0
         }
     },
 
@@ -70,6 +76,7 @@ cc.Class({
             // cc.log("this.atkStun:  " + this.atkStun +" ,this.atkPrepTime: " + this.atkPrepTime +" ,CorpseDuration: " + this.corpseDuration)
             var move = this.getComponent('Move');
             move.moveSpeed = monsterData.MoveSpeed;
+            this.atkEnergy = monsterData.AtkEnergy;
         }else{
             cc.log("there are no data for the foeType: " + this.foeType)
         }
@@ -250,7 +257,7 @@ cc.Class({
         }
     },
 
-    dead () {
+    dead (isBySkill) {
         this.move.stop();
         this.isMoving = false;
         this.isAttacking = false;
@@ -272,7 +279,11 @@ cc.Class({
         } else {
             this.player.addKills(this.killScore);
             // this.player.addScore();
-
+            if(!isBySkill){
+                //to add the energy.
+                this.waveMng.chargeEnergy(this.atkEnergy);
+            }
+            
             this.isAlive = false;
             this.scheduleOnce(this.corpse, this.deadDuation);
             this.waveMng.killFoe();
