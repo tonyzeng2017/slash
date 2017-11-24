@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "5bac3a1c-4eaf-4a93-8d1f-4a77041074a6",
+  "uuid": "ce61662d-a553-4922-ab38-4d147af8a3e5",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "tuowei_02": {
+    "buff_1_gloden": {
       "ver": "1.0.3",
-      "uuid": "ef1b0d95-ef9c-4d7f-b926-3c713d19e7cb",
-      "rawTextureUuid": "5bac3a1c-4eaf-4a93-8d1f-4a77041074a6",
+      "uuid": "e55ae0aa-b7c3-4f1f-a072-49f8ff93a3b2",
+      "rawTextureUuid": "ce61662d-a553-4922-ab38-4d147af8a3e5",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
@@ -16,10 +16,10 @@
       "offsetY": 0,
       "trimX": 0,
       "trimY": 0,
-      "width": 34,
-      "height": 118,
-      "rawWidth": 34,
-      "rawHeight": 118,
+      "width": 111,
+      "height": 113,
+      "rawWidth": 111,
+      "rawHeight": 113,
       "borderTop": 0,
       "borderBottom": 0,
       "borderLeft": 0,
