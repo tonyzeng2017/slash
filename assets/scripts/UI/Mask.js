@@ -23,7 +23,7 @@ cc.Class({
                 if(cc.sys.isMobile) {
                     cc.log("on global touch mask end~~~~~~~~~");
                     event.stopPropagation();
-                    cc.Component.EventHandler.emitEvents([this.globalTouchHandler]);
+                    cc.Component.EventHandler.emitEvents([this.globalTouchHandler], event);
                 }
             }, this);
         // }else{
@@ -31,7 +31,7 @@ cc.Class({
                 if(!cc.sys.isMobile){
                     cc.log("on global MOUSE_UP mask end~~~~~~~~~");
                     event.stopPropagation();
-                    cc.Component.EventHandler.emitEvents([this.globalTouchHandler]);
+                    cc.Component.EventHandler.emitEvents([this.globalTouchHandler], event);
                 }
             }, this);
         // }

@@ -16,7 +16,8 @@ cc.Class({
         // },
         // ...
 
-        settingUI: cc.Prefab
+        settingUI: cc.Prefab,
+        storyUI: cc.Prefab
     },
 
     // use this for initialization
@@ -35,6 +36,11 @@ cc.Class({
 
     showSettings: function(){
         this._settingsUI.getComponent("SettingsUI").show();
+    },
+
+    showStory: function(){
+        var storyUI = cc.instantiate(this.storyUI);
+        this.node.addChild(storyUI);
     }
 
     // called every frame, uncomment this function to activate update callback

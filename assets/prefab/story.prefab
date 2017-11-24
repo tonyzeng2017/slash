@@ -196,7 +196,7 @@
     },
     "component": "StoryRenderer",
     "handler": "onGlobalTap",
-    "customEventData": ""
+    "customEventData": "2"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -2622,7 +2622,10 @@
       }
     ],
     "storyID": "String",
-    "skipTimeStamp": 0
+    "skipTimeStamp": 0,
+    "bg": {
+      "__id__": 2
+    }
   },
   {
     "__type__": "cc.PrefabInfo",

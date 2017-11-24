@@ -268,11 +268,11 @@ cc.Class({
     spawnBuffItem (buffData) {
         let buffItem = this.game.poolMng.requestBuffItem(buffData.ItemType - 1);
         if(buffItem){
-            this.foeGroup.addChild(buffItem);
             let pos = this.getBuffItemPosition();
             buffItem.setPosition(pos);
             buffItem.getComponent('BuffItem').init(this.game, buffData);
-            cc.log("request a buff item~~~~~~");
+            this.foeGroup.addChild(buffItem);
+            cc.log("request a buff item~~~~~~, positionX: %s, positionY: %s", pos.x, pos.y);
         }else{
             cc.log("requesting too many buffitems! please increase size")
         }

@@ -31,16 +31,31 @@ cc.Class({
         isPlayingHide: {
             visible: false,
             default: false
+        },
+
+        isWaitingPickUP: {
+            visible: false,
+            default: false
         }
     },
 
     init: function(game, buffData){
         this.game = game;
         this.buffData = buffData;
+        this.isReturned = false;
+        this.isPlayingShow = false;
+        this.isPlayingHide = false;
+        this.isWaitingPickUP = false;
+        this.node.rotation = 0;
+        this.node.active = true;
+        this.showNode.active = true;
     },
 
     // use this for initialization
     onLoad: function () {
+        // this.showNode.active = true;
+        // this.hideNode.active = false;
+        // this.flyNode.active = false;
         this.playShow();
         // this.playHide();
     },
@@ -79,6 +94,7 @@ cc.Class({
         this.isPlayingHide = true;
         this.hideNode.active = true;
         this.showNode.active = false;
+        this.flyNode.active = false;
         var hideAnim = this.node.getComponent(cc.Animation);
         var self = this;
 
@@ -87,7 +103,7 @@ cc.Class({
             self.isReturned = true;
             self.hideNode.active = false;
             hideAnim.off("finished", onHideFinish, false);
-            // cc.log("hide animation finished555~~~~~~~");
+            cc.log("hide animation finished555~~~~~~~");
             self.playFly();
         };
 
@@ -101,19 +117,20 @@ cc.Class({
     },
 
     playShow: function(){
+        this.showNode.active = true;
         this.isPlayingShow = true;
         var showAnim = this.node.getComponent(cc.Animation);
         var self = this;
 
         var onShowFinish = function(){
             self.isPlayingShow = false;
+            self.isWaitingPickUP = true;
             // cc.log("show animation finished444~~~~~~~");
             showAnim.off("finished", onShowFinish, false);
         };
 
         showAnim.on("finished", onShowFinish, true);
         showAnim.play();
-        cc.log("playshow222~~~~~~~~~~~~~~~");
     },
 
     onShowFinish: function(){
@@ -133,9 +150,14 @@ cc.Class({
             return;
         }
 
+        if(!this.isWaitingPickUP){
+            return;
+        }
+
         let dist = cc.pDistance(this.game.player.node.position, this.node.position);
         if (dist < 50 && this.game.player.isAlive) {
-            cc.log("going to play hide~~~~~~~~~~~");
+            cc.log("going to play hide~~~~~~~~~~~, distance: %s", dist);
+            this.isWaitingPickUP = false;
             this.playHide();
         }
 

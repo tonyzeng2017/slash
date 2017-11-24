@@ -74,11 +74,17 @@ cc.Class({
              var self = this;
              if(cc.sys.isMobile){
                  this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
-                     console.log('Mouse down entrance: %s', self.entranceID);
+                     if(event.target != self.node){
+                         return;
+                     }
+                     console.log('TOUCH_END entrance: %s', self.entranceID);
                      self.onEnter();
                  }, self);
              }else{
                  this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
+                     if(event.target != self.node){
+                         return;
+                     }
                      console.log('Mouse down entrance: %s', self.entranceID);
                      self.onEnter();
                  }, self);

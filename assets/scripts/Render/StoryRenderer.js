@@ -22,7 +22,9 @@ cc.Class({
         skipTimeStamp: {
             default: 0,
             visible: false
-        }
+        },
+
+        bg: cc.Node
     },
 
     // use this for initialization
@@ -87,6 +89,7 @@ cc.Class({
 
         if(this._words[count]){
             this.animations[count].play();
+            cc.log("animation played~~~~~~~~");
         }
     },
 
@@ -97,6 +100,8 @@ cc.Class({
             this.animations[i].node.width = 810;
         }
         this.skipTimeStamp = new Date().getTime();
+
+        cc.log("animation skipped~~~~~~~~~~~");
     },
 
     onNext: function(){
@@ -106,7 +111,12 @@ cc.Class({
         }
     },
 
-    onGlobalTap: function(){
+    onGlobalTap: function(event){
+        cc.log("event.target: %s", event.target.toString());
+        if(event.target != this.bg){
+            return;
+        }
+
         if(this._animationFinished){
             this.onNext();
         }else{

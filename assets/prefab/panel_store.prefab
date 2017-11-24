@@ -55,7 +55,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 131
@@ -141,7 +141,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1280,
+      "width": 1560,
       "height": 960
     },
     "_rotationX": 0,
@@ -685,7 +685,7 @@
       "__id__": 23
     },
     "_id": "",
-    "_opacity": 100,
+    "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -778,7 +778,7 @@
       "__id__": 26
     },
     "_id": "",
-    "_opacity": 100,
+    "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,

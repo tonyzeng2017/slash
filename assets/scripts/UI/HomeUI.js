@@ -70,6 +70,7 @@ cc.Class({
 
         cc.eventManager.pauseTarget(this.btnGroup, true);
         cc.director.loadScene('EntranceGame');
+        // cc.director.loadScene('TestScene');
         TDProxy.onEvent("start_game", {});
         //G.analytics_plugin.logEvent("startGame", UserDataManager.instance.getUserData().getDCData());
     },
