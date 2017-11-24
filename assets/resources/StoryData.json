@@ -1,18 +1,26 @@
 
 {
-    "1" : {"Name" : "壹", "Word" : "玄，你终于来了，终于来了！|怜，是你么！是你在这附近么？！", "Pic" : "guochang"}
-    ,"2" : {"Name" : "贰", "Word" : "还能，再见到你吧？", "Pic" : "guochang"}
-    ,"3" : {"Name" : "叁", "Word" : "为何上天要让你离我而去？", "Pic" : "guochang"}
-    ,"4" : {"Name" : "肆", "Word" : "这里，有你的气息", "Pic" : "guochang"}
-    ,"5" : {"Name" : "5", "Word" : "你们是谁！你们将怜怎么了！|为什么会有她的气息？！妖魔鬼怪斩尽杀绝！|斩！斩！斩！", "Pic" : "guochang"}
-    ,"6" : {"Name" : "陆", "Word" : "你是谁？！你们又是谁？！|我的怜在哪里！她在哪里！！！", "Pic" : "guochang"}
-    ,"7" : {"Name" : "柒", "Word" : "怜，你做的饭菜真好吃|怜！怎么这么不小心！疼么？", "Pic" : "guochang"}
-    ,"8" : {"Name" : "捌", "Word" : "我应该怎么办，怜，告诉我……", "Pic" : "guochang"}
-    ,"9" : {"Name" : "玖", "Word" : "怜，你会没事的相信我，|没有人能从我手里夺走你，天！也不行！", "Pic" : "guochang"}
-    ,"10" : {"Name" : "拾", "Word" : "马上就好了，马上我们就要相见了|怜，等着我", "Pic" : "guochang"}
-    ,"11" : {"Name" : "壹拾壹", "Word" : "怜！怜！为什么?!为什么?！|贼老天，啊啊啊啊啊！", "Pic" : "guochang"}
-    ,"12" : {"Name" : "壹拾贰", "Word" : "对不起，对不起，怜……|是我害了你，都是我的错啊……", "Pic" : "guochang"}
-    ,"13" : {"Name" : "壹拾叁", "Word" : "原来，这一切都是你，只怪我为了给你续命|反而将你变成了怪物为祸人间。", "Pic" : "guochang"}
-    ,"14" : {"Name" : "壹拾肆", "Word" : "怜，你会理解我的对吧！|让我终结掉你这错误的形态吧！我会去轮回中寻你……", "Pic" : "guochang"}
-    ,"15" : {"Name" : "壹拾伍", "Word" : "剑伴孤影云海间，为寻伊人踏千山。|玄晶血染霜花碎，鬼嚎幽谷几人还。|出鞘激荡山峦移，回手翻转乾坤乱。|屠尽邪魔九万万，看我一剑破苍天。|男儿一世英雄梦，山海之痕自在斩!|轮回辗转，不为成仙，只为在红尘中等你归来。", "Pic" : "guochang"}
+    "1" : {"Name" : "壹", "Word" : "思君，却是一别经年。|不知君在何处，已不知吾之心在何处。", "Pic" : "guochang", "DramaReviewPic" : "juanzhou1"}
+    ,"2" : {"Name" : "贰", "Word" : "众生皆知，吾为剑神，名为玄，斩妖除魔，安定天下。|可众生皆不知吾内心之愿。", "Pic" : "guochang", "DramaReviewPic" : "juanzhou2"}
+    ,"3" : {"Name" : "叁", "Word" : "斩杀妖孽，说是为了救世,|其实不过想要追逐你的脚步。", "Pic" : "guochang", "DramaReviewPic" : "juanzhou3"}
+    ,"4" : {"Name" : "肆", "Word" : "追逐你的气息，枉自磋叹。|？？？：玄，我真的，会带来灾祸吗……", "Pic" : "guochang", "DramaReviewPic" : "juanzhou4"}
+    ,"5" : {"Name" : "5", "Word" : "村民甲:“都是因为她！她害死了那么多人！！！”|村民乙：“杀了她！杀了这头怪物！！”|玄：“莺，我们走吧！离开这里！”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou1"}
+    ,"6" : {"Name" : "陆", "Word" : "莺鱼：真的是我……是我带来了水灾……吗", "Pic" : "guochang", "DramaReviewPic" : "juanzhou2"}
+    ,"7" : {"Name" : "柒", "Word" : "村民丙：“我可怜的儿淹死了！|你还我儿来！！还我儿来啊！！呜呜！”|众村民：“抓住她！杀了她！杀了她！”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou3"}
+    ,"8" : {"Name" : "捌", "Word" : "莺鱼：“玄，我不能离开，我要证明|这并不是我造成的，我也不想拖累你……”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou4"}
+    ,"9" : {"Name" : "玖", "Word" : "莺鱼：“不是我…不是因为我啊！|为什么大家都要来怪我！真的…是因为我么？”|“对不起，玄……|对不起，我们来世再见……永别了……”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou1"}
+    ,"10" : {"Name" : "拾", "Word" : "玄：“莺！！！！！”|……|“莺，我会救你的，我会救你的，我一定会救你的”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou2"}
+    ,"11" : {"Name" : "壹拾壹", "Word" : "寄魂于骨，血肉归水中。|……", "Pic" : "guochang", "DramaReviewPic" : "juanzhou3"}
+    ,"12" : {"Name" : "壹拾贰", "Word" : "三年后……|以魂为心，以木为根骨，兽做血肉。|望能唤君回", "Pic" : "guochang", "DramaReviewPic" : "juanzhou4"}
+    ,"13" : {"Name" : "壹拾叁", "Word" : "人间岂能安得双全法，善恶悲喜一念间。", "Pic" : "guochang", "DramaReviewPic" : "juanzhou1"}
+    ,"14" : {"Name" : "壹拾肆", "Word" : "玄：“成败在此一举，|修炼多年习得复生之术，今日就要再见到你”|“天地灵息，安以身形。|世间魂魄，五脏玄冥；|青龙白虎，朱雀玄武，|宗布神明，逆天还命！”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou2"}
+    ,"15" : {"Name" : "壹拾伍", "Word" : "玄：“成功了！莺！你终于回来了！莺……？”|“莺你怎么了，不认识我了吗？你为何变成这样……”|莺鱼：“恨……杀……都杀光……”|“莺！你去哪！”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou3"}
+    ,"16" : {"Name" : "壹拾陆", "Word" : "天机算尽，落得咫尺天涯。|由真变做了假，造化弄人终虚化。", "Pic" : "guochang", "DramaReviewPic" : "juanzhou4"}
+    ,"17" : {"Name" : "壹拾柒", "Word" : "玄召唤回的莺鱼魂魄不全，|法术图中混入了周围的妖气，形成了怨恨的妖魂。|它早已不是当年的莺鱼", "Pic" : "guochang", "DramaReviewPic" : "juanzhou1"}
+    ,"18" : {"Name" : "壹拾捌", "Word" : "玄：“这些妖怪，为何有莺鱼的气息？|我做了什么……把你变成这副模样……”|玄：“莺，你在哪里？”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou2"}
+    ,"19" : {"Name" : "壹拾玖", "Word" : "玄“自你走后，世间妖邪横行，当年的村子也已荒废。|……莺，|你还不满意吗……”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou3"}
+    ,"20" : {"Name" : "贰拾", "Word" : "“莺……每杀一个妖怪，|就感受到一点你的气息飘散在空中。|我这么做真的对么？”|“不论对错，我定要寻到你”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou4"}
+    ,"21" : {"Name" : "贰拾壹", "Word" : "“莺。”|“莺，我终于要见到你了，我感受的到。”|“或许相见时，亦是别离时……”", "Pic" : "guochang", "DramaReviewPic" : "juanzhou1"}
+    ,"22" : {"Name" : "贰拾贰", "Word" : "也许冥冥中洗尽一身铅华，|你又是世间那一块美玉无瑕。|悲喜恨爱浮生愁，|而今只愿你全抛下。|轻松而去。", "Pic" : "guochang", "DramaReviewPic" : "juanzhou2"}
+    ,"23" : {"Name" : "贰拾叁", "Word" : "一缕轻魂落谁家，半生泉下相候呀。|梦里触前尘，|不过痴嗔酹一醉，谁曾说下辈子青梅竹马。|辗转待来世，与君执白发。", "Pic" : "guochang", "DramaReviewPic" : "juanzhou3"}
 }
