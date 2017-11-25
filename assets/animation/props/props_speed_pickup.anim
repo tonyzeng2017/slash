@@ -1,0 +1,285 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "props_speed_pickup",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.7666666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "pickup": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": 255
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "pickup/glow": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 3
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 3
+            }
+          ]
+        }
+      },
+      "pickup/lizi": {
+        "comps": {
+          "cc.ParticleSystem": {
+            "emissionRate": [
+              {
+                "frame": 0.18333333333333332,
+                "value": 100
+              },
+              {
+                "frame": 0.23333333333333334,
+                "value": 0
+              }
+            ],
+            "posVar": [
+              {
+                "frame": 0.18333333333333332,
+                "value": {
+                  "__type__": "cc.Vec2",
+                  "x": 0,
+                  "y": 0
+                }
+              }
+            ],
+            "life": [
+              {
+                "frame": 0.18333333333333332,
+                "value": 0.2
+              }
+            ],
+            "tangentialAccel": [
+              {
+                "frame": 0.18333333333333332,
+                "value": 100
+              },
+              {
+                "frame": 0.25,
+                "value": 0
+              }
+            ],
+            "speed": [
+              {
+                "frame": 0.18333333333333332,
+                "value": 100
+              },
+              {
+                "frame": 0.25,
+                "value": 0
+              }
+            ],
+            "gravity": [
+              {
+                "frame": 0.18333333333333332,
+                "value": {
+                  "__type__": "cc.Vec2",
+                  "x": 0,
+                  "y": 0
+                }
+              }
+            ],
+            "startSize": [
+              {
+                "frame": 0.18333333333333332,
+                "value": 30
+              }
+            ]
+          }
+        }
+      },
+      "pickup/quan": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.3,
+              "value": 0.8
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 1.1
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.3,
+              "value": 0.8
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 1.1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.06666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "pickup/helix": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ],
+          "rotation": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.5,
+              "value": -360
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "pickup/kuosan": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.3,
+              "value": 0.45
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": 0.5
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.3,
+              "value": 0.45
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": 0.5
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.3,
+              "value": 255
+            },
+            {
+              "frame": 0.7666666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "pickup/glow2": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.7,
+              "value": 2
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.7,
+              "value": 2
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
