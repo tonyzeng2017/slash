@@ -2,8 +2,8 @@
 {
     "1" : {"MapID" : 1, "MapName" : "乱空山", "StageStart" : "1", "StageEnd" : "12", "StageRewardValue" : 1, "OpenStar" : 0, "HeroStar" : 1, "Story" : -1}
     ,"2" : {"MapID" : 2, "MapName" : "玄晶洞", "StageStart" : "13", "StageEnd" : "27", "StageRewardValue" : 8, "OpenStar" : 0, "HeroStar" : 2, "Story" : 5}
-    ,"3" : {"MapID" : 3, "MapName" : "鬼嚎谷", "StageStart" : "28", "StageEnd" : "44", "StageRewardValue" : 32, "OpenStar" : 3, "HeroStar" : 3, "Story" : 7}
-    ,"4" : {"MapID" : 4, "MapName" : "寒冰河", "StageStart" : "45", "StageEnd" : "62", "StageRewardValue" : 128, "OpenStar" : 4, "HeroStar" : 4, "Story" : 9}
-    ,"5" : {"MapID" : 5, "MapName" : "阴风村", "StageStart" : "63", "StageEnd" : "80", "StageRewardValue" : 384, "OpenStar" : 5, "HeroStar" : 5, "Story" : 11}
-    ,"6" : {"MapID" : 6, "MapName" : "噬魂宅", "StageStart" : "81", "StageEnd" : "99", "StageRewardValue" : 850, "OpenStar" : 6, "HeroStar" : 6, "Story" : 13}
+    ,"3" : {"MapID" : 3, "MapName" : "鬼嚎谷", "StageStart" : "28", "StageEnd" : "44", "StageRewardValue" : 32, "OpenStar" : 3, "HeroStar" : 3, "Story" : 9}
+    ,"4" : {"MapID" : 4, "MapName" : "寒冰河", "StageStart" : "45", "StageEnd" : "62", "StageRewardValue" : 128, "OpenStar" : 4, "HeroStar" : 4, "Story" : 13}
+    ,"5" : {"MapID" : 5, "MapName" : "阴风村", "StageStart" : "63", "StageEnd" : "80", "StageRewardValue" : 384, "OpenStar" : 5, "HeroStar" : 5, "Story" : 16}
+    ,"6" : {"MapID" : 6, "MapName" : "噬魂宅", "StageStart" : "81", "StageEnd" : "99", "StageRewardValue" : 850, "OpenStar" : 6, "HeroStar" : 6, "Story" : 19}
 }
