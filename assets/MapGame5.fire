@@ -13676,6 +13676,8 @@
     "textGold": {
       "__id__": 366
     },
-    "story": null
+    "story": {
+      "__uuid__": "aac724e3-4271-4e02-8f16-f225d7133c9d"
+    }
   }
 ]

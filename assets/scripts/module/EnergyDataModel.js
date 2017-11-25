@@ -29,7 +29,15 @@ var EnergyDataModel = cc.Class({
         }
     },
 
+    isUniqueEnabled: function(){
+        return this.totalEnergy >= Constant.instance.MAX_ENERGY;
+    },
+
     useEnergy: function(){
+        this.totalEnergy = 0;
+    },
+
+    clear: function(){
         this.totalEnergy = 0;
     }
     // called every frame, uncomment this function to activate update callback

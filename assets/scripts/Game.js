@@ -14,6 +14,7 @@ cc.Class({
         bossMng: cc.Node,
         poolMng: cc.Node,
         foeGroup: cc.Node,
+        uniqueMask: cc.Node,
         // deathUI: cc.Node,
         cameraRoot: cc.Animation,
         gameWinPrefab: cc.Prefab,
@@ -23,6 +24,7 @@ cc.Class({
         audioGameWin: cc.AudioClip,
         audioGameFail: cc.AudioClip,
         newbieLife: cc.Node,
+        uniqueSkillPrefab: cc.Prefab,
 
         startTime: {
             default: 0,
@@ -163,18 +165,35 @@ cc.Class({
     },
 
     releaseSkills(){
-        let nodeList = this.foeGroup.children;
-        for (let i = 0; i < nodeList.length; ++i) {
-            let foe = nodeList[i].getComponent('Foe');
-            if (foe) {
-                foe.dead(true);                
-            } else {
-                let projectile = nodeList[i].getComponent('Projectile');
-                if (projectile) {
-                    projectile.broke();                    
+        var self = this;
+        var uniqueSkill = cc.instantiate(this.uniqueSkillPrefab);
+        var doSkill = function(){
+            uniqueSkill.removeFromParent();
+            GameManager.instance.setPaused(false);
+
+            let nodeList = self.foeGroup.children;
+            for (let i = 0; i < nodeList.length; ++i) {
+                let foe = nodeList[i].getComponent('Foe');
+                if (foe) {
+                    foe.dead(true);                
+                } else {
+                    let projectile = nodeList[i].getComponent('Projectile');
+                    if (projectile) {
+                        projectile.broke();                    
+                    }
                 }
             }
+
+            self.uniqueMask.active = false;
+            // this.player.node.active = true;
         }
+
+        GameManager.instance.setPaused(true);
+        // this.player.node.active = false;
+        var uniqueAnim = uniqueSkill.getComponent(cc.Animation);
+        uniqueAnim.on("finished", doSkill, true);
+        this.node.addChild(uniqueSkill);
+        this.uniqueMask.active = true;
     },
 
     playerReady: function (isRevive) {
@@ -267,6 +286,8 @@ cc.Class({
                 }
                 GameManager.instance.countDead();
             }
+            
+            UserDataManager.instance.getEnergyData().clear();
         }
 
         var stageData = GameManager.instance.getCurStageData();

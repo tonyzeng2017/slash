@@ -20,11 +20,14 @@ cc.Class({
         audioPause: cc.AudioClip,
         warning_bg: cc.Sprite,
         buffDisplay: cc.Node,
+        skillDisplay: cc.Node
     },
 
     // use this for initialization
     init (game) {
         this._game = game;
+
+        this.skillDisplay.getComponent("SkillDisplayRenderer").init(game);
         this.waveUI = this.waveUI.getComponent('WaveUI');
         this.waveUI.node.active = false;
         this.killDisplay = this.killDisplay.getComponent('KillDisplay');
@@ -69,7 +72,7 @@ cc.Class({
     updateEnergy: function(){
         var totalEnergy = UserDataManager.instance.getEnergyData().totalEnergy;
         //update the renderer according to the energy.
-        
+        this.skillDisplay.getComponent("SkillDisplayRenderer").updateEnergy();
     },  
 
     dead: function(){
