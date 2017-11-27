@@ -3,42 +3,15 @@
   "_name": "guochang_par",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 3,
+  "_duration": 0,
   "sample": 60,
   "speed": 1,
   "wrapMode": 2,
   "curveData": {
     "paths": {
-      "light1": {
+      "smoke": {
         "comps": {
           "cc.ParticleSystem": {}
-        }
-      },
-      "light": {
-        "props": {
-          "position": [
-            {
-              "frame": 0,
-              "value": [
-                -600,
-                0
-              ]
-            },
-            {
-              "frame": 1.4833333333333334,
-              "value": [
-                600,
-                0
-              ]
-            },
-            {
-              "frame": 3,
-              "value": [
-                -600,
-                0
-              ]
-            }
-          ]
         }
       }
     }
