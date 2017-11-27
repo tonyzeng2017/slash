@@ -1,7 +1,7 @@
 const Foe = require('Foe');
 const FoeType = require('Types').FoeType;
 const BossType = require('Types').BossType;
-const FoeTypeMap = require('Types').FoeTypeMap;
+// const FoeTypeMap = require('Types').FoeTypeMap;
 const Spawn = require('Spawn');
 var  MetaDataManager = require('MetaDataManager');
 var GameManager = require("GameManager");

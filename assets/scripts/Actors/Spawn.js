@@ -1,5 +1,5 @@
 const FoeType = require('Types').FoeType;
-const FoeTypeMap = require('Types').FoeTypeMap;
+// const FoeTypeMap = require('Types').FoeTypeMap;
 const MetaDataManager = require('MetaDataManager')
 
 const Spawn = cc.Class({
@@ -18,7 +18,7 @@ const Spawn = cc.Class({
         create: function(json){
             var spawn = new Spawn();
             var monsterData = MetaDataManager.getMonsterDataByID(json.MonsterID);
-            spawn.foeType = FoeTypeMap[monsterData.FoeType]; //FoeType.Foe3;
+            spawn.foeType = monsterData.FoeType; //FoeType.Foe3;
             cc.log("foeType: %s",spawn.foeType);
             spawn.total = json.MonsterNum;
             spawn.spawnInterval = json.TimeInterval/1000;

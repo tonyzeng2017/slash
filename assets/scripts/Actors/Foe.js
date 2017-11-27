@@ -1,6 +1,6 @@
 const MoveState = require('Move').MoveState;
 const FoeType = require('Types').FoeType;
-const FoeTypeMap = require('Types').FoeTypeMap;
+// const FoeTypeMap = require('Types').FoeTypeMap;
 const ProjectileType = require('Types').ProjectileType;
 const MetaDataManager = require("MetaDataManager");
 var GameManager = require("GameManager");
@@ -57,9 +57,9 @@ cc.Class({
     },
 
     onLoad(){
-        var foeID = FoeTypeMap.indexOf(this.foeType);
+        // var foeID = FoeTypeMap.indexOf(this.foeType);
+        var monsterData = MetaDataManager.getMonsterDataByFoeType(this.foeType)
 
-        var monsterData = MetaDataManager.getMonsterDataByFoeType(foeID)
         if(monsterData){
             this.hitPoint = monsterData.HitPoint;
             this.hurtRadius = monsterData.HurtRadius;
