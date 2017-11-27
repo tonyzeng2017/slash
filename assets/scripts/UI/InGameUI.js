@@ -100,8 +100,8 @@ cc.Class({
         this.comboDisplay.playCombo();
     },
 
-    addBuffDisplay(buffType){
-        this.buffDisplay.getComponent("BuffDisplayer").addBuffItem(buffType);
+    addBuffDisplay(buffData){
+        this.buffDisplay.getComponent("BuffDisplayer").addBuffItem(buffData);
         this.updateLife();
     },
 

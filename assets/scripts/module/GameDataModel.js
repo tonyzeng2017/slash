@@ -4,6 +4,30 @@ var IOUtil = require("IOUtil");
 var Constant = require("Constant");
 var dataKey = "GameDataModel";
 
+
+const BuffData = cc.Class({
+    name: 'BuffData',
+    properties: {
+        ItemType: 0,
+        value: 0,
+        delta: 0,
+        count: 0
+    },
+
+    ctor: function(buffData){
+        this.ItemType = buffData.ItemType;
+        this.value = buffData.AddValue;
+        this.count = 1;
+        this.delta = buffData.AddValue;
+    },
+
+    add: function(buffData){
+        this.value += buffData.AddValue;
+        this.count += 1;
+        this.delta = buffData.AddValue;
+    }
+});
+
 var GameDataModel = cc.Class({
     name: 'GameDataModel',
     properties: {
@@ -128,25 +152,27 @@ var GameDataModel = cc.Class({
         }
     },
 
-    addBuff: function(buffData){
-        var buffType = buffData.ItemType;
+    addBuff: function(rawBuffData){
+        var buffType = rawBuffData.ItemType;
         var activeBuffCount = this.getBuffCount(buffType);
         var maxBuffCount = Constant.instance.getMaxBuffCount(buffType);
         if(activeBuffCount < maxBuffCount){
             if(!this.activeBuffData[buffType]){
-                this.activeBuffData[buffType] = [];
+                this.activeBuffData[buffType] = new BuffData(rawBuffData);
+            }else{
+                this.activeBuffData[buffType].add(rawBuffData);
             }
-            this.activeBuffData[buffType].push(buffData);
+
             this.updateBuffCreateTime();
-            return true;
+            return this.activeBuffData[buffType];
         }else{
             return false;
         }
     },
 
     getBuffCount: function(type){
-        var buffs = this.activeBuffData[type];
-        return buffs === undefined ? 0 : buffs.length;
+        var buffData = this.activeBuffData[type];
+        return buffData === undefined ? 0 : buffData.count;
     },
 
     getStageHighestScore: function(){

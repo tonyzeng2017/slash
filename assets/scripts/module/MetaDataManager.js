@@ -261,6 +261,18 @@ function getStoryDataByID(ID){
     return _storyData[ID.toString()];
 }
 
+var _buffDisplayData;
+function getBuffDisplayData(itemType, count){
+    for(var key in _buffDisplayData){
+        var data = _buffDisplayData[key];
+        if(data.PropertyID == itemType.toString() && data.Layer == count){
+            return data.DisplayValue;
+        }
+    }
+
+    return "";
+}
+
 var preLoadScenes = ["EntranceGame","MapGame1", "PlayGame"];
 function getPreLoadScenes(){
     return preLoadScenes;
@@ -270,7 +282,7 @@ var  metaNames   = ["ValueData", "StageOpenData", "StageData", "MonsterData",
                     "SpawnsData", "WavesData", "ComboData", "PlayerData","PropertyData",
                     "ShopData", "RewardData", "EntranceData", "RangeData",
                     "BossSpawnsData", "CutData", "RatingValueData", "BattlefieldItemData",
-                    "BattlefieldStoreData", "StoryData"];
+                    "BattlefieldStoreData", "StoryData", "BuffDisplayData"];
 
 function loadData(completeCallback, progressCallback, target) {
 
@@ -319,6 +331,11 @@ function loadData(completeCallback, progressCallback, target) {
                                     },
                         "StoryData": function(data){
                                 _storyData = data;
+                                updateProgress();
+                        },
+
+                        "BuffDisplayData": function(data){
+                                _buffDisplayData = data;
                                 updateProgress();
                         },
                     };
@@ -379,5 +396,6 @@ module.exports = {
     randomItemInSore: randomItemInSore,
     getBuffItemByType: getBuffItemByType,
     getStoryDataByID: getStoryDataByID,
-    getPreLoadScenes: getPreLoadScenes
+    getPreLoadScenes: getPreLoadScenes,
+    getBuffDisplayData: getBuffDisplayData
 };

@@ -118,6 +118,11 @@ var UserDataModel = cc.Class({
         this.saveData();
     },
 
+    isMaxStar: function(){
+        cc.log("star: %s", this.star)
+        return this.star == MAX_STAR;
+    },
+
     setMaxLevel: function(){
         this._star = MAX_STAR;
         for(let i = 1; i <= 6;  i++){

@@ -5006,7 +5006,7 @@
     },
     "_enabled": true,
     "_paused": false,
-    "defaultSkin": "lanfa",
+    "defaultSkin": "jichu",
     "defaultAnimation": "Idle",
     "loop": true,
     "_premultipliedAlpha": true,
@@ -8673,6 +8673,9 @@
     },
     "labelCD": {
       "__id__": 135
+    },
+    "skeleton": {
+      "__id__": 123
     }
   },
   {
