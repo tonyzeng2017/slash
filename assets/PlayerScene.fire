@@ -5006,8 +5006,8 @@
     },
     "_enabled": true,
     "_paused": false,
-    "defaultSkin": "lanfa",
-    "defaultAnimation": "Idle",
+    "defaultSkin": "",
+    "defaultAnimation": "animation",
     "loop": true,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
