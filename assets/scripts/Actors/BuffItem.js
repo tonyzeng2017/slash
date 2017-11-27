@@ -160,6 +160,8 @@ cc.Class({
             this.isWaitingPickUP = false;
             this.playHide();
         }
-
+        else{
+            //cc.log("distance from buff: %s", dist);
+        }
     },
 });
