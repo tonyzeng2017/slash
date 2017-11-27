@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "f25e1c2a-c0b4-45a7-94a7-2b0a08470153",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "sfx_xulie_75_00001_003": {
+      "ver": "1.0.3",
+      "uuid": "1c90137e-a44f-4875-a6b6-6514913b589a",
+      "rawTextureUuid": "f25e1c2a-c0b4-45a7-94a7-2b0a08470153",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -5.5,
+      "offsetY": -5,
+      "trimX": 0,
+      "trimY": 32,
+      "width": 117,
+      "height": 101,
+      "rawWidth": 128,
+      "rawHeight": 155,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
