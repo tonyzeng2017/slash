@@ -82,7 +82,7 @@ cc.Class({
         this.node.rotation = 90 - deg;
 
         this.flyNode.active = true;
-        var flyAnimation = this.node.getComponent(cc.Animation);
+        var flyAnimation = this.flyNode.getComponent(cc.Animation);
         flyAnimation.play();
 
         var distance = cc.pDistance(targetPos, this.node.position);
@@ -95,7 +95,7 @@ cc.Class({
         this.hideNode.active = true;
         this.showNode.active = false;
         this.flyNode.active = false;
-        var hideAnim = this.node.getComponent(cc.Animation);
+        var hideAnim = this.hideNode.getComponent(cc.Animation);
         var self = this;
 
         var onHideFinish = function(){
@@ -119,7 +119,7 @@ cc.Class({
     playShow: function(){
         this.showNode.active = true;
         this.isPlayingShow = true;
-        var showAnim = this.node.getComponent(cc.Animation);
+        var showAnim = this.showNode.getComponent(cc.Animation);
         var self = this;
 
         var onShowFinish = function(){

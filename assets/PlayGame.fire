@@ -9788,32 +9788,44 @@
   },
   {
     "__type__": "NodePool",
-    "prefab": null,
+    "prefab": {
+      "__uuid__": "e31f6f65-7528-4d23-b895-3b69888fb88b"
+    },
     "size": 2
   },
   {
     "__type__": "NodePool",
-    "prefab": null,
+    "prefab": {
+      "__uuid__": "2db8feb6-5fe3-4857-9406-b4d50de5d3c0"
+    },
     "size": 2
   },
   {
     "__type__": "NodePool",
-    "prefab": null,
+    "prefab": {
+      "__uuid__": "5498f165-386c-4046-85da-bdd6669bafda"
+    },
     "size": 2
   },
   {
     "__type__": "NodePool",
-    "prefab": null,
+    "prefab": {
+      "__uuid__": "54787516-0062-4eef-b8bf-9d38c15d98ed"
+    },
     "size": 2
   },
   {
     "__type__": "NodePool",
-    "prefab": null,
+    "prefab": {
+      "__uuid__": "900ceb5b-954f-43ba-8417-aafdd2ed0e7a"
+    },
     "size": 2
   },
   {
     "__type__": "NodePool",
-    "prefab": null,
+    "prefab": {
+      "__uuid__": "a9104c99-3554-4cfe-95ae-560187f75be7"
+    },
     "size": 2
   },
   {

@@ -18,17 +18,21 @@
         "__id__": 2
       },
       {
-        "__id__": 25
+        "__id__": 24
       },
       {
-        "__id__": 35
+        "__id__": 33
       }
     ],
     "_tag": -1,
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 51
+      }
+    ],
     "_prefab": {
-      "__id__": 54
+      "__id__": 52
     },
     "_id": "",
     "_opacity": 255,
@@ -83,13 +87,10 @@
     "_components": [
       {
         "__id__": 22
-      },
-      {
-        "__id__": 23
       }
     ],
     "_prefab": {
-      "__id__": 24
+      "__id__": 23
     },
     "_id": "",
     "_opacity": 255,
@@ -795,26 +796,7 @@
         "__uuid__": "407dc8dc-1464-4675-83e3-e100a7598803"
       }
     ],
-    "playOnLoad": true
-  },
-  {
-    "__type__": "de021Y/Cn1G7KLL4cQuKULk",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "attributeID": 0,
-    "showNode": {
-      "__id__": 3
-    },
-    "hideNode": null,
-    "flyNode": null,
-    "isReturned": false,
-    "isPlayingShow": false,
-    "isPlayingHide": false,
-    "isWaitingPickUP": false
+    "playOnLoad": false
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -836,21 +818,18 @@
     },
     "_children": [
       {
-        "__id__": 26
+        "__id__": 25
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
-        "__id__": 32
-      },
-      {
-        "__id__": 33
+        "__id__": 31
       }
     ],
     "_prefab": {
-      "__id__": 34
+      "__id__": 32
     },
     "_id": "",
     "_opacity": 255,
@@ -893,22 +872,22 @@
     "_name": "pickup",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 25
+      "__id__": 24
     },
     "_children": [
       {
-        "__id__": 27
+        "__id__": 26
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 30
+        "__id__": 29
       }
     ],
     "_prefab": {
-      "__id__": 31
+      "__id__": 30
     },
     "_id": "",
     "_opacity": 255,
@@ -951,18 +930,18 @@
     "_name": "life",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 26
+      "__id__": 25
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 28
+        "__id__": 27
       }
     ],
     "_prefab": {
-      "__id__": 29
+      "__id__": 28
     },
     "_id": "",
     "_opacity": 255,
@@ -1005,7 +984,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 27
+      "__id__": 26
     },
     "_enabled": true,
     "_custom": true,
@@ -1110,7 +1089,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 26
+      "__id__": 25
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -1147,7 +1126,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 25
+      "__id__": 24
     },
     "_enabled": true,
     "_defaultClip": {
@@ -1158,26 +1137,7 @@
         "__uuid__": "4d20b569-2910-4402-9580-332b56d350dd"
       }
     ],
-    "playOnLoad": true
-  },
-  {
-    "__type__": "de021Y/Cn1G7KLL4cQuKULk",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 25
-    },
-    "_enabled": true,
-    "attributeID": 0,
-    "showNode": null,
-    "hideNode": {
-      "__id__": 26
-    },
-    "flyNode": null,
-    "isReturned": false,
-    "isPlayingShow": false,
-    "isPlayingHide": false,
-    "isWaitingPickUP": false
+    "playOnLoad": false
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1199,21 +1159,18 @@
     },
     "_children": [
       {
-        "__id__": 36
+        "__id__": 34
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
-        "__id__": 51
-      },
-      {
-        "__id__": 52
+        "__id__": 49
       }
     ],
     "_prefab": {
-      "__id__": 53
+      "__id__": 50
     },
     "_id": "",
     "_opacity": 255,
@@ -1256,31 +1213,31 @@
     "_name": "lightball2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 35
+      "__id__": 33
     },
     "_children": [
       {
-        "__id__": 37
+        "__id__": 35
       },
       {
-        "__id__": 40
+        "__id__": 38
       },
       {
-        "__id__": 43
+        "__id__": 41
       },
       {
-        "__id__": 46
+        "__id__": 44
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 49
+        "__id__": 47
       }
     ],
     "_prefab": {
-      "__id__": 50
+      "__id__": 48
     },
     "_id": "",
     "_opacity": 255,
@@ -1323,18 +1280,18 @@
     "_name": "trail",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 36
+      "__id__": 34
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 38
+        "__id__": 36
       }
     ],
     "_prefab": {
-      "__id__": 39
+      "__id__": 37
     },
     "_id": "",
     "_opacity": 255,
@@ -1377,7 +1334,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 37
+      "__id__": 35
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -1414,18 +1371,18 @@
     "_name": "lightball",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 36
+      "__id__": 34
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 41
+        "__id__": 39
       }
     ],
     "_prefab": {
-      "__id__": 42
+      "__id__": 40
     },
     "_id": "",
     "_opacity": 255,
@@ -1468,7 +1425,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 40
+      "__id__": 38
     },
     "_enabled": true,
     "_custom": true,
@@ -1573,18 +1530,18 @@
     "_name": "lightball3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 36
+      "__id__": 34
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 44
+        "__id__": 42
       }
     ],
     "_prefab": {
-      "__id__": 45
+      "__id__": 43
     },
     "_id": "",
     "_opacity": 255,
@@ -1627,7 +1584,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 43
+      "__id__": 41
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -1664,18 +1621,18 @@
     "_name": "lightball1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 36
+      "__id__": 34
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 47
+        "__id__": 45
       }
     ],
     "_prefab": {
-      "__id__": 48
+      "__id__": 46
     },
     "_id": "",
     "_opacity": 255,
@@ -1718,7 +1675,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 46
+      "__id__": 44
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -1755,7 +1712,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 36
+      "__id__": 34
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -1792,7 +1749,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 35
+      "__id__": 33
     },
     "_enabled": true,
     "_defaultClip": {
@@ -1803,26 +1760,7 @@
         "__uuid__": "4c393983-9ca0-4a53-8412-895213c3cea3"
       }
     ],
-    "playOnLoad": true
-  },
-  {
-    "__type__": "de021Y/Cn1G7KLL4cQuKULk",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 35
-    },
-    "_enabled": true,
-    "attributeID": 0,
-    "showNode": null,
-    "hideNode": null,
-    "flyNode": {
-      "__id__": 36
-    },
-    "isReturned": false,
-    "isPlayingShow": false,
-    "isPlayingHide": false,
-    "isWaitingPickUP": false
+    "playOnLoad": false
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1834,6 +1772,29 @@
     },
     "fileId": "10aykP9CZI4oaCQpLXY56b",
     "sync": false
+  },
+  {
+    "__type__": "de021Y/Cn1G7KLL4cQuKULk",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "attributeID": 0,
+    "showNode": {
+      "__id__": 2
+    },
+    "hideNode": {
+      "__id__": 24
+    },
+    "flyNode": {
+      "__id__": 33
+    },
+    "isReturned": false,
+    "isPlayingShow": false,
+    "isPlayingHide": false,
+    "isWaitingPickUP": false
   },
   {
     "__type__": "cc.PrefabInfo",
