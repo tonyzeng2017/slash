@@ -1322,7 +1322,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 800,
+      "width": 840,
       "height": 40
     },
     "_rotationX": 0,
@@ -1359,7 +1359,7 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字",
+    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字。",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -1515,7 +1515,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 800,
+      "width": 840,
       "height": 40
     },
     "_rotationX": 0,
@@ -1552,7 +1552,7 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字",
+    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字。",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -1708,7 +1708,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 800,
+      "width": 840,
       "height": 40
     },
     "_rotationX": 0,
@@ -1745,7 +1745,7 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字",
+    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字。",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -1901,7 +1901,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 800,
+      "width": 840,
       "height": 40
     },
     "_rotationX": 0,
@@ -1938,7 +1938,7 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字",
+    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字。",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -2094,7 +2094,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 800,
+      "width": 840,
       "height": 40
     },
     "_rotationX": 0,
@@ -2131,7 +2131,7 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字",
+    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字。",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -2287,7 +2287,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 800,
+      "width": 840,
       "height": 40
     },
     "_rotationX": 0,
@@ -2324,7 +2324,7 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字",
+    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字。",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -2480,7 +2480,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 800,
+      "width": 840,
       "height": 40
     },
     "_rotationX": 0,
@@ -2517,7 +2517,7 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
-    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字",
+    "_N$string": "这里有二十个汉字汉字这里有二十个汉字汉字。",
     "_N$horizontalAlign": 0,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
