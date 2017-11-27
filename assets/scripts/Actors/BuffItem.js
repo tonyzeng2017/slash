@@ -56,7 +56,7 @@ cc.Class({
         // this.showNode.active = true;
         // this.hideNode.active = false;
         // this.flyNode.active = false;
-        this.playShow();
+        // this.playShow();
         // this.playHide();
     },
 
@@ -151,17 +151,18 @@ cc.Class({
         }
 
         if(!this.isWaitingPickUP){
+            // cc.log("buffItem is not ready~~~~")
             return;
         }
 
         let dist = cc.pDistance(this.game.player.node.position, this.node.position);
-        if (dist < 50 && this.game.player.isAlive) {
-            cc.log("going to play hide~~~~~~~~~~~, distance: %s", dist);
+        if (dist < 80 && this.game.player.isAlive) {
+            cc.log("buffItem going to play hide~~~~~~~~~~~, distance: %s", dist);
             this.isWaitingPickUP = false;
             this.playHide();
         }
         else{
-            //cc.log("distance from buff: %s", dist);
+            // cc.log("buffItem distance from buff: %s", dist);
         }
     },
 });

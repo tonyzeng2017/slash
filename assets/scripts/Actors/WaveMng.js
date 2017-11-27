@@ -271,6 +271,7 @@ cc.Class({
             let pos = this.getBuffItemPosition();
             buffItem.setPosition(pos);
             buffItem.getComponent('BuffItem').init(this.game, buffData);
+            buffItem.getComponent('BuffItem').playShow();
             this.foeGroup.addChild(buffItem);
             cc.log("request a buff item~~~~~~, positionX: %s, positionY: %s", pos.x, pos.y);
         }else{
