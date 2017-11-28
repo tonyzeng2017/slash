@@ -8,13 +8,7 @@
   "speed": 1,
   "wrapMode": 2,
   "curveData": {
-    "paths": {
-      "smoke": {
-        "comps": {
-          "cc.ParticleSystem": {}
-        }
-      }
-    }
+    "paths": {}
   },
   "events": []
 }

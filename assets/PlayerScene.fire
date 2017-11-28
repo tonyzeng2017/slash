@@ -5006,7 +5006,7 @@
     },
     "_enabled": true,
     "_paused": false,
-    "defaultSkin": "lanfa",
+    "defaultSkin": "jichu",
     "defaultAnimation": "Idle",
     "loop": true,
     "_premultipliedAlpha": true,
