@@ -25,6 +25,7 @@ cc.Class({
         audioGameFail: cc.AudioClip,
         newbieLife: cc.Node,
         uniqueSkillPrefab: cc.Prefab,
+        playerVanishPrefab: cc.Prefab,
 
         startTime: {
             default: 0,
@@ -167,10 +168,9 @@ cc.Class({
     releaseSkills(){
         var self = this;
         var uniqueSkill = cc.instantiate(this.uniqueSkillPrefab);
-        var doSkill = function(){
-            uniqueSkill.removeFromParent();
-            GameManager.instance.setPaused(false);
+        var playerVanish = cc.instantiate(this.playerVanishPrefab);
 
+        var killAllFoes = function(){
             let nodeList = self.foeGroup.children;
             for (let i = 0; i < nodeList.length; ++i) {
                 let foe = nodeList[i].getComponent('Foe');
@@ -183,17 +183,61 @@ cc.Class({
                     }
                 }
             }
+        };
 
-            self.uniqueMask.active = false;
-            // this.player.node.active = true;
-        }
+        var fadeOutMask = function(){
+            playerVanish.getComponent(cc.Animation).off("finished", fadeOutMask, true);
+            playerVanish.removeFromParent();
+            killAllFoes();
+            
+            self.uniqueMask.runAction(cc.fadeTo(0.2, 0));
+            GameManager.instance.setPaused(false);
+            cc.log("unique skills, fadeOutMask");
+        };
 
-        GameManager.instance.setPaused(true);
-        // this.player.node.active = false;
-        var uniqueAnim = uniqueSkill.getComponent(cc.Animation);
-        uniqueAnim.on("finished", doSkill, true);
-        this.node.addChild(uniqueSkill);
-        this.uniqueMask.active = true;
+        var playerIn = function(){
+            uniqueSkill.getComponent(cc.Animation).off("finished", playerIn, true);
+            uniqueSkill.removeFromParent();
+            
+            playerVanish.getComponent(cc.Animation).play();
+            playerVanish.getComponent(cc.Animation).on("finished", fadeOutMask, true);
+            self.player.node.active = true;
+            cc.log("unique skills, playerIn");
+        };
+
+        var playUniqueSkill = function(){
+            playerVanish.getComponent(cc.Animation).off("finished", playUniqueSkill, true);
+
+            var uniqueAnim = uniqueSkill.getComponent(cc.Animation);
+            uniqueAnim.on("finished", playerIn, true);
+            self.node.addChild(uniqueSkill);
+            uniqueAnim.play();
+            cc.log("unique skills, playUniqueSkill");
+        };
+
+        var playerOut = function(){
+            self.player.node.active = false;
+
+            playerVanish.x = self.player.node.x;
+            playerVanish.y = self.player.node.y;
+            self.foeGroup.addChild(playerVanish);
+            playerVanish.getComponent(cc.Animation).play();
+            playerVanish.getComponent(cc.Animation).on("finished", playUniqueSkill, true);
+            cc.log("unique skills, playerOut");
+        };
+
+        var fadeInMask =  function(){
+            GameManager.instance.setPaused(true);
+            self.uniqueMask.active = true;
+            self.uniqueMask.runAction(cc.sequence(
+                cc.fadeTo(0.1, 180),
+                cc.callFunc( playerOut)
+            ));
+            cc.log("unique skills, fadeInMask");
+        };
+
+        cc.log("game release unique skills");
+        fadeInMask();
     },
 
     playerReady: function (isRevive) {

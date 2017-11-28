@@ -331,7 +331,7 @@
     ],
     "_prefab": null,
     "_id": "b4v3z22utBRbt7FSL8CTTJ",
-    "_opacity": 180,
+    "_opacity": 0,
     "_color": {
       "__type__": "cc.Color",
       "r": 0,
@@ -6389,6 +6389,9 @@
     },
     "uniqueSkillPrefab": {
       "__uuid__": "8e34cda3-6976-494b-8b5e-7039106d6099"
+    },
+    "playerVanishPrefab": {
+      "__uuid__": "17a469ae-b047-4aa7-a0b8-7c2d58b80b84"
     },
     "startTime": 0,
     "gameType": 0

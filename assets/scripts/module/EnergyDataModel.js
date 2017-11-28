@@ -24,8 +24,10 @@ var EnergyDataModel = cc.Class({
     },
 
     addEnergy: function(energy){
+        var stageData = GameManager.instance.getCurStageData();
+
         if(this.totalEnergy < Constant.instance.MAX_ENERGY ){
-            this.totalEnergy += energy;
+            this.totalEnergy += energy * stageData.StageEnergy/100;
         }
     },
 
