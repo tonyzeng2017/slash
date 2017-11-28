@@ -3,137 +3,64 @@
   "_name": "unique_skill_zhan",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.37,
+  "_duration": 0.58,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
     "paths": {
-      "edge_skill": {
-        "props": {
-          "position": [
-            {
-              "frame": 0,
-              "value": [
-                0,
-                0
-              ]
-            },
-            {
-              "frame": 0.06666666666666667,
-              "value": [
-                0,
-                -10
-              ]
-            },
-            {
-              "frame": 0.13333333333333333,
-              "value": [
-                0,
-                0
-              ]
-            }
-          ]
-        }
-      },
-      "brust": {
-        "comps": {
-          "cc.Sprite": {
-            "spriteFrame": [
-              {
-                "frame": 0,
-                "value": {
-                  "__uuid__": "c4bc734c-f303-4334-84d1-cbd7e0b4baa3"
-                }
-              },
-              {
-                "frame": 0.03333333333333333,
-                "value": {
-                  "__uuid__": "5bf399a9-fc78-4dee-b501-33f9a532a4ca"
-                }
-              },
-              {
-                "frame": 0.06666666666666667,
-                "value": {
-                  "__uuid__": "204dee77-32cc-4ecc-800c-417aa7318df7"
-                }
-              },
-              {
-                "frame": 0.1,
-                "value": {
-                  "__uuid__": "39c66b5d-3639-4168-b2f1-3f3ca934cae2"
-                }
-              },
-              {
-                "frame": 0.13333333333333333,
-                "value": {
-                  "__uuid__": "1c34c4d6-968e-49fb-b56f-bd0ef968d36c"
-                }
-              },
-              {
-                "frame": 0.16666666666666666,
-                "value": {
-                  "__uuid__": "a971e44e-d74d-4fc6-b225-44d4af3ac72d"
-                }
-              },
-              {
-                "frame": 0.2,
-                "value": {
-                  "__uuid__": "a87a52fe-dd60-46c8-8cc2-4bd5b0f05bdc"
-                }
-              },
-              {
-                "frame": 0.23333333333333334,
-                "value": {
-                  "__uuid__": "a1db1e6f-c059-4361-ae18-4abd30a23df3"
-                }
-              },
-              {
-                "frame": 0.26666666666666666,
-                "value": {
-                  "__uuid__": "13c372f5-cfdc-4334-a15d-3ed3568b9073"
-                }
-              },
-              {
-                "frame": 0.3,
-                "value": {
-                  "__uuid__": "26f7f08b-c40b-426a-95f5-6c9f6ab425a3"
-                }
-              },
-              {
-                "frame": 0.3333333333333333,
-                "value": {
-                  "__uuid__": "a74bd5c8-1091-4d5f-851d-cb8d80a5d839"
-                }
-              }
-            ]
-          }
-        },
+      "fx": {
         "props": {
           "opacity": [
             {
               "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.18333333333333332,
               "value": 255
             },
             {
-              "frame": 0.2833333333333333,
-              "value": 255
-            },
-            {
-              "frame": 0.36666666666666664,
+              "frame": 0.5833333333333334,
               "value": 0
             }
-          ],
-          "scaleY": [
+          ]
+        }
+      },
+      "fx/brust": {
+        "props": {
+          "opacity": [
             {
               "frame": 0,
-              "value": 0.45
+              "value": 0
+            },
+            {
+              "frame": 0.1,
+              "value": 255
+            },
+            {
+              "frame": 0.5,
+              "value": 0
             }
           ],
           "scaleX": [
             {
               "frame": 0,
-              "value": 0.45
+              "value": 0.63
+            },
+            {
+              "frame": 0.4,
+              "value": 1.2
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.63
+            },
+            {
+              "frame": 0.4,
+              "value": 1.2
             }
           ]
         }

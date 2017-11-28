@@ -583,7 +583,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 33
@@ -709,15 +709,15 @@
     "_autoRemoveOnFinish": false,
     "_totalParticles": 500,
     "_duration": -1,
-    "_emissionRate": 10,
-    "_life": 5,
+    "_emissionRate": 20,
+    "_life": 2,
     "_lifeVar": 1,
     "_startColor": {
       "__type__": "cc.Color",
-      "r": 228,
-      "g": 244,
+      "r": 159,
+      "g": 216,
       "b": 255,
-      "a": 0
+      "a": 178
     },
     "_startColorVar": {
       "__type__": "cc.Color",
@@ -731,7 +731,7 @@
       "r": 255,
       "g": 255,
       "b": 255,
-      "a": 27
+      "a": 0
     },
     "_endColorVar": {
       "__type__": "cc.Color",
@@ -742,9 +742,9 @@
     },
     "_angle": 100,
     "_angleVar": 100,
-    "_startSize": 500,
+    "_startSize": 100,
     "_startSizeVar": 100,
-    "_endSize": 500,
+    "_endSize": 700,
     "_endSizeVar": 100,
     "_startSpin": 0,
     "_startSpinVar": 100,
@@ -869,7 +869,7 @@
     "_totalParticles": 200,
     "_duration": -1,
     "_emissionRate": 3,
-    "_life": 8,
+    "_life": 3,
     "_lifeVar": 4,
     "_startColor": {
       "__type__": "cc.Color",
@@ -1027,8 +1027,8 @@
     "_autoRemoveOnFinish": false,
     "_totalParticles": 200,
     "_duration": -1,
-    "_emissionRate": 3,
-    "_life": 8,
+    "_emissionRate": 5,
+    "_life": 3,
     "_lifeVar": 4,
     "_startColor": {
       "__type__": "cc.Color",
@@ -1186,8 +1186,8 @@
     "_autoRemoveOnFinish": false,
     "_totalParticles": 200,
     "_duration": -1,
-    "_emissionRate": 2,
-    "_life": 8,
+    "_emissionRate": 5,
+    "_life": 3,
     "_lifeVar": 4,
     "_startColor": {
       "__type__": "cc.Color",
@@ -1345,8 +1345,8 @@
     "_autoRemoveOnFinish": false,
     "_totalParticles": 200,
     "_duration": -1,
-    "_emissionRate": 3,
-    "_life": 8,
+    "_emissionRate": 5,
+    "_life": 3,
     "_lifeVar": 4,
     "_startColor": {
       "__type__": "cc.Color",
