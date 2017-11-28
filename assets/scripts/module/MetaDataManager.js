@@ -204,11 +204,11 @@ function getOneSlashDataByCount(count) {
     })
     for(var i = 0; i < _cutData.length; i ++){
         if(_cutData[i].CutNum <= count){
-            return _cutData[i].CutScore;
+            return _cutData[i];
         }
     }
 
-    return _cutData[_cutData.length - 1].CutScore;
+    return _cutData[_cutData.length - 1];
 }
 
 var _battleFieldStoreData;

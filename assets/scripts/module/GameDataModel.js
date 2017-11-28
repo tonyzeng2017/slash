@@ -141,7 +141,9 @@ var GameDataModel = cc.Class({
     },
 
     addOneSlashScore: function (oneSlashCount) {
-        var oneSlashScore = MetaDataManager.getOneSlashDataByCount(oneSlashCount);
+        var oneSlashData = MetaDataManager.getOneSlashDataByCount(oneSlashCount);
+
+        var oneSlashScore = oneSlashData.CutScore;
         this.addScore(oneSlashScore);
     },
 
