@@ -328,10 +328,6 @@
     ,"10028" : {"MonsterID" : "1", "MonsterNum" : 28, "TimeInterval" : 0, "Range" : 11}
     ,"10029" : {"MonsterID" : "1", "MonsterNum" : 29, "TimeInterval" : 0, "Range" : 11}
     ,"10030" : {"MonsterID" : "1", "MonsterNum" : 30, "TimeInterval" : 0, "Range" : 11}
-    ,"11001" : {"MonsterID" : "1", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 12}
-    ,"12001" : {"MonsterID" : "1", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 13}
-    ,"13001" : {"MonsterID" : "1", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 14}
-    ,"14001" : {"MonsterID" : "1", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 15}
     ,"2001" : {"MonsterID" : "2", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
     ,"2002" : {"MonsterID" : "2", "MonsterNum" : 2, "TimeInterval" : 0, "Range" : 10}
     ,"2003" : {"MonsterID" : "2", "MonsterNum" : 3, "TimeInterval" : 0, "Range" : 10}
@@ -662,10 +658,6 @@
     ,"20028" : {"MonsterID" : "2", "MonsterNum" : 28, "TimeInterval" : 0, "Range" : 11}
     ,"20029" : {"MonsterID" : "2", "MonsterNum" : 29, "TimeInterval" : 0, "Range" : 11}
     ,"20030" : {"MonsterID" : "2", "MonsterNum" : 30, "TimeInterval" : 0, "Range" : 11}
-    ,"21001" : {"MonsterID" : "2", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 12}
-    ,"22001" : {"MonsterID" : "2", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 13}
-    ,"23001" : {"MonsterID" : "2", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 14}
-    ,"24001" : {"MonsterID" : "2", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 15}
     ,"3001" : {"MonsterID" : "3", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 10}
     ,"3002" : {"MonsterID" : "3", "MonsterNum" : 2, "TimeInterval" : 0, "Range" : 10}
     ,"3003" : {"MonsterID" : "3", "MonsterNum" : 3, "TimeInterval" : 0, "Range" : 10}
@@ -2796,7 +2788,7 @@
     ,"122001" : {"MonsterID" : "15", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 13}
     ,"123001" : {"MonsterID" : "15", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 14}
     ,"124001" : {"MonsterID" : "15", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 15}
-    ,"13001" : {"MonsterID" : "17", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 10}
+    ,"13001" : {"MonsterID" : "17", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
     ,"13002" : {"MonsterID" : "17", "MonsterNum" : 2, "TimeInterval" : 0, "Range" : 10}
     ,"13003" : {"MonsterID" : "17", "MonsterNum" : 3, "TimeInterval" : 0, "Range" : 10}
     ,"13004" : {"MonsterID" : "17", "MonsterNum" : 4, "TimeInterval" : 0, "Range" : 10}
@@ -3130,7 +3122,7 @@
     ,"132001" : {"MonsterID" : "17", "MonsterNum" : 1, "TimeInterval" : 800, "Range" : 13}
     ,"133001" : {"MonsterID" : "17", "MonsterNum" : 1, "TimeInterval" : 800, "Range" : 14}
     ,"134001" : {"MonsterID" : "17", "MonsterNum" : 1, "TimeInterval" : 800, "Range" : 15}
-    ,"14001" : {"MonsterID" : "19", "MonsterNum" : 1, "TimeInterval" : 800, "Range" : 10}
+    ,"14001" : {"MonsterID" : "19", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
     ,"14002" : {"MonsterID" : "19", "MonsterNum" : 2, "TimeInterval" : 0, "Range" : 10}
     ,"14003" : {"MonsterID" : "19", "MonsterNum" : 3, "TimeInterval" : 0, "Range" : 10}
     ,"14004" : {"MonsterID" : "19", "MonsterNum" : 4, "TimeInterval" : 0, "Range" : 10}
@@ -3460,10 +3452,10 @@
     ,"140028" : {"MonsterID" : "19", "MonsterNum" : 28, "TimeInterval" : 0, "Range" : 11}
     ,"140029" : {"MonsterID" : "19", "MonsterNum" : 29, "TimeInterval" : 0, "Range" : 11}
     ,"140030" : {"MonsterID" : "19", "MonsterNum" : 30, "TimeInterval" : 0, "Range" : 11}
-    ,"141001" : {"MonsterID" : "19", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 12}
-    ,"142001" : {"MonsterID" : "19", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 13}
-    ,"143001" : {"MonsterID" : "19", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 14}
-    ,"144001" : {"MonsterID" : "19", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 15}
+    ,"141001" : {"MonsterID" : "19", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 12}
+    ,"142001" : {"MonsterID" : "19", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 13}
+    ,"143001" : {"MonsterID" : "19", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 14}
+    ,"144001" : {"MonsterID" : "19", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 15}
     ,"15001" : {"MonsterID" : "21", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
     ,"15002" : {"MonsterID" : "21", "MonsterNum" : 2, "TimeInterval" : 0, "Range" : 10}
     ,"15003" : {"MonsterID" : "21", "MonsterNum" : 3, "TimeInterval" : 0, "Range" : 10}

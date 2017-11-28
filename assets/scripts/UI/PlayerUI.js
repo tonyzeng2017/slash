@@ -32,7 +32,8 @@ cc.Class({
         newbieTip: cc.Node,
         btnUpgradeMax: cc.Node,
         btnUpgradeStar: cc.Node,
-        labelCD: cc.Label
+        labelCD: cc.Label,
+        skeleton: sp.Skeleton
     },
 
     // use this for initialization
@@ -47,6 +48,12 @@ cc.Class({
         this.updateButtons();
         this.newbieTapLeft.active = false;
         this.newbieShowAttribute.active = UserDataManager.instance.getNewbieData().isShowAttrLevelUp();
+        
+        if(UserDataManager.instance.getUserData().isMaxStar()){
+            this.skeleton.defaultSkin = "lanfa";
+        }else{
+            this.skeleton.defaultSkin = "jichu";
+        }
     },
 
     updateButtons: function(){
@@ -91,6 +98,7 @@ cc.Class({
 
     onBreak: function(){
         this.maxAttrUI.getComponent("MaxAttrUI").show();
+        // this.skeleton.setSkin("lanfa");
     },
 
     onStart: function(){

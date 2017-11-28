@@ -16,7 +16,12 @@ cc.Class({
         // ...
         frames: [cc.SpriteFrame],
         displayText: cc.Label,
-        icon: cc.Sprite
+        icon: cc.Sprite,
+
+        buffType: {
+            visible: false,
+            default: 1
+        }
     }, 
 
     // use this for initialization
@@ -24,10 +29,13 @@ cc.Class({
         
     },
 
-    updateDisplay(buffType){
-        var item = MetaDataManager.getBuffItemByType(buffType);
-        this.icon.spriteFrame = this.frames[buffType - 1];
-        this.displayText.string = item.BuffDisplay;
+    updateDisplay(buffData){
+        this.buffType = buffData.ItemType;
+        var item = MetaDataManager.getBuffItemByType(this.buffType);
+        this.icon.spriteFrame = this.frames[this.buffType - 1];
+
+        var displayStr = MetaDataManager.getBuffDisplayData(this.buffType, buffData.count);
+        this.displayText.string = displayStr;
     }
 
     // called every frame, uncomment this function to activate update callback

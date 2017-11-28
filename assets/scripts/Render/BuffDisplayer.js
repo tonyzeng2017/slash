@@ -22,10 +22,30 @@ cc.Class({
         this.node.removeAllChildren();   
     },
 
-    addBuffItem(buffType){
-        var buffItem = cc.instantiate(this.propItem);
-        buffItem.getComponent("PropItemRenderer").updateDisplay(buffType);
-        this.node.addChild(buffItem);
+    getItemByType: function(type){
+        var items = this.node.children;
+        for(var i = 0; i < items.length; i++){
+            var renderer = items[i].getComponent("PropItemRenderer");
+            if(renderer.buffType == type){
+                return renderer;
+            }
+        }
+
+        return null;
+    },
+
+    addBuffItem(buffData){
+        cc.log("buff data item count: %s", buffData.count);
+        if(buffData.count == 1){
+            var buffItem = cc.instantiate(this.propItem);
+            buffItem.getComponent("PropItemRenderer").updateDisplay(buffData);
+            this.node.addChild(buffItem);
+        }else{
+            var itemRenderer = this.getItemByType(buffData.ItemType);
+            if(itemRenderer){
+                itemRenderer.updateDisplay(buffData);
+            }
+        }
     }
 
     // called every frame, uncomment this function to activate update callback

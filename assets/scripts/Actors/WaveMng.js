@@ -1,7 +1,7 @@
 const Foe = require('Foe');
 const FoeType = require('Types').FoeType;
 const BossType = require('Types').BossType;
-const FoeTypeMap = require('Types').FoeTypeMap;
+// const FoeTypeMap = require('Types').FoeTypeMap;
 const Spawn = require('Spawn');
 var  MetaDataManager = require('MetaDataManager');
 var GameManager = require("GameManager");
@@ -303,10 +303,10 @@ cc.Class({
 
         if(Math.random() * 100 < curStageData.Probability && UserDataManager.instance.getGameData().isBuffTimeReached()){
             cc.log('curStageData: %s', curStageData.ItemStore);
-            var buffItemData = MetaDataManager.randomItemInSore(curStageData.ItemStore);
-            var buffAddSuccess = UserDataManager.instance.getGameData().addBuff(buffItemData);
-            if(buffAddSuccess){
-                this.spawnBuffItem(buffItemData);
+            var buffRawData = MetaDataManager.randomItemInSore(curStageData.ItemStore);
+            var buffData = UserDataManager.instance.getGameData().addBuff(buffRawData);
+            if(buffData){
+                this.spawnBuffItem(buffData);
             }else{
                 cc.log("the type of buff: %s reached the max count~~~~");
             }
