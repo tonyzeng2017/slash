@@ -285,8 +285,9 @@ cc.Class({
     },
 
     chargeEnergy: function(energy){
-        UserDataManager.instance.getEnergyData().addEnergy(energy);
-        this.game.inGameUI.updateEnergy();
+        var isFirstFull = UserDataManager.instance.getEnergyData().addEnergy(energy);
+        cc.log("isfirst full: %s", isFirstFull);
+        this.game.inGameUI.updateEnergy(isFirstFull);
     },
     
     hitFoe () {

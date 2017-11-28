@@ -28,6 +28,14 @@ var EnergyDataModel = cc.Class({
 
         if(this.totalEnergy < Constant.instance.MAX_ENERGY ){
             this.totalEnergy += energy * stageData.StageEnergy/100;
+            cc.log("total energy: %s, max energy: %s", this.totalEnergy, Constant.instance.MAX_ENERGY)
+            if(this.totalEnergy >= Constant.instance.MAX_ENERGY){
+                return true;
+            }else{
+                return false;
+            }
+        }else{
+            return false
         }
     },
 

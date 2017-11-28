@@ -16,7 +16,10 @@ cc.Class({
         // },
         // ...
         mask: cc.Node,
-        total_height: 72
+        total_height: 72,
+        firstEnabledAnim: cc.Animation,
+        enabledAnim: cc.Animation,
+        releaseAnim: cc.Animation
     },
 
     init: function(game){
@@ -25,7 +28,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        this.updateEnergy();
+        this.updateEnergy(false);
     },
 
     onUseEnergy: function(){
@@ -37,12 +40,28 @@ cc.Class({
         this.game.releaseSkills();
         energyDataModel.useEnergy();
         this.updateEnergy();
+        
+        this.releaseAnim.node.active = true;
+        this.releaseAnim.play();
+
+        this.firstEnabledAnim.node.active = false;
+        this.enabledAnim.node.active = false;
     },
 
-    updateEnergy: function(){
+    updateEnergy: function(isFirstFull){
         var energyDataModel = UserDataManager.instance.getEnergyData();
         var totalEnergy = energyDataModel.totalEnergy;
         var percent = totalEnergy / Constant.instance.MAX_ENERGY;
+
+        if(isFirstFull){
+            this.firstEnabledAnim.node.active = true;
+            this.firstEnabledAnim.play();
+
+            this.enabledAnim.node.active = true;
+            this.enabledAnim.play();
+
+            cc.log("energy is full~~~~~~~~~`");
+        }
 
         this.mask.height = this.total_height * percent;
     },

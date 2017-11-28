@@ -6390,7 +6390,9 @@
     "uniqueSkillPrefab": {
       "__uuid__": "8e34cda3-6976-494b-8b5e-7039106d6099"
     },
-    "playerVanishPrefab": null,
+    "playerVanishPrefab": {
+      "__uuid__": "17a469ae-b047-4aa7-a0b8-7c2d58b80b84"
+    },
     "startTime": 0,
     "gameType": 0
   },
@@ -13287,7 +13289,7 @@
         "__uuid__": "e12dcc84-582a-4353-9f66-3b6610fd1fd5"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "cc.Node",
@@ -13439,7 +13441,7 @@
         "__uuid__": "41a52db1-803e-439b-8614-8d7af15166a7"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "cc.Node",
@@ -13463,7 +13465,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 442
@@ -13834,7 +13836,7 @@
         "__uuid__": "c06ea221-9987-402d-b5b1-c60b2053bd82"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "cc.Animation",
@@ -13891,7 +13893,16 @@
     "mask": {
       "__id__": 419
     },
-    "total_height": 72
+    "total_height": 72,
+    "firstEnabledAnim": {
+      "__id__": 428
+    },
+    "enabledAnim": {
+      "__id__": 432
+    },
+    "releaseAnim": {
+      "__id__": 442
+    }
   },
   {
     "__type__": "cc.Node",

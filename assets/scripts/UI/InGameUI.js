@@ -69,10 +69,10 @@ cc.Class({
         }
     },
 
-    updateEnergy: function(){
-        var totalEnergy = UserDataManager.instance.getEnergyData().totalEnergy;
+    updateEnergy: function(isFirstFull){
+        // var totalEnergy = UserDataManager.instance.getEnergyData().totalEnergy;
         //update the renderer according to the energy.
-        this.skillDisplay.getComponent("SkillDisplayRenderer").updateEnergy();
+        this.skillDisplay.getComponent("SkillDisplayRenderer").updateEnergy(isFirstFull);
     },  
 
     dead: function(){
