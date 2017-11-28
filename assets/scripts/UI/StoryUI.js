@@ -15,7 +15,8 @@ cc.Class({
         pageView: cc.PageView,
         content: cc.Node,
         scaleDiff: 0.2,
-        story: cc.Prefab
+        story: cc.Prefab,
+        recallStory: cc.Prefab
     },
 
     // use this for initialization

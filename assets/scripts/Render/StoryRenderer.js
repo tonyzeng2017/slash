@@ -24,7 +24,8 @@ cc.Class({
             visible: false
         },
 
-        bg: cc.Node
+        bgNormal: cc.Node,
+        bgRecall: cc.Node
     },
 
     // use this for initialization
@@ -35,6 +36,9 @@ cc.Class({
 
     initWord: function(){
         var storyData = MetaDataManager.getStoryDataByID(this.storyID);
+        this.bgNormal.active = storyData.Pic == "1";
+        this.bgRecall.active = storyData.Pic == "2";
+
         var words = storyData.Word.split("|");
         for(var i = 0; i < this.labels.length; i++){    
             if(words[i]){
@@ -113,7 +117,7 @@ cc.Class({
 
     onGlobalTap: function(event){
         cc.log("event.target: %s", event.target.toString());
-        if(event.target != this.bg){
+        if(event.target != this.bgNormal && event.target != this.bgRecall){
             return;
         }
 
