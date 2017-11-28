@@ -81,10 +81,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 1386
+        "__id__": 1388
       },
       {
-        "__id__": 1387
+        "__id__": 1389
       }
     ],
     "_prefab": null,
@@ -332,13 +332,13 @@
         "__id__": 241
       },
       {
-        "__id__": 1383
-      },
-      {
-        "__id__": 1384
-      },
-      {
         "__id__": 1385
+      },
+      {
+        "__id__": 1386
+      },
+      {
+        "__id__": 1387
       }
     ],
     "_prefab": null,
@@ -38217,16 +38217,19 @@
       },
       {
         "__id__": 1305
+      },
+      {
+        "__id__": 1381
       }
     ],
     "_tag": -1,
     "_active": false,
     "_components": [
       {
-        "__id__": 1381
+        "__id__": 1383
       },
       {
-        "__id__": 1382
+        "__id__": 1384
       }
     ],
     "_prefab": null,
@@ -47774,6 +47777,82 @@
     },
     "fileId": "1er/k4lKZHrZFzzYHNB8CH",
     "sync": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "New Label",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1076
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 1382
+      }
+    ],
+    "_prefab": null,
+    "_id": "002PKrL4xOOqOm4NgmOC9A",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 242,
+      "b": 174,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 325,
+      "height": 60
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 72,
+      "y": -323
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1381
+    },
+    "_enabled": true,
+    "_useOriginalSize": false,
+    "_actualFontSize": 25,
+    "_fontSize": 25,
+    "_lineHeight": 30,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "f8090a52-77a3-4ffa-b375-164640bebfa8"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_N$string": "达到满级满星状态后，即可获\n得全新皮肤形象",
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0
   },
   {
     "__type__": "470bfh4WrNIS7dRpj1x0Dxg",
