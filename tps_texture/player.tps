@@ -232,6 +232,7 @@
             </struct>
             <key type="filename">player/efx_p_swordkee_2.png</key>
             <key type="filename">player/efx_p_swordkee_3.png</key>
+            <key type="filename">player/efx_p_swordkee_4.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
