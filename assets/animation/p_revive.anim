@@ -14,15 +14,15 @@
           "scaleX": [
             {
               "frame": 0,
-              "value": 0
+              "value": 0.3
             },
             {
               "frame": 0.23333333333333334,
-              "value": 1.1
+              "value": 1.05
             },
             {
               "frame": 0.26666666666666666,
-              "value": 0.95
+              "value": 0.97
             },
             {
               "frame": 0.4,
@@ -32,19 +32,29 @@
           "scaleY": [
             {
               "frame": 0,
-              "value": 0
+              "value": 0.3
             },
             {
               "frame": 0.23333333333333334,
-              "value": 1.1
+              "value": 1.05
             },
             {
               "frame": 0.26666666666666666,
-              "value": 0.95
+              "value": 0.97
             },
             {
               "frame": 0.4,
               "value": 1
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.23333333333333334,
+              "value": 255
             }
           ]
         }
@@ -59,6 +69,22 @@
             {
               "frame": 0.3,
               "value": 255
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.15,
+              "value": [
+                3,
+                -335
+              ]
+            },
+            {
+              "frame": 0.3,
+              "value": [
+                3,
+                -238
+              ]
             }
           ]
         }
@@ -75,32 +101,20 @@
               "value": 255
             }
           ],
-          "scaleY": [
+          "position": [
             {
               "frame": 0.15,
-              "value": 1.4
-            },
-            {
-              "frame": 0.23333333333333334,
-              "value": 0.9
+              "value": [
+                324,
+                264
+              ]
             },
             {
               "frame": 0.3,
-              "value": 1
-            }
-          ],
-          "scaleX": [
-            {
-              "frame": 0.15,
-              "value": 1.4
-            },
-            {
-              "frame": 0.23333333333333334,
-              "value": 0.9
-            },
-            {
-              "frame": 0.3,
-              "value": 1
+              "value": [
+                176,
+                264
+              ]
             }
           ]
         }

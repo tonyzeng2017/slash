@@ -3,7 +3,7 @@
   "_name": "player_hit",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.675,
+  "_duration": 0.4,
   "sample": 40,
   "speed": 1,
   "wrapMode": 1,
@@ -17,11 +17,11 @@
               "value": 0
             },
             {
-              "frame": 0.15,
+              "frame": 0.075,
               "value": 2
             },
             {
-              "frame": 0.675,
+              "frame": 0.375,
               "value": 2.3
             }
           ],
@@ -31,11 +31,11 @@
               "value": 0
             },
             {
-              "frame": 0.15,
+              "frame": 0.075,
               "value": 2
             },
             {
-              "frame": 0.675,
+              "frame": 0.375,
               "value": 2.3
             }
           ],
@@ -45,11 +45,11 @@
               "value": 255
             },
             {
-              "frame": 0.15,
+              "frame": 0.075,
               "value": 255
             },
             {
-              "frame": 0.675,
+              "frame": 0.375,
               "value": 0
             }
           ]
@@ -330,11 +330,11 @@
             },
             {
               "frame": 0.075,
-              "value": 0.7
+              "value": 1.07
             },
             {
-              "frame": 0.125,
-              "value": 1
+              "frame": 0.15,
+              "value": 1.32
             }
           ],
           "scaleY": [
@@ -344,16 +344,20 @@
             },
             {
               "frame": 0.075,
-              "value": 0.7
+              "value": 1.07
             },
             {
-              "frame": 0.125,
-              "value": 1
+              "frame": 0.15,
+              "value": 1.32
             }
           ],
           "opacity": [
             {
               "frame": 0.05,
+              "value": 255
+            },
+            {
+              "frame": 0.1,
               "value": 255
             },
             {
@@ -367,48 +371,118 @@
         "props": {
           "scaleX": [
             {
-              "frame": 0.025,
+              "frame": 0,
               "value": 0
             },
             {
               "frame": 0.05,
-              "value": 1.3
+              "value": 0.71
             },
             {
-              "frame": 0.1,
+              "frame": 0.175,
               "value": 2.5
             }
           ],
           "scaleY": [
             {
-              "frame": 0.025,
+              "frame": 0,
               "value": 0
             },
             {
               "frame": 0.05,
-              "value": 1.3
+              "value": 0.28
             },
             {
-              "frame": 0.1,
+              "frame": 0.175,
+              "value": 0.03
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.075,
+              "value": 255
+            },
+            {
+              "frame": 0.175,
+              "value": 0
+            }
+          ],
+          "color": [
+            {
+              "frame": 0.025,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 197,
+                "g": 255,
+                "b": 253,
+                "a": 255
+              }
+            }
+          ]
+        }
+      },
+      "crossplane2": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 0.91
+            },
+            {
+              "frame": 0.075,
+              "value": 0.12
+            },
+            {
+              "frame": 0.25,
+              "value": 0
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1.21
+            },
+            {
+              "frame": 0.075,
+              "value": 2.24
+            },
+            {
+              "frame": 0.25,
               "value": 2.5
             }
           ],
           "opacity": [
             {
+              "frame": 0,
+              "value": 0
+            },
+            {
               "frame": 0.025,
               "value": 255
             },
             {
-              "frame": 0.075,
-              "value": 235
-            },
-            {
-              "frame": 0.1,
-              "value": 127.5
-            },
-            {
               "frame": 0.175,
+              "value": 255
+            },
+            {
+              "frame": 0.275,
               "value": 0
+            }
+          ],
+          "color": [
+            {
+              "frame": 0,
+              "value": {
+                "__type__": "cc.Color",
+                "r": 151,
+                "g": 255,
+                "b": 247,
+                "a": 255
+              }
             }
           ]
         }

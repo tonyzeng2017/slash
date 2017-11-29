@@ -3,7 +3,7 @@
   "_name": "PanelSetting",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.4,
+  "_duration": 0.35,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -13,31 +13,31 @@
         "props": {
           "opacity": [
             {
-              "frame": 0.18333333333333332,
+              "frame": 0.15,
               "value": 0
             },
             {
-              "frame": 0.4,
+              "frame": 0.35,
               "value": 255
             }
           ],
           "position": [
             {
-              "frame": 0.18333333333333332,
+              "frame": 0.15,
               "value": [
                 336,
                 149
               ]
             },
             {
-              "frame": 0.25,
+              "frame": 0.2,
               "value": [
                 238,
                 149
               ]
             },
             {
-              "frame": 0.4,
+              "frame": 0.35,
               "value": [
                 196.7,
                 149.4
