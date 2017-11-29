@@ -2,6 +2,7 @@ var UserDataModel  = require("UserDataModel");
 var GameDataModel = require("GameDataModel");
 var NewBieDataModel = require("NewBieDataModel");
 var EnergyDataModel = require("EnergyDataModel");
+var StoryDataModel = require("StoryDataModel");
 
 var UserDataManager = cc.Class({
     statics: {
@@ -42,7 +43,15 @@ var UserDataManager = cc.Class({
         }
 
         return this._energyData;
-    }
+    },
+
+    getStoryData: function(){
+        if(!this._storyData){
+            this._storyData = new StoryDataModel();
+        }
+
+        return this._storyData;
+    },
 });
 
 UserDataManager.instance = new UserDataManager();

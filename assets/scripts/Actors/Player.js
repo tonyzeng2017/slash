@@ -3,6 +3,7 @@ const GameManager = require("GameManager");
 var UserDataManager = require("UserDataManager");
 
 const standAnimations = ["stand_up", "stand_right", "stand"];
+const displayBuffs = [2, 3, 4, 6];
 
 const propertyMap = [
     "life",
@@ -43,7 +44,9 @@ cc.Class({
         audioSlashRights: [cc.AudioClip],
 
         audio_move_left: cc.AudioClip,
-        audio_move_right: cc.AudioClip
+        audio_move_right: cc.AudioClip,
+
+        displayBuffs: [cc.Node]
     },
 
     onLoad(){
@@ -370,6 +373,10 @@ cc.Class({
             var newValue = Math.ceil(curValue + baseValue * buffData.value/100);
             this[propertyMap[buffData.ItemType]] = newValue;
             this.game.inGameUI.addBuffDisplay(buffData);
+        }
+
+        for(var i = 0; i < this.displayBuffs.length; i++){
+            this.displayBuffs[i].getComponent("BuffOnPlayer").updateBuff();
         }
         cc.log("player buff added~~~~~~~~~~");
     },

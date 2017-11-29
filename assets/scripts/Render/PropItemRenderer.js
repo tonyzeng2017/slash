@@ -34,7 +34,9 @@ cc.Class({
         var item = MetaDataManager.getBuffItemByType(this.buffType);
         this.icon.spriteFrame = this.frames[this.buffType - 1];
 
-        var displayStr = MetaDataManager.getBuffDisplayData(this.buffType, buffData.count);
+        var data = MetaDataManager.getBuffDisplayData(this.buffType, buffData.count);
+        var displayStr = data ? data.DisplayValue : "";
+
         this.displayText.string = displayStr;
     }
 

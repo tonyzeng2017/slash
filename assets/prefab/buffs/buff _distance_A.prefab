@@ -26,9 +26,13 @@
     ],
     "_tag": -1,
     "_active": true,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 14
+      }
+    ],
     "_prefab": {
-      "__id__": 14
+      "__id__": 15
     },
     "_id": "",
     "_opacity": 255,
@@ -173,7 +177,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "0e6cd68e-6601-44ce-a6d0-cd6623d71b03"
     },
     "fileId": "e9yHZEw1tNpb7DEiKHXuDf",
     "sync": false
@@ -285,7 +289,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "0e6cd68e-6601-44ce-a6d0-cd6623d71b03"
     },
     "fileId": "a3Fxt4PU9CtbpHSe0cNcLD",
     "sync": false
@@ -397,10 +401,33 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "0e6cd68e-6601-44ce-a6d0-cd6623d71b03"
     },
     "fileId": "130213ERJNUp27RBrlAuYB",
     "sync": false
+  },
+  {
+    "__type__": "c5e1cwwpMFPDbSojDHgN6eP",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "buffID": "3",
+    "sword": null,
+    "frames": [],
+    "buffs": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 6
+      },
+      {
+        "__id__": 10
+      }
+    ]
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -408,7 +435,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "0e6cd68e-6601-44ce-a6d0-cd6623d71b03"
     },
     "fileId": "edI3Hvz01POb+iAdoAbl/s",
     "sync": false

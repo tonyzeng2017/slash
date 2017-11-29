@@ -76,7 +76,7 @@ cc.Class({
             }
         }
 
-        if(GameManager.instance.storyEnabled(storyID)){
+        if(UserDataManager.instance.getStoryData().canPlay(storyID)){//GameManager.instance.storyEnabled(storyID)){
             this._storyUI = cc.instantiate(this.story);
             this._storyUI.x = cc.director.getWinSize().width/2;
             this._storyUI.y = cc.director.getWinSize().height/2;
@@ -84,7 +84,8 @@ cc.Class({
             this._storyUI.getComponent("StoryRenderer").setStoryAndCallback(storyID, onFinished);
             this.node.addChild(this._storyUI);
 
-            GameManager.instance.playStory(storyID);
+            UserDataManager.instance.getStoryData().activeStory(storyID);
+            // GameManager.instance(storyID);
        }else{
             onFinished();
        }

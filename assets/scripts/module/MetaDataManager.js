@@ -266,11 +266,11 @@ function getBuffDisplayData(itemType, count){
     for(var key in _buffDisplayData){
         var data = _buffDisplayData[key];
         if(data.PropertyID == itemType.toString() && data.Layer == count){
-            return data.DisplayValue;
+            return data;
         }
     }
 
-    return "";
+    return null;
 }
 
 var preLoadScenes = ["EntranceGame","MapGame1", "PlayGame"];

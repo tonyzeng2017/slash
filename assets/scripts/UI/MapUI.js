@@ -50,12 +50,13 @@ cc.Class({
 
     initStory: function(){
            var entranceData = GameManager.instance.getCurEntranceData();
-           if(GameManager.instance.storyEnabled(entranceData.Story)){
+           if(UserDataManager.instance.getStoryData().canPlay(entranceData.Story)){
                 var storyUI = cc.instantiate(this.story);
                 storyUI.getComponent("StoryRenderer").setStoryAndCallback(entranceData.Story);
                 this.node.addChild(storyUI);
 
-                GameManager.instance.playStory(entranceData.Story);
+                UserDataManager.instance.getStoryData().activeStory(entranceData.Story)
+                // GameManager.instance.playStory(entranceData.Story);
            }
     },
 
