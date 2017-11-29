@@ -1,0 +1,173 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "scroll",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.03,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "glow": {
+        "props": {
+          "scaleY": [
+            {
+              "frame": 0.6333333333333333,
+              "value": 1.68
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": 1.55
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.6333333333333333,
+              "value": 1.68
+            },
+            {
+              "frame": 0.8166666666666667,
+              "value": 1.55
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.6333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 0.7833333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "shengzi": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.6,
+              "value": 255
+            },
+            {
+              "frame": 0.65,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "open_1": {
+        "comps": {
+          "cc.Sprite": {
+            "spriteFrame": [
+              {
+                "frame": 0.55,
+                "value": {
+                  "__uuid__": "3379dec8-9476-4d7d-8685-5c62d9b9d3a5"
+                }
+              },
+              {
+                "frame": 0.6,
+                "value": {
+                  "__uuid__": "9c412451-7d0f-472b-9f3c-092bcc9497ae"
+                }
+              },
+              {
+                "frame": 0.65,
+                "value": {
+                  "__uuid__": "27372537-7e5b-466f-a560-74df76ec11c3"
+                }
+              },
+              {
+                "frame": 0.7,
+                "value": {
+                  "__uuid__": "1805d9be-0172-4742-bdfb-649ccf2833fe"
+                }
+              },
+              {
+                "frame": 0.75,
+                "value": {
+                  "__uuid__": "08ec5b17-b169-4aad-80b7-3f0576c68f06"
+                }
+              },
+              {
+                "frame": 0.8,
+                "value": {
+                  "__uuid__": "3a659afe-155b-491a-969b-706f0e444641"
+                }
+              },
+              {
+                "frame": 0.85,
+                "value": {
+                  "__uuid__": "c4df26b2-dbf3-4794-b411-2f9ab399caff"
+                }
+              },
+              {
+                "frame": 0.9,
+                "value": {
+                  "__uuid__": "8028e449-e038-4db5-b5ad-74f65cb4e14e"
+                }
+              },
+              {
+                "frame": 0.95,
+                "value": {
+                  "__uuid__": "10788046-e46f-4f50-9099-b7f994d91a67"
+                }
+              },
+              {
+                "frame": 1,
+                "value": {
+                  "__uuid__": "98a1f6a7-41dc-40e5-9019-0afa3faaaa85"
+                }
+              }
+            ]
+          }
+        },
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.55,
+              "value": 255
+            },
+            {
+              "frame": 1.0333333333333334,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "glow_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.5333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 0.5666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.7166666666666667,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
