@@ -30,24 +30,14 @@
     ,"28" : {"PropertyID" : "4", "Layer" : 8, "DisplayValue" : "80%", "BuffAnimation" : "3"}
     ,"29" : {"PropertyID" : "4", "Layer" : 9, "DisplayValue" : "90%", "BuffAnimation" : "3"}
     ,"30" : {"PropertyID" : "4", "Layer" : 10, "DisplayValue" : "100%", "BuffAnimation" : "3"}
-    ,"31" : {"PropertyID" : "5", "Layer" : 1, "DisplayValue" : "10%", "BuffAnimation" : "1"}
-    ,"32" : {"PropertyID" : "5", "Layer" : 2, "DisplayValue" : "20%", "BuffAnimation" : "1"}
-    ,"33" : {"PropertyID" : "5", "Layer" : 3, "DisplayValue" : "30%", "BuffAnimation" : "1"}
-    ,"34" : {"PropertyID" : "5", "Layer" : 4, "DisplayValue" : "40%", "BuffAnimation" : "2"}
-    ,"35" : {"PropertyID" : "5", "Layer" : 5, "DisplayValue" : "50%", "BuffAnimation" : "2"}
-    ,"36" : {"PropertyID" : "5", "Layer" : 6, "DisplayValue" : "60%", "BuffAnimation" : "2"}
-    ,"37" : {"PropertyID" : "5", "Layer" : 7, "DisplayValue" : "70%", "BuffAnimation" : "3"}
-    ,"38" : {"PropertyID" : "5", "Layer" : 8, "DisplayValue" : "80%", "BuffAnimation" : "3"}
-    ,"39" : {"PropertyID" : "5", "Layer" : 9, "DisplayValue" : "90%", "BuffAnimation" : "3"}
-    ,"40" : {"PropertyID" : "5", "Layer" : 10, "DisplayValue" : "100%", "BuffAnimation" : "3"}
-    ,"41" : {"PropertyID" : "6", "Layer" : 1, "DisplayValue" : "10%", "BuffAnimation" : "1"}
-    ,"42" : {"PropertyID" : "6", "Layer" : 2, "DisplayValue" : "20%", "BuffAnimation" : "1"}
-    ,"43" : {"PropertyID" : "6", "Layer" : 3, "DisplayValue" : "30%", "BuffAnimation" : "1"}
-    ,"44" : {"PropertyID" : "6", "Layer" : 4, "DisplayValue" : "40%", "BuffAnimation" : "2"}
-    ,"45" : {"PropertyID" : "6", "Layer" : 5, "DisplayValue" : "50%", "BuffAnimation" : "2"}
-    ,"46" : {"PropertyID" : "6", "Layer" : 6, "DisplayValue" : "60%", "BuffAnimation" : "2"}
-    ,"47" : {"PropertyID" : "6", "Layer" : 7, "DisplayValue" : "70%", "BuffAnimation" : "3"}
-    ,"48" : {"PropertyID" : "6", "Layer" : 8, "DisplayValue" : "80%", "BuffAnimation" : "3"}
-    ,"49" : {"PropertyID" : "6", "Layer" : 9, "DisplayValue" : "90%", "BuffAnimation" : "3"}
-    ,"50" : {"PropertyID" : "6", "Layer" : 10, "DisplayValue" : "100%", "BuffAnimation" : "3"}
+    ,"31" : {"PropertyID" : "6", "Layer" : 1, "DisplayValue" : "10%", "BuffAnimation" : "1"}
+    ,"32" : {"PropertyID" : "6", "Layer" : 2, "DisplayValue" : "20%", "BuffAnimation" : "1"}
+    ,"33" : {"PropertyID" : "6", "Layer" : 3, "DisplayValue" : "30%", "BuffAnimation" : "1"}
+    ,"34" : {"PropertyID" : "6", "Layer" : 4, "DisplayValue" : "40%", "BuffAnimation" : "2"}
+    ,"35" : {"PropertyID" : "6", "Layer" : 5, "DisplayValue" : "50%", "BuffAnimation" : "2"}
+    ,"36" : {"PropertyID" : "6", "Layer" : 6, "DisplayValue" : "60%", "BuffAnimation" : "2"}
+    ,"37" : {"PropertyID" : "6", "Layer" : 7, "DisplayValue" : "70%", "BuffAnimation" : "3"}
+    ,"38" : {"PropertyID" : "6", "Layer" : 8, "DisplayValue" : "80%", "BuffAnimation" : "3"}
+    ,"39" : {"PropertyID" : "6", "Layer" : 9, "DisplayValue" : "90%", "BuffAnimation" : "3"}
+    ,"40" : {"PropertyID" : "6", "Layer" : 10, "DisplayValue" : "100%", "BuffAnimation" : "3"}
 }
