@@ -37,7 +37,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 88
@@ -517,7 +517,6 @@
     },
     "_enabled": true,
     "buffID": "2",
-    "sword": null,
     "frames": [
       {
         "__uuid__": "df2834e6-56a0-445f-943a-ad5fe6868784"
@@ -1950,7 +1949,6 @@
     },
     "_enabled": true,
     "buffID": "3",
-    "sword": null,
     "frames": [],
     "buffs": [
       {
@@ -2384,7 +2382,6 @@
     },
     "_enabled": true,
     "buffID": "4",
-    "sword": null,
     "frames": [],
     "buffs": [
       {
@@ -2959,7 +2956,6 @@
     },
     "_enabled": true,
     "buffID": "6",
-    "sword": null,
     "frames": [],
     "buffs": [
       {
