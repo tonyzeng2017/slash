@@ -55,7 +55,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 131
@@ -685,7 +685,7 @@
       "__id__": 23
     },
     "_id": "",
-    "_opacity": 255,
+    "_opacity": 150,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -778,7 +778,7 @@
       "__id__": 26
     },
     "_id": "",
-    "_opacity": 255,
+    "_opacity": 150,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
