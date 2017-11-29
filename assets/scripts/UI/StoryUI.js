@@ -1,3 +1,5 @@
+var UserDataManager  =  require("UserDataManager");
+
 cc.Class({
     extends: cc.Component,
 
@@ -16,12 +18,18 @@ cc.Class({
         content: cc.Node,
         scaleDiff: 0.2,
         story: cc.Prefab,
-        recallStory: cc.Prefab
+        storyItem: cc.Prefab
     },
 
     // use this for initialization
     onLoad: function () {
+        var stories = UserDataManager.instance.getStoryData().getDisplayStories();
 
+        for(var i = 0; i < stories.length - 1; i++){
+            var item = cc.instantiate(this.storyItem);
+            item.getComponent("StoryItemRenderer").render(stories[i]);
+            this.content.addChild(item);
+        }
     },
 
     // use this for initialization

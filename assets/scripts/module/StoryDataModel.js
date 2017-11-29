@@ -1,9 +1,10 @@
 var IOUtil =  require("IOUtil");
+var MetaDataManager = require("MetaDataManager");
 
 var Story = cc.Class({
 
     properties: {
-        storyID: "",
+        storyID: "0",
         enabled: false,
         opened: false,
     },
@@ -12,6 +13,11 @@ var Story = cc.Class({
         this.storyID = data.storyID;
         this.enabled = data.enabled;
         this.opened = data.opened;
+    },
+
+    getRawData: function(){
+        var rawData = MetaDataManager.getStoryDataByID(this.storyID);
+        return rawData;
     },
 
     active: function(){
@@ -87,19 +93,47 @@ cc.Class({
         return story && story.opened;
     },
 
+    createDefault: function(id){
+        var story = new Story({
+            storyID: id.toString(),
+            enabled: false,
+            opened: false,
+        });
+
+        return story;
+    },
+
     getStory: function(id){
         if(this.stories[id]){
             return this.stories[id];
         }else{
-            var story = new Story({
-                storyID: id,
-                enabled: false,
-                opened: false,
-            });
-
-            this.stories[id] = story;
+            this.stories[id] = this.createDefault(id);
             return story;
         }
+    },
+
+    getDisplayStories: function(){
+        var sortedStories = [];
+        for(var key in this.stories){
+            var story = this.stories[key];
+            if(story.enabled){
+                sortedStories.push(story);
+            }
+        }
+        var lastIndex = 0;
+        if(sortedStories.length > 0){
+            sortedStories.sort(function(a, b){
+                return Number(a.storyID) < Number(b.storyID);
+            })
+            lastIndex = Number(sortedStories[sortedStories.length - 1].storyID);
+        }
+        var nextStory = MetaDataManager.getStoryDataByID(lastIndex + 1);
+        if(nextStory){
+            var newStory = this.createDefault(lastIndex + 1);
+            sortedStories.push(newStory);
+        }
+
+        return sortedStories;
     },
 
     getData: function(){
