@@ -33,7 +33,7 @@ cc.Class({
 
     onUseEnergy: function(){
         var energyDataModel = UserDataManager.instance.getEnergyData();
-        if(!energyDataModel.isUniqueEnabled()){
+        if(!energyDataModel.isUniqueEnabled() || this.game.player.isDead()){
             return;
         }
 

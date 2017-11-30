@@ -60,7 +60,8 @@ cc.Class({
         var pages = this.pageView.getPages();
         for(var i = 0; i < pages.length; i++){
             var scale = this.getPageScale(i);
-            pages[i].children[0].scale = scale;
+            pages[i].children[0].runAction(cc.scaleTo(0.1, scale));
+            // pages[i].children[0].scale = scale;
         }
     },
 

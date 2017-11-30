@@ -17,7 +17,8 @@ cc.Class({
         text_total_score: cc.Label,
         text_highest_score: cc.Label,
         text_kills: cc.Label,
-        text_highest_combo: cc.Label
+        text_highest_combo: cc.Label,
+        iconHighest: cc.Node,
     },
 
     // use this for initialization
@@ -29,13 +30,19 @@ cc.Class({
     },
 
     render: function(){
-        this.text_total_score.string = UserDataManager.instance.getGameData().getFinalScore();
-        this.text_highest_score.string = UserDataManager.instance.getGameData().getStageHighestScore();
+        var finalScore = UserDataManager.instance.getGameData().getFinalScore();
+        var highestScore = UserDataManager.instance.getGameData().getStageHighestScore();
+
+        this.text_total_score.string = finalScore;
+        this.text_highest_score.string = highestScore;
         this.text_highest_combo.string = UserDataManager.instance.getGameData().highestCombo;
         this.text_kills.string = UserDataManager.instance.getGameData().highestSlashCount;
         // this.text_highest_score.string = "0";
         // this.text_highest_combo = "0";
         // this.text_kills.string = "0";
+        if(this.iconHighest){
+            this.iconHighest.active = finalScore == highestScore;
+        }
         cc.log("game win score updated~~~~~~~~~~~~~~ score: %s", this.text_total_score.string );
     }
 

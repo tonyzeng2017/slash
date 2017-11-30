@@ -356,23 +356,28 @@ cc.Class({
 
     addBuff(buffData){
         var baseValue = UserDataManager.instance.getUserData().getCurrentPlayerAttr(buffData.ItemType).PropertyValue;
+        var attrData = getAttributeDataByID(buffData.ItemType);
 
         if(buffData.ItemType == 6){
             //buff on the move speed.
             var curSpeed = this.getComponent('Move').moveSpeed;
             var newSpeed = curSpeed + baseValue * buffData.value/100;
+            newSpeed = Math.min(attrData.Max, newSpeed);
             this.getComponent('Move').moveSpeed = newSpeed;
             this.game.inGameUI.addBuffDisplay(buffData);
             cc.log("value for the property: %s, current: %s, new: %s", "speed", curSpeed, newSpeed);
         }else if(buffData.ItemType == 1){
             //if it is life then
-            this.life += buffData.delta;
+            var newLife = Math.min(attrData.Max, this.life + buffData.delta);
+            this.life  = newLife;
             this.game.inGameUI.updateLife();
         }else{
             //buff on other property.
             var attrIndex = Number(buffData.ItemType) - 1;
             var curValue = this[propertyMap[attrIndex]];
             var newValue = Math.ceil(curValue + baseValue * buffData.value/100);
+            newValue = Math.max(attrData.Max, newValue);
+            newValue = Math.min(attrData.Min, newValue);
             cc.log("value for the property: %s, current: %s, new: %s", propertyMap[attrIndex], curValue, newValue);
 
             this[propertyMap[attrIndex]] = newValue;
