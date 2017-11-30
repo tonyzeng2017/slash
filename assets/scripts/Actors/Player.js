@@ -363,15 +363,19 @@ cc.Class({
             var newSpeed = curSpeed + baseValue * buffData.value/100;
             this.getComponent('Move').moveSpeed = newSpeed;
             this.game.inGameUI.addBuffDisplay(buffData);
+            cc.log("value for the property: %s, current: %s, new: %s", "speed", curSpeed, newSpeed);
         }else if(buffData.ItemType == 1){
             //if it is life then
             this.life += buffData.delta;
             this.game.inGameUI.updateLife();
         }else{
             //buff on other property.
-            var curValue = this[propertyMap[buffData.ItemType]];
+            var attrIndex = Number(buffData.ItemType) - 1;
+            var curValue = this[propertyMap[attrIndex]];
             var newValue = Math.ceil(curValue + baseValue * buffData.value/100);
-            this[propertyMap[buffData.ItemType]] = newValue;
+            cc.log("value for the property: %s, current: %s, new: %s", propertyMap[attrIndex], curValue, newValue);
+
+            this[propertyMap[attrIndex]] = newValue;
             this.game.inGameUI.addBuffDisplay(buffData);
         }
 

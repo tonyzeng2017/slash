@@ -1,3 +1,5 @@
+var Constant = require("Constant");
+
 var TDAndroid = cc.Class({
 
     properties: {
@@ -182,5 +184,8 @@ if(cc.sys.os == cc.sys.OS_ANDROID){
 }else{
     
     window.TDProxy = new TDWindows();
-    
+}
+
+if(!Constant.instance.PAYMENT_ENABLE){
+    window.TDProxy = new TDWindows();
 }

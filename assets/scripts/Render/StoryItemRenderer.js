@@ -32,10 +32,13 @@ cc.Class({
         return this._storyData.storyID;
     },
 
-    render: function(storyData){
+    init: function(storyData){
         this._storyData = storyData;
+    },
 
-        var rawData = storyData.getRawData();
+    render: function(){
+
+        var rawData = this._storyData.getRawData();
         if(!rawData){
             return;
         }
@@ -50,14 +53,14 @@ cc.Class({
             this.render();
         };
 
-        this.itemNormal.node.active = storyData.opened;
-        this.itemDisable.active = !storyData.opened;
+        this.itemNormal.node.active = this._storyData.opened;
+        this.itemDisable.active = !this._storyData.opened;
 
-        if(this.itemNormal.active){
+        if(this.itemNormal.node.active){
             this.itemNormal.spriteFrame = this.itemFrames[Number(rawData.Pic) - 1];
         }
 
-        if(storyData.enabled && !storyData.opened){
+        if(this._storyData.enabled && !this._storyData.opened){
             this.openAnim.play();
             this.openAnim.on("finished", onOpened.bind(this), true);
         }

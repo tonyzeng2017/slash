@@ -24,12 +24,20 @@ cc.Class({
     // use this for initialization
     onLoad: function () {
         var stories = UserDataManager.instance.getStoryData().getDisplayStories();
+        var defaultStoryID = UserDataManager.instance.getStoryData().defaultStoryID;
 
+        var defaultIndex = 0;
         for(var i = 0; i < stories.length; i++){
             var item = cc.instantiate(this.storyItem);
-            item.getComponent("StoryItemRenderer").render(stories[i]);
+            item.getComponent("StoryItemRenderer").init(stories[i]);
+            item.getComponent("StoryItemRenderer").render();
             this.content.addChild(item);
+            if(stories[i].storyID == defaultStoryID){
+                defaultIndex = i;
+            }
         }
+
+        this.pageView.setCurrentPageIndex(defaultIndex);
     },
 
     // use this for initialization
@@ -71,6 +79,8 @@ cc.Class({
                     storyUI.removeFromParent();
                 });
                 this.node.addChild(storyUI);
+                cc.log("the page is turning~~~~~: %s", storyID);
+                UserDataManager.instance.getStoryData().setCurStory(storyID);
             }
         }.bind(this)));
     },
@@ -81,7 +91,6 @@ cc.Class({
     },
 
     onTurning: function(){
-        cc.log("the page is turning~~~~~: %s", this.pageView.getCurrentPageIndex());
         this.curIndex = this.pageView.getCurrentPageIndex();
         this.curPosX = this.content.x;
         this.initScale();

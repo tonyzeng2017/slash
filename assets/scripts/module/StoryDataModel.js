@@ -37,6 +37,7 @@ var Story = cc.Class({
     }
 })
 
+const dataKey = "StoryDataModel"
 
 cc.Class({
     name: "StoryDataModel",
@@ -51,11 +52,15 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
-        stories: null
+        stories: null,
+        defaultStoryID: "1"
     },
 
     ctor: function(){
-        var storyData = IOUtil.readData(this.name);
+        var data = IOUtil.readData(dataKey);
+        this.defaultStoryID = data.defaultStoryID ? data.defaultStoryID : "1";
+
+        var storyData = data.storyData;
         this.stories = {};
         for(var key in storyData){
             var story = new Story(storyData[key]);
@@ -111,6 +116,11 @@ cc.Class({
         return this.stories[id];
     },
 
+    setCurStory: function(storyID){
+        this.defaultStoryID = storyID;
+        this.saveData();
+    },
+
     getDisplayStories: function(){
         var sortedStories = [];
         for(var key in this.stories){
@@ -144,15 +154,16 @@ cc.Class({
     },
 
     getData: function(){
-        var data = {};
+        var data = { defaultStoryID: this.defaultStoryID } ;
+        data.storyData = {};
         for(var id in this.stories){
-            data[id] = this.stories[id].getData();
+            data.storyData[id] = this.stories[id].getData();
         }
 
         return data;
     },
 
     saveData: function(){
-        IOUtil.writeData(this.name, this.getData());
+        IOUtil.writeData(dataKey, this.getData());
     }
 });
