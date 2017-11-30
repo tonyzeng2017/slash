@@ -26,9 +26,6 @@ var GameManager = cc.Class({
 
         //礼包倒计时时间戳
         lastTimeStamp: 0,
-
-        //已播放的剧情动画
-        playedStories: []
     },
 
     isStageInEntrance: function(){
@@ -151,25 +148,12 @@ var GameManager = cc.Class({
         this.saveData();
     },
 
-    storyEnabled: function(storyID){
-        return Number(storyID) != -1 && this.playedStories.indexOf(storyID.toString()) < 0; 
-    },
-
-    playStory: function(storyID){
-        cc.log("all of the played stories: %s", this.playedStories);
-        if(this.playedStories.indexOf(storyID.toString()) < 0){
-            this.playedStories.push(storyID.toString());
-            this.saveData();
-        }
-    },
-
     saveData: function(){
         let data = {
             isMusicOn: this.isMusicOn,
             isSoundOn: this.isSoundOn,
             deadCount: this.deadCount,
-            lastTimeStamp: this.lastTimeStamp,
-            playedStories: this.playedStories
+            lastTimeStamp: this.lastTimeStamp
         };
 
         IOUtil.writeData(dataKey, data);

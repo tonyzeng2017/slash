@@ -1,3 +1,5 @@
+var UserDataManager  =  require("UserDataManager");
+
 cc.Class({
     extends: cc.Component,
 
@@ -16,12 +18,32 @@ cc.Class({
         content: cc.Node,
         scaleDiff: 0.2,
         story: cc.Prefab,
-        recallStory: cc.Prefab
+        storyItem: cc.Prefab
     },
 
     // use this for initialization
     onLoad: function () {
+        var stories = UserDataManager.instance.getStoryData().getDisplayStories();
+        var defaultStoryID = UserDataManager.instance.getStoryData().defaultStoryID;
 
+        cc.log("default storyID: %s", defaultStoryID);
+
+        var defaultIndex = 0;
+        for(var i = 0; i < stories.length; i++){
+            var item = cc.instantiate(this.storyItem);
+            item.getComponent("StoryItemRenderer").init(stories[i]);
+            item.getComponent("StoryItemRenderer").render();
+            this.content.addChild(item);
+            if(stories[i].storyID == defaultStoryID){
+                defaultIndex = i;
+            }
+            cc.log("storyID: %s", stories[i].storyID);
+        }
+
+        this.node.runAction(cc.callFunc(function(){
+            cc.log("default index: %s", defaultIndex);
+            this.pageView.setCurrentPageIndex(defaultIndex);
+        }.bind(this)));
     },
 
     // use this for initialization
@@ -53,14 +75,19 @@ cc.Class({
     onItemTouch: function(event){
         this.node.runAction(cc.callFunc(function(){
             event.stopPropagationImmediate();
-            var index = this.pageView.getPages().indexOf(event.target);
-            cc.log("the index: %s", index)
-    
-            var storyUI = cc.instantiate(this.story);
-            storyUI.getComponent("StoryRenderer").setStoryAndCallback((index+1).toString(), function(){
-                storyUI.removeFromParent();
-            });
-            this.node.addChild(storyUI);
+            // var index = this.pageView.getPages().indexOf(event.target);
+            // cc.log("the index: %s", index)
+            var storyID = event.target.getComponent("StoryItemRenderer").getStoryID();
+
+            if(UserDataManager.instance.getStoryData().isStoryEnabled(storyID)){
+                var storyUI = cc.instantiate(this.story);
+                storyUI.getComponent("StoryRenderer").setStoryAndCallback(storyID, function(){
+                    storyUI.removeFromParent();
+                });
+                this.node.addChild(storyUI);
+                cc.log("the page is turning~~~~~: %s", storyID);
+                UserDataManager.instance.getStoryData().setCurStory(storyID);
+            }
         }.bind(this)));
     },
 
@@ -70,7 +97,6 @@ cc.Class({
     },
 
     onTurning: function(){
-        cc.log("the page is turning~~~~~: %s", this.pageView.getCurrentPageIndex());
         this.curIndex = this.pageView.getCurrentPageIndex();
         this.curPosX = this.content.x;
         this.initScale();

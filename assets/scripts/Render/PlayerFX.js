@@ -63,7 +63,6 @@ cc.Class({
         this.game.playStory(stageData.StoryStart,  doPlayIntro);
     },
 
-
     startIntro(){
         this.introAnim.node.active = true;
         this.introAnim.play('start');

@@ -302,11 +302,11 @@ cc.Class({
     createBuffItem(){
         var curStageData = GameManager.instance.getCurStageData();
 
-        if(Math.random() * 100 < curStageData.Probability && UserDataManager.instance.getGameData().isBuffTimeReached()){
-            cc.log('curStageData: %s', curStageData.ItemStore);
+        if(Math.random() * 100 < curStageData.Probability && UserDataManager.instance.getGameData().isBuffTimeReached()){         
             var buffRawData = MetaDataManager.randomItemInSore(curStageData.ItemStore);
             var buffData = UserDataManager.instance.getGameData().addBuff(buffRawData);
             if(buffData){
+                cc.log('buffType: %s, addvalue1: %s, addvalue2: %s', buffData.ItemType, buffRawData.AddValue, buffData.value);
                 this.spawnBuffItem(buffData);
             }else{
                 cc.log("the type of buff: %s reached the max count~~~~");
