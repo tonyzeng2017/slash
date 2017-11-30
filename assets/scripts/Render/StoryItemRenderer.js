@@ -20,6 +20,7 @@ cc.Class({
         itemDisable: cc.Node,
         itemFrames: [cc.SpriteFrame],
         openAnim: cc.Animation,
+        title_disable: cc.Label
     },
 
     // use this for initialization
@@ -27,25 +28,38 @@ cc.Class({
 
     },
 
+    getStoryID: function(){
+        return this._storyData.storyID;
+    },
+
     render: function(storyData){
+        this._storyData = storyData;
+
         var rawData = storyData.getRawData();
         if(!rawData){
             return;
         }
 
         this.title.string = rawData.Name;
+        this.title_disable.string = rawData.Name;
         cc.log("story name: %s", rawData.Name);
 
         var onOpened = function(){
-            UserDataManager.instance.getStoryData().openStory(storyData.storyID);
-            
+            UserDataManager.instance.getStoryData().openStory(this._storyData.storyID);
+            this.openAnim.off("finished", onOpened, true);
+            this.render();
         };
 
-        this.itemNormal.active = storyData.opened;
+        this.itemNormal.node.active = storyData.opened;
         this.itemDisable.active = !storyData.opened;
+
+        if(this.itemNormal.active){
+            this.itemNormal.spriteFrame = this.itemFrames[Number(rawData.Pic) - 1];
+        }
+
         if(storyData.enabled && !storyData.opened){
             this.openAnim.play();
-            this.openAnim.on("finished", onOpened, true);
+            this.openAnim.on("finished", onOpened.bind(this), true);
         }
     }
     // called every frame, uncomment this function to activate update callback

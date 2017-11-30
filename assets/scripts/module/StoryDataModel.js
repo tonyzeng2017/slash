@@ -104,12 +104,11 @@ cc.Class({
     },
 
     getStory: function(id){
-        if(this.stories[id]){
-            return this.stories[id];
-        }else{
+        if(!this.stories[id]){
             this.stories[id] = this.createDefault(id);
-            return story;
         }
+
+        return this.stories[id];
     },
 
     getDisplayStories: function(){
@@ -122,17 +121,25 @@ cc.Class({
         }
         var lastIndex = 0;
         if(sortedStories.length > 0){
+            //升序
             sortedStories.sort(function(a, b){
-                return Number(a.storyID) < Number(b.storyID);
-            })
+                return Number(a.storyID) > Number(b.storyID);
+            });
+
+            for(var i = 0; i < sortedStories.length; i ++){
+                cc.log("storyID: %s", sortedStories[i].storyID);
+            }
+
             lastIndex = Number(sortedStories[sortedStories.length - 1].storyID);
         }
         var nextStory = MetaDataManager.getStoryDataByID(lastIndex + 1);
+        cc.log("lastIndex: %s", lastIndex);
         if(nextStory){
             var newStory = this.createDefault(lastIndex + 1);
             sortedStories.push(newStory);
         }
 
+        cc.log("sorted stories: %s", sortedStories.length);
         return sortedStories;
     },
 

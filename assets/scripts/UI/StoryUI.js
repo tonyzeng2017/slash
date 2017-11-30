@@ -25,7 +25,7 @@ cc.Class({
     onLoad: function () {
         var stories = UserDataManager.instance.getStoryData().getDisplayStories();
 
-        for(var i = 0; i < stories.length - 1; i++){
+        for(var i = 0; i < stories.length; i++){
             var item = cc.instantiate(this.storyItem);
             item.getComponent("StoryItemRenderer").render(stories[i]);
             this.content.addChild(item);
@@ -61,14 +61,17 @@ cc.Class({
     onItemTouch: function(event){
         this.node.runAction(cc.callFunc(function(){
             event.stopPropagationImmediate();
-            var index = this.pageView.getPages().indexOf(event.target);
-            cc.log("the index: %s", index)
-    
-            var storyUI = cc.instantiate(this.story);
-            storyUI.getComponent("StoryRenderer").setStoryAndCallback((index+1).toString(), function(){
-                storyUI.removeFromParent();
-            });
-            this.node.addChild(storyUI);
+            // var index = this.pageView.getPages().indexOf(event.target);
+            // cc.log("the index: %s", index)
+            var storyID = event.target.getComponent("StoryItemRenderer").getStoryID();
+
+            if(UserDataManager.instance.getStoryData().isStoryEnabled(storyID)){
+                var storyUI = cc.instantiate(this.story);
+                storyUI.getComponent("StoryRenderer").setStoryAndCallback(storyID, function(){
+                    storyUI.removeFromParent();
+                });
+                this.node.addChild(storyUI);
+            }
         }.bind(this)));
     },
 
