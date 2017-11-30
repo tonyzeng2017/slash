@@ -26,6 +26,8 @@ cc.Class({
         var stories = UserDataManager.instance.getStoryData().getDisplayStories();
         var defaultStoryID = UserDataManager.instance.getStoryData().defaultStoryID;
 
+        cc.log("default storyID: %s", defaultStoryID);
+
         var defaultIndex = 0;
         for(var i = 0; i < stories.length; i++){
             var item = cc.instantiate(this.storyItem);
@@ -35,9 +37,13 @@ cc.Class({
             if(stories[i].storyID == defaultStoryID){
                 defaultIndex = i;
             }
+            cc.log("storyID: %s", stories[i].storyID);
         }
 
-        this.pageView.setCurrentPageIndex(defaultIndex);
+        this.node.runAction(cc.callFunc(function(){
+            cc.log("default index: %s", defaultIndex);
+            this.pageView.setCurrentPageIndex(defaultIndex);
+        }.bind(this)));
     },
 
     // use this for initialization
