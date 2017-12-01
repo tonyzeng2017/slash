@@ -434,9 +434,9 @@
     "_startColor": {
       "__type__": "cc.Color",
       "r": 255,
-      "g": 238,
-      "b": 172,
-      "a": 0
+      "g": 240,
+      "b": 180,
+      "a": 107
     },
     "_startColorVar": {
       "__type__": "cc.Color",
@@ -1617,7 +1617,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 66
