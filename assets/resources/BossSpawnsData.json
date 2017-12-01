@@ -4,4 +4,12 @@
     ,"9201" : {"SpawnID" : "9201", "MonsterID" : "10", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
     ,"9301" : {"SpawnID" : "9301", "MonsterID" : "11", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
     ,"9401" : {"SpawnID" : "9401", "MonsterID" : "12", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
+    ,"19101" : {"SpawnID" : "19101", "MonsterID" : "29", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
+    ,"29101" : {"SpawnID" : "29101", "MonsterID" : "30", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
+    ,"19201" : {"SpawnID" : "19201", "MonsterID" : "31", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
+    ,"29201" : {"SpawnID" : "29201", "MonsterID" : "32", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
+    ,"19301" : {"SpawnID" : "19301", "MonsterID" : "33", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
+    ,"29301" : {"SpawnID" : "29301", "MonsterID" : "34", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
+    ,"19401" : {"SpawnID" : "19401", "MonsterID" : "35", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
+    ,"29401" : {"SpawnID" : "29401", "MonsterID" : "36", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 10}
 }
