@@ -86,6 +86,7 @@ var GameManager = cc.Class({
         if(this.isMusicOn){
             // this.audioID_BGM = cc.audioEngine.play(bgm, true , 1);
             var bg_music_name = BG_MUSIC_NAME[self.curSceneType];
+            cc.log("sceneType: %s, loaded music name: %s", self.curSceneType, bg_music_name);
             cc.loader.loadRes(bg_music_name, cc.AudioClip, function (err, audio) {
                 // self.bg.spriteFrame = spriteFrame;
                 self.audioID_BGM  = cc.audioEngine.play(audio, true, 1);
