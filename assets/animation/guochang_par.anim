@@ -3,12 +3,234 @@
   "_name": "guochang_par",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0,
+  "_duration": 4.83,
   "sample": 60,
   "speed": 1,
   "wrapMode": 2,
   "curveData": {
-    "paths": {}
+    "paths": {
+      "light_01": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.85,
+              "value": 255
+            },
+            {
+              "frame": 1.65,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "light_02": {
+          "opacity": [
+            {
+              "frame": 0.18333333333333332,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 255
+            },
+            {
+              "frame": 4.033333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "light_03": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.11666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.3666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 3.1666666666666665,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "light_04": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.016666666666666666,
+              "value": 165.40540540540545
+            },
+            {
+              "frame": 0.9666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.5,
+              "value": 0
+            },
+            {
+              "frame": 2.7,
+              "value": 255
+            },
+            {
+              "frame": 3.533333333333333,
+              "value": 168.85135135135138
+            }
+          ]
+        }
+      },
+      "light_03_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 1.0166666666666666,
+              "value": 0
+            },
+            {
+              "frame": 3,
+              "value": 255
+            },
+            {
+              "frame": 4.6,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "light_02_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 2.1333333333333333,
+              "value": 255
+            },
+            {
+              "frame": 4.466666666666667,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "light_04_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 2.066666666666667,
+              "value": 0
+            },
+            {
+              "frame": 3.533333333333333,
+              "value": 255
+            },
+            {
+              "frame": 4.833333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "light_03_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.8166666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.9666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 4.3,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "light_01_1": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.08333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 1.35,
+              "value": 255
+            },
+            {
+              "frame": 3.3833333333333333,
+              "value": 0
+            }
+          ]
+        }
+      },
+      "light_01_2": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 52.39726027397259
+            },
+            {
+              "frame": 0.31666666666666665,
+              "value": 0
+            },
+            {
+              "frame": 0.9333333333333333,
+              "value": 0
+            },
+            {
+              "frame": 2.5166666666666666,
+              "value": 255
+            },
+            {
+              "frame": 4.433333333333334,
+              "value": 54.14383561643834
+            }
+          ]
+        }
+      },
+      "light_03_3": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.03333333333333333,
+              "value": 100
+            },
+            {
+              "frame": 1.0666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 1.75,
+              "value": 0
+            },
+            {
+              "frame": 2.8666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 3.816666666666667,
+              "value": 100
+            }
+          ]
+        }
+      }
+    }
   },
   "events": []
 }
