@@ -6,16 +6,4 @@
     ,"4" : {"StoreID" : 1, "FightingItem" : "190004", "Weight" : 100}
     ,"5" : {"StoreID" : 1, "FightingItem" : "190005", "Weight" : 0}
     ,"6" : {"StoreID" : 1, "FightingItem" : "190006", "Weight" : 100}
-    ,"7" : {"StoreID" : 2, "FightingItem" : "190001", "Weight" : 100}
-    ,"8" : {"StoreID" : 2, "FightingItem" : "190002", "Weight" : 100}
-    ,"9" : {"StoreID" : 2, "FightingItem" : "190003", "Weight" : 70}
-    ,"10" : {"StoreID" : 2, "FightingItem" : "190004", "Weight" : 100}
-    ,"11" : {"StoreID" : 2, "FightingItem" : "190005", "Weight" : 0}
-    ,"12" : {"StoreID" : 2, "FightingItem" : "190006", "Weight" : 100}
-    ,"13" : {"StoreID" : 3, "FightingItem" : "190001", "Weight" : 100}
-    ,"14" : {"StoreID" : 3, "FightingItem" : "190002", "Weight" : 100}
-    ,"15" : {"StoreID" : 3, "FightingItem" : "190003", "Weight" : 50}
-    ,"16" : {"StoreID" : 3, "FightingItem" : "190004", "Weight" : 100}
-    ,"17" : {"StoreID" : 3, "FightingItem" : "190005", "Weight" : 0}
-    ,"18" : {"StoreID" : 3, "FightingItem" : "190006", "Weight" : 100}
 }
