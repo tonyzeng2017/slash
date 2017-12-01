@@ -47790,7 +47790,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1382
@@ -47868,7 +47868,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 1384
@@ -47925,7 +47925,7 @@
     "_lineHeight": 27,
     "_enableWrapText": true,
     "_N$file": {
-      "__uuid__": "f8090a52-77a3-4ffa-b375-164640bebfa8"
+      "__uuid__": "5895239c-c7f4-421f-a5a9-c068efa9477c"
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
