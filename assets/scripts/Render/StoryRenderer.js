@@ -36,8 +36,8 @@ cc.Class({
 
     initWord: function(){
         var storyData = MetaDataManager.getStoryDataByID(this.storyID);
-        this.bgNormal.active = storyData.Pic == "1";
-        this.bgRecall.active = storyData.Pic == "2";
+        this.bgNormal.active = storyData.IsRecall == 0;
+        this.bgRecall.active = storyData.IsRecall == 1;
 
         var words = storyData.Word.split("|");
         for(var i = 0; i < this.labels.length; i++){    
