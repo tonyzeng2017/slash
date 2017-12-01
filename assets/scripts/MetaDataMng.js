@@ -3,7 +3,7 @@ var MetaDataManager = require("MetaDataManager");
 var UserDataManager = require("UserDataManager");
 var Constant = require("Constant");
 var preLoadScenes = MetaDataManager.getPreLoadScenes();
-const FoeType = require('Types').FoeType;
+const Types = require('Types');
 
 cc.Class({
     extends: cc.Component,
@@ -72,7 +72,7 @@ cc.Class({
         TDProxy.onEvent("enter_game", UserDataManager.instance.getUserData().getDCData());
         // cc.Texture2D.defaultPixelFormat = cc.Texture2D.PIXEL_FORMAT_RGBA4444;
 
-        cc.log("foe type: %s, %s", FoeType.Foe0, FoeType.Foe1);
+        cc.log("attribute type: %s, %s", Types.AttributeType.ATK_DURATION, Types.AttributeType.HP);
         cc.log("texture format: %s", cc.Texture2D.defaultPixelFormat);
         MetaDataManager.loadData(
             function () {

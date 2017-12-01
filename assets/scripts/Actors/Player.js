@@ -1,9 +1,11 @@
 const MetaDataManager = require("MetaDataManager");
 const GameManager = require("GameManager");
 var UserDataManager = require("UserDataManager");
-
+var AttributeType = require("Types").AttributeType;
+var Types = require("Types");
 const standAnimations = ["stand_up", "stand_right", "stand"];
-const displayBuffs = [2, 3, 4, 6];
+const displayBuffs = [AttributeType.HURT_RADIUS, AttributeType.ATK_DISTANCE, 
+                        AttributeType.ATK_DURATION, AttributeType.SPEED];
 
 const propertyMap = [
     "life",
@@ -51,7 +53,7 @@ cc.Class({
 
     onLoad(){
         this.initProperties();
-        this.game.inGameUI.updateLife();
+        this.game.inGameUI.updateLife(Types.LifeType.INIT);
     },
 
     initProperties(){
@@ -67,7 +69,7 @@ cc.Class({
             }
         }
 
-        let speed = UserDataManager.instance.getUserData().getCurrentPlayerAttr(6).PropertyValue;
+        let speed = UserDataManager.instance.getUserData().getCurrentPlayerAttr(AttributeType.SPEED).PropertyValue;
         this.getComponent('Move').moveSpeed = speed;
         cc.log("onload player.atkDuration: %s, player.atkDist: %s, player life: %s, speed: %s" , this.atkDuration, this.atkDist, this.life, speed);
     },
@@ -308,7 +310,7 @@ cc.Class({
         let action = cc.sequence(cc.delayTime(0.6), hideCB);
 
         this.initProperties();
-        this.game.inGameUI.updateLife();
+        this.game.inGameUI.updateLife(Types.LifeType.INIT);
         this.game.inGameUI.hideWarning();
         cc.log("player revived, life: %s", this.life);
     },
@@ -318,7 +320,7 @@ cc.Class({
         if (!this.isAlive) return;
 
         this.life--;
-        this.game.inGameUI.updateLife(true);
+        this.game.inGameUI.updateLife(Types.LifeType.COST);
         this.playHit();
 
         if(this.life <= 0){
@@ -356,9 +358,10 @@ cc.Class({
 
     addBuff(buffData){
         var baseValue = UserDataManager.instance.getUserData().getCurrentPlayerAttr(buffData.ItemType).PropertyValue;
-        var attrData = getAttributeDataByID(buffData.ItemType);
+        var attrData = MetaDataManager.getAttributeDataByID(buffData.ItemType);
+        cc.log("buffType: %s, attrType: %s", buffData.ItemType, AttributeType.HP);
 
-        if(buffData.ItemType == 6){
+        if(Number(buffData.ItemType) == AttributeType.SPEED){
             //buff on the move speed.
             var curSpeed = this.getComponent('Move').moveSpeed;
             var newSpeed = curSpeed + baseValue * buffData.value/100;
@@ -366,11 +369,12 @@ cc.Class({
             this.getComponent('Move').moveSpeed = newSpeed;
             this.game.inGameUI.addBuffDisplay(buffData);
             cc.log("value for the property: %s, current: %s, new: %s", "speed", curSpeed, newSpeed);
-        }else if(buffData.ItemType == 1){
+        }else if(Number(buffData.ItemType) == AttributeType.HP){
             //if it is life then
             var newLife = Math.min(attrData.Max, this.life + buffData.delta);
+            cc.log("max life: %s, expectLife: %s, newLife: %s", attrData.Max, this.life + buffData.delta, newLife);
             this.life  = newLife;
-            this.game.inGameUI.updateLife();
+            this.game.inGameUI.updateLife(Types.LifeType.ADD);
         }else{
             //buff on other property.
             var attrIndex = Number(buffData.ItemType) - 1;

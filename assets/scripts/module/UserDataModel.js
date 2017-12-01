@@ -176,7 +176,7 @@ var UserDataModel = cc.Class({
         var stageData = MetaDataManager.getStageOpenDataByID(stage);
         var index =  this._openedStages.indexOf(stageData.Preconditions);
 
-        return true;//index >= 0;
+        return index >= 0;
     },
 
     isEntraceEnabled: function(entranceID){
@@ -184,7 +184,7 @@ var UserDataModel = cc.Class({
         let isStageOpen = this.isStageEnabled(entranceData.StageStart);
 
         cc.log("openStar: %s", entranceData.OpenStar);
-        return true;//isStageOpen && this._star >= Number(entranceData.OpenStar);
+        return isStageOpen && this._star >= Number(entranceData.OpenStar);
     },
 
     getTopStageInEntrance: function(entranceID){

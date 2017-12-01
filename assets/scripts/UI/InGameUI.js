@@ -2,6 +2,7 @@ var GameManager = require("GameManager");
 var UserDataManager = require("UserDataManager");
 var MetaDataManager = require("MetaDataManager");
 var Constant = require("Constant");
+var Types = require("Types");
 
 cc.Class({
     extends: cc.Component,
@@ -34,7 +35,7 @@ cc.Class({
         this.killDisplay.node.active = false;
         this.comboDisplay = this.comboDisplay.getComponent('ComboDisplay');
         this.comboDisplay.init();
-        this.updateLife();
+        this.updateLife(Types.LifeType.INIT);
 
         // cc.log("this.game onload6");
         this.txt_score.string = "0";
@@ -52,21 +53,33 @@ cc.Class({
         cc.log("bg name: %s", stageData.MapPic);
     },
 
-    updateLife(costLife){
+    updateLife(lifeType){
         this.txt_life.string = this._game.player.life;
-        if(this.lifeAni && costLife){
+        if(lifeType == Types.LifeType.INIT){
+            return;
+        }
+
+        if(this.lifeAni && lifeType == Types.LifeType.COST){
             this.lifeAni.node.active = true;
             this.lifeAni.play();
+        }
 
-            let life_limit = Math.ceil( Constant.instance.WARNING_LIFE * this._game.player.life );
-            if(this._game.player.life == life_limit && this.warning_bg){
+        var initLife = UserDataManager.instance.getUserData().getCurrentPlayerAttr(Types.AttributeType.HP).PropertyValue;
+        let life_limit = Math.ceil( Constant.instance.WARNING_LIFE * initLife );
+        cc.log("player life: %s, lifelimit:  %s, initLife: %s", this._game.player.life, life_limit, initLife);
+        if(this._game.player.life <= life_limit){
+            if(!this.warning_bg.node.active){
                 this.warning_bg.node.active = true;
                 // let blink = cc.blink(10000, 10000);
                 let seq = cc.sequence(cc.fadeIn(0.5), cc.fadeOut(0.5));
                 this.warning_bg.node.runAction(cc.repeatForever(seq));
             }
-            // cc.log("life animation played~~~~~~")
+        }else{
+            this.warning_bg.node.active = false;
+            this.warning_bg.node.stopAllActions();
         }
+        // cc.log("life animation played~~~~~~")
+        // }
     },
 
     updateEnergy: function(isFirstFull){
@@ -102,7 +115,7 @@ cc.Class({
 
     addBuffDisplay(buffData){
         this.buffDisplay.getComponent("BuffDisplayer").addBuffItem(buffData);
-        this.updateLife();
+        // this.updateLife(Types.LifeType.ADD);
     },
 
     getCombo(){
