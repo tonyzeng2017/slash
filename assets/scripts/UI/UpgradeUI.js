@@ -25,7 +25,8 @@ cc.Class({
         audioPlayer: cc.AudioClip,
         newbieLevelUps: [cc.Node],
         newbieStarUps: [cc.Node],
-        starup_ani: cc.Node
+        starup_ani: cc.Node,
+        iconStarMax: cc.Node
     },
 
     // use this for initialization
@@ -38,6 +39,7 @@ cc.Class({
 
         this.updateItemRenderers();
         this.btnStar.active = this.isButtonStarVisible();
+        this.iconStarMax.active = UserDataManager.instance.getUserData().isMaxStar();
         this.node.dispatchEvent( new cc.Event.EventCustom('level_changed', true));
     },
 

@@ -11,6 +11,7 @@ cc.Class({
         waveUI: cc.Node,
         killDisplay: cc.Node,
         comboDisplay: cc.Node,
+        icon_life: cc.Node,
         txt_life: cc.Label,
         txt_score: cc.Label,
         txt_level:cc.Label,
@@ -62,6 +63,12 @@ cc.Class({
         if(this.lifeAni && lifeType == Types.LifeType.COST){
             this.lifeAni.node.active = true;
             this.lifeAni.play();
+        }
+
+        if(lifeType == Types.LifeType.ADD){
+            if(this.icon_life){
+                this.icon_life.runAction(cc.sequence(cc.scaleTo(0.1, 1.25), cc.scaleTo(0.1, 0.8)));
+            }
         }
 
         var initLife = UserDataManager.instance.getUserData().getCurrentPlayerAttr(Types.AttributeType.HP).PropertyValue;

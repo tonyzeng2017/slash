@@ -86,6 +86,7 @@ cc.Class({
 
             UserDataManager.instance.getStoryData().activeStory(storyID);
             // GameManager.instance(storyID);
+            GameManager.instance.updateScene(Types.sceneType.NORMAL);
        }else{
             onFinished();
        }

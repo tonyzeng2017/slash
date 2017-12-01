@@ -624,13 +624,13 @@
     "killScore": 0,
     "sfAtkDirs": [
       {
-        "__uuid__": "33781673-1fa3-4b25-a695-466ce1a21104"
+        "__uuid__": "d6d4a2a9-fd47-4a07-9fd8-27bf9262c29f"
       },
       {
-        "__uuid__": "cfd34a60-7f5e-42f7-9660-d694d0f50f7e"
+        "__uuid__": "3c2972d6-9f78-4a53-a537-138f6bd6a8a9"
       },
       {
-        "__uuid__": "941c7a16-7a91-4c2d-8c7c-29db9895dc76"
+        "__uuid__": "b2b3db84-e4ed-4eb2-adc8-074cc33fc334"
       }
     ],
     "fxSmoke": {
@@ -653,7 +653,8 @@
         "__uuid__": "c00f1d21-d734-4ed4-b0b9-b4c656e5b6d5"
       }
     ],
-    "isBoss": false
+    "isBoss": false,
+    "atkEnergy": 0
   },
   {
     "__type__": "03fecYvs+9L07SPviQLuLj3",

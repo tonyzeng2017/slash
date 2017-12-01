@@ -1,9 +1,9 @@
 
 {
-    "1" : {"ItemID" : "100002", "ItemName" : "少量灵石", "ItemType" : 0, "ItemNum" : 600, "BuyType" : 0, "MoneyType" : 0, "MoneyNum" : 6, "ShopType" : 0, "Pic" : "battle-shop-item3"}
+    "1" : {"ItemID" : "100002", "ItemName" : "少量灵石", "ItemType" : 0, "ItemNum" : 3000, "BuyType" : 0, "MoneyType" : 0, "MoneyNum" : 6, "ShopType" : 0, "Pic" : "battle-shop-item3"}
     ,"2" : {"ItemID" : "100003", "ItemName" : "中量灵石", "ItemType" : 0, "ItemNum" : 6000, "BuyType" : 0, "MoneyType" : 0, "MoneyNum" : 12, "ShopType" : 0, "Pic" : "battle-shop-item4"}
-    ,"3" : {"ItemID" : "100004", "ItemName" : "一箱灵石", "ItemType" : 0, "ItemNum" : 30000, "BuyType" : 0, "MoneyType" : 0, "MoneyNum" : 25, "ShopType" : 0, "Pic" : "battle-shop-item5"}
-    ,"4" : {"ItemID" : "100005", "ItemName" : "一炉灵石", "ItemType" : 0, "ItemNum" : 180000, "BuyType" : 0, "MoneyType" : 0, "MoneyNum" : 36, "ShopType" : 0, "Pic" : "battle-shop-item6"}
+    ,"3" : {"ItemID" : "100004", "ItemName" : "一箱灵石", "ItemType" : 0, "ItemNum" : 12500, "BuyType" : 0, "MoneyType" : 0, "MoneyNum" : 25, "ShopType" : 0, "Pic" : "battle-shop-item5"}
+    ,"4" : {"ItemID" : "100005", "ItemName" : "一炉灵石", "ItemType" : 0, "ItemNum" : 20000, "BuyType" : 0, "MoneyType" : 0, "MoneyNum" : 40, "ShopType" : 0, "Pic" : "battle-shop-item6"}
     ,"6" : {"ItemID" : "100007", "ItemName" : "复活", "ItemType" : 1, "ItemNum" : 1, "BuyType" : 0, "MoneyType" : 0, "MoneyNum" : 1, "ShopType" : 1}
     ,"7" : {"ItemID" : "100008", "ItemName" : "突破最强礼包", "ItemType" : 1, "ItemNum" : 1, "BuyType" : 1, "MoneyType" : 0, "MoneyNum" : 68, "ShopType" : 1}
 }
