@@ -44,7 +44,7 @@ var Constant = cc.Class({
     getMaxBuffCount: function(type){
         cc.log("max_buff_str: %s", this.MAX_BUFF_STR);
         var max_numbers = this.MAX_BUFF_STR.split(",");
-        return Number(max_numbers[type]);
+        return Number(max_numbers[type - 1]);
     },
 });
 

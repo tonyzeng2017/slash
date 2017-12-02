@@ -155,9 +155,11 @@ var GameDataModel = cc.Class({
     },
 
     addBuff: function(rawBuffData){
+        cc.log("added the buff data");
         var buffType = rawBuffData.ItemType;
         var activeBuffCount = this.getBuffCount(buffType);
         var maxBuffCount = Constant.instance.getMaxBuffCount(buffType);
+        cc.log("active buff count:%s, maxBuffCount: %s", activeBuffCount, maxBuffCount);
         if(activeBuffCount < maxBuffCount){
             if(!this.activeBuffData[buffType]){
                 this.activeBuffData[buffType] = new BuffData(rawBuffData);
@@ -166,8 +168,10 @@ var GameDataModel = cc.Class({
             }
 
             this.updateBuffCreateTime();
+            cc.log("added the buff data success");
             return this.activeBuffData[buffType];
         }else{
+            cc.log("added the buff data failed");
             return false;
         }
     },
