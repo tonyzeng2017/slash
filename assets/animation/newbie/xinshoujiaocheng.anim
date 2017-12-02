@@ -3,7 +3,7 @@
   "_name": "xinshoujiaocheng",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 16.5,
+  "_duration": 14.066666666666666,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -970,42 +970,6 @@
                 214.3,
                 468.3
               ]
-            }
-          ]
-        }
-      },
-      "chunbaise": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 14,
-              "value": 0
-            },
-            {
-              "frame": 15,
-              "value": 173
-            },
-            {
-              "frame": 16.5,
-              "value": 173
-            }
-          ]
-        }
-      },
-      "wenzi_qjszcmycgj": {
-        "props": {
-          "opacity": [
-            {
-              "frame": 14,
-              "value": 0
-            },
-            {
-              "frame": 15,
-              "value": 255
-            },
-            {
-              "frame": 16.5,
-              "value": 255
             }
           ]
         }
