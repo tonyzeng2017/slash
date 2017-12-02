@@ -7,12 +7,13 @@ cc.Class({
     properties: {
         introAnim: cc.Animation,
         reviveAnim: cc.Animation,
-        newBieAnim: cc.Animation,
+        // newBieAnim: cc.Animation,
         audioIntro: cc.AudioClip,
         audioRevive: cc.AudioClip,
         changeSceneAnim: cc.Animation,
         inGameUI: cc.Node,
-        story: cc.Prefab
+        story: cc.Prefab,
+        newbie: cc.Prefab,
     },
 
     // use this for initialization
@@ -37,10 +38,22 @@ cc.Class({
             }
             else{
                 // UserDataManager.instance.getNewbieData().finishInGame();
-                self.newBieAnim.node.active = true;
-                self.newBieAnim.play();
-                self.newBieAnim.on('finished',  function(){
-                    self.newBieAnim.node.active = false;
+                // self.newBieAnim.node.active = true;
+                // self.newBieAnim.play();
+                // self.newBieAnim.on('finished',  function(){
+                //     self.newBieAnim.node.active = false;
+                //     self.startIntro();
+                // }, self);
+                var newbieNode = cc.instantiate(self.newbie);
+                newbieNode.x = 160;
+                newbieNode.y = 60;
+                self.game.node.addChild(newbieNode);
+
+                var newbieAnim = newbieNode.getComponent(cc.Animation);
+                newbieAnim.play();
+                newbieAnim.on("finished", function(){
+                    newbieAnim.node.active = false;
+                    newbieAnim.node.removeFromParent();
                     self.startIntro();
                 }, self);
             }
