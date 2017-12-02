@@ -312,19 +312,22 @@ cc.Class({
     gameOver: function (isWin) {
 
         var self = this;
-        var doGameOver = function(){
+        // var doGameOver = function(){
             GameManager.instance.pauseMusic();
             UserDataManager.instance.getGameData().saveData();
             self.hideRevive();
-    
+
             TDProxy.onEvent("play_finish", {duration: Date.now() - self.startTime, result: isWin});
             self.startTime = 0;
-    
+
             if(isWin){
                 var curStage = GameManager.instance.curStageID;
                 UserDataManager.instance.getUserData().openStage(curStage);
-                // this.gameWinUI.show();
-                self.showGameWin();
+
+                var stageData = GameManager.instance.getCurStageData();
+                this.playStory(stageData.StoryComplete, function(){
+                    self.showGameWin();
+                });
             }else{
                 self.showGameFail();
                 if(GameManager.instance.isFirstDead()){
@@ -334,10 +337,7 @@ cc.Class({
             }
             
             UserDataManager.instance.getEnergyData().clear();
-        }
-
-        var stageData = GameManager.instance.getCurStageData();
-        this.playStory(stageData.StoryComplete, doGameOver);
+        // }
     },
 
     restart: function () {
