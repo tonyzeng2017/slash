@@ -284,6 +284,10 @@ var  metaNames   = ["ValueData", "StageOpenData", "StageData", "MonsterData",
                     "BossSpawnsData", "CutData", "RatingValueData", "BattlefieldItemData",
                     "BattlefieldStoreData", "StoryData", "BuffDisplayData"];
 
+function getMetaCount(){
+    return metaNames.length;
+}
+
 function loadData(completeCallback, progressCallback, target) {
 
     //var scheduler = cc.director.getScheduler();
@@ -397,5 +401,6 @@ module.exports = {
     getBuffItemByType: getBuffItemByType,
     getStoryDataByID: getStoryDataByID,
     getPreLoadScenes: getPreLoadScenes,
-    getBuffDisplayData: getBuffDisplayData
+    getBuffDisplayData: getBuffDisplayData,
+    getMetaCount
 };
