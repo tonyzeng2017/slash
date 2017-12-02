@@ -1940,7 +1940,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 102.29999999999995,
+      "width": 102.3,
       "height": 33
     },
     "_rotationX": 0,
@@ -2033,8 +2033,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 579,
-      "y": 299
+      "x": 552,
+      "y": 292
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2154,8 +2154,8 @@
     "_target": null,
     "_alignFlags": 33,
     "_left": 1169,
-    "_right": 11,
-    "_top": 11,
+    "_right": 38,
+    "_top": 18,
     "_bottom": 609,
     "_verticalCenter": 0,
     "_horizontalCenter": 0,
