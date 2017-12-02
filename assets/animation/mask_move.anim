@@ -3,8 +3,8 @@
   "_name": "mask_move",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 5.333333333333333,
-  "sample": 15,
+  "_duration": 3.3333333333333335,
+  "sample": 24,
   "speed": 1,
   "wrapMode": 1,
   "curveData": {
@@ -15,7 +15,7 @@
           "value": 0
         },
         {
-          "frame": 5.333333333333333,
+          "frame": 3.3333333333333335,
           "value": 810
         }
       ]
