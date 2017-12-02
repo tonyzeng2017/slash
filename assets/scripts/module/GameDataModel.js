@@ -79,8 +79,8 @@ var GameDataModel = cc.Class({
     },
 
     getFinalScore: function(){
-        let entranceData = MetaDataManager.getEntranceData(GameManager.instance.entranceID);
-        return Math.round(this.totalScore * entranceData.StageRewardValue);
+        // let entranceData = MetaDataManager.getEntranceData(GameManager.instance.entranceID);
+        return Math.round(this.totalScore); //entranceData.StageRewardValue;
     },
 
     getScoreByLevel: function(level){
@@ -126,8 +126,8 @@ var GameDataModel = cc.Class({
         let stageData = MetaDataManager.getStageDataByID(GameManager.instance.curStageID);
         var stageRewardValue = stageData.RewardValue/100;
         //var ratingValue = MetaDataManager.getRatingData(this.getScoreLevel());
-
-        this.totalReward = this.getFinalScore() * stageRewardValue * Constant.instance.REWARD_RATIO; //(1 + ratingValue);
+        let entranceData = MetaDataManager.getEntranceData(GameManager.instance.entranceID);
+        this.totalReward = this.getFinalScore() * entranceData.StageRewardValue * stageRewardValue * Constant.instance.REWARD_RATIO; //(1 + ratingValue);
         /*this.scoreReward = Math.ceil( Constant.instance.marks[scoreLevel] / 1000 * stageData.BasicReward );
         this.comboReward = Math.ceil( Constant.instance.comboRewardRatio / 1000 * this.highestCombo ) ;
         this.killReward = Math.ceil( Constant.instance.killsRewardRatio / 1000 * this.killedCount );
