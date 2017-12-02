@@ -37,7 +37,8 @@ cc.Class({
                 cc.director.preloadScene(preLoadScenes[index] , function(){
                     cc.log("%s preloaded~~~~~", preLoadScenes[index]);
 
-                    if(index ==  0){
+                    self.updateProgress(index);
+                    if(index ==  preLoadScenes.length - 1){
                         self.onLoadCompleted();
                     }
                 });
@@ -45,16 +46,21 @@ cc.Class({
         ))
     },
 
+    updateProgress: function(index){
+        var metaCount = MetaDataManager.getMetaCount();
+        cc.log("metaCount:  %s", metaCount);
+
+        this.destProgress =  (index + 1  + metaCount)/(metaCount + preLoadScenes.length);
+        this.textPercent.string = Math.ceil(this.destProgress*100) + "%";
+        this.curProgress = this.bar.width/1120;
+        this.timer = 0;
+        this.isLerping = true;
+    },
+
     onLoadCompleted: function(){
         this.isCompleted = true;
         this.loadingUI.active = false;
         this.btnStart.active = true;
-
-        this.destProgress = 1;
-        this.textPercent.string = "100%";
-        this.curProgress = this.bar.width/1120;
-        this.timer = 0;
-        this.isLerping = true;
         TDProxy.onEvent("game_load_completed", UserDataManager.instance.getUserData().getDCData());
     },
 
