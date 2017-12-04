@@ -3,7 +3,7 @@
     "190001" : {"ItemType" : 1, "AddValue" : 1}
     ,"190002" : {"ItemType" : 2, "AddValue" : 12}
     ,"190003" : {"ItemType" : 3, "AddValue" : 12}
-    ,"190004" : {"ItemType" : 4, "AddValue" : -10}
+    ,"190004" : {"ItemType" : 4, "AddValue" : -4}
     ,"190005" : {"ItemType" : 5, "AddValue" : -10}
     ,"190006" : {"ItemType" : 6, "AddValue" : 10}
 }
