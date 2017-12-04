@@ -62,7 +62,11 @@ cc.Class({
             //  if(cc.sys.isMobile){
                  this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
                      console.log('Mouse down entrance: %s', self.entranceID);
-                     TipsManager.init.showTips("通关前一关，并且人物属性达到" + entranceData.OpenStar + "星" );
+                     if(entranceData.OpenStar == 0){
+                        TipsManager.init.showTips("通关前一关" );
+                     }else{
+                        TipsManager.init.showTips("通关前一关，并且人物属性达到" + entranceData.OpenStar + "星" );
+                     }
                  }, self);
             //  }else{
             //      this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
