@@ -1,0 +1,67 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "xulie_xuanwo",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "comps": {
+      "cc.Sprite": {
+        "spriteFrame": [
+          {
+            "frame": 0,
+            "value": {
+              "__uuid__": "57310dab-bc91-4995-a3f3-46457946a477"
+            }
+          },
+          {
+            "frame": 0.4,
+            "value": {
+              "__uuid__": "b8a08149-eb02-4e24-ab76-7ba16e08695d"
+            }
+          },
+          {
+            "frame": 0.8,
+            "value": {
+              "__uuid__": "d70479fe-d3dd-491f-a3b6-f96797281de7"
+            }
+          },
+          {
+            "frame": 1.2,
+            "value": {
+              "__uuid__": "793e6546-b7d2-45ac-aabd-eee6f4e13f50"
+            }
+          },
+          {
+            "frame": 1.6,
+            "value": {
+              "__uuid__": "4460a38c-b6be-4b41-82d3-57278f51037c"
+            }
+          },
+          {
+            "frame": 1.9833333333333334,
+            "value": {
+              "__uuid__": "4460a38c-b6be-4b41-82d3-57278f51037c"
+            }
+          }
+        ]
+      }
+    },
+    "props": {
+      "rotation": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 1.9833333333333334,
+          "value": 360
+        }
+      ]
+    }
+  },
+  "events": []
+}
