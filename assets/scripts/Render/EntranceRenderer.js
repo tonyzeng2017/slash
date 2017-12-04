@@ -59,20 +59,20 @@ cc.Class({
          if(!isEntranceEnable){
              ShaderUtil.setShader(this.bg, "gray");
              var self = this;
-             if(cc.sys.isMobile){
+            //  if(cc.sys.isMobile){
                  this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
                      console.log('Mouse down entrance: %s', self.entranceID);
                      TipsManager.init.showTips("通关前一关，并且人物属性达到" + entranceData.OpenStar + "星" );
                  }, self);
-             }else{
-                 this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
-                     console.log('Mouse down entrance: %s', self.entranceID);
-                     TipsManager.init.showTips("通关前一关，并且人物属性达到" + entranceData.OpenStar + "星" );
-                 }, self);
-             }
+            //  }else{
+            //      this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
+            //          console.log('Mouse down entrance: %s', self.entranceID);
+            //          TipsManager.init.showTips("通关前一关，并且人物属性达到" + entranceData.OpenStar + "星" );
+            //      }, self);
+            //  }
          }else{
              var self = this;
-             if(cc.sys.isMobile){
+            //  if(cc.sys.isMobile){
                  this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
                      if(event.target != self.node){
                          return;
@@ -80,15 +80,15 @@ cc.Class({
                      console.log('TOUCH_END entrance: %s', self.entranceID);
                      self.onEnter();
                  }, self);
-             }else{
-                 this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
-                     if(event.target != self.node){
-                         return;
-                     }
-                     console.log('Mouse down entrance: %s', self.entranceID);
-                     self.onEnter();
-                 }, self);
-             }
+            //  }else{
+            //      this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
+            //          if(event.target != self.node){
+            //              return;
+            //          }
+            //          console.log('Mouse down entrance: %s', self.entranceID);
+            //          self.onEnter();
+            //      }, self);
+            //  }
          }
     },
 

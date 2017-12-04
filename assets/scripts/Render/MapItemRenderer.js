@@ -61,7 +61,7 @@ cc.Class({
         var touched = false;
         if(stagePassed || stageEnabled){
 
-            if(cc.sys.isMobile){
+            // if(cc.sys.isMobile){
                 this.node.on(cc.Node.EventType.TOUCH_END, function (event) {
                     GameManager.instance.playSound(self.audio, false, 1);
                     if(touched){
@@ -82,34 +82,34 @@ cc.Class({
                         self.enterGame();
                     }
                 }, this);
-            }else{
-                var moved = false;
-                this.node.on(cc.Node.EventType.MOUSE_DOWN, function (event) {
-                    moved = false;
-                }, this);
+            // }else{
+            //     var moved = false;
+            //     this.node.on(cc.Node.EventType.MOUSE_DOWN, function (event) {
+            //         moved = false;
+            //     }, this);
 
-                this.node.on(cc.Node.EventType.MOUSE_MOVE, function (event) {
-                    moved = true;
-                }, this);
+            //     this.node.on(cc.Node.EventType.MOUSE_MOVE, function (event) {
+            //         moved = true;
+            //     }, this);
 
-                this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
-                    if(!moved && !touched){
-                        touched = true;
-                        GameManager.instance.playSound(self.audio, false, 1);
-                        if(!self.player){
-                            console.log('Mouse down stage: %s', self.stageID);
-                            self.enterGame();
-                        }else{
-                            self.player.active = true;
-                            let flyAnim = self.player.getComponent(cc.Animation);
-                            flyAnim.play();
-                            flyAnim.on('finished',  function(){
-                                self.enterGame();
-                            }, self);
-                        }
-                    }
-                }, this);
-            }
+            //     this.node.on(cc.Node.EventType.MOUSE_UP, function (event) {
+            //         if(!moved && !touched){
+            //             touched = true;
+            //             GameManager.instance.playSound(self.audio, false, 1);
+            //             if(!self.player){
+            //                 console.log('Mouse down stage: %s', self.stageID);
+            //                 self.enterGame();
+            //             }else{
+            //                 self.player.active = true;
+            //                 let flyAnim = self.player.getComponent(cc.Animation);
+            //                 flyAnim.play();
+            //                 flyAnim.on('finished',  function(){
+            //                     self.enterGame();
+            //                 }, self);
+            //             }
+            //         }
+            //     }, this);
+            // }
         }
     },
 

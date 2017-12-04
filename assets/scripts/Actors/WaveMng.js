@@ -222,6 +222,10 @@ cc.Class({
         if(GameManager.instance.isPaused){
             return;
         }
+        
+        if(!this.currentSpawn){
+            return;
+        }
 
         if (this.currentSpawn.finished) {
             this.endSpawn();
@@ -238,8 +242,9 @@ cc.Class({
     },
 
     spawnBossFoe () {
-        if (this.bossSpawn.finished) {
+        if (!this.bossSpawn || this.bossSpawn.finished) {
             this.unschedule(this.spawnBossFoe);
+            return;
         }
         let newFoe = this.bossSpawn.spawn(this.game.poolMng);
         if (newFoe) {

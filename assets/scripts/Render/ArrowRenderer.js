@@ -19,7 +19,7 @@ cc.Class({
         let move1 = cc.moveBy(0.3, 5, 0).easing(cc.easeQuinticActionOut());
         let move2 = cc.moveBy(0.3, -5, 0).easing(cc.easeQuinticActionOut());
         if(!cc.sys.isBrowser){
-            this.node.runAction(cc.RepeatForever(cc.sequence(move1, move2)));
+            this.node.runAction(cc.repeatForever(cc.sequence(move1, move2)));
         }
     }
     // called every frame, uncomment this function to activate update callback

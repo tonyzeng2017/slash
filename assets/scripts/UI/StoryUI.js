@@ -69,7 +69,7 @@ cc.Class({
         var pages = this.pageView.getPages();
         for(var i = 0; i< pages.length; i++){
             pages[i].on(cc.Node.EventType.TOUCH_END, this.onItemTouch.bind(this));
-            pages[i].on(cc.Node.EventType.MOUSE_UP, this.onItemTouch.bind(this));
+            // pages[i].on(cc.Node.EventType.MOUSE_UP, this.onItemTouch.bind(this));
         }
     }, 
 
