@@ -11,7 +11,12 @@ const Spawn = cc.Class({
         },
         total: 0,
         spawnInterval: 0,
-        isCompany: false
+        isCompany: false,
+        
+        finished: {
+            default: false,
+            visible: false
+        }
     },
 
     statics: {

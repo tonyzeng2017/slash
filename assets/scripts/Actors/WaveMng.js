@@ -227,7 +227,8 @@ cc.Class({
             return;
         }
 
-        if (this.currentSpawn.finished) {
+        // cc.log("this.currentSpawn.finished: %s", this.currentSpawn.finished);
+        if (this.currentSpawn.finished === true) {
             this.endSpawn();
             return;
         }
