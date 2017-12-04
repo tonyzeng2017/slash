@@ -10113,7 +10113,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 330
@@ -10427,7 +10427,7 @@
     ],
     "_prefab": null,
     "_id": "bdU7uywodIZ5BYvJGJvIXS",
-    "_opacity": 255,
+    "_opacity": 72.79600000003832,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
