@@ -14,12 +14,14 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // };
 
-        audioTouch: cc.AudioClip
+        audioTouch: cc.AudioClip,
+        btnUpgrade: cc.Node
     },
 
     // use this for initialization
     onLoad: function () {
         this._rewardRenderer = this.node.getComponent("PanelRewardRenderer");
+        this.btnUpgrade.runAction(cc.repeatForever(cc.sequence(cc.scaleTo(0.5, 1.25), cc.scaleTo(0.5, 0.8))));
     },
 
     init: function(game){

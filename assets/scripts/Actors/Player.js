@@ -380,8 +380,8 @@ cc.Class({
             var attrIndex = Number(buffData.ItemType) - 1;
             var curValue = this[propertyMap[attrIndex]];
             var newValue = Math.ceil(curValue + baseValue * buffData.value/100);
-            newValue = Math.max(attrData.Max, newValue);
-            newValue = Math.min(attrData.Min, newValue);
+            newValue = Math.min(attrData.Max, newValue);
+            newValue = Math.max(attrData.Min, newValue);
             cc.log("value for the property: %s, current: %s, new: %s", propertyMap[attrIndex], curValue, newValue);
 
             this[propertyMap[attrIndex]] = newValue;

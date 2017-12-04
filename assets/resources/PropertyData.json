@@ -1,9 +1,9 @@
 
 {
-    "1" : {"PropertyName" : "生命值", "Pic" : "icon_1", "Max" : "99", "Min" : 1}
-    ,"2" : {"PropertyName" : "伤害半径", "Pic" : "icon_2", "Max" : "180", "Min" : 65}
-    ,"3" : {"PropertyName" : "攻击距离", "Pic" : "icon_3", "Max" : "650", "Min" : 310}
-    ,"4" : {"PropertyName" : "攻击时间", "Pic" : "icon_4", "Max" : "999", "Min" : 130}
-    ,"5" : {"PropertyName" : "攻击间隔", "Pic" : "icon_5", "Max" : "999", "Min" : 9}
-    ,"6" : {"PropertyName" : "移动速度", "Pic" : "icon_6", "Max" : "550", "Min" : 250}
+    "1" : {"PropertyName" : "生命值", "Pic" : "icon_1", "Max" : 99, "Min" : 1}
+    ,"2" : {"PropertyName" : "伤害半径", "Pic" : "icon_2", "Max" : 180, "Min" : 65}
+    ,"3" : {"PropertyName" : "攻击距离", "Pic" : "icon_3", "Max" : 650, "Min" : 310}
+    ,"4" : {"PropertyName" : "攻击时间", "Pic" : "icon_4", "Max" : 999, "Min" : 130}
+    ,"5" : {"PropertyName" : "攻击间隔", "Pic" : "icon_5", "Max" : 999, "Min" : 9}
+    ,"6" : {"PropertyName" : "移动速度", "Pic" : "icon_6", "Max" : 550, "Min" : 250}
 }

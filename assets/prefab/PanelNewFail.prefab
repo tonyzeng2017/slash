@@ -1762,6 +1762,9 @@
     "_enabled": true,
     "audioTouch": {
       "__uuid__": "1323c45a-6885-4b43-8c04-9eeeb0ef74e4"
+    },
+    "btnUpgrade": {
+      "__id__": 24
     }
   },
   {
