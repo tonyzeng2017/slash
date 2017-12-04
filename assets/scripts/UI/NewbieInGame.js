@@ -1,5 +1,5 @@
-var GameManager = require("GameManager");
-var Types = require("Types");
+var Types = require("Types")
+var GameManager = require("GameManager")
 
 cc.Class({
     extends: cc.Component,
@@ -15,34 +15,25 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
-
-        settingUI: cc.Prefab,
-        storyUI: cc.Prefab
+        newbieInGame: cc.Prefab
     },
 
     // use this for initialization
     onLoad: function () {
-        GameManager.instance.updateScene(Types.sceneType.NORMAL);
-        this.initSerttings();
-    },
+        GameManager.instance.updateScene(Types.sceneType.BATTLE_NORMAL);
 
-    initSerttings: function(){
-        this._settingsUI = cc.instantiate(this.settingUI);
-        this._settingsUI.x = 0;
-        this._settingsUI.y = 0;
-        this._settingsUI.active = false;
-        this.node.addChild(this._settingsUI);
-    },
+        var newbieNode = cc.instantiate(this.newbieInGame);
+        newbieNode.x = 160;
+        newbieNode.y = 60;
+        this.node.addChild(newbieNode);
 
-    showSettings: function(){
-        this._settingsUI.getComponent("SettingsUI").show();
+        var newbieAnim = newbieNode.getComponent(cc.Animation);
+        newbieAnim.play();
+        newbieAnim.on("finished", function(){
+            cc.log("newbie in game animation finished");
+            cc.director.loadScene('PlayGame');
+        }, this);
     },
-
-    showStory: function(){
-        var storyUI = cc.instantiate(this.storyUI);
-        this.node.addChild(storyUI);
-        // cc.director.loadScene("NewBieGame");
-    }
 
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {

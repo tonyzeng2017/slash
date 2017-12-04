@@ -116,7 +116,11 @@ cc.Class({
     enterGame: function(){
         GameManager.instance.updateStage(this.stageID, this.isBoss);
         TDProxy.onEvent("enter_play", {max_stage: UserDataManager.instance.getUserData().getMaxOpenStage()});
-        cc.director.loadScene('PlayGame');
+        if(UserDataManager.instance.getNewbieData().isInGameFinished){
+            cc.director.loadScene('PlayGame');
+        }else{
+            cc.director.loadScene('NewBieGame');
+        }
     },
 
     onNewbieEnterGame: function () {

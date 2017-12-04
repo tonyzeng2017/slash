@@ -27,7 +27,7 @@ cc.Class({
         var self = this;
         var doPlayIntro = function() {
 
-            if(UserDataManager.instance.getNewbieData().isInGameFinished){
+            // if(UserDataManager.instance.getNewbieData().isInGameFinished){
                 self.inGameUI.active = false;
                 self.changeSceneAnim.on("finished", function(){
                     self.startIntro();
@@ -35,44 +35,24 @@ cc.Class({
                     self.changeSceneAnim.node.active = false;
                 });
                 self.changeSceneAnim.play();
-            }
-            else{
-                // UserDataManager.instance.getNewbieData().finishInGame();
-                // self.newBieAnim.node.active = true;
-                // self.newBieAnim.play();
-                // self.newBieAnim.on('finished',  function(){
-                //     self.newBieAnim.node.active = false;
-                //     self.startIntro();
-                // }, self);
-                var newbieNode = cc.instantiate(self.newbie);
-                newbieNode.x = 160;
-                newbieNode.y = 60;
-                self.game.node.addChild(newbieNode);
+            // }
+            // else{
+            //     var newbieNode = cc.instantiate(self.newbie);
+            //     newbieNode.x = 160;
+            //     newbieNode.y = 60;
+            //     self.game.node.addChild(newbieNode);
 
-                var newbieAnim = newbieNode.getComponent(cc.Animation);
-                newbieAnim.play();
-                newbieAnim.on("finished", function(){
-                    newbieAnim.node.active = false;
-                    newbieAnim.node.removeFromParent();
-                    self.startIntro();
-                }, self);
-            }
+            //     var newbieAnim = newbieNode.getComponent(cc.Animation);
+            //     newbieAnim.play();
+            //     newbieAnim.on("finished", function(){
+            //         newbieAnim.node.active = false;
+            //         newbieAnim.node.removeFromParent();
+            //         self.startIntro();
+            //     }, self);
+            // }
         }
 
         var stageData = GameManager.instance.getCurStageData();
-        // if(GameManager.instance.storyEnabled(stageData.Story)){
-        //      var storyUI = cc.instantiate(this.story);
-        //      storyUI.x = cc.director.getWinSize().width/2;
-        //      storyUI.y = cc.director.getWinSize().height/2;
-        //      cc.log("storyID: %s", stageData.Story);
-        //      storyUI.getComponent("StoryRenderer").setStoryAndCallback(stageData.Story, doPlayIntro);
-        //      this.game.node.addChild(storyUI);
-
-        //      GameManager.instance.playStory(stageData.Story);
-        // }else{
-        //      doPlayIntro();
-        // }
-
         this.game.playStory(stageData.StoryStart,  doPlayIntro);
     },
 
