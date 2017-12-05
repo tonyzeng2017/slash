@@ -11,6 +11,7 @@ cc.Class({
         player1: cc.Node,
         inGameUI: cc.Node,
         playerFX: cc.Node,
+        playerFX1: cc.Node,
         waveMng: cc.Node,
         bossMng: cc.Node,
         poolMng: cc.Node,
@@ -48,13 +49,17 @@ cc.Class({
         }
 
         UserDataManager.instance.getGameData().clear();
-        this.playerFX = this.playerFX.getComponent('PlayerFX');
-        this.playerFX.init(this);
         if(UserDataManager.instance.getUserData().isMaxStar()){
+            this.playerFX.active = false;
             this.player = this.player1.getComponent('Player');
+            this.playerFX = this.playerFX1.getComponent('PlayerFX');
         }else{
+            this.playerFX1.active = false;
             this.player = this.player.getComponent('Player');
+            this.playerFX = this.playerFX.getComponent('PlayerFX');
         }
+
+        this.playerFX.init(this);
         this.player.init(this);
         this.player.node.active = false;
         

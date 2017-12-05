@@ -58,14 +58,22 @@ cc.Class({
 
     startIntro(){
         this.introAnim.node.active = true;
-        this.introAnim.play('start');
+        if(UserDataManager.instance.getUserData().isMaxStar()){
+            this.introAnim.play('start1');
+        }else{
+            this.introAnim.play('start');
+        }
         GameManager.instance.playSound(this.audioIntro, false, 1);
     },
 
     playRevive () {
         this.reviveAnim.node.active = true;
         this.reviveAnim.node.setPosition(this.game.player.node.position);
-        this.reviveAnim.play('revive2');
+        if(UserDataManager.instance.getUserData().isMaxStar()){
+            this.reviveAnim.play('revive1');
+        }else{
+            this.reviveAnim.play('revive2');
+        }
         GameManager.instance.playSound(this.audioRevive, false, 1);
     },
 
