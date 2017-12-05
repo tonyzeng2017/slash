@@ -33,7 +33,8 @@ cc.Class({
         btnUpgradeMax: cc.Node,
         btnUpgradeStar: cc.Node,
         labelCD: cc.Label,
-        skeleton: sp.Skeleton
+        skeleton_normal: sp.Skeleton,
+        skeleton_max: sp.Skeleton
     },
 
     // use this for initialization
@@ -46,14 +47,15 @@ cc.Class({
         }
 
         this.updateButtons();
+        this.updatePlayer();
+
         this.newbieTapLeft.active = false;
         this.newbieShowAttribute.active = UserDataManager.instance.getNewbieData().isShowAttrLevelUp();
-        
-        if(UserDataManager.instance.getUserData().isMaxStar()){
-            this.skeleton.defaultSkin = "lanfa";
-        }else{
-            this.skeleton.defaultSkin = "jichu";
-        }
+    },
+
+    updatePlayer: function(){
+        this.skeleton_max.node.active = UserDataManager.instance.getUserData().isMaxStar();
+        this.skeleton_normal.node.active = !UserDataManager.instance.getUserData().isMaxStar();
     },
 
     updateButtons: function(){
@@ -116,6 +118,7 @@ cc.Class({
 
         this.node.getComponent("StarRenderer").onLoad();
         this.updateButtons();
+        this.updatePlayer();
     },
 
     onBack:function(){

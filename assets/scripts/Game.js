@@ -8,6 +8,7 @@ cc.Class({
 
     properties: {
         player: cc.Node,
+        player1: cc.Node,
         inGameUI: cc.Node,
         playerFX: cc.Node,
         waveMng: cc.Node,
@@ -49,9 +50,14 @@ cc.Class({
         UserDataManager.instance.getGameData().clear();
         this.playerFX = this.playerFX.getComponent('PlayerFX');
         this.playerFX.init(this);
-        this.player = this.player.getComponent('Player');
+        if(UserDataManager.instance.getUserData().isMaxStar()){
+            this.player = this.player1.getComponent('Player');
+        }else{
+            this.player = this.player.getComponent('Player');
+        }
         this.player.init(this);
         this.player.node.active = false;
+        
         this.poolMng = this.poolMng.getComponent('PoolMng');
         this.poolMng.init();
         this.bossMng = this.bossMng.getComponent('BossMng');
@@ -325,6 +331,7 @@ cc.Class({
                 UserDataManager.instance.getUserData().openStage(curStage);
 
                 var stageData = GameManager.instance.getCurStageData();
+                cc.log("storyID level completed: %s", stageData.StoryComplete);
                 this.playStory(stageData.StoryComplete, function(){
                     self.showGameWin();
                 });

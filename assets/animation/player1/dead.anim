@@ -3,7 +3,7 @@
   "_name": "dead",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.8,
+  "_duration": 2.1,
   "sample": 10,
   "speed": 1,
   "wrapMode": 1,
@@ -58,10 +58,27 @@
             "value": {
               "__uuid__": "d273f804-612c-44c3-a6f7-fb0cb1c1e746"
             }
+          },
+          {
+            "frame": 2,
+            "value": {
+              "__uuid__": "d273f804-612c-44c3-a6f7-fb0cb1c1e746"
+            }
           }
         ]
       }
     }
   },
-  "events": []
+  "events": [
+    {
+      "frame": 0.2,
+      "func": "playParticle",
+      "params": []
+    },
+    {
+      "frame": 2,
+      "func": "finish",
+      "params": []
+    }
+  ]
 }
