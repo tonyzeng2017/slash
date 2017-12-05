@@ -26,6 +26,7 @@ cc.Class({
         spine_node: cc.Node,
         player: cc.Node,
         audio: cc.AudioClip,
+        story_flag: cc.Node,
         newbieEnterGame: cc.Node
     },
 
@@ -53,6 +54,12 @@ cc.Class({
         if(!stageEnabled){
             ShaderUtil.setShader(this.item_bg, "gray");
         }
+
+        var hasStory = UserDataManager.instance.getStoryData().hasStoryInStage(this.stageID.toString());
+        if(this.story_flag){
+            this.story_flag.active = hasStory && !stagePassed;
+        }
+
         var mobile = cc.sys.isMobile;
         cc.log("is mobile: %s", mobile);
 

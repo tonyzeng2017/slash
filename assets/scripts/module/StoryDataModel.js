@@ -153,6 +153,11 @@ cc.Class({
         return sortedStories;
     },
 
+    hasStoryInStage: function(stageID){
+        var stageData = MetaDataManager.getStageDataByID(stageID);
+        return stageData.StoryStart != -1 || stageData.StoryComplete != -1; 
+    },
+
     getData: function(){
         var data = { defaultStoryID: this.defaultStoryID } ;
         data.storyData = {};
