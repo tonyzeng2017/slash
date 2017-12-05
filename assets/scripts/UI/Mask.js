@@ -20,20 +20,20 @@ cc.Class({
 
         // if(cc.sys.isMobile) {
             this.node.on(cc.Node.EventType.TOUCH_END, function(event){
-                if(cc.sys.isMobile) {
+                // if(cc.sys.isMobile) {
                     cc.log("on global touch mask end~~~~~~~~~");
                     event.stopPropagation();
                     cc.Component.EventHandler.emitEvents([this.globalTouchHandler], event);
-                }
+                // }
             }, this);
         // }else{
-            this.node.on(cc.Node.EventType.MOUSE_UP, function(event){
-                if(!cc.sys.isMobile){
-                    cc.log("on global MOUSE_UP mask end~~~~~~~~~");
-                    event.stopPropagation();
-                    cc.Component.EventHandler.emitEvents([this.globalTouchHandler], event);
-                }
-            }, this);
+            // this.node.on(cc.Node.EventType.MOUSE_UP, function(event){
+            //     if(!cc.sys.isMobile){
+            //         cc.log("on global MOUSE_UP mask end~~~~~~~~~");
+            //         event.stopPropagation();
+            //         cc.Component.EventHandler.emitEvents([this.globalTouchHandler], event);
+            //     }
+            // }, this);
         // }
     },
 

@@ -19,20 +19,20 @@ cc.Class({
     onLoad: function () {
         // if(cc.sys.isMobile) {
             this.node.on(cc.Node.EventType.TOUCH_END, function(event){
-                if(cc.sys.isMobile) {
+                // if(cc.sys.isMobile) {
                     event.stopPropagation();
                     cc.Component.EventHandler.emitEvents([this.touchHandler]);
                     cc.log("on guide touch mask end~~~~~~~~~");
-                }
+                // }
             }, this);
         // }else{
-            this.node.on(cc.Node.EventType.MOUSE_UP, function(event){
-                if(!cc.sys.isMobile) {
-                    event.stopPropagation();
-                    cc.Component.EventHandler.emitEvents([this.touchHandler]);
-                    cc.log("on guide MOUSE_UP mask end~~~~~~~~~");
-                }
-            }, this);
+            // this.node.on(cc.Node.EventType.MOUSE_UP, function(event){
+            //     if(!cc.sys.isMobile) {
+            //         event.stopPropagation();
+            //         cc.Component.EventHandler.emitEvents([this.touchHandler]);
+            //         cc.log("on guide MOUSE_UP mask end~~~~~~~~~");
+            //     }
+            // }, this);
         // }
     }
     // called every frame, uncomment this function to activate update callback
