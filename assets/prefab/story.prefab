@@ -159,7 +159,7 @@
       "__id__": 46
     },
     "_id": "",
-    "_opacity": 255,
+    "_opacity": 0,
     "_color": {
       "__type__": "cc.Color",
       "r": 0,
@@ -1633,7 +1633,7 @@
       "__id__": 70
     },
     "_id": "",
-    "_opacity": 255,
+    "_opacity": 0,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,

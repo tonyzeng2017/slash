@@ -39,6 +39,14 @@ cc.Class({
         this.bgNormal.active = storyData.IsRecall == 0;
         this.bgRecall.active = storyData.IsRecall == 1;
 
+        if(this.bgNormal.active){
+            this.bgNormal.runAction(cc.fadeIn(0.5));
+        }
+
+        if(this.bgRecall.active){
+            this.bgRecall.runAction(cc.fadeIn(0.5));
+        }
+
         var words = storyData.Word.split("|");
         for(var i = 0; i < this.labels.length; i++){    
             if(words[i]){
