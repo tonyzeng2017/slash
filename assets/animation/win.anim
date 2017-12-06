@@ -1,0 +1,139 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "win",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2.066666666666667,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "win_wenzi": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.21666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.35,
+              "value": 255
+            },
+            {
+              "frame": 1.2666666666666666,
+              "value": 255
+            },
+            {
+              "frame": 2.066666666666667,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.21666666666666667,
+              "value": [
+                -537,
+                -116
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 0.35,
+              "value": [
+                -37,
+                -17
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": [
+                8.8,
+                -9.2
+              ],
+              "motionPath": []
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.21666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.35,
+              "value": 1
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 1.05
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0.21666666666666667,
+              "value": 0
+            },
+            {
+              "frame": 0.35,
+              "value": 1
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 1.05
+            }
+          ]
+        }
+      },
+      "shuimo_gamewin": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0.26666666666666666,
+              "value": 0
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": 255
+            },
+            {
+              "frame": 1.2833333333333334,
+              "value": 255
+            },
+            {
+              "frame": 2.066666666666667,
+              "value": 0
+            }
+          ],
+          "position": [
+            {
+              "frame": 0.26666666666666666,
+              "value": [
+                -43.4,
+                -7.7
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 0.36666666666666664,
+              "value": [
+                3.2,
+                2.5
+              ],
+              "motionPath": []
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": [
+                29,
+                6
+              ],
+              "motionPath": []
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
