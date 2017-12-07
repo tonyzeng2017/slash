@@ -213,7 +213,7 @@ cc.Class({
             let hideCB = cc.callFunc(function() {
                 self.game.gameOver(true);
             });
-            let action = cc.sequence(cc.delayTime(1.6), hideCB);
+            let action = cc.sequence(cc.delayTime(1.0), hideCB);
             this.foeGroup.runAction(action);
         }
     },

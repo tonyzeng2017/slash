@@ -86,7 +86,7 @@ cc.Class({
         this.spArrow.active = false;
         this.atkTargetPos = cc.p(0,0);
         this.isAtkGoingOut = false;
-        this.validAtkRect = cc.rect(25, 25, (cc.director.getVisibleSize().width - 50), (cc.director.getVisibleSize().height - 100));
+        this.validAtkRect = cc.rect(25, 25, (cc.director.getVisibleSize().width - 50), (cc.director.getVisibleSize().height - 120));
         cc.log("valid rect, width: %s, height: %s", cc.director.getVisibleSize().width, cc.director.getVisibleSize().height);
         this.oneSlashKills = 0;
         this.totalScore = 0;

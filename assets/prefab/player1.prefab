@@ -654,7 +654,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 20
@@ -3108,16 +3108,12 @@
     "audioSlashLefts": [
       {
         "__uuid__": "a3989d9a-bc3f-40ba-9b25-bc21d306700d"
-      },
-      null,
-      null
+      }
     ],
     "audioSlashRights": [
       {
         "__uuid__": "c00f1d21-d734-4ed4-b0b9-b4c656e5b6d5"
-      },
-      null,
-      null
+      }
     ],
     "audio_move_left": {
       "__uuid__": "78f6b3a4-e898-4e19-891f-b405b35ae830"

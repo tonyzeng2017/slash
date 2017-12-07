@@ -3589,16 +3589,12 @@
     "audioSlashLefts": [
       {
         "__uuid__": "a3989d9a-bc3f-40ba-9b25-bc21d306700d"
-      },
-      null,
-      null
+      }
     ],
     "audioSlashRights": [
       {
         "__uuid__": "c00f1d21-d734-4ed4-b0b9-b4c656e5b6d5"
-      },
-      null,
-      null
+      }
     ],
     "audio_move_left": {
       "__uuid__": "78f6b3a4-e898-4e19-891f-b405b35ae830"
@@ -6543,6 +6539,9 @@
     },
     "playerVanishPrefab": {
       "__uuid__": "17a469ae-b047-4aa7-a0b8-7c2d58b80b84"
+    },
+    "gameWinAnimPrefab": {
+      "__uuid__": "48d119f4-6ebb-4da1-b2a6-ba28738541bf"
     },
     "startTime": 0,
     "gameType": 0
@@ -10979,7 +10978,7 @@
     "prefab": {
       "__uuid__": "7a1cbbd1-5503-48c2-928c-f7f1a60e72f2"
     },
-    "size": 3
+    "size": 10
   },
   {
     "__type__": "NodePool",

@@ -28,6 +28,7 @@ cc.Class({
         newbieLife: cc.Node,
         uniqueSkillPrefab: cc.Prefab,
         playerVanishPrefab: cc.Prefab,
+        gameWinAnimPrefab: cc.Prefab,
 
         startTime: {
             default: 0,
@@ -337,9 +338,20 @@ cc.Class({
 
                 var stageData = GameManager.instance.getCurStageData();
                 cc.log("storyID level completed: %s", stageData.StoryComplete);
-                this.playStory(stageData.StoryComplete, function(){
-                    self.showGameWin();
-                });
+
+                var winAnimNode = cc.instantiate(this.gameWinAnimPrefab);
+                winAnimNode.x = cc.director.getWinSize().width/2 + 80;
+                winAnimNode.y = cc.director.getWinSize().height/2 + 40;
+                this.node.addChild(winAnimNode);                
+                var finished = function(){
+                    self.playStory(stageData.StoryComplete, function(){
+                        self.showGameWin();
+                    });
+                    winAnimNode.removeFromParent();
+                };
+                var winAnim = winAnimNode.getComponent(cc.Animation);
+                winAnim.on("finished", finished);
+                winAnim.play();
             }else{
                 self.showGameFail();
                 if(GameManager.instance.isFirstDead()){

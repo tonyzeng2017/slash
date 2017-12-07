@@ -125,6 +125,7 @@ cc.Class({
     onRestart: function(){
         GameManager.instance.playSound(this.audio, false, 1);
         UserDataManager.instance.getGameData().clear();
+        UserDataManager.instance.getEnergyData().clear();
         GameManager.instance.setPaused(false);
         cc.director.loadScene('PlayGame');
     },
