@@ -82,8 +82,13 @@ cc.Class({
         if(!this.isAniFinished){
             return;
         }
-
-        cc.director.loadScene("MapGame" + GameManager.instance.entranceID);
+        var touched = false;
+        if(!touched){
+            touched = true;
+            cc.director.loadScene("MapGame" + GameManager.instance.entranceID, function(){
+                touched = false;  
+            });
+        }
         GameManager.instance.playSound(this.audioTouch);
     },
 

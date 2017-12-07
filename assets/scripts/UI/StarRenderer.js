@@ -16,6 +16,7 @@ cc.Class({
         // ...
         stars_dark: [cc.Node],
         stars_light: [cc.Node],
+        stars_anim: [cc.Animation]
     },
 
     // use this for initialization
@@ -30,8 +31,19 @@ cc.Class({
         for(let i = 0; i < 6; i++ ){
             this.stars_dark[i].active = i > star-1;
             this.stars_light[i].active = i <= star-1;
+
+            if(this.stars_anim[i]){
+                this.stars_anim[i].node.active = false;
+            }
         }
     },
+
+    playStar(){
+        let star = UserDataManager.instance.getUserData().star;
+        var starAnim = this.stars_anim[star - 1];
+        starAnim.node.active = true;
+        starAnim.play();
+    }
 
     // resignStars: function(){
     //     for(let i = 0; i < 6; i++ ) {

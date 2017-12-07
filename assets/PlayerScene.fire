@@ -11322,7 +11322,7 @@
         "__uuid__": "f2e34a0d-8074-4d69-97ce-3b0cb84cfb68"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "cc.Node",
@@ -11798,7 +11798,7 @@
         "__uuid__": "f2e34a0d-8074-4d69-97ce-3b0cb84cfb68"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "cc.Node",
@@ -12274,7 +12274,7 @@
         "__uuid__": "f2e34a0d-8074-4d69-97ce-3b0cb84cfb68"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "cc.Node",
@@ -12750,7 +12750,7 @@
         "__uuid__": "f2e34a0d-8074-4d69-97ce-3b0cb84cfb68"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "cc.Node",
@@ -13226,7 +13226,7 @@
         "__uuid__": "f2e34a0d-8074-4d69-97ce-3b0cb84cfb68"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "cc.Node",
@@ -13702,7 +13702,7 @@
         "__uuid__": "f2e34a0d-8074-4d69-97ce-3b0cb84cfb68"
       }
     ],
-    "playOnLoad": true
+    "playOnLoad": false
   },
   {
     "__type__": "cc.Node",
@@ -35512,6 +35512,26 @@
       {
         "__id__": 289
       }
+    ],
+    "stars_anim": [
+      {
+        "__id__": 306
+      },
+      {
+        "__id__": 318
+      },
+      {
+        "__id__": 330
+      },
+      {
+        "__id__": 342
+      },
+      {
+        "__id__": 354
+      },
+      {
+        "__id__": 366
+      }
     ]
   },
   {
@@ -48466,7 +48486,8 @@
       {
         "__id__": 38
       }
-    ]
+    ],
+    "stars_anim": []
   },
   {
     "__type__": "7b9c8YQfKxJz4r+r1BLZd3Q",

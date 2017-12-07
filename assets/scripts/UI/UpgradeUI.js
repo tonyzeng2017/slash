@@ -102,6 +102,7 @@ cc.Class({
         GameManager.instance.playSound(this.audioStar, false, 1);
         UserDataManager.instance.getUserData().addStar();
         this.refresh();
+        this.node.getComponent("StarRenderer").playStar();
 
         this.starup_ani.active = true;
         let anim = this.starup_ani.getComponent(cc.Animation);
