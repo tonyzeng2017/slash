@@ -23,6 +23,11 @@ cc.Class({
             default: 0,
             visible: false
         },
+        
+        loadedTimeStamp: {
+            default: 0,
+            visible: false
+        },
 
         bgNormal: cc.Node,
         bgRecall: cc.Node
@@ -32,6 +37,7 @@ cc.Class({
     onLoad: function () {
         this.initWord();
         this.playAnimation();
+        this.loadedTimeStamp = new Date().getTime();
     },
 
     initWord: function(){
@@ -128,6 +134,11 @@ cc.Class({
         if(event.target != this.bgNormal && event.target != this.bgRecall){
             return;
         }
+        var now = new Date().getTime();
+        if(now - this.loadedTimeStamp < 1000){
+            // cc.log("time not enough, back~~");
+            return;
+        }
 
         if(this._animationFinished){
             this.onNext();
@@ -135,8 +146,8 @@ cc.Class({
             if(this.skipTimeStamp == 0){
                 this.onSkip();
             }else{
-                var now = new Date().getTime();
-                if(now - this.skipTimeStamp>=1000){
+
+                if(now - this.skipTimeStamp >= 1000){
                     this.onNext();
                 }
             }
