@@ -3521,7 +3521,9 @@
     "audio": {
       "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
-    "story_flag": null,
+    "story_flag": {
+      "__id__": 91
+    },
     "newbieEnterGame": null
   },
   {
@@ -5504,7 +5506,9 @@
     "audio": {
       "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
-    "story_flag": null,
+    "story_flag": {
+      "__id__": 147
+    },
     "newbieEnterGame": null
   },
   {
@@ -9347,7 +9351,9 @@
     "audio": {
       "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
-    "story_flag": null,
+    "story_flag": {
+      "__id__": 261
+    },
     "newbieEnterGame": null
   },
   {

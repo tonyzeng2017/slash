@@ -9,7 +9,7 @@
     ,"1007" : {"MonsterID" : "1", "MonsterNum" : 7, "TimeInterval" : 0, "Range" : 10}
     ,"1008" : {"MonsterID" : "1", "MonsterNum" : 8, "TimeInterval" : 0, "Range" : 10}
     ,"1009" : {"MonsterID" : "1", "MonsterNum" : 9, "TimeInterval" : 0, "Range" : 10}
-    ,"1010" : {"MonsterID" : "1", "MonsterNum" : 10, "TimeInterval" : 0, "Range" : 10}
+    ,"1010" : {"MonsterID" : "1", "MonsterNum" : 10, "TimeInterval" : 5000, "Range" : 10}
     ,"1011" : {"MonsterID" : "1", "MonsterNum" : 11, "TimeInterval" : 0, "Range" : 10}
     ,"1012" : {"MonsterID" : "1", "MonsterNum" : 12, "TimeInterval" : 0, "Range" : 10}
     ,"1013" : {"MonsterID" : "1", "MonsterNum" : 13, "TimeInterval" : 0, "Range" : 10}

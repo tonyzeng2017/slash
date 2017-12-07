@@ -7017,7 +7017,9 @@
     "player": {
       "__id__": 187
     },
-    "story_flag": null,
+    "story_flag": {
+      "__id__": 185
+    },
     "newbieEnterGame": null
   },
   {
@@ -13059,7 +13061,9 @@
       "__id__": 345
     },
     "player": null,
-    "story_flag": null,
+    "story_flag": {
+      "__id__": 361
+    },
     "newbieEnterGame": null
   },
   {
