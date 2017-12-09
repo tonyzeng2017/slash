@@ -9,7 +9,7 @@
     ,"1007" : {"MonsterID" : "1", "MonsterNum" : 7, "TimeInterval" : 0, "Range" : 10}
     ,"1008" : {"MonsterID" : "1", "MonsterNum" : 8, "TimeInterval" : 0, "Range" : 10}
     ,"1009" : {"MonsterID" : "1", "MonsterNum" : 9, "TimeInterval" : 0, "Range" : 10}
-    ,"1010" : {"MonsterID" : "1", "MonsterNum" : 10, "TimeInterval" : 5000, "Range" : 10}
+    ,"1010" : {"MonsterID" : "1", "MonsterNum" : 10, "TimeInterval" : 0, "Range" : 10}
     ,"1011" : {"MonsterID" : "1", "MonsterNum" : 11, "TimeInterval" : 0, "Range" : 10}
     ,"1012" : {"MonsterID" : "1", "MonsterNum" : 12, "TimeInterval" : 0, "Range" : 10}
     ,"1013" : {"MonsterID" : "1", "MonsterNum" : 13, "TimeInterval" : 0, "Range" : 10}
@@ -298,7 +298,7 @@
     ,"1928" : {"MonsterID" : "1", "MonsterNum" : 28, "TimeInterval" : 0, "Range" : 9}
     ,"1929" : {"MonsterID" : "1", "MonsterNum" : 29, "TimeInterval" : 0, "Range" : 9}
     ,"1930" : {"MonsterID" : "1", "MonsterNum" : 30, "TimeInterval" : 0, "Range" : 9}
-    ,"10001" : {"MonsterID" : "1", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 11}
+    ,"10001" : {"MonsterID" : "1", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 11}
     ,"10002" : {"MonsterID" : "1", "MonsterNum" : 2, "TimeInterval" : 0, "Range" : 11}
     ,"10003" : {"MonsterID" : "1", "MonsterNum" : 3, "TimeInterval" : 0, "Range" : 11}
     ,"10004" : {"MonsterID" : "1", "MonsterNum" : 4, "TimeInterval" : 0, "Range" : 11}
