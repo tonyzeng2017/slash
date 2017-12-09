@@ -185,7 +185,3 @@ if(cc.sys.os == cc.sys.OS_ANDROID){
     
     window.TDProxy = new TDWindows();
 }
-
-if(!Constant.instance.PAYMENT_ENABLE){
-    window.TDProxy = new TDWindows();
-}
