@@ -5,5 +5,5 @@
     ,"3" : {"PropertyName" : "攻击距离", "Pic" : "icon_3", "Max" : 650, "Min" : 310}
     ,"4" : {"PropertyName" : "攻击时间", "Pic" : "icon_4", "Max" : 999, "Min" : 130}
     ,"5" : {"PropertyName" : "攻击间隔", "Pic" : "icon_5", "Max" : 999, "Min" : 9}
-    ,"6" : {"PropertyName" : "移动速度", "Pic" : "icon_6", "Max" : 550, "Min" : 250}
+    ,"6" : {"PropertyName" : "移动速度", "Pic" : "icon_6", "Max" : 1500, "Min" : 250}
 }

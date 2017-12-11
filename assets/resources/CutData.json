@@ -1,16 +1,16 @@
 
 {
-    "1" : {"CutNum" : 2, "CutScore" : 2, "Scale" : 50}
-    ,"2" : {"CutNum" : 3, "CutScore" : 4, "Scale" : 50}
-    ,"3" : {"CutNum" : 4, "CutScore" : 8, "Scale" : 50}
-    ,"4" : {"CutNum" : 5, "CutScore" : 14, "Scale" : 60}
-    ,"5" : {"CutNum" : 6, "CutScore" : 21, "Scale" : 60}
-    ,"6" : {"CutNum" : 8, "CutScore" : 35, "Scale" : 70}
-    ,"7" : {"CutNum" : 9, "CutScore" : 54, "Scale" : 80}
-    ,"8" : {"CutNum" : 10, "CutScore" : 80, "Scale" : 100}
-    ,"9" : {"CutNum" : 12, "CutScore" : 120, "Scale" : 110}
-    ,"10" : {"CutNum" : 15, "CutScore" : 192, "Scale" : 120}
-    ,"11" : {"CutNum" : 20, "CutScore" : 320, "Scale" : 130}
-    ,"12" : {"CutNum" : 25, "CutScore" : 440, "Scale" : 140}
+    "1" : {"CutNum" : 2, "CutScore" : 2, "Scale" : 60}
+    ,"2" : {"CutNum" : 3, "CutScore" : 4, "Scale" : 65}
+    ,"3" : {"CutNum" : 4, "CutScore" : 8, "Scale" : 80}
+    ,"4" : {"CutNum" : 5, "CutScore" : 14, "Scale" : 80}
+    ,"5" : {"CutNum" : 6, "CutScore" : 21, "Scale" : 90}
+    ,"6" : {"CutNum" : 8, "CutScore" : 35, "Scale" : 100}
+    ,"7" : {"CutNum" : 9, "CutScore" : 54, "Scale" : 100}
+    ,"8" : {"CutNum" : 10, "CutScore" : 80, "Scale" : 120}
+    ,"9" : {"CutNum" : 12, "CutScore" : 120, "Scale" : 130}
+    ,"10" : {"CutNum" : 15, "CutScore" : 192, "Scale" : 140}
+    ,"11" : {"CutNum" : 20, "CutScore" : 320, "Scale" : 150}
+    ,"12" : {"CutNum" : 25, "CutScore" : 440, "Scale" : 150}
     ,"13" : {"CutNum" : 30, "CutScore" : 600, "Scale" : 150}
 }
