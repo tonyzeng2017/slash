@@ -39,7 +39,7 @@ cc.Class({
         if(this.newbieEnterGame){
             this.newbieEnterGame.active = UserDataManager.instance.getNewbieData().isShowEnterGame();
             if(this.newbieEnterGame.active){
-                TDProxy.onMissionBegin("step_enter_game2");
+                TD.getProxy().onMissionBegin("step_enter_game2");
             }
         }
 
@@ -122,7 +122,7 @@ cc.Class({
 
     enterGame: function(){
         GameManager.instance.updateStage(this.stageID, this.isBoss);
-        TDProxy.onEvent("enter_play", {max_stage: UserDataManager.instance.getUserData().getMaxOpenStage()});
+        TD.getProxy().onEvent("enter_play", {max_stage: UserDataManager.instance.getUserData().getMaxOpenStage()});
         if(UserDataManager.instance.getNewbieData().isInGameFinished){
             cc.director.loadScene('PlayGame');
         }else{
@@ -133,7 +133,7 @@ cc.Class({
     onNewbieEnterGame: function () {
         UserDataManager.instance.getNewbieData().finishEnterGame();
         this.enterGame();
-        TDProxy.onMissionCompleted("step_enter_game2");
+        TD.getProxy().onMissionCompleted("step_enter_game2");
     }
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {

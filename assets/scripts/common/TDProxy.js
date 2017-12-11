@@ -169,19 +169,28 @@ var TDWindows = cc.Class({
     onReward: function(virtualCurrencyAmount, reason){
 
     }
-
 });
 
+var TD = cc.Class({
+    properties: {
+        proxy: null
+    },
 
-if(cc.sys.os == cc.sys.OS_ANDROID){
-    
-    window.TDProxy = new TDAndroid();
-    
-}else if(cc.sys.os == cc.sys.OS_IOS){
-    
-    window.TDProxy = new TDIOS();
-    
-}else{
-    
-    window.TDProxy = new TDWindows();
-}
+    getProxy: function(){
+        if(!this.proxy){
+            if(cc.sys.os == cc.sys.OS_ANDROID){
+                this.proxy = new TDAndroid();
+            }else if(cc.sys.os == cc.sys.OS_IOS){
+                this.proxy = new TDIOS();
+            }else{
+                this.proxy = new TDWindows();
+            }
+        }
+
+        return this.proxy;
+    }
+});
+
+window.TD = new TD();
+
+

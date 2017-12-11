@@ -35,7 +35,7 @@ cc.Class({
             // cc.log("this.newbieEnterGame.active: %s", this.newbieEnterGame.active)
 
             if(this.newbieEnterGame.active){
-                TDProxy.onMissionBegin("step_enter_game1");
+                TD.getProxy().onMissionBegin("step_enter_game1");
             }
         }
 
@@ -107,7 +107,7 @@ cc.Class({
     onNewbieEnterGame: function () {
         UserDataManager.instance.getNewbieData().isEnterGameStarted = true;
         this.onEnter();
-        TDProxy.onMissionCompleted("step_enter_game1");
+        TD.getProxy().onMissionCompleted("step_enter_game1");
         // G.analytics_plugin.finishTask({
         //     Task_Id:  "enter_game",
         //     Task_Type: (TaskType.GUIDE_LINE).toString()

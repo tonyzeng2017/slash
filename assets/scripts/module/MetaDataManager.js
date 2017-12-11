@@ -402,5 +402,6 @@ module.exports = {
     getStoryDataByID: getStoryDataByID,
     getPreLoadScenes: getPreLoadScenes,
     getBuffDisplayData: getBuffDisplayData,
-    getMetaCount
+    getMetaCount,
+    loadMetaData
 };

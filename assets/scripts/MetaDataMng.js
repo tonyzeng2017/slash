@@ -56,12 +56,19 @@ cc.Class({
         this.timer = 0;
         this.isLerping = true;
     },
+    
+    start: function(){
+        var self = this;
+        MetaDataManager.loadMetaData("Config" , function(data){
+            cc.log("TDEnabled: %s", data.TDEnabled);
+        });
+    },
 
     onLoadCompleted: function(){
         this.isCompleted = true;
         this.loadingUI.active = false;
         this.btnStart.active = true;
-        TDProxy.onEvent("game_load_completed", UserDataManager.instance.getUserData().getDCData());
+        TD.getProxy().onEvent("game_load_completed", UserDataManager.instance.getUserData().getDCData());
     },
 
     // use this for initialization
@@ -75,7 +82,7 @@ cc.Class({
         this.isLerping = false;
         this.timer = 0;
 
-        TDProxy.onEvent("enter_game", UserDataManager.instance.getUserData().getDCData());
+        TD.getProxy().onEvent("enter_game", UserDataManager.instance.getUserData().getDCData());
         // cc.Texture2D.defaultPixelFormat = cc.Texture2D.PIXEL_FORMAT_RGBA4444;
 
         cc.log("attribute type: %s, %s", Types.AttributeType.ATK_DURATION, Types.AttributeType.HP);
@@ -105,7 +112,7 @@ cc.Class({
 
         var maxOpenStage = UserDataManager.instance.getUserData().getMaxOpenStage();
         cc.log("max openStage: %s", maxOpenStage);
-        TDProxy.setAccountLevel(Number(maxOpenStage));
+        TD.getProxy().setAccountLevel(Number(maxOpenStage));
     },
 
         // called every frame, uncomment this function to activate update callback

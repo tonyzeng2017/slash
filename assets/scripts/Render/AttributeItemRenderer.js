@@ -93,7 +93,7 @@ cc.Class({
 
             let dataUP = UserDataManager.instance.getUserData().getCurrentPlayerAttr(this.attrID);
             var dcAttrName = AttributeName[this.attrID - 1] + "_up";
-            TDProxy.onEvent(dcAttrName, {number: dataUP.PropertyValue - data.PropertyValue});
+            TD.getProxy().onEvent(dcAttrName, {number: dataUP.PropertyValue - data.PropertyValue});
         }else{
             TipsManager.init.showTips("灵石不足~");
         }
@@ -118,7 +118,7 @@ cc.Class({
         this.onLoad();
 
         var dcAttrName = AttributeName[this.attrID - 1] + "_down";
-        TDProxy.onEvent(dcAttrName, {number: curData.PropertyValue - data.PropertyValue});
+        TD.getProxy().onEvent(dcAttrName, {number: curData.PropertyValue - data.PropertyValue});
 
         GameManager.instance.playSound(this.audioSub, false, 1);
     }

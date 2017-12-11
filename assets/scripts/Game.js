@@ -107,7 +107,7 @@ cc.Class({
     start () {
         GameManager.instance.setPaused(false);
         this.startTime = Date.now();
-        TDProxy.onEvent("play_start", {});
+        TD.getProxy().onEvent("play_start", {});
 
         this.playerFX.playIntro();
         // UI initialization
@@ -329,7 +329,7 @@ cc.Class({
             UserDataManager.instance.getGameData().saveData();
             self.hideRevive();
 
-            TDProxy.onEvent("play_finish", {duration: Date.now() - self.startTime, result: isWin});
+            TD.getProxy().onEvent("play_finish", {duration: Date.now() - self.startTime, result: isWin});
             self.startTime = 0;
 
             if(isWin){
@@ -355,7 +355,7 @@ cc.Class({
             }else{
                 self.showGameFail();
                 if(GameManager.instance.isFirstDead()){
-                    TDProxy.onEvent("first_dead", {mapID: GameManager.instance.mapID, stageID: GameManager.instance.curStageID});
+                    TD.getProxy().onEvent("first_dead", {mapID: GameManager.instance.mapID, stageID: GameManager.instance.curStageID});
                 }
                 GameManager.instance.countDead();
             }

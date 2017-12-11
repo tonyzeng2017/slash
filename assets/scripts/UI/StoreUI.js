@@ -103,7 +103,7 @@ cc.Class({
         this.node.getComponent(cc.Animation).play();
         GameManager.instance.playSound(this.audioShop, false, 1);
         cc.log("storeUI show called~~~~~~~~~~~~~, audio: %s", this.audioShop);
-        TDProxy.onEvent("enter_shop", "");
+        TD.getProxy().onEvent("enter_shop", "");
     }
 
     // called every frame, uncomment this function to activate update callback
