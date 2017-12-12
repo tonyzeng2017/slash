@@ -43,11 +43,6 @@ cc.Class({
 
     // use this for initialization
     onLoad () {
-        if(GameManager.instance.isBossStage){
-            GameManager.instance.updateScene(Types.sceneType.BATTLE_BOSS);
-        }else{
-            GameManager.instance.updateScene(Types.sceneType.BATTLE_NORMAL);
-        }
 
         UserDataManager.instance.getGameData().clear();
         if(UserDataManager.instance.getUserData().isMaxStar()){
@@ -88,11 +83,11 @@ cc.Class({
             }
         }
 
+        cc.log("to play storyID: %s", storyID);
         if(UserDataManager.instance.getStoryData().canPlay(storyID)){//GameManager.instance.storyEnabled(storyID)){
             this._storyUI = cc.instantiate(this.story);
             this._storyUI.x = cc.director.getWinSize().width/2;
             this._storyUI.y = cc.director.getWinSize().height/2;
-            cc.log("storyID: %s", storyID);
             this._storyUI.getComponent("StoryRenderer").setStoryAndCallback(storyID, onFinished);
             this.node.addChild(this._storyUI);
 

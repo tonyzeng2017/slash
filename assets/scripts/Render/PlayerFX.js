@@ -1,5 +1,6 @@
 var UserDataManager = require("UserDataManager");
 var GameManager = require("GameManager");
+const Types = require('Types');
 
 cc.Class({
     extends: cc.Component,
@@ -26,30 +27,19 @@ cc.Class({
     playIntro: function(){
         var self = this;
         var doPlayIntro = function() {
+            self.inGameUI.active = false;
+            self.changeSceneAnim.on("finished", function(){
+                self.startIntro();
+                self.inGameUI.active = true;
+                self.changeSceneAnim.node.active = false;
+            });
+            self.changeSceneAnim.play();
 
-            // if(UserDataManager.instance.getNewbieData().isInGameFinished){
-                self.inGameUI.active = false;
-                self.changeSceneAnim.on("finished", function(){
-                    self.startIntro();
-                    self.inGameUI.active = true;
-                    self.changeSceneAnim.node.active = false;
-                });
-                self.changeSceneAnim.play();
-            // }
-            // else{
-            //     var newbieNode = cc.instantiate(self.newbie);
-            //     newbieNode.x = 160;
-            //     newbieNode.y = 60;
-            //     self.game.node.addChild(newbieNode);
-
-            //     var newbieAnim = newbieNode.getComponent(cc.Animation);
-            //     newbieAnim.play();
-            //     newbieAnim.on("finished", function(){
-            //         newbieAnim.node.active = false;
-            //         newbieAnim.node.removeFromParent();
-            //         self.startIntro();
-            //     }, self);
-            // }
+            if(GameManager.instance.isBossStage){
+                GameManager.instance.updateScene(Types.sceneType.BATTLE_BOSS);
+            }else{
+                GameManager.instance.updateScene(Types.sceneType.BATTLE_NORMAL);
+            }
         }
 
         var stageData = GameManager.instance.getCurStageData();
