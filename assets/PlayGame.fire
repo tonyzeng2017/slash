@@ -10719,7 +10719,7 @@
     "prefab": {
       "__uuid__": "b0379fb8-e2d2-4897-8fa2-6126012fea40"
     },
-    "size": 20
+    "size": 10
   },
   {
     "__type__": "NodePool",
@@ -10733,14 +10733,14 @@
     "prefab": {
       "__uuid__": "b2c2fc48-205a-4580-828c-eea2a653780d"
     },
-    "size": 20
+    "size": 10
   },
   {
     "__type__": "NodePool",
     "prefab": {
       "__uuid__": "8255e1de-1187-46ae-970a-cba9c5267b02"
     },
-    "size": 10
+    "size": 8
   },
   {
     "__type__": "NodePool",
@@ -10789,28 +10789,28 @@
     "prefab": {
       "__uuid__": "ad2703aa-f09b-4bab-aeaf-8e673550c884"
     },
-    "size": 20
+    "size": 10
   },
   {
     "__type__": "NodePool",
     "prefab": {
       "__uuid__": "939492de-0aed-4489-8dd3-39ccc50fba16"
     },
-    "size": 20
+    "size": 10
   },
   {
     "__type__": "NodePool",
     "prefab": {
       "__uuid__": "2f4f07fe-0bca-4296-92aa-3b3f5611b931"
     },
-    "size": 20
+    "size": 10
   },
   {
     "__type__": "NodePool",
     "prefab": {
       "__uuid__": "5406e55a-c9a6-4e8e-a1ba-7e13300a7c2d"
     },
-    "size": 20
+    "size": 10
   },
   {
     "__type__": "NodePool",
@@ -10831,14 +10831,14 @@
     "prefab": {
       "__uuid__": "1c3732e1-0b03-4f69-9a4c-a62576977308"
     },
-    "size": 10
+    "size": 8
   },
   {
     "__type__": "NodePool",
     "prefab": {
       "__uuid__": "0e5750ac-f16a-4e08-96a6-16546e45db56"
     },
-    "size": 10
+    "size": 8
   },
   {
     "__type__": "NodePool",
@@ -10929,7 +10929,7 @@
     "prefab": {
       "__uuid__": "684cf918-a2dd-44a8-ab01-e7f99dc0bac2"
     },
-    "size": 33
+    "size": 3
   },
   {
     "__type__": "NodePool",
@@ -10943,7 +10943,7 @@
     "prefab": {
       "__uuid__": "f2fca8ad-2fdf-4f45-8ea2-caff8ac3bb0d"
     },
-    "size": 33
+    "size": 3
   },
   {
     "__type__": "NodePool",
