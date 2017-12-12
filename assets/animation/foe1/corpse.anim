@@ -122,7 +122,17 @@
         ]
       }
     },
-    "props": {}
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            0,
+            70
+          ]
+        }
+      ]
+    }
   },
   "events": []
 }

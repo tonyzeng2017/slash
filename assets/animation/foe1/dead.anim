@@ -69,13 +69,10 @@
       }
     },
     "props": {
-      "position": [
+      "anchorY": [
         {
           "frame": 0,
-          "value": [
-            -20,
-            -130
-          ]
+          "value": 0.5
         }
       ]
     }
