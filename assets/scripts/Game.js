@@ -335,8 +335,8 @@ cc.Class({
                 cc.log("storyID level completed: %s", stageData.StoryComplete);
 
                 var winAnimNode = cc.instantiate(this.gameWinAnimPrefab);
-                winAnimNode.x = cc.director.getWinSize().width/2 + 80;
-                winAnimNode.y = cc.director.getWinSize().height/2 + 40;
+                winAnimNode.x = cc.director.getWinSize().width/2 + 80 - 20;
+                winAnimNode.y = cc.director.getWinSize().height/2 + 40 + 15;
                 this.node.addChild(winAnimNode);                
                 var finished = function(){
                     self.playStory(stageData.StoryComplete, function(){
