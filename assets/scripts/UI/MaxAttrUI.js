@@ -59,6 +59,7 @@ cc.Class({
                 self.updateAttrs();
                 self.playerUI.getComponent("PlayerUI").updateAttrs();
                 self.playerUI.getComponent("PlayerUI").updateButtons();
+                self.playerUI.getComponent("PlayerUI").updatePlayer();
                 self.upgradeUI.getComponent("UpgradeUI").updateAttrs();
                 self.onBuySuccess();
             },

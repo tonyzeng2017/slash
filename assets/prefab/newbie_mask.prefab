@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "newbie_mask",
+    "_name": "newbie_levelup1",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -112,8 +112,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 180,
-      "height": 60
+      "width": 950,
+      "height": 70
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -121,8 +121,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -363,
-      "y": 324
+      "x": 5,
+      "y": 250
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -167,7 +167,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 1440,
-      "height": 720
+      "height": 740
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -175,8 +175,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 363,
-      "y": -324
+      "x": -5,
+      "y": -250
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -296,8 +296,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 320,
-      "height": 75
+      "width": 550,
+      "height": 68
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -305,8 +305,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -468,
-      "y": 153
+      "x": -34,
+      "y": 158
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -350,8 +350,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 300,
-      "height": 60
+      "width": 506.25,
+      "height": 40
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -380,12 +380,12 @@
     "_useOriginalSize": false,
     "_actualFontSize": 25,
     "_fontSize": 25,
-    "_lineHeight": 30,
+    "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "这里是拥有的生命，当生命\n全部失去时，游戏失败。",
+    "_N$string": "当灵石足够时，点击“+”按钮即可升级当前属性",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -460,7 +460,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 28
@@ -495,8 +495,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -945,
-      "y": 132
+      "x": -216,
+      "y": 80
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -549,8 +549,8 @@
     "_scaleY": 0.15,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 586,
-      "y": 179
+      "x": 460.4,
+      "y": 129.3
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -642,8 +642,8 @@
     "_scaleY": 0.3,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 586,
-      "y": 179
+      "x": 460.4,
+      "y": 129.3
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -735,8 +735,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 167,
-      "y": 9
+      "x": 0,
+      "y": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -792,8 +792,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 489,
-      "y": 149
+      "x": 550.1,
+      "y": 115.8
     },
     "_skewX": 0,
     "_skewY": 0,
