@@ -10,7 +10,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "newbie_levelup1",
+    "_name": "newbie_levelup4",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -25,7 +25,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 30
@@ -112,8 +112,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 950,
-      "height": 70
+      "width": 100,
+      "height": 100
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -121,8 +121,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 5,
-      "y": 250
+      "x": 577,
+      "y": 15
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -166,7 +166,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 1440,
+      "width": 1560,
       "height": 740
     },
     "_rotationX": 0,
@@ -175,8 +175,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -5,
-      "y": -250
+      "x": -577,
+      "y": -15
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -296,8 +296,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 550,
-      "height": 68
+      "width": 300,
+      "height": 80
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -305,8 +305,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -34,
-      "y": 158
+      "x": 378,
+      "y": 132
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -350,7 +350,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 506.25,
+      "width": 250,
       "height": 40
     },
     "_rotationX": 0,
@@ -359,7 +359,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": 2,
       "y": 0
     },
     "_skewX": 0,
@@ -385,7 +385,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "当灵石足够时，点击“+”按钮即可升级当前属性",
+    "_N$string": "点击按钮返回属性界面",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -460,7 +460,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 28
@@ -491,12 +491,12 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
+    "_scaleX": -1,
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -216,
-      "y": 80
+      "x": 1025,
+      "y": -134
     },
     "_skewX": 0,
     "_skewY": 0,

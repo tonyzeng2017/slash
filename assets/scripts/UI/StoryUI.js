@@ -33,17 +33,18 @@ cc.Class({
             var item = cc.instantiate(this.storyItem);
             item.getComponent("StoryItemRenderer").init(stories[i]);
             item.getComponent("StoryItemRenderer").render();
-            this.content.addChild(item);
+            // this.content.addChild(item);
+            this.pageView.insertPage(item, i);
             if(stories[i].storyID == defaultStoryID){
                 defaultIndex = i;
             }
-            cc.log("storyID: %s", stories[i].storyID);
+            cc.log("pushed storyID: %s", stories[i].storyID);
         }
 
-        this.node.runAction(cc.callFunc(function(){
-            cc.log("default index: %s", defaultIndex);
-            this.pageView.setCurrentPageIndex(defaultIndex);
-        }.bind(this)));
+        // this.node.runAction(cc.callFunc(function(){
+        //     cc.log("default index: %s", defaultIndex);
+        //     this.pageView.setCurrentPageIndex(defaultIndex);
+        // }.bind(this)));
     },
 
     // use this for initialization
@@ -58,6 +59,7 @@ cc.Class({
 
     initScale: function(){
         var pages = this.pageView.getPages();
+        cc.log("story pages count: %s", pages.length);
         for(var i = 0; i < pages.length; i++){
             var scale = this.getPageScale(i);
             pages[i].children[0].runAction(cc.scaleTo(0.1, scale));

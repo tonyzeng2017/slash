@@ -56,6 +56,21 @@ cc.Class({
         defaultStoryID: "1"
     },
 
+    fakeData: function(){
+        var data = { defaultStoryID: "1" } ;
+        data.storyData = {};
+
+        for(var i = 1; i < 18; i ++){
+            data.storyData[i.toString()] = {
+                storyID: i.toString(),
+                enabled: true,
+                opened: false
+             };
+        }
+
+        return data;
+    },
+
     ctor: function(){
         var data = IOUtil.readData(dataKey);
         this.defaultStoryID = data.defaultStoryID ? data.defaultStoryID : "1";
@@ -135,11 +150,6 @@ cc.Class({
             sortedStories.sort(function(a, b){
                 return Number(a.storyID) > Number(b.storyID);
             });
-
-            for(var i = 0; i < sortedStories.length; i ++){
-                cc.log("storyID: %s", sortedStories[i].storyID);
-            }
-
             lastIndex = Number(sortedStories[sortedStories.length - 1].storyID);
         }
         var nextStory = MetaDataManager.getStoryDataByID(lastIndex + 1);
@@ -148,7 +158,9 @@ cc.Class({
             var newStory = this.createDefault(lastIndex + 1);
             sortedStories.push(newStory);
         }
-
+        // for(var i = 0; i < sortedStories.length; i ++){
+        //     cc.log("storyID: %s", sortedStories[i].storyID);
+        // }
         cc.log("sorted stories: %s", sortedStories.length);
         return sortedStories;
     },
