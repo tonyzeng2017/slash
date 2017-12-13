@@ -84,10 +84,10 @@
           ]
         }
       ],
-      "anchorY": [
+      "anchorX": [
         {
           "frame": 0,
-          "value": 0.1
+          "value": 0.5
         }
       ]
     }

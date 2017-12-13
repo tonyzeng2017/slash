@@ -68,7 +68,23 @@
         ]
       }
     },
-    "props": {}
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            0,
+            -30
+          ]
+        }
+      ],
+      "anchorX": [
+        {
+          "frame": 0,
+          "value": 0.5
+        }
+      ]
+    }
   },
   "events": []
 }
