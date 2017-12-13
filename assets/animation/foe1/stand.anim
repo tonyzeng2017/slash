@@ -73,6 +73,23 @@
           }
         ]
       }
+    },
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            0,
+            -30
+          ]
+        }
+      ],
+      "anchorY": [
+        {
+          "frame": 0,
+          "value": 0.1
+        }
+      ]
     }
   },
   "events": []

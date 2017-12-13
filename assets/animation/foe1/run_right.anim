@@ -73,6 +73,17 @@
           }
         ]
       }
+    },
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            0,
+            30
+          ]
+        }
+      ]
     }
   },
   "events": []
