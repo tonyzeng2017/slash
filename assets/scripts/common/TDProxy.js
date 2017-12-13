@@ -1,4 +1,4 @@
-var Constant = require("Constant");
+var GameConfig = require("GameConfig");
 
 var TDAndroid = cc.Class({
 
@@ -178,12 +178,16 @@ var TD = cc.Class({
 
     getProxy: function(){
         if(!this.proxy){
-            if(cc.sys.os == cc.sys.OS_ANDROID){
-                this.proxy = new TDAndroid();
-            }else if(cc.sys.os == cc.sys.OS_IOS){
-                this.proxy = new TDIOS();
-            }else{
+            if(GameConfig.self.tdDisabled){
                 this.proxy = new TDWindows();
+            }else{
+                if(cc.sys.os == cc.sys.OS_ANDROID){
+                    this.proxy = new TDAndroid();
+                }else if(cc.sys.os == cc.sys.OS_IOS){
+                    this.proxy = new TDIOS();
+                }else{
+                    this.proxy = new TDWindows();
+                }
             }
         }
 

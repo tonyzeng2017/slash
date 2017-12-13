@@ -4,6 +4,7 @@ var UserDataManager = require("UserDataManager");
 var Constant = require("Constant");
 var preLoadScenes = MetaDataManager.getPreLoadScenes();
 const Types = require('Types');
+var GameConfig = require("GameConfig");
 
 cc.Class({
     extends: cc.Component,
@@ -57,11 +58,21 @@ cc.Class({
         this.isLerping = true;
     },
     
-    start: function(){
-        var self = this;
-        MetaDataManager.loadMetaData("Config" , function(data){
-            cc.log("TDEnabled: %s", data.TDEnabled);
-        });
+    onLoad: function(){
+        // var self = this;
+        // MetaDataManager.loadMetaData("Config" , function(data){
+        //     cc.log("TDEnabled: %s", data.TDEnabled);
+        // });
+        // var fullName = jsb.fileUtils.fullPathFromRelativeFile("resources/SlashConfig.json");
+        // cc.log("fullPathForFilename: %s", fullName); 
+        // var fileContent = jsb.fileUtils.getStringFromFile(fullName);
+        // cc.log("file content: %s", fileContent);
+        // var config = JSON.parse(fileContent);
+
+        var paths = jsb.fileUtils.getSearchPaths();
+        for(var i = 0; i < paths; i ++){
+            cc.log("search path: %s", paths[i]);
+        }
     },
 
     onLoadCompleted: function(){
@@ -72,10 +83,10 @@ cc.Class({
     },
 
     // use this for initialization
-    onLoad: function () {
+    start: function () {
         var self = this;
         var size = cc.director.getVisibleSize();
-        cc.log("width: %, height: %s", size.width, size.height)
+        cc.log("width: %s, height: %s, tdDisabled: %s", size.width, size.height, GameConfig.self.tdDisabled);
         this.curProgress = 0;
         this.destProgress = 0;
         this.lerpDuration = 0.2;
