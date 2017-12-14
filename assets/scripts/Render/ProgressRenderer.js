@@ -21,7 +21,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        let star = UserDataManager.instance.getUserData().star;
+        let star = UserDataManager.instance.getUserData().star.value;
         let maxLevel = MetaDataManager.getMaxLevelByStarAndID(star, level);
         let level = UserDataManager.instance.getUserData().getAttrLevel(this.attrID);
         let count = Math.floor(10 * level/maxLevel );

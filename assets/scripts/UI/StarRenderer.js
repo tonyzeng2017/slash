@@ -21,7 +21,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        let star = UserDataManager.instance.getUserData().star;
+        let star = UserDataManager.instance.getUserData().star.value;
         this.showStar(star);
 
         cc.log("updated the star: %s", star);
@@ -39,7 +39,7 @@ cc.Class({
     },
 
     playStar(){
-        let star = UserDataManager.instance.getUserData().star;
+        let star = UserDataManager.instance.getUserData().star.value;
         var starAnim = this.stars_anim[star - 1];
         starAnim.node.active = true;
         starAnim.play();

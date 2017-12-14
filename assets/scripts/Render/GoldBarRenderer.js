@@ -18,7 +18,7 @@ cc.Class({
     },
 
     updateGold: function(){
-        let gold = UserDataManager.instance.getUserData().gold;
+        let gold = UserDataManager.instance.getUserData().gold.value;
         this.txtGold.string = gold;
         cc.log("the user gold: %s", gold);
     }

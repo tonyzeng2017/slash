@@ -28,13 +28,13 @@ var UserDataModel = cc.Class({
     ctor: function() {
         var userData = IOUtil.readData(dataKey);
         this._levels = userData && userData.levels ? userData.levels : [0, 0, 0, 0, 0, 0];
-        this._star = userData && userData.star ? userData.star : 1;
-        this._gold = userData && userData.gold ? userData.gold : 0;
+        this._star = new  EncryptNumber(userData && userData.star ? userData.star : 1);
+        this._gold = new EncryptNumber(userData && userData.gold ? userData.gold : 0);
         this._openedStages = userData && userData.openedStages ? userData.openedStages : ["0"];
         // cc.log("user data model constructor22222222222~~~~~~~~");
         this._reviveCount = userData && userData.reviveCount ? userData.reviveCount : 0;
         this._openedEntrances = userData && userData.openedEntrances ? userData.openedEntrances : {"1": false};
-        cc.log("user level and star :%s, %s " , this._levels, this._star);
+        cc.log("user level and star :%s, %s " , this._levels, this._star.value);
     },
 
     addRevive: function(){
@@ -49,7 +49,7 @@ var UserDataModel = cc.Class({
     isAttrMaxLevel: function(attrID){
         let level = this.getAttrLevel(attrID);
         var nextLevelData = MetaDataManager.getPlayerPropertyByLevelAndID(level + 1, attrID);
-        if(!nextLevelData || nextLevelData && nextLevelData.PlayerStar > this.star){
+        if(!nextLevelData || nextLevelData && nextLevelData.PlayerStar > this.star.value){
             // cc.log("attrID: %s ,next level: %s",attrID,  JSON.stringify(nextLevelData));
             //cc.log("next level star: %s, current star: %s, current level: %s", nextLevelData.PlayerStar, this.star, level);
             return true;
@@ -94,7 +94,7 @@ var UserDataModel = cc.Class({
 
     subLevel: function(attrID){
         let curLevel = this.getAttrLevel(attrID);
-        let minLevel = MetaDataManager.getMinLevelByStarAndID(this._star, attrID);
+        let minLevel = MetaDataManager.getMinLevelByStarAndID(this._star.value, attrID);
         if(curLevel <= minLevel){
             return false;
         }
@@ -106,27 +106,27 @@ var UserDataModel = cc.Class({
     },
 
     addStar: function () {
-        if(this._star >= MAX_STAR){
+        if(this._star.value >= MAX_STAR){
             return;
         }
 
-        this._star++;
+        this._star.add(1);
         for(let i = 1; i <= 6;  i++){
-            let minLevel = MetaDataManager.getMinLevelByStarAndID(this._star, i);
+            let minLevel = MetaDataManager.getMinLevelByStarAndID(this._star.value, i);
             this.setAttrLevel(i, minLevel);
         }
         this.saveData();
     },
 
     isMaxStar: function(){
-        cc.log("star: %s", this.star)
-        return this.star == MAX_STAR;
+        cc.log("star: %s", this.star.value)
+        return this.star.value == MAX_STAR;
     },
 
     setMaxLevel: function(){
-        this._star = MAX_STAR;
+        this._star.value = MAX_STAR;
         for(let i = 1; i <= 6;  i++){
-            let maxLevel = MetaDataManager.getMaxLevelByStarAndID(this._star, i);
+            let maxLevel = MetaDataManager.getMaxLevelByStarAndID(this._star.value, i);
             this.setAttrLevel(i, maxLevel);
         }
 
@@ -136,14 +136,14 @@ var UserDataModel = cc.Class({
     addGold: function(count){
         cc.log("count: %s", count);
         count = count ? count : 0;
-        this._gold += Number(count);
+        this._gold.add(Number(count));
         this.saveData();
     },
 
     costGold: function(count){
         cc.log("count: %s", count);
         count = count ? count : 0;
-        this._gold -= Number(count);
+        this._gold.sub(Number(count));
         this.saveData();
     },
 
@@ -184,7 +184,7 @@ var UserDataModel = cc.Class({
         let isStageOpen = this.isStageEnabled(entranceData.StageStart);
 
         cc.log("openStar: %s", entranceData.OpenStar);
-        return isStageOpen && this._star >= Number(entranceData.OpenStar);
+        return isStageOpen && this._star.value >= Number(entranceData.OpenStar);
     },
 
     getTopStageInEntrance: function(entranceID){
@@ -212,16 +212,16 @@ var UserDataModel = cc.Class({
     },
 
     toMaxEnable: function(){
-        return this.isAllAttrMax() && this._star == MAX_STAR;
+        return this.isAllAttrMax() && this._star.value == MAX_STAR;
     },
 
     starUpEnable: function(){
-        return this.isAllAttrMax() && this._star < MAX_STAR;
+        return this.isAllAttrMax() && this._star.value < MAX_STAR;
     },
 
     isAllAttrMax: function(){
         for(let i = 1; i <= 6; i++){
-            var data = MetaDataManager.getPlayerPropertyByStarAndID(this._star, i);
+            var data = MetaDataManager.getPlayerPropertyByStarAndID(this._star.value, i);
             let itemActive = data.DisplayPosition == 1;
             let isMax = this.isAttrMaxLevel(i);
             if(!isMax && itemActive){
@@ -236,8 +236,8 @@ var UserDataModel = cc.Class({
     getData(){
         return {
             levels: this._levels,
-            star: this._star,
-            gold: this._gold,
+            star: this._star.value,
+            gold: this._gold.value,
             openedStages: this._openedStages,
             openedEntrances: this._openedEntrances
         }
@@ -245,7 +245,7 @@ var UserDataModel = cc.Class({
 
     getDCData: function () {
         return{
-            star: this._star,
+            star: this._star.value,
             health_LV: this._levels[0],
             hurt_radius_LV: this._levels[1],
             attack_distance_LV: this._levels[2],

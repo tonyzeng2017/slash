@@ -61,7 +61,7 @@ cc.Class({
     },
 
     updateGold: function(){
-        this.textGold.string = UserDataManager.instance.getUserData().gold;
+        this.textGold.string = UserDataManager.instance.getUserData().gold.value;
     },
 
     // openStage: function(event, data){

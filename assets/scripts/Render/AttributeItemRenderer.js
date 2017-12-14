@@ -33,7 +33,7 @@ cc.Class({
         this.spMaxLevel = this.node.getChildByName("battle-label_max");
         this.iconCost = this.node.getChildByName("battle-shop-icon_product");
 
-        let star = UserDataManager.instance.getUserData().star;
+        let star = UserDataManager.instance.getUserData().star.value;
         let level = UserDataManager.instance.getUserData().getAttrLevel(this.attrID);
         let propertyData = MetaDataManager.getPlayerPropertyByLevelAndID(level , this.attrID);
         if(propertyData) {
@@ -62,7 +62,7 @@ cc.Class({
     },
 
     updateProgress:function(){
-        let star = UserDataManager.instance.getUserData().star;
+        let star = UserDataManager.instance.getUserData().star.value;
         let maxLevel = MetaDataManager.getMaxLevelByStarAndID(star, this.attrID);
         let minLevel = MetaDataManager.getMinLevelByStarAndID(star, this.attrID);
         let level = UserDataManager.instance.getUserData().getAttrLevel(this.attrID);
@@ -82,7 +82,7 @@ cc.Class({
         }
 
         let data = UserDataManager.instance.getUserData().getCurrentPlayerAttr(this.attrID);
-        let gold = UserDataManager.instance.getUserData().gold;
+        let gold = UserDataManager.instance.getUserData().gold.value;
         if(gold >= data.cost){
             UserDataManager.instance.getUserData().addLevel(this.attrID);
             UserDataManager.instance.getUserData().costGold(data.cost);
@@ -100,7 +100,7 @@ cc.Class({
     },
     
     onLevelDown:function () {
-		let star = UserDataManager.instance.getUserData().star;
+		let star = UserDataManager.instance.getUserData().star.value;
 		let curLevel = UserDataManager.instance.getUserData().getAttrLevel(this.attrID);
         let minLevel = MetaDataManager.getMinLevelByStarAndID(star, this.attrID);
         if(curLevel <= minLevel){

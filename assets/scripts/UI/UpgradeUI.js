@@ -31,7 +31,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        let star = UserDataManager.instance.getUserData().star;
+        let star = UserDataManager.instance.getUserData().star.value;
         // this.starBar.width = 700 * star / 6 ;
 
         // let starRenderer = this.getComponent("StarRenderer");
@@ -65,7 +65,7 @@ cc.Class({
     },
 
     updateItemRenderers: function(){
-        let star = UserDataManager.instance.getUserData().star;
+        let star = UserDataManager.instance.getUserData().star.value;
         let activeCount = 0;
         let startY = this.attrItemRenderers[0].y;
         for(let i = 1; i <= 6; i++) {
