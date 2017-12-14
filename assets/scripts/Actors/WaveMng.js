@@ -148,7 +148,10 @@ cc.Class({
     },
 
     startSpawn () {
-        this.schedule(this.spawnFoe, this.currentSpawn.spawnInterval);
+        this.unschedule(this.spawnFoe);
+        this.node.runAction(cc.callFunc(function(){
+            this.schedule(this.spawnFoe, this.currentSpawn.spawnInterval);
+        }.bind(this)));
     },
 
     startBossSpawn (bossSpawn) {
@@ -160,7 +163,6 @@ cc.Class({
     },
 
     endSpawn () {
-        this.unschedule(this.spawnFoe);
         let nextSpawn = this.currentWave.getNextSpawn();
         if (nextSpawn) {
             this.currentSpawn = nextSpawn;
@@ -170,11 +172,12 @@ cc.Class({
                 cc.log("nextSpawn.bossSpawnID: %s",nextSpawn.bossSpawnID);
                 this.startBoss(nextSpawn.bossSpawnID);
             }
+        }else{
+            cc.log("spawnFoe, no next spawn~~~~");
         }
     },
 
     startWave () {
-        this.unschedule(this.spawnFoe);
         this.currentWave.init();
         this.waveTotalFoes = this.currentWave.totalFoes;
         this.killedFoe = 0;
@@ -209,6 +212,8 @@ cc.Class({
             cc.log("endWave wave index:%s: ", this.waveIdx);
             this.startWave();
         } else {
+            this.unscheduleSpawn();
+
             let self = this;
             let hideCB = cc.callFunc(function() {
                 self.game.gameOver(true);
@@ -229,6 +234,7 @@ cc.Class({
 
         // cc.log("this.currentSpawn.finished: %s", this.currentSpawn.finished);
         if (this.currentSpawn.finished === true) {
+            cc.log("spawnFoe finished is calling~~~~~~~~~");
             this.endSpawn();
             return;
         }
@@ -240,6 +246,10 @@ cc.Class({
             newFoe.getComponent('Foe').init(this);
             // this.curFoeCount++;
         }
+    },
+
+    unscheduleSpawn(){
+        cc.director.getScheduler().unscheduleAllForTarget(this);
     },
 
     spawnBossFoe () {
