@@ -55,7 +55,13 @@ cc.Class({
     },
 
     updateLife(lifeType){
-        this.txt_life.string = this._game.player.life.value;
+        var life = this._game.player.life;
+        if(typeof life === "object"){
+            this.txt_life.string = this._game.player.life.value;
+        }else if(typeof life === "number"){
+            this.txt_life.string = this._game.player.life;
+        }
+
         if(lifeType == Types.LifeType.INIT){
             return;
         }
