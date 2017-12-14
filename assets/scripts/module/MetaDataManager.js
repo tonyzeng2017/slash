@@ -199,9 +199,6 @@ function getRatingData(ID){
 
 var _cutData;
 function getOneSlashDataByCount(count) {
-    _cutData.sort(function(a, b){
-        return a.CutNum < b.CutNum;
-    })
     for(var i = 0; i < _cutData.length; i ++){
         if(_cutData[i].CutNum <= count){
             return _cutData[i];
@@ -319,6 +316,14 @@ function loadData(completeCallback, progressCallback, target) {
                                         for(var key in data){
                                             _cutData.push(data[key]);
                                         }
+                                        _cutData.sort(function(a, b){
+                                            return a.CutNum < b.CutNum;
+                                        });
+                                        cc.log("================================start");
+                                        for(var i = 0; i < _cutData.length; i ++){
+                                             cc.log("cutNum: %s", _cutData[i].CutNum);
+                                        }
+                                        cc.log("================================end");
                                         updateProgress();
                                     },
                         "RatingValueData": function(data){
