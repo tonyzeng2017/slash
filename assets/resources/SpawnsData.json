@@ -298,7 +298,7 @@
     ,"1928" : {"MonsterID" : "7", "MonsterNum" : 28, "TimeInterval" : 0, "Range" : 9}
     ,"1929" : {"MonsterID" : "7", "MonsterNum" : 29, "TimeInterval" : 0, "Range" : 9}
     ,"1930" : {"MonsterID" : "7", "MonsterNum" : 30, "TimeInterval" : 0, "Range" : 9}
-    ,"10001" : {"MonsterID" : "7", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 11}
+    ,"10001" : {"MonsterID" : "7", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 11}
     ,"10002" : {"MonsterID" : "7", "MonsterNum" : 2, "TimeInterval" : 0, "Range" : 11}
     ,"10003" : {"MonsterID" : "7", "MonsterNum" : 3, "TimeInterval" : 0, "Range" : 11}
     ,"10004" : {"MonsterID" : "7", "MonsterNum" : 4, "TimeInterval" : 0, "Range" : 11}
