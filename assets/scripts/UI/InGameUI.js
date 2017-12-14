@@ -55,7 +55,7 @@ cc.Class({
     },
 
     updateLife(lifeType){
-        this.txt_life.string = this._game.player.life;
+        this.txt_life.string = this._game.player.life.value;
         if(lifeType == Types.LifeType.INIT){
             return;
         }
@@ -73,8 +73,8 @@ cc.Class({
 
         var initLife = UserDataManager.instance.getUserData().getCurrentPlayerAttr(Types.AttributeType.HP).PropertyValue;
         let life_limit = Math.ceil( Constant.instance.WARNING_LIFE * initLife );
-        cc.log("player life: %s, lifelimit:  %s, initLife: %s", this._game.player.life, life_limit, initLife);
-        if(this._game.player.life <= life_limit){
+        cc.log("player life: %s, lifelimit:  %s, initLife: %s", this._game.player.life.value, life_limit, initLife);
+        if(this._game.player.life.value <= life_limit){
             if(!this.warning_bg.node.active){
                 this.warning_bg.node.active = true;
                 // let blink = cc.blink(10000, 10000);

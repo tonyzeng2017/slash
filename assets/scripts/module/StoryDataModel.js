@@ -9,7 +9,7 @@ var Story = cc.Class({
         opened: false,
     },
 
-    ctor: function(data){
+    __ctor__: function(data){
         this.storyID = data.storyID;
         this.enabled = data.enabled;
         this.opened = data.opened;

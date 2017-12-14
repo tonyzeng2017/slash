@@ -4,7 +4,6 @@ var IOUtil = require("IOUtil");
 var Constant = require("Constant");
 var dataKey = "GameDataModel";
 
-
 const BuffData = cc.Class({
     name: 'BuffData',
     properties: {
@@ -14,7 +13,7 @@ const BuffData = cc.Class({
         count: 0
     },
 
-    ctor: function(buffData){
+    __ctor__: function(buffData){
         this.ItemType = buffData.ItemType;
         this.value = buffData.AddValue;
         this.count = 1;

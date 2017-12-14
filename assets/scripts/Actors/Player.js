@@ -71,7 +71,8 @@ cc.Class({
 
         let speed = UserDataManager.instance.getUserData().getCurrentPlayerAttr(AttributeType.SPEED).PropertyValue;
         this.getComponent('Move').moveSpeed = speed;
-        cc.log("onload player.atkDuration: %s, player.atkDist: %s, player life: %s, speed: %s" , this.atkDuration, this.atkDist, this.life, speed);
+        this.life = new EncryptNumber(this.life);
+        cc.log("onload player.atkDuration: %s, player.atkDist: %s, player life: %s, speed: %s" , this.atkDuration, this.atkDist, this.life.value, speed);
     },
 
     // use this for initialization
@@ -312,18 +313,18 @@ cc.Class({
         this.initProperties();
         this.game.inGameUI.updateLife(Types.LifeType.INIT);
         this.game.inGameUI.hideWarning();
-        cc.log("player revived, life: %s", this.life);
+        cc.log("player revived, life: %s", this.life.value);
     },
 
     dead () {
         if (this.invincible) return;
         if (!this.isAlive) return;
 
-        this.life--;
+        this.life.sub(1);
         this.game.inGameUI.updateLife(Types.LifeType.COST);
         this.playHit();
 
-        if(this.life <= 0){
+        if(this.life.value <= 0){
             this.node.emit('freeze');
             this.isAlive = false;
             this.isAttacking = false;
@@ -343,7 +344,7 @@ cc.Class({
     },
 
     isDead(){
-        return this.life<=0;
+        return this.life.value <= 0;
     },
 
     corpse () {
@@ -371,9 +372,9 @@ cc.Class({
             cc.log("value for the property: %s, current: %s, new: %s", "speed", curSpeed, newSpeed);
         }else if(Number(buffData.ItemType) == AttributeType.HP){
             //if it is life then
-            var newLife = Math.min(attrData.Max, this.life + buffData.delta);
-            cc.log("max life: %s, expectLife: %s, newLife: %s", attrData.Max, this.life + buffData.delta, newLife);
-            this.life  = newLife;
+            var newLife = Math.min(attrData.Max, this.life.value + buffData.delta);
+            cc.log("max life: %s, expectLife: %s, newLife: %s", attrData.Max, this.life.value + buffData.delta, newLife);
+            this.life.value = newLife;
             this.game.inGameUI.updateLife(Types.LifeType.ADD);
         }else{
             //buff on other property.
