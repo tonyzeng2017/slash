@@ -1,6 +1,6 @@
 
 {
-    "1" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 0, "PropertyID" : 1, "PropertyValue" : 2, "ItemID" : "100001", "cost" : "15"}
+    "1" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 0, "PropertyID" : 1, "PropertyValue" : 2, "ItemID" : "100001", "cost" : "10"}
     ,"2" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 1, "PropertyID" : 1, "PropertyValue" : 3, "ItemID" : "100001", "cost" : "35"}
     ,"3" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 2, "PropertyID" : 1, "PropertyValue" : 4, "ItemID" : "100001", "cost" : "60"}
     ,"4" : {"PlayerStar" : 1, "DisplayPosition" : 1, "Level" : 3, "PropertyID" : 1, "PropertyValue" : 5, "ItemID" : "100001", "cost" : "80"}
