@@ -10705,7 +10705,7 @@
     "prefab": {
       "__uuid__": "9668b306-990a-421b-855f-45f126a8f3cc"
     },
-    "size": 5
+    "size": 15
   },
   {
     "__type__": "NodePool",
@@ -10859,7 +10859,7 @@
     "prefab": {
       "__uuid__": "ddd716d1-a94d-483a-99ba-d5b33ccbe026"
     },
-    "size": 15
+    "size": 10
   },
   {
     "__type__": "NodePool",
@@ -10873,14 +10873,14 @@
     "prefab": {
       "__uuid__": "7fe3ac29-b591-43f6-a93d-4105a4e7ce19"
     },
-    "size": 5
+    "size": 15
   },
   {
     "__type__": "NodePool",
     "prefab": {
       "__uuid__": "b97a7e58-9310-4dae-b7e1-1ff98d348808"
     },
-    "size": 5
+    "size": 15
   },
   {
     "__type__": "NodePool",
