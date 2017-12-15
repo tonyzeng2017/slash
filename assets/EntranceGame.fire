@@ -538,7 +538,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 13
@@ -1682,7 +1682,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 352.5,
+      "x": 353.5,
       "y": 234.5
     },
     "_skewX": 0,
@@ -1891,7 +1891,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -85,
+      "x": -81,
       "y": 13
     },
     "_skewX": 0,
@@ -2042,8 +2042,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -78,
-      "y": -14
+      "x": -58,
+      "y": -24
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2087,7 +2087,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 62
@@ -2643,8 +2643,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -76,
-      "y": 61
+      "x": -57,
+      "y": 59
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2688,7 +2688,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 78
@@ -3244,8 +3244,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 65,
-      "y": -76
+      "x": 72,
+      "y": -77
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3289,7 +3289,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 94
@@ -3845,8 +3845,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 90,
-      "y": 40
+      "x": 111,
+      "y": 1
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3890,7 +3890,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 110
@@ -4447,7 +4447,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -140,
-      "y": 19
+      "y": -27
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4491,7 +4491,7 @@
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 126
