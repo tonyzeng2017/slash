@@ -106,19 +106,23 @@ var GameDataModel = cc.Class({
         return this.getScoreByLevel(this.max_score_level);
     },
 
-    getScoreLevel: function(){
-        let stageData = MetaDataManager.getStageDataByID(GameManager.instance.curStageID);
-        let finalScore = this.getFinalScore();
+    getLevelByScore: function(score, stageID){
+        let stageData = MetaDataManager.getStageDataByID(stageID);
 
         // let scores = [stageData.D, stageData.C, stageData.B, stageData.A, stageData.S, stageData.SS, stageData.SSS];
         let scores = [stageData.C, stageData.B, stageData.A, stageData.S, stageData.SS, stageData.SSS];
         for(let i = 0; i < scores.length; i++){
-            if(finalScore < scores[i]){
+            if(score < scores[i]){
                 return i;
             }
         }
 
         return scores.length;
+    },
+
+    getScoreLevel: function(){
+        let finalScore = this.getFinalScore();
+        return this.getLevelByScore(finalScore, GameManager.instance.curStageID);
     },
 
     updateReward: function(){
@@ -180,9 +184,13 @@ var GameDataModel = cc.Class({
         return buffData === undefined ? 0 : buffData.count;
     },
 
-    getStageHighestScore: function(){
-        var score = this.highestScores[ GameManager.instance.curStageID ];
+    getHighestScoreByStage: function(stageID){
+        var score = this.highestScores[stageID];
         return  score ? score : 0;
+    },
+
+    getStageHighestScore: function(){
+        return this.getHighestScoreByStage(GameManager.instance.curStageID);
     },
 
     setStageHighestScore: function(score){

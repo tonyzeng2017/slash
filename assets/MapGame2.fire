@@ -1246,7 +1246,8 @@
       "__id__": 23
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -1877,7 +1878,8 @@
       "__id__": 41
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -2591,7 +2593,8 @@
     "story_flag": {
       "__id__": 59
     },
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -3222,7 +3225,8 @@
       "__id__": 79
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -3853,7 +3857,8 @@
       "__id__": 97
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -4484,7 +4489,8 @@
       "__id__": 115
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -5198,7 +5204,8 @@
     "story_flag": {
       "__id__": 133
     },
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -5829,7 +5836,8 @@
       "__id__": 153
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -6460,7 +6468,8 @@
       "__id__": 171
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -7091,7 +7100,8 @@
       "__id__": 189
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -7722,7 +7732,8 @@
       "__id__": 207
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -8353,7 +8364,8 @@
       "__id__": 225
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -8984,7 +8996,8 @@
       "__id__": 243
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -9615,7 +9628,8 @@
       "__id__": 261
     },
     "story_flag": null,
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "cc.Node",
@@ -10368,7 +10382,8 @@
     "story_flag": {
       "__id__": 285
     },
-    "newbieEnterGame": null
+    "newbieEnterGame": null,
+    "node_level": null
   },
   {
     "__type__": "2fc27gKWQdHW7TD3jAaM8So",
@@ -10436,7 +10451,27 @@
     },
     "content": {
       "__id__": 11
-    }
+    },
+    "levelFrames": [
+      {
+        "__uuid__": "1abfb327-1b49-4ed1-ab1e-7a34a06de3a7"
+      },
+      {
+        "__uuid__": "ee7e5a9f-5135-4d38-ac14-63f40d86769f"
+      },
+      {
+        "__uuid__": "83a3879a-7ada-4abb-bb6f-9eaa0c4d64bd"
+      },
+      {
+        "__uuid__": "e473d1bc-cf0f-41c8-895d-0bcac74547b1"
+      },
+      {
+        "__uuid__": "d5a3b3af-f05a-4d77-b363-b31dcc013394"
+      },
+      {
+        "__uuid__": "6600e6b8-9fc8-4efb-b0a1-167354d97302"
+      }
+    ]
   },
   {
     "__type__": "cc.Node",

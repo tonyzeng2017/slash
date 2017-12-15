@@ -19,7 +19,8 @@ cc.Class({
         scrollView: cc.ScrollView,
         btnLeft: cc.Node,
         btnRight: cc.Node,
-        content: cc.Node
+        content: cc.Node,
+        levelFrames: [cc.SpriteFrame]
     },
 
     // use this for initialization
@@ -28,6 +29,13 @@ cc.Class({
         // this.scrollView.node.on('scroll-to-right', this.onToRight, this);
         this.scrollView.node.on('scrolling', this.onScrolling, this);
         this.onScrolling();
+    },
+
+    start: function(){
+        for(var i = 0; i < this.mapItems.length; i++){
+            var itemRenderer = this.mapItems[i].getComponent("MapItemRenderer");
+            itemRenderer.updateLevel(this.levelFrames);
+        }
     },
 
     // onToLeft: function(){

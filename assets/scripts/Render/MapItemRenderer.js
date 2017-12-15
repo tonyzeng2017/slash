@@ -28,7 +28,7 @@ cc.Class({
         audio: cc.AudioClip,
         story_flag: cc.Node,
         newbieEnterGame: cc.Node,
-        icon_level: cc.Sprite
+        node_level: cc.Node
     },
 
     showAnimation: function(){
@@ -36,7 +36,13 @@ cc.Class({
     },
 
     updateLevel: function(frames){
-        
+        var stagePassed = UserDataManager.instance.getUserData().isStagePassed(this.stageID.toString());
+        if(stagePassed){
+            var highestScore = UserDataManager.instance.getGameData().getHighestScoreByStage(this.stageID);
+            cc.log("highest score: %s", highestScore);
+        }else{
+            this.node_level.active = false;
+        }
     },
 
     // use this for initialization
