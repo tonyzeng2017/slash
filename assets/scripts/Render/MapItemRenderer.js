@@ -27,11 +27,16 @@ cc.Class({
         player: cc.Node,
         audio: cc.AudioClip,
         story_flag: cc.Node,
-        newbieEnterGame: cc.Node
+        newbieEnterGame: cc.Node,
+        icon_level: cc.Sprite
     },
 
     showAnimation: function(){
         this.spine_node.active  = true;
+    },
+
+    updateLevel: function(frames){
+        
     },
 
     // use this for initialization
