@@ -22,7 +22,7 @@ cc.Class({
         text_name: cc.Label,
         name_bg: cc.Sprite,
         bg: cc.Sprite,
-        lock: cc.Sprite,
+        lock: cc.Node,
         seal:cc.Animation,
         audio: cc.AudioClip,
         newbieEnterGame: cc.Node
@@ -45,7 +45,7 @@ cc.Class({
 
          let isEntranceEnable = UserDataManager.instance.getUserData().isEntraceEnabled(this.entranceID);
          cc.log("stageStart: %s, isOpen: %s", entranceData.StageStart, isEntranceEnable);
-         this.lock.node.active = !isEntranceEnable;
+         this.lock.active = !isEntranceEnable;
          this.text_name.node.active = isEntranceEnable;
          this.name_bg.node.active = isEntranceEnable;
 
