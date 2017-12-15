@@ -628,7 +628,7 @@
     ,"2928" : {"MonsterID" : "2", "MonsterNum" : 28, "TimeInterval" : 0, "Range" : 9}
     ,"2929" : {"MonsterID" : "2", "MonsterNum" : 29, "TimeInterval" : 0, "Range" : 9}
     ,"2930" : {"MonsterID" : "2", "MonsterNum" : 30, "TimeInterval" : 0, "Range" : 9}
-    ,"20001" : {"MonsterID" : "2", "MonsterNum" : 1, "TimeInterval" : 1000, "Range" : 11}
+    ,"20001" : {"MonsterID" : "2", "MonsterNum" : 1, "TimeInterval" : 500, "Range" : 11}
     ,"20002" : {"MonsterID" : "2", "MonsterNum" : 2, "TimeInterval" : 0, "Range" : 11}
     ,"20003" : {"MonsterID" : "2", "MonsterNum" : 3, "TimeInterval" : 0, "Range" : 11}
     ,"20004" : {"MonsterID" : "2", "MonsterNum" : 4, "TimeInterval" : 0, "Range" : 11}
