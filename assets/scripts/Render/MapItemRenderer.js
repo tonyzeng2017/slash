@@ -36,10 +36,17 @@ cc.Class({
     },
 
     updateLevel: function(frames){
+        if(!this.node_level){
+            return;
+        }
+
         var stagePassed = UserDataManager.instance.getUserData().isStagePassed(this.stageID.toString());
         if(stagePassed){
             var highestScore = UserDataManager.instance.getGameData().getHighestScoreByStage(this.stageID);
-            cc.log("highest score: %s", highestScore);
+            var levelScore = UserDataManager.instance.getGameData().getLevelByScore(highestScore, this.stageID);
+            cc.log("highest score: %s, level: %s", highestScore, levelScore);
+            var icon = this.node_level.children[0].getComponent(cc.Sprite);
+            icon.spriteFrame = frames[levelScore-1];
         }else{
             this.node_level.active = false;
         }

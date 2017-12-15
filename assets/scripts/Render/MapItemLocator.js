@@ -31,7 +31,7 @@ cc.Class({
         this.onScrolling();
     },
 
-    start: function(){
+    updateItemLevel: function(){
         for(var i = 0; i < this.mapItems.length; i++){
             var itemRenderer = this.mapItems[i].getComponent("MapItemRenderer");
             itemRenderer.updateLevel(this.levelFrames);
@@ -96,6 +96,8 @@ cc.Class({
         if(maxOpenItem){
             maxOpenItem.getComponent("MapItemRenderer").showAnimation();
         }
+
+        this.updateItemLevel();
     }
 
     // called every frame, uncomment this function to activate update callback
