@@ -5,10 +5,10 @@
     ,"3" : {"CutNum" : 4, "CutScore" : 8, "Scale" : 70}
     ,"4" : {"CutNum" : 5, "CutScore" : 14, "Scale" : 80}
     ,"5" : {"CutNum" : 6, "CutScore" : 31, "Scale" : 90}
-    ,"6" : {"CutNum" : 8, "CutScore" : 57, "Scale" : 100}
-    ,"7" : {"CutNum" : 9, "CutScore" : 86, "Scale" : 120}
-    ,"8" : {"CutNum" : 10, "CutScore" : 120, "Scale" : 140}
-    ,"9" : {"CutNum" : 12, "CutScore" : 153, "Scale" : 150}
+    ,"6" : {"CutNum" : 8, "CutScore" : 54, "Scale" : 100}
+    ,"7" : {"CutNum" : 9, "CutScore" : 79, "Scale" : 120}
+    ,"8" : {"CutNum" : 10, "CutScore" : 104, "Scale" : 140}
+    ,"9" : {"CutNum" : 12, "CutScore" : 144, "Scale" : 150}
     ,"10" : {"CutNum" : 15, "CutScore" : 216, "Scale" : 170}
     ,"11" : {"CutNum" : 20, "CutScore" : 320, "Scale" : 170}
     ,"12" : {"CutNum" : 25, "CutScore" : 400, "Scale" : 170}
