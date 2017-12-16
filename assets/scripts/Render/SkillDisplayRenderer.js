@@ -40,7 +40,7 @@ cc.Class({
             return;
         }
         
-        // GameManager.instance.playSound(this.audioUniqueSkill);
+        GameManager.instance.playSound(this.audioUniqueTouch);
         this.game.releaseSkills();
         energyDataModel.useEnergy();
         this.updateEnergy();
