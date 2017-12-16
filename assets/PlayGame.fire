@@ -14949,6 +14949,12 @@
     },
     "releaseAnim": {
       "__id__": 459
+    },
+    "audioUniqueSkill": {
+      "__uuid__": "a8bdb9c0-048d-4e55-82c7-88a7115fc091"
+    },
+    "audioUniqueTouch": {
+      "__uuid__": "1954dfee-5cee-45bd-a4cf-27cb89fd945d"
     }
   },
   {

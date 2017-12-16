@@ -1,5 +1,6 @@
 var UserDataManager = require("UserDataManager")
 var Constant = require("Constant")
+var GameManager = require("GameManager")
 
 cc.Class({
     extends: cc.Component,
@@ -19,7 +20,9 @@ cc.Class({
         total_height: 72,
         firstEnabledAnim: cc.Animation,
         enabledAnim: cc.Animation,
-        releaseAnim: cc.Animation
+        releaseAnim: cc.Animation,
+        audioUniqueSkill: cc.AudioClip,
+        audioUniqueTouch: cc.AudioClip
     },
 
     init: function(game){
@@ -36,11 +39,16 @@ cc.Class({
         if(!energyDataModel.isUniqueEnabled() || this.game.player.isDead()){
             return;
         }
-
+        
+        // GameManager.instance.playSound(this.audioUniqueSkill);
         this.game.releaseSkills();
         energyDataModel.useEnergy();
         this.updateEnergy();
-        
+
+        this.scheduleOnce(function(){
+            GameManager.instance.playSound(this.audioUniqueSkill);
+        }.bind(this), 0.5);
+
         this.releaseAnim.node.active = true;
         this.releaseAnim.play();
 

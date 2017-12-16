@@ -247,7 +247,7 @@ cc.Class({
         };
 
         fadeInMask();
-        GameManager.instance.playSound(this.audioUnique);
+        // GameManager.instance.playSound(this.audioUnique);
         cc.log("game release unique skills, sound played");
     },
 
