@@ -59,6 +59,7 @@ cc.Class({
         var self = this;
         var callbacks = {
             successCallback: function () {
+                cc.log("pay revive success~~~~~~~~~~");
                 self.hide();
                 self._game.revive();
             },
@@ -82,6 +83,7 @@ cc.Class({
     },
 
     onFreeRevive: function(){
+        cc.log("free revive success~~~~~~~~~~");
         this.hide();
         this._game.revive();
     },
