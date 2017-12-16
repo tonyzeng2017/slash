@@ -28,7 +28,8 @@ cc.Class({
         audio: cc.AudioClip,
         story_flag: cc.Node,
         newbieEnterGame: cc.Node,
-        node_level: cc.Node
+        node_level: cc.Node,
+        boss_node: cc.Node,
     },
 
     showAnimation: function(){
@@ -67,6 +68,14 @@ cc.Class({
         this.text_name.string =  stageData.StageName;
         this.icon_lock.active = false;// !stageEnabled;
         this.icon_pass.active = stagePassed;
+
+        if(this.isBoss && this.boss_node){
+            if(stagePassed){
+                this.boss_node.color = cc.Color.WHITE;
+            }else{
+                this.boss_node.color = cc.Color.BLACK;
+            }
+        }
 
         cc.log("stagePassed, %s, stageEnabled: %s", stagePassed, stageEnabled);
         if(!stageEnabled){

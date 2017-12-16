@@ -1418,7 +1418,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 30
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -2215,7 +2216,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 52
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -3095,7 +3097,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 76
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -3892,7 +3895,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 98
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -4689,7 +4693,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 120
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -5486,7 +5491,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 142
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -6283,7 +6289,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 164
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -7163,7 +7170,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 188
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -7960,7 +7968,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 210
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -8757,7 +8766,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 232
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -9554,7 +9564,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 254
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -10351,7 +10362,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 276
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -11148,7 +11160,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 298
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -11945,7 +11958,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 320
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -12742,7 +12756,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 342
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -13539,7 +13554,8 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 364
-    }
+    },
+    "boss_node": null
   },
   {
     "__type__": "cc.Node",
@@ -14539,6 +14555,9 @@
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 389
+    },
+    "boss_node": {
+      "__id__": 379
     }
   },
   {
