@@ -29828,7 +29828,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 550,
+      "width": 525,
       "height": 80
     },
     "_rotationX": 0,
@@ -29863,7 +29863,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "当前属性全部升级为最高时就可以让进行升星了，\n升星可以提高属性的上限值，可以变得更强",
+    "_N$string": "当前属性全部升级为最高时就可以进行升星了，\n升星可以提高属性的上限值，可以变得更强",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
