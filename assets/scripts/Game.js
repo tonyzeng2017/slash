@@ -25,6 +25,7 @@ cc.Class({
         story: cc.Prefab,
         audioGameWin: cc.AudioClip,
         audioGameFail: cc.AudioClip,
+        audioUnique: cc.AudioClip,
         newbieLife: cc.Node,
         uniqueSkillPrefab: cc.Prefab,
         playerVanishPrefab: cc.Prefab,
@@ -245,8 +246,9 @@ cc.Class({
             cc.log("unique skills, fadeInMask");
         };
 
-        cc.log("game release unique skills");
         fadeInMask();
+        GameManager.instance.playSound(this.audioUnique);
+        cc.log("game release unique skills, sound played");
     },
 
     playerReady: function (isRevive) {

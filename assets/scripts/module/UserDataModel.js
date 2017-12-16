@@ -252,6 +252,7 @@ var UserDataModel = cc.Class({
             attack_duration_LV: this._levels[3],
             attack_interval_LV: this._levels[4],
             moving_speed_LV: this._levels[5],
+            reviveCount: this._reviveCount
         }
     },
 

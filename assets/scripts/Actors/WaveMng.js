@@ -178,6 +178,7 @@ cc.Class({
     },
 
     startWave () {
+        
         this.currentWave.init();
         this.waveTotalFoes = this.currentWave.totalFoes;
         this.killedFoe = 0;

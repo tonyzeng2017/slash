@@ -410,6 +410,12 @@ cc.Class({
 
     // called every frame, uncomment this function to activate update callback
     update (dt) {
+        // if(cc.director.getAnimationInterval() > 0.025){
+        //     cc.game.setFrameRate(30);
+        // }else{
+        //     cc.game.setFrameRate(60);
+        // }
+
         if (this.isAlive === false) {
             return;
         }
