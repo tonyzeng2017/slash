@@ -611,7 +611,7 @@
     },
     "_enabled": true,
     "foeType": 0,
-    "atkType": 0,
+    "atkType": 1,
     "projectileType": 1,
     "hitPoint": 1,
     "hurtRadius": 45,
