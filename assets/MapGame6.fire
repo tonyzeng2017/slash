@@ -485,7 +485,7 @@
         "__id__": 190
       },
       {
-        "__id__": 212
+        "__id__": 214
       },
       {
         "__id__": 236
@@ -7062,16 +7062,19 @@
       },
       {
         "__id__": 206
+      },
+      {
+        "__id__": 210
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 210
+        "__id__": 212
       },
       {
-        "__id__": 211
+        "__id__": 213
       }
     ],
     "_prefab": null,
@@ -7775,6 +7778,84 @@
     "_atlas": null
   },
   {
+    "__type__": "cc.Node",
+    "_name": "story_flag",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 190
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 211
+      }
+    ],
+    "_prefab": null,
+    "_id": "dbc4PkcBNBw7HmO7+LPJ2D",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 56,
+      "height": 67
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -118.7,
+      "y": -86.9
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 210
+    },
+    "_enabled": true,
+    "_spriteFrame": {
+      "__uuid__": "7d26caeb-0037-420c-ab32-296cc9bb084c"
+    },
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
     "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
@@ -7811,7 +7892,7 @@
     "stageID": 89,
     "isBoss": true,
     "item_bg": {
-      "__id__": 210
+      "__id__": 212
     },
     "icon_lock": {
       "__id__": 191
@@ -7831,7 +7912,9 @@
     "audio": {
       "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
-    "story_flag": null,
+    "story_flag": {
+      "__id__": 210
+    },
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 206
@@ -7846,9 +7929,6 @@
       "__id__": 11
     },
     "_children": [
-      {
-        "__id__": 213
-      },
       {
         "__id__": 215
       },
@@ -7920,14 +8000,14 @@
     "_name": "icon_lock",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 212
+      "__id__": 214
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 214
+        "__id__": 216
       }
     ],
     "_prefab": null,
@@ -7972,7 +8052,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 213
+      "__id__": 215
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -7998,14 +8078,14 @@
     "_name": "icon_pass",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 212
+      "__id__": 214
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 216
+        "__id__": 218
       }
     ],
     "_prefab": null,
@@ -8050,7 +8130,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 215
+      "__id__": 217
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -8076,14 +8156,14 @@
     "_name": "textName",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 212
+      "__id__": 214
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 218
+        "__id__": 220
       }
     ],
     "_prefab": null,
@@ -8128,7 +8208,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 217
+      "__id__": 219
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -8152,14 +8232,14 @@
     "_name": "spine",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 212
+      "__id__": 214
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 220
+        "__id__": 222
       }
     ],
     "_prefab": null,
@@ -8204,7 +8284,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 219
+      "__id__": 221
     },
     "_enabled": true,
     "_paused": false,
@@ -8221,88 +8301,10 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "story_flag",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 212
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 222
-      }
-    ],
-    "_prefab": null,
-    "_id": "b7ecNCzihPQbvhtEcFZ2xe",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 56,
-      "height": 67
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": -272,
-      "y": -92
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 221
-    },
-    "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "7d26caeb-0037-420c-ab32-296cc9bb084c"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_atlas": null
-  },
-  {
-    "__type__": "cc.Node",
     "_name": "fei_right",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 212
+      "__id__": 214
     },
     "_children": [
       {
@@ -8501,7 +8503,7 @@
     "_name": "level_bg1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 212
+      "__id__": 214
     },
     "_children": [
       {
@@ -8661,7 +8663,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 212
+      "__id__": 214
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -8687,7 +8689,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 212
+      "__id__": 214
     },
     "_enabled": true,
     "stageID": 90,
@@ -8696,16 +8698,16 @@
       "__id__": 234
     },
     "icon_lock": {
-      "__id__": 213
-    },
-    "icon_pass": {
       "__id__": 215
     },
+    "icon_pass": {
+      "__id__": 217
+    },
     "text_name": {
-      "__id__": 218
+      "__id__": 220
     },
     "spine_node": {
-      "__id__": 219
+      "__id__": 221
     },
     "player": {
       "__id__": 223
@@ -8713,9 +8715,7 @@
     "audio": {
       "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
-    "story_flag": {
-      "__id__": 221
-    },
+    "story_flag": null,
     "newbieEnterGame": null,
     "node_level": {
       "__id__": 230
@@ -16333,7 +16333,7 @@
         "__id__": 190
       },
       {
-        "__id__": 212
+        "__id__": 214
       },
       {
         "__id__": 236
