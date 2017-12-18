@@ -1414,6 +1414,9 @@
     "player": {
       "__id__": 23
     },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
+    },
     "story_flag": null,
     "newbieEnterGame": null,
     "node_level": {
@@ -2211,6 +2214,9 @@
     },
     "player": {
       "__id__": 45
+    },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
     "story_flag": null,
     "newbieEnterGame": null,
@@ -3091,6 +3097,9 @@
     "player": {
       "__id__": 69
     },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
+    },
     "story_flag": {
       "__id__": 67
     },
@@ -3891,6 +3900,9 @@
     "player": {
       "__id__": 91
     },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
+    },
     "story_flag": null,
     "newbieEnterGame": null,
     "node_level": {
@@ -4688,6 +4700,9 @@
     },
     "player": {
       "__id__": 113
+    },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
     "story_flag": null,
     "newbieEnterGame": null,
@@ -5487,6 +5502,9 @@
     "player": {
       "__id__": 135
     },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
+    },
     "story_flag": null,
     "newbieEnterGame": null,
     "node_level": {
@@ -6284,6 +6302,9 @@
     },
     "player": {
       "__id__": 157
+    },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
     "story_flag": null,
     "newbieEnterGame": null,
@@ -7164,6 +7185,9 @@
     "player": {
       "__id__": 181
     },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
+    },
     "story_flag": {
       "__id__": 179
     },
@@ -7964,6 +7988,9 @@
     "player": {
       "__id__": 203
     },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
+    },
     "story_flag": null,
     "newbieEnterGame": null,
     "node_level": {
@@ -8761,6 +8788,9 @@
     },
     "player": {
       "__id__": 225
+    },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
     "story_flag": null,
     "newbieEnterGame": null,
@@ -9560,6 +9590,9 @@
     "player": {
       "__id__": 247
     },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
+    },
     "story_flag": null,
     "newbieEnterGame": null,
     "node_level": {
@@ -10357,6 +10390,9 @@
     },
     "player": {
       "__id__": 269
+    },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
     "story_flag": null,
     "newbieEnterGame": null,
@@ -11156,6 +11192,9 @@
     "player": {
       "__id__": 291
     },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
+    },
     "story_flag": null,
     "newbieEnterGame": null,
     "node_level": {
@@ -11953,6 +11992,9 @@
     },
     "player": {
       "__id__": 313
+    },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
     "story_flag": null,
     "newbieEnterGame": null,
@@ -12752,6 +12794,9 @@
     "player": {
       "__id__": 335
     },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
+    },
     "story_flag": null,
     "newbieEnterGame": null,
     "node_level": {
@@ -13549,6 +13594,9 @@
     },
     "player": {
       "__id__": 357
+    },
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
     },
     "story_flag": null,
     "newbieEnterGame": null,
@@ -14549,6 +14597,9 @@
       "__id__": 375
     },
     "player": null,
+    "audio": {
+      "__uuid__": "21065696-c649-4576-a088-d3fc09ae3115"
+    },
     "story_flag": {
       "__id__": 387
     },
