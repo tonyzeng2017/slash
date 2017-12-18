@@ -43,6 +43,7 @@ var UserDataModel = cc.Class({
     },
 
     canReviveFree: function(){
+        cc.log("revive count: %s, maxCount: %s", this._reviveCount, Constant.instance.MAX_FREE_REVIVE);
         return this._reviveCount < Constant.instance.MAX_FREE_REVIVE;
     },
 

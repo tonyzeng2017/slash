@@ -44,6 +44,10 @@ cc.Class({
         this._itemData = MetaDataManager.getShopData()[Constant.instance.SHOPID_REVIVE];
         this.txtPrice.string = this._itemData.MoneyNum;
 
+        this.updateState();
+    },
+
+    updateState: function(){
         var canReviveFree = UserDataManager.instance.getUserData().canReviveFree();
         this.btnPayRevive.active = !canReviveFree;
         this.btnFreeRevive.active = canReviveFree;

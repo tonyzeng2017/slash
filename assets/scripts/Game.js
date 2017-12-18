@@ -277,7 +277,9 @@ cc.Class({
             this.node.addChild(this._reviveUI);
         }
 
-        return this._reviveUI.getComponent("GameReviveUI")
+        var component = this._reviveUI.getComponent("GameReviveUI")
+        component.updateState();
+        return component;
     },
 
     hideRevive: function(){
