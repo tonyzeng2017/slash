@@ -60,7 +60,7 @@ cc.Class({
         var data = { defaultStoryID: "1" } ;
         data.storyData = {};
 
-        for(var i = 1; i < 18; i ++){
+        for(var i = 1; i < 15; i ++){
             data.storyData[i.toString()] = {
                 storyID: i.toString(),
                 enabled: true,
@@ -148,7 +148,7 @@ cc.Class({
         if(sortedStories.length > 0){
             //升序
             sortedStories.sort(function(a, b){
-                return Number(a.storyID) > Number(b.storyID);
+                return Number(a.storyID) - Number(b.storyID);
             });
             lastIndex = Number(sortedStories[sortedStories.length - 1].storyID);
         }

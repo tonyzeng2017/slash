@@ -317,7 +317,7 @@ function loadData(completeCallback, progressCallback, target) {
                                             _cutData.push(data[key]);
                                         }
                                         _cutData.sort(function(a, b){
-                                            return a.CutNum < b.CutNum;
+                                            return a.CutNum - b.CutNum;
                                         });
                                         cc.log("================================start");
                                         for(var i = 0; i < _cutData.length; i ++){

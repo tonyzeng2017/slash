@@ -201,7 +201,7 @@ var UserDataModel = cc.Class({
 
     getMaxOpenStage: function(){
         this._openedStages.sort(function(a, b){
-            return Number(a) < Number(b);
+            return Number(b) - Number(a); 
         });
         
         return this._openedStages[0];
