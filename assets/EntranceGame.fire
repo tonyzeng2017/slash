@@ -6727,7 +6727,7 @@
       }
     ],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 240
@@ -8082,8 +8082,8 @@
     "_enabled": true,
     "isAlignOnce": true,
     "_target": null,
-    "_alignFlags": 36,
-    "_left": 0,
+    "_alignFlags": 12,
+    "_left": 61.375,
     "_right": 1075.375,
     "_top": 0,
     "_bottom": 26.5,
@@ -8095,7 +8095,7 @@
     "_isAbsBottom": true,
     "_isAbsHorizontalCenter": true,
     "_isAbsVerticalCenter": true,
-    "_originalWidth": 0,
+    "_originalWidth": 191,
     "_originalHeight": 0
   },
   {
