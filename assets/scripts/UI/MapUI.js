@@ -27,6 +27,7 @@ cc.Class({
 
     // use this for initialization
     onLoad: function () {
+
         this._shopUI = cc.instantiate(this.storeUI);
         this._shopUI.x = 0;
         this._shopUI.y = 0;

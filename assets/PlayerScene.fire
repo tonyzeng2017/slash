@@ -85,6 +85,9 @@
       },
       {
         "__id__": 1405
+      },
+      {
+        "__id__": 1406
       }
     ],
     "_prefab": null,
@@ -48555,5 +48558,14 @@
     "upgradeUI": {
       "__id__": 246
     }
+  },
+  {
+    "__type__": "3408czdZgFHuLJrL73/CSPK",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true
   }
 ]

@@ -66,10 +66,10 @@ var NewBieDataModel = cc.Class({
 
     ctor: function() {
         var newbieData = IOUtil.readData(dataKey);
-        this.isInGameFinished = false;//newbieData ? newbieData.isInGameFinished : false;
-        this.isAttrLevelUpFinished = false;//newbieData ? newbieData.isAttrLevelUpFinished: false;
+        this.isInGameFinished = newbieData ? newbieData.isInGameFinished : false;
+        this.isAttrLevelUpFinished = newbieData ? newbieData.isAttrLevelUpFinished: false;
         this.isEnterGameFinished = newbieData ? newbieData.isEnterGameFinished: false;
-        this.isStarUpFinished = false;//newbieData ? newbieData.isStarUpFinished : false;
+        this.isStarUpFinished = newbieData ? newbieData.isStarUpFinished : false;
     }
 });
 

@@ -85,6 +85,9 @@
       },
       {
         "__id__": 391
+      },
+      {
+        "__id__": 392
       }
     ],
     "_prefab": null,
@@ -14447,5 +14450,14 @@
     "story": {
       "__uuid__": "aac724e3-4271-4e02-8f16-f225d7133c9d"
     }
+  },
+  {
+    "__type__": "3408czdZgFHuLJrL73/CSPK",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true
   }
 ]
