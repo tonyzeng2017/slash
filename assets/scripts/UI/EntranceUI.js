@@ -17,7 +17,9 @@ cc.Class({
         // ...
 
         settingUI: cc.Prefab,
-        storyUI: cc.Prefab
+        storyUI: cc.Prefab,
+        storyNode: cc.Node,
+        btnStory: cc.Node
     },
 
     // use this for initialization
@@ -38,12 +40,21 @@ cc.Class({
         this._settingsUI.getComponent("SettingsUI").show();
     },
 
+    closeStory: function(){
+        this.btnStory.active = false;
+        if(this._storyUI){
+            this._storyUI.removeFromParent();
+        }
+    },
+
     showStory: function(){
-        var storyUI = cc.instantiate(this.storyUI);
-        this.node.addChild(storyUI);
+        this.btnStory.active = true;
+        this._storyUI = cc.instantiate(this.storyUI);
+        this._storyUI.x = 0;
+        this._storyUI.y = 0;
+        this.storyNode.addChild(this._storyUI);
         // cc.director.loadScene("NewBieGame");
     }
-
     // called every frame, uncomment this function to activate update callback
     // update: function (dt) {
 

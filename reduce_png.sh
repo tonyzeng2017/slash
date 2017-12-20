@@ -13,7 +13,7 @@ function ergodic(){
                 	extension="${filename##*.}"
                 	#echo $extension
                 	if [ "$extension"x = "pngx" ]; then     
-                	      ~/tools/pngquant/pngquant -f --quality=65-80 $filename -o $filename
+                	      ~/tools/pngquant/pngquant -f --quality=65-80 256 $filename -o $filename
                               echo $filename
                 	fi
                 fi  
