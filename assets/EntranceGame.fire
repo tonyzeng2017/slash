@@ -17,7 +17,7 @@
         "__id__": 2
       },
       {
-        "__id__": 265
+        "__id__": 266
       }
     ],
     "_tag": -1,
@@ -48,7 +48,7 @@
     "_globalZOrder": 0,
     "_opacityModifyRGB": false,
     "groupIndex": 0,
-    "autoReleaseAssets": true
+    "autoReleaseAssets": {}
   },
   {
     "__type__": "cc.Node",
@@ -115,6 +115,9 @@
       },
       {
         "__id__": 264
+      },
+      {
+        "__id__": 265
       }
     ],
     "_prefab": null,
@@ -8821,6 +8824,15 @@
     }
   },
   {
+    "__type__": "3408czdZgFHuLJrL73/CSPK",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true
+  },
+  {
     "__type__": "cc.Node",
     "_name": "tips",
     "_objFlags": 0,
@@ -8832,7 +8844,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 266
+        "__id__": 267
       }
     ],
     "_prefab": null,
@@ -8877,7 +8889,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 265
+      "__id__": 266
     },
     "_enabled": true,
     "tipsPrefab": {
