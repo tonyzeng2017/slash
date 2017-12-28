@@ -147,6 +147,9 @@
     "_components": [
       {
         "__id__": 65
+      },
+      {
+        "__id__": 66
       }
     ],
     "_prefab": null,
@@ -2005,7 +2008,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 102.29999999999995,
+      "width": 102.3,
       "height": 33
     },
     "_rotationX": 0,
@@ -2351,5 +2354,14 @@
     },
     "_fitWidth": false,
     "_fitHeight": true
+  },
+  {
+    "__type__": "3408czdZgFHuLJrL73/CSPK",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 4
+    },
+    "_enabled": true
   }
 ]
